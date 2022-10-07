@@ -1,0 +1,39 @@
+* Amplifier open-loop DC testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+
+.include "inv.spice"
+
+.param pVDD = 5.0
+.param pIB  = 20.0u
+
+VDD vdd 0 dc {pVDD}
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+
+vin in cm dc 0 ac 1
+
+ib vdd ib {pIB}
+xb ib      vdd gp bp  vreg vss inv_bias
+x0 in  out vdd gp bp  vreg vss inv0
+
+.param dx = 1.2
+.dc vin {-dx} {dx} {dx/1001}
+.option gmin = 1e-15
+.control
+	run
+	
+	let vi = in
+	let vo = out
+	let av = db(abs(deriv(vo)))
+	plot vo vs vi xlimit 0 2.4 ylimit 0 2.4
+	plot av vs vo xlimit 0 2.4 ylimit -20 60
+	
+	wrdata ../data/inv_ol_vo.txt vi vo
+	wrdata ../data/inv_ol_av.txt av vo
+	
+.endc
+
+.end

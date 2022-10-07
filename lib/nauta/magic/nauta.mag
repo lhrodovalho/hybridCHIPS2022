@@ -1,0 +1,104 @@
+magic
+tech gf180mcuC
+timestamp 1664224745
+<< metal1 >>
+rect -924 240 -912 252
+rect -12 240 0 252
+<< via2 >>
+rect -888 144 -876 204
+rect -768 144 -756 204
+rect -168 144 -156 204
+rect -48 144 -36 204
+rect -648 -48 -636 12
+rect -528 -48 -516 12
+rect -408 -48 -396 12
+rect -288 -48 -276 12
+<< metal3 >>
+rect -1044 444 -1032 504
+rect -1044 390 -1032 408
+rect -1044 372 -1032 384
+rect -1044 240 -1032 252
+rect -948 240 -886 252
+rect -38 240 24 252
+rect -1044 144 -1032 204
+rect -1044 96 -1032 108
+rect -1044 48 -1032 60
+rect -1044 -48 -1032 12
+rect -1044 -168 -1032 -108
+<< via3 >>
+rect -864 144 -852 204
+rect -672 144 -660 204
+rect -264 144 -252 204
+rect -72 144 -60 204
+rect -912 96 -900 108
+rect -792 96 -780 108
+rect -144 96 -132 108
+rect -24 96 -12 108
+rect -624 48 -612 60
+rect -552 48 -540 60
+rect -384 48 -372 60
+rect -312 48 -300 60
+rect -744 -48 -732 12
+rect -504 -48 -492 12
+rect -432 -48 -420 12
+rect -192 -48 -180 12
+use nauta_cell  nauta_cell_0
+timestamp 1663277574
+transform 1 0 -228 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_1
+timestamp 1663277574
+transform 1 0 -108 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_2
+timestamp 1663277574
+transform 1 0 12 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_3
+timestamp 1663277574
+transform 1 0 132 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_4
+timestamp 1663277574
+transform 1 0 612 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_5
+timestamp 1663277574
+transform 1 0 492 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_6
+timestamp 1663277574
+transform 1 0 372 0 1 -36
+box -720 -132 -588 564
+use nauta_cell  nauta_cell_7
+timestamp 1663277574
+transform 1 0 252 0 1 -36
+box -720 -132 -588 564
+use nauta_edge  nauta_edge_0
+timestamp 1663277675
+transform 1 0 -276 0 1 -36
+box -756 -132 -660 564
+use nauta_edge  nauta_edge_1
+timestamp 1663277675
+transform -1 0 -648 0 1 -36
+box -756 -132 -660 564
+<< labels >>
+rlabel metal3 -1044 48 -1032 60 0 ip
+port 1 nsew
+rlabel metal3 -1044 96 -1032 108 0 im
+port 2 nsew
+rlabel metal3 -1044 144 -1032 204 0 op
+port 3 nsew
+rlabel metal3 -1044 -48 -1032 12 0 om
+port 4 nsew
+rlabel metal3 -1044 444 -1032 504 0 vdd
+port 5 nsew
+rlabel metal3 -1044 372 -1032 384 0 gp
+port 6 nsew
+rlabel metal3 -1044 240 -1032 252 0 bp
+port 7 nsew
+rlabel metal3 -1044 396 -1032 408 0 vreg
+port 8 nsew
+rlabel metal3 -1044 -168 -1032 -108 0 gnd
+port 9 nsew
+<< end >>

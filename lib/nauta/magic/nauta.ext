@@ -1,0 +1,1087 @@
+timestamp 1664224745
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use nauta_edge nauta_edge_0 1 0 -2760 0 1 -360
+use nauta_cell nauta_cell_0 1 0 -2280 0 1 -360
+use nauta_cell nauta_cell_1 1 0 -1080 0 1 -360
+use nauta_cell nauta_cell_2 1 0 120 0 1 -360
+use nauta_cell nauta_cell_7 1 0 2520 0 1 -360
+use nauta_cell nauta_cell_3 1 0 1320 0 1 -360
+use nauta_cell nauta_cell_6 1 0 3720 0 1 -360
+use nauta_cell nauta_cell_4 1 0 6120 0 1 -360
+use nauta_cell nauta_cell_5 1 0 4920 0 1 -360
+use nauta_edge nauta_edge_1 -1 0 -6480 0 1 -360
+port "gnd" 9 -10440 -1680 -10320 -1080 m3
+port "om" 4 -10440 -480 -10320 120 m3
+port "ip" 1 -10440 480 -10320 600 m3
+port "im" 2 -10440 960 -10320 1080 m3
+port "op" 3 -10440 1440 -10320 2040 m3
+port "bp" 7 -10440 2400 -10320 2520 m3
+port "gp" 6 -10440 3720 -10320 3840 m3
+port "vreg" 8 -10440 3960 -10320 4080 m3
+port "vdd" 5 -10440 4440 -10320 5040 m3
+node "gnd" 0 111.909 -10440 -1680 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_n1920_n480#" 1 174.595 -1920 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n4320_n480#" 1 108.92 -4320 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n5040_n480#" 1 108.92 -5040 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n7440_n480#" 1 174.595 -7440 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "om" 0 106.605 -10440 -480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_n3120_480#" 0 54.8624 -3120 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n3840_480#" 0 54.8464 -3840 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5520_480#" 0 54.8464 -5520 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6240_480#" 0 54.8624 -6240 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "ip" 0 25.4741 -10440 480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_n240_960#" 0 59.0397 -240 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n1440_960#" 0 59.5051 -1440 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7920_960#" 0 59.5051 -7920 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n9120_960#" 0 58.1762 -9120 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "im" 0 24.8571 -10440 960 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_n720_1440#" 1 131.122 -720 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n2640_1440#" 1 174.595 -2640 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n6720_1440#" 1 174.595 -6720 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n8640_1440#" 1 131.122 -8640 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "op" 0 103.945 -10440 1440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_n380_2400#" 0 113.016 -380 2400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74400 1480 0 0 0 0
+node "m3_n9480_2400#" 0 110.861 -9480 2400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74400 1480 0 0 0 0
+node "bp" 0 27.7003 -10440 2400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "gp" 0 27.8306 -10440 3720 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "vreg" 0 33.0726 -10440 3960 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 600 0 0 0 0
+node "vdd" 0 110.21 -10440 4440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m2_n2880_n480#" 1 231.124 -2880 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n4080_n480#" 1 198.878 -4080 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n5280_n480#" 1 198.878 -5280 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n6480_n480#" 1 231.124 -6480 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n480_1440#" 1 207.544 -480 1440 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n1680_1440#" 1 225.808 -1680 1440 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n7680_1440#" 1 225.808 -7680 1440 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n8880_1440#" 1 207.045 -8880 1440 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m1_n120_2400#" 0 72.4289 -120 2400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+node "m1_n9240_2400#" 0 72.4289 -9240 2400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m3_n8640_1440#" "m2_n8880_1440#" 176.122
+cap "bp" "gp" 3.0774
+cap "m3_n720_1440#" "m2_n1680_1440#" 41.9168
+cap "m3_n4320_n480#" "m2_n4080_n480#" 176.122
+cap "m3_n3840_480#" "m3_n3120_480#" 14.844
+cap "m3_n9480_2400#" "m2_n8880_1440#" 3.51331
+cap "m2_n5280_n480#" "m2_n6480_n480#" 44.8651
+cap "om" "ip" 10.258
+cap "m3_n5040_n480#" "m2_n4080_n480#" 12.4155
+cap "m2_n5280_n480#" "m3_n4320_n480#" 12.4155
+cap "m3_n6720_1440#" "m2_n7680_1440#" 41.9168
+cap "m3_n2640_1440#" "m2_n1680_1440#" 41.9168
+cap "m2_n480_1440#" "m2_n1680_1440#" 22.1947
+cap "im" "ip" 10.258
+cap "m3_n3840_480#" "m3_n5520_480#" 4.78816
+cap "m2_n2880_n480#" "m2_n4080_n480#" 44.8651
+cap "bp" "m1_n9240_2400#" 0.491432
+cap "vreg" "gp" 61.548
+cap "bp" "op" 10.258
+cap "m3_n5040_n480#" "m2_n5280_n480#" 176.122
+cap "m3_n240_960#" "m3_n380_2400#" 4.7988
+cap "m3_n7920_960#" "m3_n9120_960#" 9.00369
+cap "m3_n5040_n480#" "m2_n6480_n480#" 4.84416
+cap "m3_n1920_n480#" "m2_n2880_n480#" 41.9168
+cap "m3_n7440_n480#" "m2_n6480_n480#" 41.9168
+cap "m2_n480_1440#" "m3_n720_1440#" 176.122
+cap "m3_n9480_2400#" "m1_n9240_2400#" 7.28572
+cap "m3_n380_2400#" "m1_n120_2400#" 7.28572
+cap "m3_n5040_n480#" "m3_n4320_n480#" 74.2198
+cap "vreg" "vdd" 10.258
+cap "m3_n8640_1440#" "m2_n7680_1440#" 41.9168
+cap "bp" "m3_n9480_2400#" 4.39629
+cap "im" "op" 10.258
+cap "m3_n380_2400#" "m2_n480_1440#" 3.51331
+cap "m3_n240_960#" "m3_n1440_960#" 9.00369
+cap "m3_n6240_480#" "m3_n5520_480#" 14.844
+cap "op" "m2_n8880_1440#" 14.2068
+cap "m2_n5280_n480#" "m2_n4080_n480#" 18.3455
+cap "m2_n2880_n480#" "m3_n4320_n480#" 4.84416
+cap "om" "gnd" 6.1548
+cap "m3_n9120_960#" "m3_n9480_2400#" 4.7988
+cap "im" "m3_n9120_960#" 3.99826
+cap "m2_n7680_1440#" "m2_n8880_1440#" 22.1947
+cap "nauta_cell_0/out" "nauta_edge_0/gnd" 2.28107
+cap "nauta_cell_0/dl" "nauta_edge_0/gnd" 4.08313
+cap "nauta_edge_0/lo" "nauta_cell_0/dr" 0.333599
+cap "nauta_edge_0/lo" "nauta_edge_0/im" 38.0168
+cap "nauta_edge_0/om" "nauta_cell_0/dl" 1.57978
+cap "nauta_edge_0/om" "nauta_edge_0/gnd" 16.8515
+cap "nauta_cell_0/dr" "nauta_edge_0/gnd" 1.44586
+cap "nauta_edge_0/im" "nauta_edge_0/gnd" 46.4627
+cap "nauta_edge_0/im" "nauta_edge_0/om" 29.4853
+cap "nauta_edge_0/lo" "nauta_cell_0/inr" 4.35046
+cap "nauta_edge_0/lo" "nauta_cell_0/out" 0.484943
+cap "nauta_edge_0/lo" "nauta_cell_0/dl" 1.9842
+cap "nauta_cell_1/dl" "nauta_edge_0/gnd" 1.11991
+cap "nauta_edge_0/lo" "nauta_edge_0/gnd" 3.68594
+cap "nauta_edge_0/lo" "nauta_edge_0/om" 7.0802
+cap "nauta_cell_0/inr" "nauta_edge_0/gnd" 3.62493
+cap "nauta_cell_1/out" "nauta_edge_0/gnd" 0.0340466
+cap "nauta_edge_0/gnd" "nauta_cell_1/dr" 1.43112
+cap "nauta_edge_0/om" "nauta_edge_0/im" 16.7872
+cap "nauta_cell_1/dl" "nauta_cell_2/dr" 0.00500446
+cap "nauta_edge_0/gnd" "nauta_cell_1/dl" 3.42094
+cap "nauta_cell_1/dl" "nauta_cell_0/inr" 1.4046
+cap "nauta_edge_0/gnd" "nauta_cell_0/inr" 0.0897465
+cap "nauta_cell_0/dr" "nauta_edge_0/om" 0.768795
+cap "nauta_cell_1/dl" "nauta_edge_0/im" 0.768795
+cap "nauta_edge_0/gnd" "nauta_edge_0/im" 15.3762
+cap "nauta_edge_0/im" "nauta_cell_0/inr" 88.3008
+cap "nauta_cell_1/dr" "nauta_cell_0/dr" 0.333599
+cap "nauta_cell_0/out" "nauta_edge_0/lo" 6.64529
+cap "nauta_cell_1/dl" "nauta_cell_2/inl" 0.768795
+cap "nauta_edge_0/gnd" "nauta_cell_2/inl" 2.04732
+cap "nauta_cell_1/dl" "nauta_cell_0/dr" 1.21898
+cap "nauta_cell_1/out" "nauta_cell_0/dl" 1.26887
+cap "nauta_cell_2/inl" "nauta_cell_0/inr" 0.00569977
+cap "nauta_edge_0/gnd" "nauta_cell_0/dr" 0.150681
+cap "nauta_cell_1/dl" "nauta_edge_0/ip" 0.0869354
+cap "nauta_cell_2/inl" "nauta_edge_0/im" 4.04056
+cap "nauta_cell_0/dr" "nauta_edge_0/im" 1.4046
+cap "nauta_edge_0/gnd" "nauta_edge_0/lo" 2.95745
+cap "nauta_edge_0/lo" "nauta_cell_0/inr" 1.81386
+cap "nauta_edge_0/ip" "nauta_edge_0/im" 0.318933
+cap "nauta_edge_0/lo" "nauta_edge_0/im" 0.00569977
+cap "nauta_cell_1/out" "nauta_cell_0/out" 4.50057
+cap "nauta_cell_0/dr" "nauta_edge_0/lo" 0.811798
+cap "nauta_edge_0/om" "nauta_cell_0/dl" 0.0869354
+cap "nauta_cell_1/dr" "nauta_cell_0/dl" 0.00500446
+cap "nauta_edge_0/gnd" "nauta_cell_1/out" 9.88393
+cap "nauta_cell_1/out" "nauta_cell_0/inr" 8.57936
+cap "nauta_cell_1/dl" "nauta_cell_0/dl" 0.667198
+cap "nauta_cell_1/out" "nauta_edge_0/im" 2.40533
+cap "nauta_edge_0/gnd" "nauta_cell_0/dl" 0.824307
+cap "nauta_cell_2/dl" "nauta_cell_1/dl" 0.333599
+cap "nauta_edge_0/im" "nauta_cell_0/dl" 0.768795
+cap "nauta_edge_0/gnd" "nauta_cell_2/dl" 1.11991
+cap "nauta_cell_0/out" "nauta_edge_0/om" 1.59082
+cap "nauta_cell_1/out" "nauta_cell_0/dr" 3.75611
+cap "nauta_cell_0/out" "nauta_cell_1/dr" 1.10505
+cap "nauta_cell_1/dl" "nauta_cell_0/out" 3.75611
+cap "nauta_cell_1/dl" "nauta_edge_0/om" 0.16382
+cap "nauta_edge_0/gnd" "nauta_cell_0/out" 17.4124
+cap "nauta_edge_0/gnd" "nauta_edge_0/om" -28.0914
+cap "nauta_cell_0/out" "nauta_edge_0/im" 8.57936
+cap "nauta_edge_0/om" "nauta_cell_0/inr" 18.7276
+cap "nauta_cell_0/gnd" "nauta_cell_1/out" 7.70041
+cap "nauta_cell_0/gnd" "nauta_cell_2/dl" 3.42094
+cap "nauta_cell_2/inl" "nauta_cell_0/gnd" 15.4129
+cap "nauta_cell_2/dl" "nauta_cell_1/dr" 1.21898
+cap "nauta_cell_2/inl" "nauta_cell_1/dr" 1.4046
+cap "nauta_cell_0/om" "nauta_cell_0/gnd" -4.71575
+cap "nauta_cell_0/om" "nauta_cell_1/dr" 3.75611
+cap "nauta_cell_3/dl" "nauta_cell_2/dl" 0.333599
+cap "nauta_cell_2/dr" "nauta_cell_1/out" 1.10505
+cap "nauta_cell_0/gnd" "nauta_cell_1/dr" 0.145676
+cap "nauta_cell_0/om" "nauta_cell_3/dl" 3.27117
+cap "nauta_cell_0/dl" "nauta_cell_1/dr" 0.00500446
+cap "nauta_cell_3/dr" "nauta_cell_2/dl" 0.00500446
+cap "nauta_cell_0/gnd" "nauta_cell_3/dl" 1.11991
+cap "nauta_cell_2/dr" "nauta_cell_0/gnd" 1.43112
+cap "nauta_cell_0/dr" "nauta_cell_0/gnd" 1.11991
+cap "nauta_cell_0/inl" "nauta_cell_0/ip" 0.0942752
+cap "nauta_cell_0/om" "nauta_cell_0/out" 0.814511
+cap "nauta_cell_2/dr" "nauta_cell_1/dr" 0.333599
+cap "nauta_cell_0/dr" "nauta_cell_1/dr" 0.333599
+cap "nauta_cell_1/out" "nauta_cell_0/ip" 1.59082
+cap "nauta_cell_0/om" "nauta_cell_3/dr" 1.10505
+cap "nauta_cell_0/ip" "nauta_cell_2/dl" 0.768795
+cap "nauta_cell_0/inl" "nauta_cell_2/dl" 0.768795
+cap "nauta_cell_0/gnd" "nauta_cell_0/out" 0.0340466
+cap "nauta_cell_0/inl" "nauta_cell_2/inl" 6.73284
+cap "nauta_cell_2/inl" "nauta_cell_0/ip" 4.04056
+cap "nauta_cell_1/dr" "nauta_cell_0/out" 0.16382
+cap "nauta_cell_2/inl" "nauta_cell_0/inr" 0.00569977
+cap "nauta_cell_1/dl" "nauta_cell_2/dl" 0.333599
+cap "nauta_cell_1/out" "nauta_cell_2/dl" 3.75611
+cap "nauta_cell_2/inl" "nauta_cell_1/out" 8.57936
+cap "nauta_cell_0/om" "nauta_cell_0/ip" 11.9237
+cap "nauta_cell_0/om" "nauta_cell_0/inr" 4.04056
+cap "nauta_cell_0/om" "nauta_cell_0/inl" 1.90976
+cap "nauta_cell_1/dl" "nauta_cell_0/om" 1.10505
+cap "nauta_cell_0/om" "nauta_cell_1/out" 4.50057
+cap "nauta_cell_0/om" "nauta_cell_2/dl" 1.65535
+cap "nauta_cell_0/inl" "nauta_cell_0/gnd" 3.0693
+cap "nauta_cell_0/gnd" "nauta_cell_0/ip" 5.11662
+cap "nauta_cell_0/gnd" "nauta_cell_0/inr" 2.04732
+cap "nauta_cell_0/ip" "nauta_cell_1/dr" 0.768795
+cap "nauta_cell_0/inl" "nauta_cell_1/dr" 0.0869354
+cap "nauta_cell_0/om" "nauta_cell_2/inl" 96.2634
+cap "nauta_cell_1/dl" "nauta_cell_0/gnd" 1.43112
+cap "nauta_cell_1/dr" "nauta_cell_0/inr" 0.768795
+cap "nauta_cell_3/dl" "nauta_cell_1/inr" 1.41756
+cap "nauta_cell_1/gnd" "nauta_cell_2/dr" -0.339267
+cap "nauta_cell_2/dr" "nauta_cell_1/ip" 1.4046
+cap "nauta_cell_1/gnd" "nauta_cell_1/dr" 1.11991
+cap "nauta_cell_3/dr" "nauta_cell_2/dr" 0.667198
+cap "nauta_cell_7/dr" "nauta_cell_3/dl" 0.00500446
+cap "nauta_cell_7/dr" "nauta_cell_1/inr" 1.10505
+cap "nauta_cell_3/dl" "nauta_cell_7/dl" 0.333599
+cap "nauta_cell_1/inr" "nauta_cell_7/dl" 3.27117
+cap "nauta_cell_2/inl" "nauta_cell_3/dl" 0.768795
+cap "nauta_cell_1/gnd" "nauta_cell_3/dl" 3.42094
+cap "nauta_cell_2/inl" "nauta_cell_1/inr" 1.90976
+cap "nauta_cell_3/dl" "nauta_cell_1/ip" 1.49153
+cap "nauta_cell_1/gnd" "nauta_cell_1/inr" 6.75134
+cap "nauta_cell_1/inr" "nauta_cell_1/ip" 55.342
+cap "nauta_cell_3/dr" "nauta_cell_1/inr" 2.05336
+cap "nauta_cell_3/dl" "nauta_cell_2/dl" 0.333599
+cap "nauta_cell_1/inr" "nauta_cell_2/dl" 1.10505
+cap "nauta_cell_1/gnd" "nauta_cell_1/out" 0.0340466
+cap "nauta_cell_3/dr" "nauta_cell_7/dr" 0.333599
+cap "nauta_cell_3/dl" "nauta_cell_2/dr" 1.21898
+cap "nauta_cell_1/gnd" "nauta_cell_7/dl" 1.11991
+cap "nauta_cell_1/inr" "nauta_cell_2/dr" 4.52491
+cap "nauta_cell_1/gnd" "nauta_cell_2/inl" 3.0693
+cap "nauta_cell_3/dr" "nauta_cell_7/dl" 0.609489
+cap "nauta_cell_2/inl" "nauta_cell_1/ip" 6.73284
+cap "nauta_cell_1/gnd" "nauta_cell_1/ip" 18.1157
+cap "nauta_cell_3/dr" "nauta_cell_2/inl" 0.0869354
+cap "nauta_cell_3/dr" "nauta_cell_1/gnd" 2.78524
+cap "nauta_cell_3/dr" "nauta_cell_1/ip" 1.53759
+cap "nauta_cell_1/gnd" "nauta_cell_2/dl" 1.43112
+cap "nauta_cell_3/dr" "nauta_cell_2/dl" 0.00500446
+cap "nauta_cell_3/dr" "nauta_cell_7/dl" 0.609489
+cap "nauta_cell_6/dr" "nauta_cell_2/gnd" 1.43112
+cap "nauta_cell_2/gnd" "nauta_cell_6/inr" 3.0693
+cap "nauta_cell_2/out" "nauta_cell_6/dl" 3.27117
+cap "nauta_cell_2/out" "nauta_cell_7/dr" 1.41756
+cap "nauta_cell_2/inr" "nauta_cell_7/dr" 1.49153
+cap "nauta_cell_2/out" "nauta_cell_3/dr" 3.27117
+cap "nauta_cell_2/inr" "nauta_cell_7/dl" 1.53759
+cap "nauta_cell_6/dr" "nauta_cell_7/dr" 0.333599
+cap "nauta_cell_7/dr" "nauta_cell_6/inr" 0.768795
+cap "nauta_cell_2/out" "nauta_cell_7/dl" 2.05336
+cap "nauta_cell_3/dl" "nauta_cell_2/gnd" 1.43112
+cap "nauta_cell_6/dr" "nauta_cell_7/dl" 0.00500446
+cap "nauta_cell_7/dl" "nauta_cell_6/inr" 0.0869354
+cap "nauta_cell_6/dl" "nauta_cell_2/gnd" 3.18673
+cap "nauta_cell_5/dl" "nauta_cell_2/gnd" 0.0148669
+cap "nauta_cell_7/dr" "nauta_cell_2/gnd" 2.78524
+cap "nauta_cell_2/inr" "nauta_cell_2/out" 30.6028
+cap "nauta_cell_3/dl" "nauta_cell_7/dr" 0.00500446
+cap "nauta_cell_3/dr" "nauta_cell_2/gnd" 3.17187
+cap "nauta_cell_2/inr" "nauta_cell_6/inr" 6.73284
+cap "nauta_cell_2/out" "nauta_cell_6/inr" 1.90976
+cap "nauta_cell_7/dl" "nauta_cell_2/gnd" 3.42094
+cap "nauta_cell_7/dr" "nauta_cell_6/dl" 0.609489
+cap "nauta_cell_6/dr" "nauta_cell_2/out" 1.10505
+cap "nauta_cell_3/dl" "nauta_cell_7/dl" 0.333599
+cap "nauta_cell_7/dr" "nauta_cell_3/dr" 0.333599
+cap "nauta_cell_7/dl" "nauta_cell_6/dl" 0.333599
+cap "nauta_cell_2/dr" "nauta_cell_2/gnd" 1.11991
+cap "nauta_cell_2/inr" "nauta_cell_2/gnd" 25.6462
+cap "nauta_cell_2/out" "nauta_cell_2/gnd" -6.4706
+cap "nauta_cell_2/out" "nauta_cell_3/dl" 1.10505
+cap "nauta_cell_7/im" "nauta_cell_6/dl" 0.0869354
+cap "nauta_cell_7/inl" "nauta_cell_7/inr" 31.3532
+cap "nauta_cell_7/im" "nauta_cell_6/dr" 0.768795
+cap "nauta_cell_7/dl" "nauta_cell_7/gnd" 1.43112
+cap "nauta_cell_7/im" "nauta_cell_7/inl" 1.59082
+cap "nauta_cell_4/inl" "nauta_cell_6/inr" 0.00569977
+cap "nauta_cell_7/inr" "nauta_cell_7/gnd" 20.5296
+cap "nauta_cell_7/im" "nauta_cell_7/gnd" 3.0693
+cap "nauta_cell_7/dr" "nauta_cell_6/dl" 0.609489
+cap "nauta_cell_7/inl" "nauta_cell_6/inr" 57.2786
+cap "nauta_cell_6/dr" "nauta_cell_7/dr" 0.333599
+cap "nauta_cell_4/dl" "nauta_cell_7/gnd" 0.0148669
+cap "nauta_cell_7/inl" "nauta_cell_6/dl" 2.02253
+cap "nauta_cell_7/inr" "nauta_cell_5/out" 0.814511
+cap "nauta_cell_7/inl" "nauta_cell_6/dr" 1.65535
+cap "nauta_cell_7/inl" "nauta_cell_7/dr" 3.27117
+cap "nauta_cell_6/inr" "nauta_cell_7/gnd" 15.4129
+cap "nauta_cell_4/inl" "nauta_cell_7/gnd" 0.218768
+cap "nauta_cell_7/gnd" "nauta_cell_6/dl" 2.78524
+cap "nauta_cell_5/dl" "nauta_cell_6/dl" 0.333599
+cap "nauta_cell_3/dr" "nauta_cell_7/gnd" 0.0148669
+cap "nauta_cell_6/dr" "nauta_cell_7/gnd" 3.42094
+cap "nauta_cell_6/dr" "nauta_cell_5/dl" 0.609489
+cap "nauta_cell_7/dr" "nauta_cell_7/gnd" 3.18673
+cap "nauta_cell_7/inl" "nauta_cell_7/gnd" -22.6401
+cap "nauta_cell_5/out" "nauta_cell_6/inr" 3.87018
+cap "nauta_cell_7/inl" "nauta_cell_5/dl" 3.27117
+cap "nauta_cell_5/out" "nauta_cell_6/dl" 0.16382
+cap "nauta_cell_6/dr" "nauta_cell_5/out" 0.484943
+cap "nauta_cell_7/inl" "nauta_cell_5/out" 2.25028
+cap "nauta_cell_5/dr" "nauta_cell_6/dl" 0.00500446
+cap "nauta_cell_5/dl" "nauta_cell_7/gnd" 3.17187
+cap "nauta_cell_6/dr" "nauta_cell_5/dr" 0.333599
+cap "nauta_cell_7/im" "nauta_cell_7/inr" 0.318933
+cap "nauta_cell_7/inl" "nauta_cell_5/dr" 1.10505
+cap "nauta_cell_7/dl" "nauta_cell_6/dl" 0.333599
+cap "nauta_cell_7/dl" "nauta_cell_6/dr" 0.00500446
+cap "nauta_cell_5/out" "nauta_cell_7/gnd" 1.83271
+cap "nauta_cell_7/inl" "nauta_cell_7/dl" 1.10505
+cap "nauta_cell_7/inr" "nauta_cell_6/inr" 4.04056
+cap "nauta_cell_5/dr" "nauta_cell_7/gnd" 1.43112
+cap "nauta_cell_7/inr" "nauta_cell_6/dl" 1.4046
+cap "nauta_cell_7/inr" "nauta_cell_6/dr" 0.768795
+cap "nauta_cell_7/im" "nauta_cell_6/inr" 6.73284
+cap "nauta_cell_7/im" "nauta_cell_4/out" 3.87018
+cap "nauta_cell_7/im" "nauta_cell_6/inr" 4.04056
+cap "nauta_cell_4/inl" "nauta_cell_7/gnd" 11.0508
+cap "nauta_cell_4/inl" "nauta_cell_5/dl" 0.768795
+cap "nauta_cell_7/om" "nauta_cell_4/inl" 19.1092
+cap "nauta_cell_7/im" "nauta_cell_4/inl" 88.3008
+cap "nauta_cell_5/dr" "nauta_cell_4/dr" 0.333599
+cap "nauta_cell_4/inl" "nauta_cell_6/inr" 0.00569977
+cap "nauta_cell_5/dr" "nauta_cell_6/dr" 0.333599
+cap "nauta_cell_5/dr" "nauta_cell_7/ip" 0.0869354
+cap "nauta_cell_5/out" "nauta_cell_4/dr" 1.10505
+cap "nauta_cell_5/out" "nauta_cell_6/dr" 3.27117
+cap "nauta_cell_5/out" "nauta_cell_7/ip" 1.59082
+cap "nauta_cell_4/dr" "nauta_cell_7/gnd" 1.43112
+cap "nauta_cell_5/dr" "nauta_cell_6/dl" 0.00500446
+cap "nauta_cell_4/dr" "nauta_cell_5/dl" 0.00500446
+cap "nauta_cell_5/dr" "nauta_cell_7/gnd" 2.31369
+cap "nauta_cell_6/dr" "nauta_cell_7/gnd" 1.11991
+cap "nauta_cell_7/om" "nauta_cell_5/dr" 0.16382
+cap "nauta_cell_5/dr" "nauta_cell_4/dl" 1.21898
+cap "nauta_cell_6/dr" "nauta_cell_5/dl" 0.609489
+cap "nauta_cell_7/om" "nauta_cell_7/ip" 5.33119
+cap "nauta_cell_7/ip" "nauta_cell_5/dl" 0.768795
+cap "nauta_cell_5/dr" "nauta_cell_7/im" 0.768795
+cap "nauta_cell_5/dr" "nauta_cell_4/out" 0.484943
+cap "nauta_cell_7/im" "nauta_cell_7/ip" 0.318933
+cap "nauta_cell_5/dr" "nauta_cell_6/inr" 0.768795
+cap "nauta_cell_5/out" "nauta_cell_6/dl" 1.10505
+cap "nauta_cell_5/dr" "nauta_cell_4/inl" 1.4046
+cap "nauta_cell_7/om" "nauta_cell_5/out" 2.25028
+cap "nauta_cell_5/out" "nauta_cell_7/gnd" 16.8619
+cap "nauta_cell_5/out" "nauta_cell_4/dl" 3.75611
+cap "nauta_cell_7/im" "nauta_cell_5/out" 1.59082
+cap "nauta_cell_5/out" "nauta_cell_4/out" 2.25028
+cap "nauta_cell_6/dl" "nauta_cell_5/dl" 0.333599
+cap "nauta_cell_5/out" "nauta_cell_6/inr" 4.70918
+cap "nauta_cell_7/om" "nauta_cell_5/dl" 0.484943
+cap "nauta_cell_7/gnd" "nauta_cell_5/dl" 1.67799
+cap "nauta_cell_7/om" "nauta_cell_7/gnd" -21.98
+cap "nauta_cell_7/om" "nauta_cell_4/dl" 0.768795
+cap "nauta_edge_1/lo" "nauta_cell_7/gnd" 2.95745
+cap "nauta_cell_5/out" "nauta_cell_4/inl" 8.57936
+cap "nauta_cell_4/dl" "nauta_cell_5/dl" 0.667198
+cap "nauta_cell_4/dl" "nauta_cell_7/gnd" 2.936
+cap "nauta_cell_7/im" "nauta_cell_7/gnd" 13.6135
+cap "nauta_cell_7/im" "nauta_cell_5/dl" 0.0869354
+cap "nauta_cell_7/om" "nauta_cell_7/im" 4.51878
+cap "nauta_cell_7/om" "nauta_cell_4/out" 0.814511
+cap "nauta_cell_7/im" "nauta_cell_4/dl" 1.4046
+cap "nauta_cell_4/out" "nauta_cell_7/gnd" 1.79867
+cap "nauta_cell_6/inr" "nauta_cell_7/gnd" 2.04732
+cap "nauta_cell_4/out" "nauta_cell_5/dl" 0.16382
+cap "nauta_cell_7/om" "nauta_cell_6/inr" 30.3808
+cap "nauta_cell_6/inr" "nauta_cell_5/dl" 1.4046
+cap "nauta_cell_7/im" "nauta_edge_1/lo" 0.00569977
+cap "nauta_cell_4/inl" "nauta_cell_4/om" 3.65898
+cap "nauta_cell_4/out" "nauta_cell_4/om" 1.59082
+cap "nauta_cell_4/inr" "nauta_edge_1/lo" 37.3309
+cap "nauta_cell_4/inl" "nauta_edge_1/lo" 6.16431
+cap "nauta_cell_4/out" "nauta_edge_1/lo" 7.13023
+cap "nauta_cell_5/dr" "nauta_cell_4/dr" 0.333599
+cap "nauta_cell_5/dr" "nauta_cell_4/out" 3.27117
+cap "nauta_cell_4/gnd" "nauta_cell_4/dl" 1.92107
+cap "nauta_cell_4/dr" "nauta_cell_4/gnd" 3.58572
+cap "nauta_cell_4/gnd" "nauta_cell_5/out" 0.0340466
+cap "nauta_cell_4/inr" "nauta_cell_4/gnd" 44.09
+cap "nauta_cell_4/inl" "nauta_cell_4/gnd" 7.48461
+cap "nauta_cell_4/gnd" "nauta_cell_4/out" 20.6876
+cap "nauta_cell_4/gnd" "nauta_cell_4/om" -31.1948
+cap "nauta_cell_4/dr" "nauta_cell_5/out" 0.16382
+cap "nauta_cell_4/gnd" "nauta_edge_1/lo" 5.66398
+cap "nauta_cell_4/inr" "nauta_cell_4/dr" 0.768795
+cap "nauta_cell_4/inr" "nauta_cell_5/out" 0.814511
+cap "nauta_cell_4/dl" "nauta_edge_1/lo" 1.1454
+cap "nauta_cell_4/dr" "nauta_cell_5/dl" 0.00500446
+cap "nauta_cell_4/out" "nauta_cell_5/out" 2.25028
+cap "nauta_cell_4/dr" "nauta_cell_4/om" 0.0869354
+cap "nauta_cell_5/dr" "nauta_cell_4/gnd" 1.11991
+cap "nauta_cell_4/dr" "nauta_edge_1/lo" 1.9842
+cap "nauta_cell_4/inr" "nauta_cell_4/out" 4.70918
+cap "nauta_cell_4/out" "nauta_cell_5/dl" 1.10505
+cap "nauta_cell_4/inr" "nauta_cell_4/om" 26.9648
+cap "nauta_cell_4/gnd" "nauta_cell_4/inl" 0.555626
+cap "nauta_cell_4/dl" "nauta_cell_4/gnd" 0.0147368
+cap "nauta_cell_4/out" "nauta_cell_4/gnd" 0.482406
+cap "nauta_cell_4/dr" "nauta_cell_4/gnd" 0.982358
+cap "nauta_cell_4/inr" "nauta_cell_4/gnd" 5.2431
+cap "nauta_edge_0/ip" "nauta_cell_0/dl" 0.0025239
+cap "nauta_edge_0/ip" "nauta_edge_0/im" 15.0415
+cap "nauta_edge_0/ip" "nauta_edge_0/gnd" -12.715
+cap "nauta_edge_0/ip" "nauta_edge_0/lo" 0.265516
+cap "nauta_edge_0/bp" "nauta_edge_0/im" -0.0975024
+cap "nauta_edge_0/gnd" "nauta_edge_0/im" 58.8737
+cap "nauta_edge_0/bp" "nauta_edge_0/gnd" -0.00118004
+cap "nauta_edge_0/om" "nauta_edge_0/im" 49.0433
+cap "nauta_edge_0/hi" "nauta_edge_0/im" 0.00615277
+cap "nauta_edge_0/om" "nauta_edge_0/gnd" -3.13646
+cap "nauta_edge_0/im" "nauta_edge_0/op" 79.6738
+cap "nauta_edge_0/gnd" "nauta_edge_0/bp" -0.00118004
+cap "nauta_edge_0/im" "nauta_edge_0/gnd" -19.877
+cap "nauta_edge_0/om" "nauta_edge_0/im" 32.5324
+cap "nauta_edge_0/im" "nauta_edge_0/ip" 9.39225
+cap "nauta_edge_0/gnd" "nauta_edge_0/op" 46.57
+cap "nauta_edge_0/om" "nauta_edge_0/op" 23.9896
+cap "nauta_edge_0/ip" "nauta_edge_0/op" 7.19687
+cap "nauta_edge_0/om" "nauta_edge_0/gnd" -31.4309
+cap "nauta_edge_0/ip" "nauta_edge_0/gnd" -62.4984
+cap "nauta_edge_0/im" "nauta_edge_0/bp" -0.705684
+cap "nauta_cell_0/inl" "nauta_cell_0/gnd" -47.1114
+cap "nauta_cell_0/inl" "nauta_cell_0/om" 0.309311
+cap "nauta_cell_0/ip" "nauta_cell_0/gnd" -62.4984
+cap "nauta_cell_0/inl" "nauta_cell_0/inr" 7.19687
+cap "nauta_cell_0/ip" "nauta_cell_0/om" 7.19687
+cap "nauta_cell_0/inl" "nauta_cell_0/bp" -0.0386286
+cap "nauta_cell_0/om" "nauta_cell_0/gnd" 4.03499
+cap "nauta_cell_0/ip" "nauta_cell_0/inr" 7.19687
+cap "nauta_cell_0/gnd" "nauta_cell_0/inr" 27.5861
+cap "nauta_cell_0/om" "nauta_cell_0/inr" 72.9304
+cap "nauta_cell_0/gnd" "nauta_cell_0/bp" -0.00118004
+cap "nauta_cell_1/gnd" "nauta_cell_1/inr" -2.29438
+cap "nauta_cell_1/bp" "nauta_cell_1/im" -0.0386286
+cap "nauta_cell_1/ip" "nauta_cell_1/gnd" -30.6141
+cap "nauta_cell_1/inr" "nauta_cell_1/im" 7.19687
+cap "nauta_cell_1/ip" "nauta_cell_1/im" 12.1983
+cap "nauta_cell_1/gnd" "nauta_cell_1/bp" -0.00118004
+cap "nauta_cell_1/ip" "nauta_cell_1/inr" 33.1731
+cap "nauta_cell_1/gnd" "nauta_cell_1/im" -47.1114
+cap "nauta_cell_2/gnd" "nauta_cell_2/out" -19.1007
+cap "nauta_cell_2/inr" "nauta_cell_2/im" 7.19687
+cap "nauta_cell_2/inr" "nauta_cell_2/gnd" -63.625
+cap "nauta_cell_2/inr" "nauta_cell_2/out" 22.7345
+cap "nauta_cell_7/bp" "nauta_cell_2/im" -0.0515048
+cap "nauta_cell_7/bp" "nauta_cell_2/gnd" -0.00157339
+cap "nauta_cell_2/gnd" "nauta_cell_2/im" -62.8152
+cap "nauta_cell_2/im" "nauta_cell_2/out" 7.19687
+cap "nauta_cell_7/inr" "nauta_cell_7/op" -19.1284
+cap "nauta_cell_7/im" "nauta_cell_7/gnd" -78.519
+cap "nauta_cell_7/gnd" "nauta_cell_7/inl" -42.9545
+cap "nauta_cell_7/im" "nauta_cell_7/bp" -0.0643809
+cap "nauta_cell_7/gnd" "nauta_cell_7/bp" -0.00196674
+cap "nauta_cell_7/im" "nauta_cell_7/inr" 7.19687
+cap "nauta_cell_7/gnd" "nauta_cell_7/inr" -84.4578
+cap "nauta_cell_7/inr" "nauta_cell_7/inl" 29.8098
+cap "nauta_cell_7/im" "nauta_cell_7/op" 7.19687
+cap "nauta_cell_7/gnd" "nauta_cell_7/op" 19.7062
+cap "nauta_cell_7/inl" "nauta_cell_7/op" 61.3741
+cap "nauta_cell_7/om" "nauta_cell_7/op" 54.0562
+cap "nauta_cell_7/ip" "nauta_cell_7/op" 5.00148
+cap "nauta_cell_7/im" "nauta_cell_7/op" 79.0085
+cap "nauta_cell_7/im" "nauta_cell_7/bp" -0.0386286
+cap "nauta_cell_7/gnd" "nauta_cell_7/ip" -62.4984
+cap "nauta_cell_7/om" "nauta_cell_7/gnd" -11.7247
+cap "nauta_cell_7/im" "nauta_cell_7/gnd" -27.4052
+cap "nauta_cell_7/gnd" "nauta_cell_7/op" 27.9378
+cap "nauta_cell_7/om" "nauta_cell_7/ip" 7.19687
+cap "nauta_cell_7/im" "nauta_cell_7/ip" 7.19687
+cap "nauta_cell_7/om" "nauta_cell_7/im" -3.74833
+cap "nauta_cell_7/gnd" "nauta_cell_7/bp" -0.00118004
+cap "nauta_cell_4/gnd" "nauta_cell_4/bp" -0.00118004
+cap "nauta_cell_4/inr" "nauta_cell_4/inl" 3.4203
+cap "nauta_cell_4/gnd" "nauta_cell_4/inl" 26.5121
+cap "nauta_cell_4/om" "nauta_cell_4/inl" 7.31796
+cap "nauta_cell_4/ip" "nauta_cell_4/inl" 2.19539
+cap "nauta_cell_4/gnd" "nauta_cell_4/inr" 18.7034
+cap "nauta_cell_4/om" "nauta_cell_4/inr" 53.2917
+cap "nauta_cell_4/ip" "nauta_cell_4/inr" 15.9875
+cap "nauta_cell_4/bp" "nauta_cell_4/inr" -2.03979
+cap "nauta_cell_4/gnd" "nauta_cell_4/om" -31.4309
+cap "nauta_cell_4/gnd" "nauta_cell_4/ip" -62.4984
+cap "nauta_edge_0/op" "nauta_cell_0/gnd" -18.9478
+cap "nauta_edge_0/op" "nauta_edge_0/vreg" 5.00212
+cap "nauta_edge_0/im" "nauta_edge_0/op" 75.5795
+cap "nauta_edge_0/op" "nauta_edge_0/bp" 8.44672
+cap "nauta_edge_0/op" "nauta_edge_0/hi" 2.69456
+cap "nauta_edge_0/vreg" "nauta_cell_0/gnd" 3.4833
+cap "nauta_edge_0/im" "nauta_cell_0/gnd" 50.4875
+cap "nauta_cell_0/gnd" "nauta_edge_0/bp" -28.5624
+cap "nauta_edge_0/im" "nauta_edge_0/bp" 24.403
+cap "nauta_edge_0/om" "nauta_edge_0/im" 1.2194
+cap "nauta_edge_0/im" "nauta_cell_0/gnd" 9.98878
+cap "nauta_edge_0/vreg" "nauta_edge_0/op" 4.44089e-16
+cap "nauta_edge_0/op" "nauta_edge_0/bp" 13.6534
+cap "nauta_edge_0/op" "nauta_edge_0/im" 125.939
+cap "nauta_edge_0/op" "nauta_cell_0/gnd" 15.0999
+cap "nauta_edge_0/bp" "nauta_edge_0/im" 5.35929
+cap "nauta_edge_0/vreg" "nauta_cell_0/gnd" -1.15463e-14
+cap "nauta_edge_0/bp" "nauta_cell_0/gnd" -59.8856
+cap "nauta_cell_0/inr" "nauta_cell_0/bp" 7.87519
+cap "nauta_cell_0/gnd" "nauta_cell_0/inl" -15.387
+cap "nauta_cell_0/bp" "nauta_cell_0/om" 13.0681
+cap "nauta_cell_0/inr" "nauta_cell_0/vreg" 8.88178e-16
+cap "nauta_cell_0/inr" "nauta_cell_0/om" 138.913
+cap "nauta_cell_0/gnd" "nauta_cell_0/bp" -59.8856
+cap "nauta_cell_0/gnd" "nauta_cell_0/inr" -67.7716
+cap "nauta_cell_0/gnd" "nauta_cell_0/vreg" -7.99361e-15
+cap "nauta_cell_0/gnd" "nauta_cell_0/om" 34.2515
+cap "nauta_cell_0/ip" "nauta_cell_0/inr" 7.10543e-15
+cap "nauta_cell_1/out" "nauta_cell_1/bp" -0.182809
+cap "nauta_cell_1/out" "nauta_cell_1/inr" 35.9843
+cap "nauta_cell_1/im" "nauta_cell_1/gnd" -15.387
+cap "nauta_cell_1/out" "nauta_cell_1/gnd" -62.4964
+cap "nauta_cell_1/out" "nauta_cell_1/ip" 60.9917
+cap "nauta_cell_1/bp" "nauta_cell_1/inr" 12.8334
+cap "nauta_cell_1/gnd" "nauta_cell_1/vreg" -1.06581e-14
+cap "nauta_cell_1/gnd" "nauta_cell_1/inr" 34.2515
+cap "nauta_cell_1/gnd" "nauta_cell_1/bp" -59.8856
+cap "nauta_cell_1/ip" "nauta_cell_1/inr" 12.0964
+cap "nauta_cell_1/bp" "nauta_cell_1/ip" 3.28257
+cap "nauta_cell_1/gnd" "nauta_cell_1/ip" 30.0998
+cap "nauta_cell_1/out" "nauta_cell_1/vreg" 1.77636e-15
+cap "nauta_cell_2/out" "nauta_cell_2/inr" 6.65792
+cap "nauta_cell_2/out" "nauta_cell_2/op" 35.9843
+cap "nauta_cell_7/bp" "nauta_cell_2/inr" 3.04787
+cap "nauta_cell_7/vreg" "nauta_cell_2/op" 1.77636e-15
+cap "nauta_cell_7/bp" "nauta_cell_2/op" -0.243746
+cap "nauta_cell_2/out" "nauta_cell_7/gnd" 34.2515
+cap "nauta_cell_7/gnd" "nauta_cell_7/vreg" -1.77636e-15
+cap "nauta_cell_7/gnd" "nauta_cell_7/bp" -79.8475
+cap "nauta_cell_2/inr" "nauta_cell_2/op" 35.9843
+cap "nauta_cell_7/gnd" "nauta_cell_2/op" -83.3286
+cap "nauta_cell_7/gnd" "nauta_cell_2/inr" 18.4919
+cap "nauta_cell_2/out" "nauta_cell_7/bp" 13.3028
+cap "nauta_cell_7/gnd" "nauta_cell_2/im" -20.516
+cap "nauta_cell_7/op" "nauta_cell_7/vreg" 1.33227e-15
+cap "nauta_cell_7/inr" "nauta_cell_7/gnd" 18.4919
+cap "nauta_cell_7/bp" "nauta_cell_7/gnd" -99.8093
+cap "nauta_cell_7/inr" "nauta_cell_7/bp" 3.04787
+cap "nauta_cell_7/op" "nauta_cell_7/gnd" -85.6689
+cap "nauta_cell_7/inr" "nauta_cell_7/op" 37.2037
+cap "nauta_cell_7/inl" "nauta_cell_7/gnd" 15.7597
+cap "nauta_cell_7/inr" "nauta_cell_7/inl" 5.43852
+cap "nauta_cell_7/bp" "nauta_cell_7/op" 2.74319
+cap "nauta_cell_7/bp" "nauta_cell_7/inl" 10.2549
+cap "nauta_cell_7/im" "nauta_cell_7/gnd" -25.645
+cap "nauta_cell_7/inl" "nauta_cell_7/op" 66.9615
+cap "nauta_cell_7/bp" "nauta_cell_7/im" 3.01238
+cap "nauta_cell_7/op" "nauta_cell_7/om" 47.1566
+cap "nauta_cell_7/bp" "nauta_cell_7/om" 2.81318
+cap "nauta_cell_7/gnd" "nauta_cell_7/im" 3.10485
+cap "nauta_cell_7/op" "nauta_cell_7/bp" 10.0721
+cap "nauta_cell_7/gnd" "nauta_cell_7/om" 18.4919
+cap "nauta_cell_7/op" "nauta_cell_7/vreg" -8.88178e-16
+cap "nauta_cell_7/op" "nauta_cell_7/gnd" -35.1288
+cap "nauta_cell_7/bp" "nauta_cell_7/gnd" -59.8856
+cap "nauta_cell_7/om" "nauta_cell_7/im" 1.2194
+cap "nauta_cell_7/gnd" "nauta_cell_7/vreg" -6.21725e-15
+cap "nauta_cell_7/op" "nauta_cell_7/im" 138.537
+cap "nauta_cell_4/gnd" "nauta_cell_4/inl" -36.0348
+cap "nauta_cell_4/bp" "nauta_cell_4/gnd" -58.3358
+cap "nauta_cell_4/gnd" "nauta_cell_4/inr" 47.4304
+cap "nauta_cell_4/vreg" "nauta_cell_4/gnd" -1.06581e-14
+cap "nauta_cell_4/bp" "nauta_cell_4/inl" 8.42626
+cap "nauta_cell_4/inr" "nauta_cell_4/inl" 39.8316
+cap "nauta_cell_4/vreg" "nauta_cell_4/inl" -8.88178e-16
+cap "nauta_cell_4/bp" "nauta_cell_4/inr" 23.8357
+cap "nauta_cell_4/bp" "nauta_cell_4/gnd" 0.574955
+cap "nauta_cell_0/gnd" "nauta_edge_0/gp" 23.9403
+cap "nauta_edge_0/gp" "nauta_edge_0/bp" 37.8317
+cap "nauta_edge_0/gp" "nauta_edge_0/vreg" -62.2987
+cap "nauta_cell_0/gnd" "nauta_edge_0/bp" -62.0803
+cap "nauta_edge_0/im" "nauta_edge_0/hi" 43.1116
+cap "nauta_edge_0/op" "nauta_edge_0/hi" 7.5289
+cap "nauta_cell_0/gnd" "nauta_edge_0/vreg" 26.983
+cap "nauta_edge_0/vreg" "nauta_edge_0/bp" 26.5974
+cap "nauta_edge_0/im" "nauta_edge_0/gp" 7.34943
+cap "nauta_edge_0/op" "nauta_edge_0/gp" 5.93707
+cap "nauta_cell_0/gnd" "nauta_edge_0/im" 14.8805
+cap "nauta_cell_0/gnd" "nauta_edge_0/op" 3.69148
+cap "nauta_edge_0/im" "nauta_edge_0/vreg" 3.24834
+cap "nauta_edge_0/im" "nauta_edge_0/bp" 9.82659
+cap "nauta_edge_0/op" "nauta_edge_0/vreg" 6.65453
+cap "nauta_edge_0/op" "nauta_edge_0/bp" 2.66031
+cap "nauta_edge_0/gp" "nauta_edge_0/vdd" -0.128275
+cap "nauta_edge_0/hi" "nauta_edge_0/gp" 11.4302
+cap "nauta_cell_0/gnd" "nauta_edge_0/vdd" -3.12315
+cap "nauta_cell_0/gnd" "nauta_edge_0/hi" 0.83866
+cap "nauta_edge_0/vdd" "nauta_edge_0/bp" 2.66454e-15
+cap "nauta_edge_0/vdd" "nauta_edge_0/vreg" -0.714871
+cap "nauta_edge_0/hi" "nauta_edge_0/bp" 1.95188
+cap "nauta_edge_0/hi" "nauta_edge_0/vreg" 4.73828
+cap "nauta_edge_0/vreg" "nauta_edge_0/vdd" -0.714871
+cap "nauta_edge_0/bp" "nauta_cell_0/gnd" -28.8371
+cap "nauta_edge_0/bp" "nauta_edge_0/op" 5.05304
+cap "nauta_edge_0/gp" "nauta_cell_0/gnd" -7.00243
+cap "nauta_edge_0/gp" "nauta_edge_0/op" 8.88178e-16
+cap "nauta_cell_2/inr" "nauta_edge_0/op" 0.132816
+cap "nauta_edge_0/op" "nauta_cell_1/inr" 11.18
+cap "nauta_edge_0/vreg" "nauta_edge_0/hi" 2.83326
+cap "nauta_cell_0/gnd" "nauta_edge_0/vdd" -14.005
+cap "nauta_edge_0/op" "nauta_edge_0/vdd" 4.44089e-16
+cap "nauta_edge_0/bp" "nauta_edge_0/gp" -0.118454
+cap "nauta_cell_2/out" "nauta_edge_0/im" 0.43253
+cap "nauta_edge_0/op" "nauta_edge_0/hi" 7.07985
+cap "nauta_edge_0/vreg" "nauta_edge_0/im" 6.95772
+cap "nauta_edge_0/bp" "nauta_edge_0/vdd" 1.33227e-15
+cap "nauta_edge_0/gp" "nauta_edge_0/vdd" -0.128275
+cap "nauta_cell_0/gnd" "nauta_edge_0/im" -2.66454e-15
+cap "nauta_edge_0/op" "nauta_edge_0/im" 94.1563
+cap "nauta_edge_0/vreg" "nauta_cell_2/out" 0.414846
+cap "nauta_edge_0/bp" "nauta_edge_0/im" -7.10543e-15
+cap "nauta_cell_2/inr" "nauta_edge_0/im" 0.318933
+cap "nauta_edge_0/im" "nauta_cell_1/inr" 0.318933
+cap "nauta_edge_0/gp" "nauta_edge_0/im" -4.88498e-15
+cap "nauta_edge_0/im" "nauta_edge_0/vdd" 2.22045e-16
+cap "nauta_cell_2/out" "nauta_edge_0/op" 1.04002
+cap "nauta_edge_0/vreg" "nauta_edge_0/op" 24.9075
+cap "nauta_edge_0/vreg" "nauta_cell_0/gnd" 14.5689
+cap "nauta_edge_0/hi" "nauta_edge_0/im" 0.00569977
+cap "nauta_edge_0/op" "nauta_cell_0/gnd" 1.97696
+cap "nauta_edge_0/vreg" "nauta_edge_0/bp" 7.91829
+cap "nauta_edge_0/vreg" "nauta_cell_1/inr" 2.44346
+cap "nauta_edge_0/vreg" "nauta_edge_0/gp" -109.59
+cap "nauta_cell_0/op" "nauta_cell_2/inr" 1.90988
+cap "nauta_cell_1/inr" "nauta_cell_0/op" 84.5282
+cap "nauta_cell_0/vreg" "nauta_cell_0/im" 2.44346
+cap "nauta_cell_0/op" "nauta_cell_0/vdd" 6.66134e-16
+cap "nauta_cell_2/out" "nauta_cell_0/vreg" 8.98109
+cap "nauta_cell_0/op" "nauta_cell_3/inr" 0.318933
+cap "nauta_cell_1/inr" "nauta_cell_3/inl" 0.00569977
+cap "nauta_cell_0/vdd" "nauta_cell_0/bp" 1.33227e-15
+cap "nauta_cell_0/vreg" "nauta_cell_3/out" 1.1648
+cap "nauta_cell_0/vreg" "nauta_cell_2/inr" 2.44346
+cap "nauta_cell_0/vdd" "nauta_cell_0/gnd" -14.005
+cap "nauta_cell_1/inr" "nauta_cell_0/vreg" 4.51426
+cap "nauta_cell_0/op" "nauta_cell_0/bp" -8.17124e-14
+cap "nauta_cell_0/op" "nauta_cell_3/inl" 4.04056
+cap "nauta_cell_0/vreg" "nauta_cell_0/vdd" -0.714871
+cap "nauta_cell_0/gp" "nauta_cell_0/vdd" -0.128275
+cap "nauta_cell_0/vreg" "nauta_cell_3/inr" 0.650008
+cap "nauta_cell_0/op" "nauta_cell_0/gnd" 4.88498e-15
+cap "nauta_cell_0/gnd" "nauta_cell_0/bp" -28.8371
+cap "nauta_cell_2/out" "nauta_cell_0/im" 1.90988
+cap "nauta_cell_0/op" "nauta_cell_0/vreg" 14.8519
+cap "nauta_cell_0/gp" "nauta_cell_0/bp" -0.118454
+cap "nauta_cell_0/vreg" "nauta_cell_0/bp" 4.49254
+cap "nauta_cell_0/vreg" "nauta_cell_3/inl" 2.86589
+cap "nauta_cell_2/out" "nauta_cell_3/out" 4.41569
+cap "nauta_cell_0/vreg" "nauta_cell_0/gnd" 11.4035
+cap "nauta_cell_0/im" "nauta_cell_2/inr" 0.0942752
+cap "nauta_cell_2/out" "nauta_cell_2/inr" -0.378995
+cap "nauta_cell_1/inr" "nauta_cell_2/out" 6.54376
+cap "nauta_cell_0/gp" "nauta_cell_0/gnd" -7.11215
+cap "nauta_cell_1/inr" "nauta_cell_0/im" 0.318933
+cap "nauta_cell_0/vreg" "nauta_cell_0/gp" -110.276
+cap "nauta_cell_2/out" "nauta_cell_3/inr" 1.01458
+cap "nauta_cell_1/inr" "nauta_cell_2/inr" 9.6133
+cap "nauta_cell_0/op" "nauta_cell_2/out" 11.0061
+cap "nauta_cell_0/op" "nauta_cell_0/im" 9.27013
+cap "nauta_cell_0/op" "nauta_cell_3/out" 0.43253
+cap "nauta_cell_2/out" "nauta_cell_3/inl" 3.78473
+cap "nauta_cell_3/inr" "nauta_cell_3/out" -0.378995
+cap "nauta_cell_1/vreg" "nauta_cell_1/op" 2.8583
+cap "nauta_cell_2/out" "nauta_cell_1/vreg" 6.98865
+cap "nauta_cell_2/inr" "nauta_cell_3/inl" 80.4341
+cap "nauta_cell_3/inl" "nauta_cell_1/op" 9.13731
+cap "nauta_cell_7/inl" "nauta_cell_3/out" 5.66311
+cap "nauta_cell_7/inr" "nauta_cell_1/vreg" 0.650008
+cap "nauta_cell_1/vdd" "nauta_cell_1/gnd" -14.005
+cap "nauta_cell_2/out" "nauta_cell_3/inl" 3.93356
+cap "nauta_cell_1/bp" "nauta_cell_1/gp" -0.118454
+cap "nauta_cell_1/vreg" "nauta_cell_1/inr" 0.941732
+cap "nauta_cell_1/vdd" "nauta_cell_1/vreg" -0.714871
+cap "nauta_cell_7/out" "nauta_cell_1/vreg" 1.1648
+cap "nauta_cell_3/out" "nauta_cell_1/vreg" 13.5503
+cap "nauta_cell_7/inr" "nauta_cell_3/inl" 0.318933
+cap "nauta_cell_2/inr" "nauta_cell_3/out" 7.71829
+cap "nauta_cell_7/out" "nauta_cell_3/inl" 0.43253
+cap "nauta_cell_3/inl" "nauta_cell_1/inr" 0.00569977
+cap "nauta_cell_1/gp" "nauta_cell_1/gnd" -7.18545
+cap "nauta_cell_3/out" "nauta_cell_3/inl" -0.378995
+cap "nauta_cell_3/out" "nauta_cell_1/op" 2.04269
+cap "nauta_cell_2/out" "nauta_cell_3/out" 9.04947
+cap "nauta_cell_1/gp" "nauta_cell_1/vreg" -105.717
+cap "nauta_cell_3/inr" "nauta_cell_7/inl" 26.4474
+cap "nauta_cell_7/inr" "nauta_cell_3/out" 2.04269
+cap "nauta_cell_1/bp" "nauta_cell_1/gnd" -28.8371
+cap "nauta_cell_3/out" "nauta_cell_7/out" 6.73258
+cap "nauta_cell_1/bp" "nauta_cell_1/vreg" 5.77186
+cap "nauta_cell_3/inr" "nauta_cell_1/vreg" 1.79345
+cap "nauta_cell_3/inr" "nauta_cell_2/inr" 13.1779
+cap "nauta_cell_7/inl" "nauta_cell_1/vreg" 2.86589
+cap "nauta_cell_1/gp" "nauta_cell_1/vdd" -0.128275
+cap "nauta_cell_3/inr" "nauta_cell_1/op" 0.318933
+cap "nauta_cell_7/inl" "nauta_cell_2/inr" 0.00569977
+cap "nauta_cell_3/inr" "nauta_cell_2/out" 1.46065
+cap "nauta_cell_1/gnd" "nauta_cell_1/vreg" 15.6136
+cap "nauta_cell_7/inl" "nauta_cell_3/inl" 4.04056
+cap "nauta_cell_2/inr" "nauta_cell_1/vreg" 4.51426
+cap "nauta_cell_7/inr" "nauta_cell_3/inr" 7.73565
+cap "nauta_cell_1/bp" "nauta_cell_1/vdd" 8.88178e-16
+cap "nauta_cell_3/inr" "nauta_cell_7/out" 2.05518
+cap "nauta_cell_1/vreg" "nauta_cell_3/inl" 2.5901
+cap "nauta_cell_7/vreg" "nauta_cell_7/gnd" 11.0806
+cap "nauta_cell_7/gnd" "nauta_cell_2/vdd" -18.6733
+cap "nauta_cell_7/vreg" "nauta_cell_2/vdd" -0.953161
+cap "nauta_cell_7/out" "nauta_cell_3/inr" 5.66311
+cap "nauta_cell_7/vreg" "nauta_cell_3/inl" 2.44346
+cap "nauta_cell_7/vreg" "nauta_cell_2/inr" 0.941732
+cap "nauta_cell_3/inr" "nauta_cell_6/inl" 0.00569977
+cap "nauta_cell_7/vreg" "nauta_cell_2/out" 0.414846
+cap "nauta_cell_7/vreg" "nauta_cell_3/inr" 5.31648
+cap "nauta_cell_7/inr" "nauta_cell_3/out" 0.43253
+cap "nauta_cell_7/out" "nauta_cell_7/inr" -0.378995
+cap "nauta_cell_7/inr" "nauta_cell_6/inl" 40.217
+cap "nauta_cell_7/inr" "nauta_cell_6/out" 2.05518
+cap "nauta_cell_5/inl" "nauta_cell_7/inr" 0.00569977
+cap "nauta_cell_7/inr" "nauta_cell_2/op" 9.13731
+cap "nauta_cell_7/bp" "nauta_cell_7/gp" -0.157939
+cap "nauta_cell_7/out" "nauta_cell_7/inl" -0.378995
+cap "nauta_cell_7/vreg" "nauta_cell_7/inr" 1.79345
+cap "nauta_cell_7/inl" "nauta_cell_3/out" 2.05518
+cap "nauta_cell_7/inr" "nauta_cell_3/inl" 0.318933
+cap "nauta_cell_7/inl" "nauta_cell_2/op" 0.318933
+cap "nauta_cell_7/inl" "nauta_cell_6/inl" 4.04056
+cap "nauta_cell_7/inl" "nauta_cell_6/out" 0.43253
+cap "nauta_cell_7/bp" "nauta_cell_7/gnd" -38.4495
+cap "nauta_cell_7/out" "nauta_cell_3/out" 6.73258
+cap "nauta_cell_7/vreg" "nauta_cell_7/inl" 2.5901
+cap "nauta_cell_7/vreg" "nauta_cell_7/bp" 0.116535
+cap "nauta_cell_7/inl" "nauta_cell_3/inl" 9.13731
+cap "nauta_cell_7/inr" "nauta_cell_3/inr" 5.44222
+cap "nauta_cell_7/out" "nauta_cell_6/inl" 5.66311
+cap "nauta_cell_7/bp" "nauta_cell_2/vdd" 1.77636e-15
+cap "nauta_cell_7/inl" "nauta_cell_2/inr" 0.00569977
+cap "nauta_cell_7/out" "nauta_cell_2/op" 2.04269
+cap "nauta_cell_7/out" "nauta_cell_6/out" 6.73258
+cap "nauta_cell_7/gp" "nauta_cell_7/gnd" -9.62946
+cap "nauta_cell_7/vreg" "nauta_cell_5/out" 0.0123872
+cap "nauta_cell_7/vreg" "nauta_cell_7/gp" -151.75
+cap "nauta_cell_7/gp" "nauta_cell_2/vdd" -0.171033
+cap "nauta_cell_7/out" "nauta_cell_7/vreg" 13.5503
+cap "nauta_cell_7/vreg" "nauta_cell_3/out" 4.06434
+cap "nauta_cell_7/out" "nauta_cell_3/inl" 2.04269
+cap "nauta_cell_7/vreg" "nauta_cell_6/inl" 5.45599
+cap "nauta_cell_7/inl" "nauta_cell_3/inr" 53.9867
+cap "nauta_cell_5/inl" "nauta_cell_7/vreg" 0.139511
+cap "nauta_cell_7/vreg" "nauta_cell_2/op" 2.44346
+cap "nauta_cell_7/vreg" "nauta_cell_6/out" 4.07673
+cap "nauta_cell_7/out" "nauta_cell_7/op" 0.43253
+cap "nauta_cell_3/inr" "nauta_cell_7/vreg" 0.139511
+cap "nauta_cell_6/inl" "nauta_cell_7/inl" 9.13731
+cap "nauta_cell_6/out" "nauta_cell_7/inl" 2.04269
+cap "nauta_cell_3/out" "nauta_cell_7/vreg" 0.0123872
+cap "nauta_cell_7/vdd" "nauta_cell_7/vreg" -1.19145
+cap "nauta_cell_6/inl" "nauta_cell_5/inl" 4.04056
+cap "nauta_cell_6/out" "nauta_cell_5/inl" 5.66311
+cap "nauta_cell_7/im" "nauta_cell_7/vreg" 2.44346
+cap "nauta_cell_7/vdd" "nauta_cell_7/bp" 1.77636e-15
+cap "nauta_cell_7/bp" "nauta_cell_7/vreg" -4.32652
+cap "nauta_cell_6/inl" "nauta_cell_3/inr" 0.00569977
+cap "nauta_cell_7/inr" "nauta_cell_7/op" 4.04056
+cap "nauta_cell_7/vdd" "nauta_cell_7/gnd" -23.3417
+cap "nauta_cell_7/im" "nauta_cell_6/inl" 0.318933
+cap "nauta_cell_6/out" "nauta_cell_7/im" 2.04269
+cap "nauta_cell_6/inl" "nauta_cell_7/vreg" 1.79345
+cap "nauta_cell_6/out" "nauta_cell_7/vreg" 13.5503
+cap "nauta_cell_7/gnd" "nauta_cell_7/vreg" 10.7578
+cap "nauta_cell_7/vdd" "nauta_cell_7/gp" -0.213791
+cap "nauta_cell_7/gp" "nauta_cell_7/vreg" -192.782
+cap "nauta_cell_7/gnd" "nauta_cell_7/bp" -48.0618
+cap "nauta_cell_7/gp" "nauta_cell_7/bp" -0.197423
+cap "nauta_cell_7/out" "nauta_cell_7/vreg" 4.07673
+cap "nauta_cell_6/out" "nauta_cell_6/inl" -0.378995
+cap "nauta_cell_7/gp" "nauta_cell_7/gnd" -12.0735
+cap "nauta_cell_7/inl" "nauta_cell_7/op" 0.318933
+cap "nauta_cell_7/out" "nauta_cell_6/inl" 2.05518
+cap "nauta_cell_6/out" "nauta_cell_7/out" 6.73258
+cap "nauta_cell_5/inl" "nauta_cell_7/op" 40.217
+cap "nauta_cell_7/inr" "nauta_cell_7/vreg" 5.45599
+cap "nauta_cell_7/im" "nauta_cell_7/op" 9.13731
+cap "nauta_cell_7/vreg" "nauta_cell_7/op" 6.80633
+cap "nauta_cell_7/inr" "nauta_cell_6/out" 5.66311
+cap "nauta_cell_7/inr" "nauta_cell_6/inl" 40.217
+cap "nauta_cell_6/out" "nauta_cell_7/op" 6.35358
+cap "nauta_cell_6/inl" "nauta_cell_7/op" 0.43253
+cap "nauta_cell_7/inl" "nauta_cell_7/vreg" 2.44346
+cap "nauta_cell_7/vreg" "nauta_cell_5/inl" 5.31648
+cap "nauta_cell_7/bp" "nauta_cell_7/gp" -0.118454
+cap "nauta_cell_7/gnd" "nauta_cell_7/bp" -28.8371
+cap "nauta_cell_7/vreg" "nauta_cell_6/inl" 0.650008
+cap "nauta_cell_7/vreg" "nauta_cell_7/gp" -105.717
+cap "nauta_cell_7/vreg" "nauta_cell_7/gnd" 15.6136
+cap "nauta_cell_7/gp" "nauta_cell_7/vdd" -0.128275
+cap "nauta_cell_7/op" "nauta_cell_5/inl" 40.7069
+cap "nauta_cell_7/gnd" "nauta_cell_7/vdd" -14.005
+cap "nauta_cell_7/vreg" "nauta_edge_1/hi" 1.17185
+cap "nauta_cell_7/op" "nauta_cell_6/inl" 2.04269
+cap "nauta_cell_7/op" "nauta_cell_7/gp" 3.55271e-15
+cap "nauta_cell_7/vreg" "nauta_cell_6/out" 1.1648
+cap "nauta_cell_7/op" "nauta_cell_7/gnd" 6.21725e-15
+cap "nauta_cell_6/inl" "nauta_cell_5/inl" 7.73565
+cap "nauta_cell_7/vreg" "nauta_cell_7/im" 5.03356
+cap "nauta_cell_7/gnd" "nauta_cell_7/gp" -7.18545
+cap "nauta_cell_7/op" "nauta_cell_6/out" 6.73258
+cap "nauta_cell_6/out" "nauta_cell_5/inl" 2.05518
+cap "nauta_cell_7/op" "nauta_cell_7/im" 90.0719
+cap "nauta_cell_7/vreg" "nauta_cell_7/bp" 5.81091
+cap "nauta_cell_7/im" "nauta_cell_5/inl" 0.318933
+cap "nauta_cell_7/bp" "nauta_cell_7/vdd" 1.11022e-15
+cap "nauta_cell_7/im" "nauta_cell_6/inl" 0.318933
+cap "nauta_cell_7/vreg" "nauta_cell_7/vdd" -0.714871
+cap "nauta_cell_7/op" "nauta_cell_7/bp" -1.35003e-13
+cap "nauta_cell_7/im" "nauta_edge_1/hi" 0.00569977
+cap "nauta_cell_7/vreg" "nauta_cell_7/op" 27.9192
+cap "nauta_cell_7/op" "nauta_cell_7/vdd" -7.77156e-16
+cap "nauta_cell_7/vreg" "nauta_cell_5/inl" 1.79345
+cap "nauta_cell_7/im" "nauta_cell_6/out" 0.43253
+cap "nauta_cell_4/vreg" "nauta_edge_1/hi" 6.3997
+cap "nauta_cell_4/op" "nauta_cell_4/im" 4.21726
+cap "nauta_cell_4/op" "nauta_edge_1/hi" 14.6088
+cap "nauta_cell_4/vreg" "nauta_cell_4/vdd" -0.714871
+cap "nauta_cell_4/vdd" "nauta_cell_4/gp" -0.128275
+cap "nauta_cell_4/op" "nauta_cell_4/vdd" 2.22045e-16
+cap "nauta_cell_4/vreg" "nauta_cell_4/bp" 33.261
+cap "nauta_cell_4/im" "nauta_edge_1/hi" 40.3683
+cap "nauta_cell_4/vreg" "nauta_cell_4/gnd" 21.6292
+cap "nauta_cell_4/op" "nauta_cell_4/bp" 7.71334
+cap "nauta_cell_4/bp" "nauta_cell_4/gp" -0.0295787
+cap "nauta_cell_4/op" "nauta_cell_4/gnd" 2.79736
+cap "nauta_cell_4/gnd" "nauta_cell_4/gp" -7.07572
+cap "nauta_cell_4/vreg" "nauta_cell_5/inl" 0.650008
+cap "nauta_cell_4/bp" "nauta_cell_4/im" 9.82659
+cap "nauta_cell_4/gnd" "nauta_cell_4/im" 4.90444
+cap "nauta_cell_4/op" "nauta_cell_5/inl" 1.01458
+cap "nauta_cell_4/bp" "nauta_edge_1/hi" -0.534752
+cap "nauta_cell_4/gnd" "nauta_edge_1/hi" -10.6035
+cap "nauta_cell_5/inl" "nauta_cell_4/im" 0.318933
+cap "nauta_cell_4/vdd" "nauta_cell_4/bp" 3.55271e-15
+cap "nauta_cell_4/op" "nauta_cell_4/vreg" 10.8862
+cap "nauta_cell_4/vreg" "nauta_cell_4/gp" -106.994
+cap "nauta_cell_4/gnd" "nauta_cell_4/vdd" -14.005
+cap "nauta_cell_4/op" "nauta_cell_4/gp" -1.77636e-15
+cap "nauta_cell_4/vreg" "nauta_cell_4/im" 5.1725
+cap "nauta_cell_4/gnd" "nauta_cell_4/bp" -14.755
+cap "nauta_cell_4/bp" "nauta_cell_4/gnd" 0.574955
+cap "nauta_cell_4/im" "nauta_cell_4/gnd" 1.41035
+cap "nauta_cell_4/op" "nauta_cell_4/gnd" 0.428998
+cap "nauta_cell_4/vreg" "nauta_cell_4/gnd" 0.540636
+cap "nauta_edge_0/hih" "nauta_edge_0/vdd" 1.50618
+cap "nauta_cell_0/gnd" "nauta_edge_0/vdd" -32.2395
+cap "nauta_edge_0/bp" "nauta_edge_0/vdd" -0.332161
+cap "nauta_edge_0/gp" "nauta_edge_0/vdd" 11.0575
+cap "nauta_edge_0/vreg" "nauta_edge_0/vdd" 12.3947
+cap "nauta_edge_0/gp" "nauta_edge_0/hih" 36.4652
+cap "nauta_edge_0/vreg" "nauta_edge_0/hih" 13.6235
+cap "nauta_cell_0/gnd" "nauta_edge_0/bp" 0.0319744
+cap "nauta_edge_0/gp" "nauta_cell_0/gnd" 12.4291
+cap "nauta_edge_0/vreg" "nauta_cell_0/gnd" 12
+cap "nauta_edge_0/gp" "nauta_edge_0/vreg" 43.0237
+cap "nauta_edge_0/vdd" "nauta_edge_0/vreg" 29.494
+cap "nauta_edge_0/gp" "nauta_edge_0/hih" 5.36862
+cap "nauta_edge_0/vdd" "nauta_edge_0/hih" 3.84613
+cap "nauta_edge_0/gp" "nauta_edge_0/bp" 8.88178e-16
+cap "nauta_edge_0/vdd" "nauta_edge_0/bp" -0.862647
+cap "nauta_edge_0/vreg" "nauta_edge_0/hih" 2.89465
+cap "nauta_edge_0/vreg" "nauta_edge_0/bp" -5.55112e-17
+cap "nauta_edge_0/vdd" "nauta_cell_0/gnd" -47.0415
+cap "nauta_edge_0/gp" "nauta_cell_0/gnd" 1.4682
+cap "nauta_edge_0/vreg" "nauta_cell_0/gnd" -0.328317
+cap "nauta_edge_0/vdd" "nauta_edge_0/gp" 12.0384
+cap "nauta_cell_0/gp" "nauta_cell_0/bp" 1.33227e-15
+cap "nauta_cell_0/vreg" "nauta_cell_0/gnd" -0.380579
+cap "nauta_cell_0/vreg" "nauta_cell_0/vdd" 26.486
+cap "nauta_cell_0/gnd" "nauta_cell_0/bp" 8.67362e-19
+cap "nauta_cell_0/vdd" "nauta_cell_0/bp" -0.724247
+cap "nauta_cell_0/gp" "nauta_cell_0/gnd" 1.06581e-14
+cap "nauta_cell_0/vdd" "nauta_cell_0/gp" 15.2917
+cap "nauta_cell_0/vreg" "nauta_cell_0/gp" 46.6599
+cap "nauta_cell_0/vdd" "nauta_cell_0/gnd" -47.8706
+cap "nauta_cell_1/vdd" "nauta_cell_1/gp" 14.6694
+cap "nauta_cell_1/gnd" "nauta_cell_1/gp" -1.33227e-15
+cap "nauta_cell_1/vreg" "nauta_cell_1/bp" -2.77556e-17
+cap "nauta_cell_1/vdd" "nauta_cell_1/bp" -0.585846
+cap "nauta_cell_1/gnd" "nauta_cell_1/bp" -1.73472e-18
+cap "nauta_cell_1/gp" "nauta_cell_1/bp" -3.33067e-16
+cap "nauta_cell_1/vdd" "nauta_cell_1/vreg" 35.9485
+cap "nauta_cell_1/vreg" "nauta_cell_1/gnd" -0.380579
+cap "nauta_cell_1/vreg" "nauta_cell_1/gp" 53.7427
+cap "nauta_cell_1/vdd" "nauta_cell_1/gnd" -47.5888
+cap "nauta_cell_7/gnd" "nauta_cell_2/vdd" -62.7753
+cap "nauta_cell_5/gp" "nauta_cell_7/gp" 0.00569977
+cap "nauta_cell_7/gnd" "nauta_cell_7/vreg" -0.507439
+cap "nauta_cell_7/vreg" "nauta_cell_2/vdd" 23.3111
+cap "nauta_cell_5/gp" "nauta_cell_2/vdd" 0.148274
+cap "nauta_cell_7/gp" "nauta_cell_7/gnd" -7.10543e-15
+cap "nauta_cell_7/gp" "nauta_cell_2/vdd" 22.6598
+cap "nauta_cell_7/bp" "nauta_cell_2/vdd" -0.448968
+cap "nauta_cell_7/gp" "nauta_cell_7/vreg" 41.2245
+cap "nauta_cell_7/vreg" "nauta_cell_7/vdd" 16.4637
+cap "nauta_cell_7/bp" "nauta_cell_7/vdd" -0.56121
+cap "nauta_cell_7/vdd" "nauta_cell_3/gp" 0.148274
+cap "nauta_cell_7/gp" "nauta_cell_7/vdd" 21.9419
+cap "nauta_cell_7/gnd" "nauta_cell_7/vdd" -78.4691
+cap "nauta_cell_7/vreg" "nauta_cell_7/gp" 41.2245
+cap "nauta_cell_7/vreg" "nauta_cell_7/gnd" -0.634299
+cap "nauta_cell_7/bp" "nauta_cell_7/gnd" 1.73472e-18
+cap "nauta_cell_7/gp" "nauta_cell_3/gp" 0.00569977
+cap "nauta_cell_7/bp" "nauta_cell_7/gp" -2.77556e-16
+cap "nauta_cell_7/vdd" "nauta_cell_7/gp" 6.32078
+cap "nauta_cell_7/vdd" "nauta_cell_7/vreg" 34.3429
+cap "nauta_cell_7/gp" "nauta_cell_7/vreg" 53.7427
+cap "nauta_edge_1/hih" "nauta_cell_7/vdd" 1.19919
+cap "nauta_edge_1/hih" "nauta_cell_7/gp" 0.00569977
+cap "nauta_cell_7/bp" "nauta_cell_7/gnd" -8.67362e-19
+cap "nauta_cell_7/gnd" "nauta_cell_7/vdd" -48.4343
+cap "nauta_cell_7/gnd" "nauta_cell_7/gp" -8.88178e-16
+cap "nauta_cell_7/gnd" "nauta_cell_7/vreg" -0.380579
+cap "nauta_cell_7/bp" "nauta_cell_7/vdd" -1.00105
+cap "nauta_cell_4/vdd" "nauta_cell_4/vreg" 25.1966
+cap "nauta_cell_4/gnd" "nauta_cell_4/gp" 1.87274
+cap "nauta_cell_4/bp" "nauta_cell_4/vdd" -3.55271e-15
+cap "nauta_cell_4/gnd" "nauta_cell_4/vreg" 8.56807
+cap "nauta_edge_1/hih" "nauta_cell_4/gp" 39.0848
+cap "nauta_cell_4/gnd" "nauta_cell_4/vdd" -43.9086
+cap "nauta_cell_4/vreg" "nauta_edge_1/hih" 16.5181
+cap "nauta_cell_4/vdd" "nauta_edge_1/hih" 7.51554
+cap "nauta_cell_4/vreg" "nauta_cell_4/gp" 9.85009
+cap "nauta_cell_4/vdd" "nauta_cell_4/gp" 17.3974
+cap "nauta_cell_4/vreg" "nauta_cell_4/gnd" 0.338604
+cap "nauta_cell_4/vdd" "nauta_cell_4/gnd" 1.79867
+cap "nauta_cell_4/gnd" "nauta_cell_4/gp" 1.76316
+merge "nauta_edge_1/om" "nauta_cell_5/inl" -3386.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288000 -5760 -1224000 -25680 -288000 -5760 0 0
+merge "nauta_cell_5/inl" "nauta_cell_4/om"
+merge "nauta_cell_4/om" "nauta_cell_5/om"
+merge "nauta_cell_5/om" "m3_n1920_n480#"
+merge "m3_n1920_n480#" "nauta_cell_6/om"
+merge "nauta_cell_6/om" "nauta_cell_6/out"
+merge "nauta_cell_6/out" "m2_n2880_n480#"
+merge "m2_n2880_n480#" "nauta_cell_7/inl"
+merge "nauta_cell_7/inl" "nauta_cell_3/inr"
+merge "nauta_cell_3/inr" "m3_n4320_n480#"
+merge "m3_n4320_n480#" "nauta_cell_7/out"
+merge "nauta_cell_7/out" "m2_n4080_n480#"
+merge "m2_n4080_n480#" "nauta_cell_3/om"
+merge "nauta_cell_3/om" "nauta_cell_7/om"
+merge "nauta_cell_7/om" "m3_n5040_n480#"
+merge "m3_n5040_n480#" "nauta_cell_3/out"
+merge "nauta_cell_3/out" "m2_n5280_n480#"
+merge "m2_n5280_n480#" "nauta_cell_2/om"
+merge "nauta_cell_2/om" "nauta_cell_2/out"
+merge "nauta_cell_2/out" "m2_n6480_n480#"
+merge "m2_n6480_n480#" "nauta_cell_1/inr"
+merge "nauta_cell_1/inr" "nauta_cell_1/om"
+merge "nauta_cell_1/om" "m3_n7440_n480#"
+merge "m3_n7440_n480#" "nauta_cell_0/om"
+merge "nauta_cell_0/om" "nauta_edge_0/om"
+merge "nauta_edge_0/om" "om"
+merge "nauta_edge_1/vdd" "vdd" -7546.08 -1296000 -23760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259200 -8640 0 0 -648000 -14160 0 0 0 0
+merge "vdd" "nauta_cell_5/vdd"
+merge "nauta_cell_5/vdd" "nauta_cell_4/vdd"
+merge "nauta_cell_4/vdd" "nauta_cell_6/vdd"
+merge "nauta_cell_6/vdd" "nauta_cell_3/vdd"
+merge "nauta_cell_3/vdd" "nauta_cell_7/vdd"
+merge "nauta_cell_7/vdd" "nauta_cell_2/vdd"
+merge "nauta_cell_2/vdd" "nauta_cell_1/vdd"
+merge "nauta_cell_1/vdd" "nauta_cell_0/vdd"
+merge "nauta_cell_0/vdd" "nauta_edge_0/vdd"
+merge "nauta_edge_1/gnd" "nauta_cell_4/gnd" -11904.8 0 0 0 0 0 0 -1036800 -34560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1036800 -34560 0 0 -1296000 -35760 0 0 0 0
+merge "nauta_cell_4/gnd" "nauta_cell_5/gnd"
+merge "nauta_cell_5/gnd" "nauta_cell_6/gnd"
+merge "nauta_cell_6/gnd" "nauta_cell_3/gnd"
+merge "nauta_cell_3/gnd" "nauta_cell_7/gnd"
+merge "nauta_cell_7/gnd" "nauta_cell_2/gnd"
+merge "nauta_cell_2/gnd" "nauta_cell_1/gnd"
+merge "nauta_cell_1/gnd" "nauta_cell_0/gnd"
+merge "nauta_cell_0/gnd" "nauta_edge_0/gnd"
+merge "nauta_edge_0/gnd" "VSUBS"
+merge "VSUBS" "gnd"
+merge "nauta_edge_1/ip" "nauta_cell_5/ip" -1252.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -187200 -6600 -57600 -2040 0 0
+merge "nauta_cell_5/ip" "nauta_cell_4/ip"
+merge "nauta_cell_4/ip" "nauta_cell_6/inl"
+merge "nauta_cell_6/inl" "nauta_cell_6/ip"
+merge "nauta_cell_6/ip" "m3_n3120_480#"
+merge "m3_n3120_480#" "nauta_cell_7/inr"
+merge "nauta_cell_7/inr" "nauta_cell_3/inl"
+merge "nauta_cell_3/inl" "m3_n3840_480#"
+merge "m3_n3840_480#" "nauta_cell_3/ip"
+merge "nauta_cell_3/ip" "nauta_cell_7/ip"
+merge "nauta_cell_7/ip" "m3_n5520_480#"
+merge "m3_n5520_480#" "nauta_cell_2/inr"
+merge "nauta_cell_2/inr" "nauta_cell_2/ip"
+merge "nauta_cell_2/ip" "m3_n6240_480#"
+merge "m3_n6240_480#" "nauta_cell_1/ip"
+merge "nauta_cell_1/ip" "nauta_cell_0/ip"
+merge "nauta_cell_0/ip" "nauta_edge_0/ip"
+merge "nauta_edge_0/ip" "ip"
+merge "nauta_edge_1/vreg" "nauta_cell_5/vreg" -4285.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -388800 -11160 0 0 0 0
+merge "nauta_cell_5/vreg" "nauta_cell_4/vreg"
+merge "nauta_cell_4/vreg" "nauta_cell_6/vreg"
+merge "nauta_cell_6/vreg" "nauta_cell_3/vreg"
+merge "nauta_cell_3/vreg" "nauta_cell_7/vreg"
+merge "nauta_cell_7/vreg" "nauta_cell_2/vreg"
+merge "nauta_cell_2/vreg" "nauta_cell_1/vreg"
+merge "nauta_cell_1/vreg" "nauta_cell_0/vreg"
+merge "nauta_cell_0/vreg" "nauta_edge_0/vreg"
+merge "nauta_edge_0/vreg" "vreg"
+merge "nauta_edge_1/op" "nauta_cell_5/op" -3462.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288000 -5760 -1224000 -25680 -288000 -5760 0 0
+merge "nauta_cell_5/op" "nauta_cell_4/inl"
+merge "nauta_cell_4/inl" "nauta_cell_4/op"
+merge "nauta_cell_4/op" "m3_n720_1440#"
+merge "m3_n720_1440#" "nauta_cell_4/out"
+merge "nauta_cell_4/out" "m2_n480_1440#"
+merge "m2_n480_1440#" "nauta_cell_5/out"
+merge "nauta_cell_5/out" "m2_n1680_1440#"
+merge "m2_n1680_1440#" "nauta_cell_6/inr"
+merge "nauta_cell_6/inr" "nauta_cell_6/op"
+merge "nauta_cell_6/op" "m3_n2640_1440#"
+merge "m3_n2640_1440#" "nauta_cell_3/op"
+merge "nauta_cell_3/op" "nauta_cell_7/op"
+merge "nauta_cell_7/op" "nauta_cell_2/inl"
+merge "nauta_cell_2/inl" "nauta_cell_2/op"
+merge "nauta_cell_2/op" "m3_n6720_1440#"
+merge "m3_n6720_1440#" "nauta_cell_1/op"
+merge "nauta_cell_1/op" "nauta_cell_1/out"
+merge "nauta_cell_1/out" "m2_n7680_1440#"
+merge "m2_n7680_1440#" "nauta_cell_0/inr"
+merge "nauta_cell_0/inr" "nauta_cell_0/op"
+merge "nauta_cell_0/op" "m3_n8640_1440#"
+merge "m3_n8640_1440#" "nauta_edge_0/op"
+merge "nauta_edge_0/op" "op"
+merge "op" "nauta_cell_0/out"
+merge "nauta_cell_0/out" "m2_n8880_1440#"
+merge "nauta_edge_1/bp" "nauta_cell_5/bp" -6220.67 -1425600 -25920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259200 -10440 0 0 -278400 -9840 0 0 0 0
+merge "nauta_cell_5/bp" "m3_n380_2400#"
+merge "m3_n380_2400#" "m1_n120_2400#"
+merge "m1_n120_2400#" "nauta_cell_4/bp"
+merge "nauta_cell_4/bp" "nauta_cell_6/bp"
+merge "nauta_cell_6/bp" "nauta_cell_3/bp"
+merge "nauta_cell_3/bp" "nauta_cell_7/bp"
+merge "nauta_cell_7/bp" "nauta_cell_2/bp"
+merge "nauta_cell_2/bp" "nauta_cell_1/bp"
+merge "nauta_cell_1/bp" "nauta_cell_0/bp"
+merge "nauta_cell_0/bp" "m1_n9240_2400#"
+merge "m1_n9240_2400#" "nauta_edge_0/bp"
+merge "nauta_edge_0/bp" "m3_n9480_2400#"
+merge "m3_n9480_2400#" "bp"
+merge "nauta_edge_1/im" "nauta_cell_4/inr" -1617.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -187200 -6480 -57600 -1920 0 0
+merge "nauta_cell_4/inr" "nauta_cell_5/inr"
+merge "nauta_cell_5/inr" "m3_n240_960#"
+merge "m3_n240_960#" "nauta_cell_5/im"
+merge "nauta_cell_5/im" "nauta_cell_4/im"
+merge "nauta_cell_4/im" "m3_n1440_960#"
+merge "m3_n1440_960#" "nauta_cell_6/im"
+merge "nauta_cell_6/im" "nauta_cell_3/im"
+merge "nauta_cell_3/im" "nauta_cell_7/im"
+merge "nauta_cell_7/im" "nauta_cell_2/im"
+merge "nauta_cell_2/im" "nauta_cell_1/inl"
+merge "nauta_cell_1/inl" "nauta_cell_1/im"
+merge "nauta_cell_1/im" "m3_n7920_960#"
+merge "m3_n7920_960#" "nauta_cell_0/inl"
+merge "nauta_cell_0/inl" "nauta_cell_0/im"
+merge "nauta_cell_0/im" "m3_n9120_960#"
+merge "m3_n9120_960#" "nauta_edge_0/im"
+merge "nauta_edge_0/im" "im"
+merge "nauta_edge_1/gp" "nauta_cell_5/gp" -1322.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -129600 -4560 0 0 0 0
+merge "nauta_cell_5/gp" "nauta_cell_4/gp"
+merge "nauta_cell_4/gp" "nauta_cell_6/gp"
+merge "nauta_cell_6/gp" "nauta_cell_3/gp"
+merge "nauta_cell_3/gp" "nauta_cell_7/gp"
+merge "nauta_cell_7/gp" "nauta_cell_2/gp"
+merge "nauta_cell_2/gp" "nauta_cell_1/gp"
+merge "nauta_cell_1/gp" "nauta_cell_0/gp"
+merge "nauta_cell_0/gp" "nauta_edge_0/gp"
+merge "nauta_edge_0/gp" "gp"

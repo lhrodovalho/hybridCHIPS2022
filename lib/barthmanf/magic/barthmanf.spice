@@ -1,0 +1,102 @@
+* NGSPICE file created from barthmanf.ext - technology: gf180mcuC
+
+.subckt barthmanf_edge vreg gp op im x y ip om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 vdd hih 0.45fF
+C1 vreg bp 0.23fF
+C2 hi bp 0.28fF
+C3 vreg hi 0.11fF
+C4 vreg gp 1.01fF
+C5 vreg vdd 0.22fF
+C6 vreg gnd 0.44fF
+C7 bp gnd 4.35fF
+C8 vdd gnd 4.01fF
+C9 lo gnd 0.84fF
+C10 hi gnd 0.46fF
+C11 hih gnd 0.46fF
+.ends
+
+.subckt barthmanf_cell inl inr out gp vreg op im x y ip om vdd gnd bp
+X0 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X1 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 d2 inr out gnd nmos_3p3 w=1.8u l=0.6u
+X4 d1 inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X5 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X6 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X7 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X8 gnd inr d2 gnd nmos_3p3 w=1.8u l=0.6u
+X9 out inl d1 gnd nmos_3p3 w=1.8u l=0.6u
+X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+C0 inl bp 0.32fF
+C1 inl om 0.18fF
+C2 gp vreg 1.98fF
+C3 inl inr 0.60fF
+C4 out bp 0.15fF
+C5 out om 0.11fF
+C6 op inr 0.20fF
+C7 vdd vreg 1.41fF
+C8 out vreg 0.78fF
+C9 out inr 0.20fF
+C10 bp vreg 0.92fF
+C11 inl op 0.20fF
+C12 gp vdd 0.66fF
+C13 bp inr 0.32fF
+C14 om inr 0.18fF
+C15 inl out 0.17fF
+C16 op out 0.11fF
+C17 out gnd 1.69fF
+C18 inr gnd 2.35fF
+C19 inl gnd 2.36fF
+C20 vreg gnd 0.72fF
+C21 gp gnd 1.56fF
+C22 bp gnd 6.58fF
+C23 vdd gnd 6.08fF
+C24 d2 gnd 0.18fF
+C25 d1 gnd 0.18fF
+.ends
+
+.subckt barthmanf ip im op om vdd gp bp vreg gnd
+Xbarthmanf_edge_0 vreg gp op im x y ip om vdd gnd bp barthmanf_edge
+Xbarthmanf_cell_0 im y op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_1 y ip om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_3 x op x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_2 om x x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_4 x y y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_5 y x y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_6 ip im y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_8 ip y om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_9 y im op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+C0 op y 0.33fF
+C1 x om 0.20fF
+C2 om im 0.19fF
+C3 op x 0.51fF
+C4 gp vdd 0.12fF
+C5 op om 0.12fF
+C6 op im 0.15fF
+C7 y ip 0.18fF
+C8 vreg y 0.10fF
+C9 x ip 0.43fF
+C10 om ip 0.50fF
+C11 ip im 0.40fF
+C12 x y 0.17fF
+C13 y om 0.32fF
+C14 op ip 0.13fF
+C15 y im 0.12fF
+C16 vreg vdd 0.21fF
+C17 vreg gp -0.59fF
+C18 bp gnd 57.26fF
+C19 vdd gnd 50.73fF
+C20 om gnd 15.22fF
+C21 ip gnd 13.46fF
+C22 y gnd 24.71fF
+C23 x gnd 19.27fF
+C24 im gnd 13.99fF
+C25 op gnd 15.24fF
+C26 vreg gnd 2.69fF
+C27 gp gnd 12.68fF
+.ends
+

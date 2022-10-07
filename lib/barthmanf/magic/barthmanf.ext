@@ -1,0 +1,1400 @@
+timestamp 1663415887
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use barthmanf_cell barthmanf_cell_0 1 0 -1200 0 1 -480
+use barthmanf_edge barthmanf_edge_0 1 0 -1680 0 1 -480
+use barthmanf_cell barthmanf_cell_1 1 0 0 0 1 -480
+use barthmanf_cell barthmanf_cell_2 1 0 1200 0 1 -480
+use barthmanf_cell barthmanf_cell_3 1 0 2400 0 1 -480
+use barthmanf_cell barthmanf_cell_4 1 0 3600 0 1 -480
+use barthmanf_cell barthmanf_cell_5 1 0 4800 0 1 -480
+use barthmanf_cell barthmanf_cell_6 1 0 6000 0 1 -480
+use barthmanf_cell barthmanf_cell_8 1 0 7200 0 1 -480
+use barthmanf_cell barthmanf_cell_9 1 0 8400 0 1 -480
+port "gnd" 9 -9360 -1800 -9240 -1200 m3
+port "om" 4 -9360 -600 -9240 0 m3
+port "ip" 1 -9360 360 -9240 480 m3
+port "im" 2 -9360 1800 -9240 1920 m3
+port "op" 3 -9360 2280 -9240 2880 m3
+port "bp" 7 -9360 3240 -9240 3360 m3
+port "gp" 6 -9360 4560 -9240 4680 m3
+port "vreg" 8 -9360 4800 -9240 4920 m3
+port "vdd" 5 -9360 5280 -9240 5880 m3
+node "gnd" 0 111.909 -9360 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_n5640_n600#" 1 174.595 -5640 -600 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "om" 0 106.605 -9360 -600 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_360_360#" 0 59.5051 360 360 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n840_360#" 0 59.5051 -840 360 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6360_360#" 0 61.6396 -6360 360 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "ip" 0 25.4741 -9360 360 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_1560_840#" 0 54.8624 1560 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_840_840#" 0 54.0508 840 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n2040_840#" 0 44.9863 -2040 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n2760_840#" 0 45.3207 -2760 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6840_840#" 0 54.8624 -6840 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7560_840#" 0 54.8624 -7560 840 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "y" 0 25.4741 -9360 840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_n1560_1320#" 0 61.6236 -1560 1320 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n3240_1320#" 0 57.1217 -3240 1320 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n4440_1320#" 0 44.4016 -4440 1320 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5160_1320#" 0 45.3207 -5160 1320 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "x" 0 25.4741 -9360 1320 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_2040_1800#" 0 61.6396 2040 1800 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n360_1800#" 0 61.6396 -360 1800 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n8040_1800#" 0 60.7761 -8040 1800 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "im" 0 24.8571 -9360 1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_n3960_2280#" 1 192.187 -3960 2280 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "op" 0 103.945 -9360 2280 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "bp" 0 30.161 -9360 3240 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "gp" 0 28.3066 -9360 4560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "vreg" 0 23.6196 -9360 4800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "vdd" 0 110.21 -9360 5280 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m2_600_n600#" 1 255.867 600 -600 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n6600_n600#" 1 245.094 -6600 -600 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n600_840#" 0 78.5869 -600 840 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n1800_840#" 0 70.2873 -1800 840 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n3000_840#" 0 73.0812 -3000 840 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n4200_1320#" 0 70.9266 -4200 1320 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n5400_1320#" 0 73.0812 -5400 1320 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_1800_2280#" 1 255.867 1800 2280 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n7800_2280#" 1 255.369 -7800 2280 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m3_n2760_840#" "m2_n1800_840#" 2.4831
+cap "vreg" "vdd" 10.258
+cap "m3_1560_840#" "m3_840_840#" 14.844
+cap "m3_360_360#" "m3_n840_360#" 9.00369
+cap "m3_n5160_1320#" "m2_n4200_1320#" 2.4831
+cap "m3_n3240_1320#" "m2_n4200_1320#" 8.04505
+cap "m3_n4440_1320#" "m2_n4200_1320#" 34.6994
+cap "m3_n2040_840#" "m2_n1800_840#" 35.2244
+cap "op" "m2_n7800_2280#" 14.2068
+cap "bp" "op" 10.258
+cap "m3_n6840_840#" "m3_n7560_840#" 14.844
+cap "m3_n2040_840#" "m2_n600_840#" 0.968832
+cap "m3_n5160_1320#" "m3_n4440_1320#" 14.844
+cap "m3_n3240_1320#" "m3_n4440_1320#" 5.58436
+cap "y" "x" 10.258
+cap "m3_n3240_1320#" "m3_n1560_1320#" 4.78816
+cap "m2_n3000_840#" "m2_n1800_840#" 3.66909
+cap "m3_840_840#" "m2_n600_840#" 4.28432
+cap "im" "m3_n8040_1800#" 3.99826
+cap "x" "im" 10.258
+cap "m3_n2040_840#" "m3_n2760_840#" 14.844
+cap "m2_n5400_1320#" "m2_n4200_1320#" 3.66909
+cap "im" "op" 10.258
+cap "vreg" "gp" 30.774
+cap "y" "ip" 10.258
+cap "gnd" "om" 6.1548
+cap "bp" "gp" 3.0774
+cap "m2_n600_840#" "m2_n1800_840#" 8.97302
+cap "m2_n3000_840#" "m3_n2760_840#" 35.2244
+cap "m2_n3000_840#" "m3_n2040_840#" 2.4831
+cap "m3_n5160_1320#" "m2_n5400_1320#" 35.2244
+cap "m3_n4440_1320#" "m2_n5400_1320#" 2.4831
+cap "om" "ip" 10.258
+cap "m3_n5640_n600#" "m2_n6600_n600#" 41.9168
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/gnd" 44.4154
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/om" 29.4853
+cap "barthmanf_cell_0/gnd" "barthmanf_edge_0/lo" 3.68594
+cap "barthmanf_cell_0/om" "barthmanf_edge_0/lo" 7.0802
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/gnd" 5.67225
+cap "barthmanf_cell_0/d1" "barthmanf_edge_0/lo" 1.9842
+cap "barthmanf_cell_0/d2" "barthmanf_cell_0/gnd" 1.44586
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/gnd" 1.11991
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/om" 16.8856
+cap "barthmanf_cell_0/out" "barthmanf_edge_0/lo" 0.484943
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/d1" 1.57978
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/d1" 4.08313
+cap "barthmanf_cell_0/inl" "barthmanf_edge_0/lo" 38.0111
+cap "barthmanf_cell_0/inr" "barthmanf_edge_0/lo" 4.35616
+cap "barthmanf_cell_0/d2" "barthmanf_edge_0/lo" 0.333599
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" 2.28107
+cap "barthmanf_cell_0/d1" "barthmanf_cell_0/ip" 0.0869354
+cap "barthmanf_cell_2/inr" "barthmanf_cell_0/inr" 0.318933
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/out" 4.50057
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/ip" 1.59082
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inl" -0.036714
+cap "barthmanf_cell_1/d1" "barthmanf_cell_2/d1" 0.333599
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/d2" 1.21898
+cap "barthmanf_edge_0/lo" "barthmanf_cell_0/out" 6.64529
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 15.5027
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/inl" 10.7734
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/inl" 6.06431
+cap "barthmanf_cell_0/d1" "barthmanf_cell_1/d1" 0.667198
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/om" -10.8244
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/ip" 3.0693
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/ip" 0.318933
+cap "barthmanf_cell_0/d2" "barthmanf_cell_1/d2" 0.333599
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/om" 36.6152
+cap "barthmanf_cell_1/d1" "barthmanf_cell_2/out" 0.16382
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/out" 3.75611
+cap "barthmanf_edge_0/lo" "barthmanf_cell_0/gnd" 2.95745
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/ip" 6.73284
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_2/d1" 1.11991
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/d2" 0.150681
+cap "barthmanf_cell_2/inr" "barthmanf_cell_1/d1" 0.0869354
+cap "barthmanf_edge_0/lo" "barthmanf_cell_0/inr" 1.81956
+cap "barthmanf_cell_0/d1" "barthmanf_cell_1/d2" 0.00500446
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/d2" 1.4046
+cap "barthmanf_cell_0/out" "barthmanf_cell_1/d2" 1.10505
+cap "barthmanf_cell_0/d1" "barthmanf_cell_0/gnd" 0.824307
+cap "barthmanf_cell_2/d2" "barthmanf_cell_1/d1" 0.00500446
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/inl" 0.768795
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/d2" 3.75611
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_1/d1" 3.42094
+cap "barthmanf_cell_0/d1" "barthmanf_cell_0/inr" 0.768795
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_2/out" 0.0340466
+cap "barthmanf_cell_0/d2" "barthmanf_cell_0/ip" 0.768795
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/inr" 1.4046
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" 17.4124
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/inr" 0.814511
+cap "barthmanf_edge_0/lo" "barthmanf_cell_0/d2" 0.811798
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/out" 8.57936
+cap "barthmanf_cell_0/d1" "barthmanf_cell_0/om" 1.26887
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/om" 0.768795
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_1/d2" 1.43112
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/inl" 4.70918
+cap "barthmanf_cell_2/d1" "barthmanf_cell_3/inr" 0.0869354
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/ip" 100.296
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/inr" 1.59082
+cap "barthmanf_cell_1/d2" "barthmanf_cell_2/out" 3.75611
+cap "barthmanf_cell_0/om" "barthmanf_cell_3/inr" 0.318933
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_2/inr" 3.0693
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/ip" 8.57936
+cap "barthmanf_cell_3/inl" "barthmanf_cell_0/ip" 0.00569977
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_2/d2" 1.43112
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" 0.0340466
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/inr" 0.768795
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/inl" 0.0869354
+cap "barthmanf_cell_0/om" "barthmanf_cell_2/inr" 1.59082
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/inr" 1.59082
+cap "barthmanf_cell_2/d1" "barthmanf_cell_3/out" 0.16382
+cap "barthmanf_cell_2/d2" "barthmanf_cell_0/om" 1.10505
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_3/out" 0.0340466
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/ip" 0.318933
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/ip" 4.04056
+cap "barthmanf_cell_3/out" "barthmanf_cell_0/om" 0.814511
+cap "barthmanf_cell_2/d1" "barthmanf_cell_0/gnd" 3.42094
+cap "barthmanf_cell_2/d1" "barthmanf_cell_3/d1" 0.333599
+cap "barthmanf_cell_1/d1" "barthmanf_cell_2/d1" 0.333599
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_3/d1" 1.11991
+cap "barthmanf_cell_1/d2" "barthmanf_cell_2/inr" 0.768795
+cap "barthmanf_cell_0/inr" "barthmanf_cell_2/inr" 0.0942752
+cap "barthmanf_cell_2/d1" "barthmanf_cell_0/om" 3.75611
+cap "barthmanf_cell_1/d1" "barthmanf_cell_0/gnd" 1.43112
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/d2" 1.11991
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/om" -16.5206
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/out" 2.25028
+cap "barthmanf_cell_2/d1" "barthmanf_cell_3/d2" 0.00500446
+cap "barthmanf_cell_1/d2" "barthmanf_cell_2/d2" 0.333599
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/out" 0.16382
+cap "barthmanf_cell_2/inr" "barthmanf_cell_0/ip" 7.20883
+cap "barthmanf_cell_2/d1" "barthmanf_cell_3/inl" 0.768795
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/ip" 0.814511
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_3/inl" 2.04732
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/gnd" 17.9692
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/d1" 3.27117
+cap "barthmanf_cell_2/d1" "barthmanf_cell_0/inr" 0.768795
+cap "barthmanf_cell_0/om" "barthmanf_cell_3/inl" 4.04056
+cap "barthmanf_cell_1/d1" "barthmanf_cell_2/out" 1.10505
+cap "barthmanf_cell_1/d2" "barthmanf_cell_2/d1" 1.21898
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/om" 4.50057
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 5.11662
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/d1" 0.00500446
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/gnd" 0.145676
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/d2" 1.10505
+cap "barthmanf_cell_2/d1" "barthmanf_cell_0/ip" 1.4046
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/d2" 0.333599
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/inr" 6.73854
+cap "barthmanf_cell_1/d2" "barthmanf_cell_0/om" 1.4046
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/ip" 0.0366274
+cap "barthmanf_cell_3/inl" "barthmanf_cell_1/y" 1.13344
+cap "barthmanf_cell_2/inr" "barthmanf_cell_3/inr" 10.7734
+cap "barthmanf_cell_3/d1" "barthmanf_cell_1/out" 0.768795
+cap "barthmanf_cell_3/d2" "barthmanf_cell_4/d1" 0.609489
+cap "barthmanf_cell_1/out" "barthmanf_cell_1/gnd" -28.0914
+cap "barthmanf_cell_3/d2" "barthmanf_cell_4/inl" 1.4046
+cap "barthmanf_cell_3/out" "barthmanf_cell_4/d1" 3.27117
+cap "barthmanf_cell_3/inr" "barthmanf_cell_4/inl" 30.3808
+cap "barthmanf_cell_3/out" "barthmanf_cell_4/inl" 4.70918
+cap "barthmanf_cell_3/d1" "barthmanf_cell_1/gnd" 3.42094
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/out" 0.484943
+cap "barthmanf_cell_2/d2" "barthmanf_cell_3/inl" 1.4046
+cap "barthmanf_cell_1/inr" "barthmanf_cell_3/inl" 0.00569977
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/gnd" 1.79867
+cap "barthmanf_cell_3/d2" "barthmanf_cell_1/out" 0.0869354
+cap "barthmanf_cell_3/d1" "barthmanf_cell_1/y" 0.250756
+cap "barthmanf_cell_2/inr" "barthmanf_cell_4/inl" 0.00569977
+cap "barthmanf_cell_3/out" "barthmanf_cell_1/out" 1.59082
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/y" 0.0340466
+cap "barthmanf_cell_1/d2" "barthmanf_cell_1/gnd" 1.11991
+cap "barthmanf_cell_3/inr" "barthmanf_cell_1/out" 12.3137
+cap "barthmanf_cell_2/inr" "barthmanf_cell_3/inl" 88.3008
+cap "barthmanf_cell_3/d1" "barthmanf_cell_4/d2" 0.00500446
+cap "barthmanf_cell_2/inr" "barthmanf_cell_1/out" 8.3358
+cap "barthmanf_cell_4/inl" "barthmanf_cell_3/inl" 4.04056
+cap "barthmanf_cell_3/d2" "barthmanf_cell_1/gnd" 2.78524
+cap "barthmanf_cell_3/out" "barthmanf_cell_1/gnd" 17.9692
+cap "barthmanf_cell_3/d2" "barthmanf_cell_2/out" 0.16382
+cap "barthmanf_cell_3/inr" "barthmanf_cell_1/gnd" 14.0496
+cap "barthmanf_cell_3/inr" "barthmanf_cell_2/out" 0.814511
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/out" 2.25028
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/d2" 1.21898
+cap "barthmanf_cell_3/d2" "barthmanf_cell_1/y" 1.25374
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/gnd" 2.04732
+cap "barthmanf_cell_2/d2" "barthmanf_cell_1/gnd" -0.339267
+cap "barthmanf_cell_3/inr" "barthmanf_cell_1/y" 9.20137
+cap "barthmanf_cell_3/out" "barthmanf_cell_1/y" 3.84111
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/d1" 0.333599
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/inr" 1.4046
+cap "barthmanf_cell_2/d1" "barthmanf_cell_1/gnd" 1.43112
+cap "barthmanf_cell_2/inr" "barthmanf_cell_1/gnd" 2.70273
+cap "barthmanf_cell_3/inl" "barthmanf_cell_1/out" 18.7276
+cap "barthmanf_cell_3/d2" "barthmanf_cell_4/d2" 0.333599
+cap "barthmanf_cell_3/out" "barthmanf_cell_4/d2" 1.10505
+cap "barthmanf_cell_3/d1" "barthmanf_cell_4/d1" 0.333599
+cap "barthmanf_cell_3/d1" "barthmanf_cell_4/inl" 0.768795
+cap "barthmanf_cell_4/d1" "barthmanf_cell_1/gnd" 1.11991
+cap "barthmanf_cell_4/inl" "barthmanf_cell_1/gnd" 2.04732
+cap "barthmanf_cell_3/d2" "barthmanf_cell_2/d2" 0.667198
+cap "barthmanf_cell_3/inr" "barthmanf_cell_2/d2" 0.768795
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/d2" 3.75611
+cap "barthmanf_cell_3/d2" "barthmanf_cell_2/d1" 0.00500446
+cap "barthmanf_cell_3/inl" "barthmanf_cell_1/gnd" 15.4129
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/inl" 3.87018
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/d1" 1.10505
+cap "barthmanf_cell_2/inr" "barthmanf_cell_3/d2" 0.768795
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/inr" 8.57936
+cap "barthmanf_cell_5/inr" "barthmanf_cell_2/y" 8.32367
+cap "barthmanf_cell_3/d2" "barthmanf_cell_4/d2" 0.333599
+cap "barthmanf_cell_3/out" "barthmanf_cell_4/inl" 3.87018
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/y" 1.10505
+cap "barthmanf_cell_4/d1" "barthmanf_cell_3/inr" 1.4046
+cap "barthmanf_cell_4/d2" "barthmanf_cell_3/out" 0.16382
+cap "barthmanf_cell_4/inl" "barthmanf_cell_2/y" 4.85507
+cap "barthmanf_cell_4/d1" "barthmanf_cell_5/inr" 0.0869354
+cap "barthmanf_cell_5/d2" "barthmanf_cell_2/y" 1.10505
+cap "barthmanf_cell_4/d2" "barthmanf_cell_2/y" 1.88954
+cap "barthmanf_cell_2/om" "barthmanf_cell_2/y" 11.9948
+cap "barthmanf_cell_4/d2" "barthmanf_cell_5/d1" 0.609489
+cap "barthmanf_cell_4/d1" "barthmanf_cell_3/d1" 0.333599
+cap "barthmanf_cell_3/inr" "barthmanf_cell_2/gnd" 6.26123
+cap "barthmanf_cell_3/d2" "barthmanf_cell_2/y" 3.27117
+cap "barthmanf_cell_2/ip" "barthmanf_cell_2/y" 0.00569977
+cap "barthmanf_cell_3/inl" "barthmanf_cell_4/inl" 6.73284
+cap "barthmanf_cell_5/inr" "barthmanf_cell_2/gnd" 3.0693
+cap "barthmanf_cell_4/d2" "barthmanf_cell_3/inl" 0.0869354
+cap "barthmanf_cell_4/d1" "barthmanf_cell_5/d2" 0.00500446
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/y" 3.06479
+cap "barthmanf_cell_3/d1" "barthmanf_cell_2/gnd" 1.43112
+cap "barthmanf_cell_3/d2" "barthmanf_cell_4/d1" 0.609489
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/gnd" 2.04732
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_4/inl" 15.4129
+cap "barthmanf_cell_5/d2" "barthmanf_cell_2/gnd" 1.43112
+cap "barthmanf_cell_5/d1" "barthmanf_cell_2/y" 3.27117
+cap "barthmanf_cell_4/d2" "barthmanf_cell_2/gnd" 2.78524
+cap "barthmanf_cell_4/d1" "barthmanf_cell_3/out" 0.484943
+cap "barthmanf_cell_2/om" "barthmanf_cell_2/gnd" -41.593
+cap "barthmanf_cell_4/d1" "barthmanf_cell_2/y" 0.932616
+cap "barthmanf_cell_2/out" "barthmanf_cell_2/gnd" 0.0340466
+cap "barthmanf_cell_3/d2" "barthmanf_cell_2/gnd" 3.17187
+cap "barthmanf_cell_3/inl" "barthmanf_cell_2/y" 1.90976
+cap "barthmanf_cell_3/inr" "barthmanf_cell_4/inl" 57.92
+cap "barthmanf_cell_2/ip" "barthmanf_cell_2/gnd" 0.218768
+cap "barthmanf_cell_4/d2" "barthmanf_cell_3/inr" 0.768795
+cap "barthmanf_cell_4/d1" "barthmanf_cell_5/d1" 0.333599
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/inl" 0.318933
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/d2" 0.768795
+cap "barthmanf_cell_3/out" "barthmanf_cell_2/gnd" 1.83271
+cap "barthmanf_cell_4/d1" "barthmanf_cell_3/inl" 0.768795
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/y" 40.3315
+cap "barthmanf_cell_6/d1" "barthmanf_cell_2/gnd" 0.0148669
+cap "barthmanf_cell_4/d2" "barthmanf_cell_3/d1" 0.00500446
+cap "barthmanf_cell_5/d1" "barthmanf_cell_2/gnd" 3.18673
+cap "barthmanf_cell_2/inr" "barthmanf_cell_4/inl" 0.00569977
+cap "barthmanf_cell_2/om" "barthmanf_cell_4/inl" 11.9948
+cap "barthmanf_cell_5/d2" "barthmanf_cell_4/d2" 0.333599
+cap "barthmanf_cell_3/inl" "barthmanf_cell_2/gnd" 3.0693
+cap "barthmanf_cell_2/d2" "barthmanf_cell_2/gnd" 1.11991
+cap "barthmanf_cell_3/inr" "barthmanf_cell_2/y" 10.1571
+cap "barthmanf_cell_4/d1" "barthmanf_cell_2/gnd" 3.42094
+cap "barthmanf_cell_3/om" "barthmanf_cell_3/gnd" -51.9913
+cap "barthmanf_cell_3/y" "barthmanf_cell_5/inr" 8.72526
+cap "barthmanf_cell_6/d1" "barthmanf_cell_3/gnd" 3.17187
+cap "barthmanf_cell_3/ip" "barthmanf_cell_3/gnd" 6.48
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/om" 11.9948
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/d2" 0.768795
+cap "barthmanf_cell_4/d1" "barthmanf_cell_5/d2" 0.00500446
+cap "barthmanf_cell_3/y" "barthmanf_cell_6/d1" 3.27117
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/d1" 0.0869354
+cap "barthmanf_cell_4/d1" "barthmanf_cell_5/d1" 0.333599
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/ip" 8.74974
+cap "barthmanf_cell_6/d2" "barthmanf_cell_3/gnd" 1.43112
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_4/inl" 3.0693
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/inr" 6.73284
+cap "barthmanf_cell_5/d2" "barthmanf_cell_6/d1" 0.609489
+cap "barthmanf_cell_6/d1" "barthmanf_cell_5/d1" 0.333599
+cap "barthmanf_cell_5/d2" "barthmanf_cell_3/ip" 1.4046
+cap "barthmanf_cell_6/d2" "barthmanf_cell_3/y" 1.10505
+cap "barthmanf_cell_5/d1" "barthmanf_cell_3/ip" 0.768795
+cap "barthmanf_cell_3/y" "barthmanf_cell_4/inl" 8.32367
+cap "barthmanf_cell_4/d2" "barthmanf_cell_3/gnd" 3.18673
+cap "barthmanf_cell_3/om" "barthmanf_cell_5/inr" 11.9948
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/d2" 0.333599
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/gnd" 0.218768
+cap "barthmanf_cell_3/ip" "barthmanf_cell_5/inr" 44.1561
+cap "barthmanf_cell_8/d1" "barthmanf_cell_3/gnd" 0.0148669
+cap "barthmanf_cell_3/y" "barthmanf_cell_4/d2" 3.27117
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/d1" 0.00500446
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/gnd" 42.1642
+cap "barthmanf_cell_5/d2" "barthmanf_cell_4/inl" 0.0869354
+cap "barthmanf_cell_5/d1" "barthmanf_cell_4/inl" 0.768795
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/inr" 0.00569977
+cap "barthmanf_cell_5/d2" "barthmanf_cell_4/d2" 0.333599
+cap "barthmanf_cell_4/d2" "barthmanf_cell_5/d1" 0.609489
+cap "barthmanf_cell_5/d2" "barthmanf_cell_3/gnd" 3.42094
+cap "barthmanf_cell_5/d1" "barthmanf_cell_3/gnd" 2.78524
+cap "barthmanf_cell_4/inl" "barthmanf_cell_5/inr" 0.318933
+cap "barthmanf_cell_3/d2" "barthmanf_cell_3/gnd" 0.0148669
+cap "barthmanf_cell_6/inr" "barthmanf_cell_3/gnd" 3.0693
+cap "barthmanf_cell_3/y" "barthmanf_cell_5/d2" 1.41756
+cap "barthmanf_cell_3/y" "barthmanf_cell_5/d1" 2.05336
+cap "barthmanf_cell_4/d1" "barthmanf_cell_3/gnd" 1.43112
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_5/inr" 15.4129
+cap "barthmanf_cell_3/y" "barthmanf_cell_4/d1" 1.10505
+cap "barthmanf_cell_3/y" "barthmanf_cell_6/inr" 1.90976
+cap "barthmanf_cell_6/inr" "barthmanf_cell_4/gnd" 10.5442
+cap "barthmanf_cell_4/om" "barthmanf_cell_6/d2" 0.484943
+cap "barthmanf_cell_8/d2" "barthmanf_cell_4/gnd" 1.43112
+cap "barthmanf_cell_5/inr" "barthmanf_cell_6/d2" 0.768795
+cap "barthmanf_cell_6/d1" "barthmanf_cell_4/gnd" 1.67799
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/ip" 20.2315
+cap "barthmanf_cell_6/d2" "barthmanf_cell_8/d1" 1.21898
+cap "barthmanf_cell_4/om" "barthmanf_cell_4/y" 2.25028
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/y" 4.70918
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/d1" 0.00500446
+cap "barthmanf_cell_4/y" "barthmanf_cell_8/d1" 3.75611
+cap "barthmanf_cell_6/d1" "barthmanf_cell_5/d2" 0.609489
+cap "barthmanf_cell_6/inr" "barthmanf_cell_4/y" 7.87199
+cap "barthmanf_cell_4/y" "barthmanf_cell_5/d1" 1.10505
+cap "barthmanf_cell_8/d2" "barthmanf_cell_6/d2" 0.333599
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_9/d1" 1.11991
+cap "barthmanf_cell_6/d2" "barthmanf_cell_4/ip" 1.4046
+cap "barthmanf_cell_6/inr" "barthmanf_cell_4/om" 15.865
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_5/d2" 1.11991
+cap "barthmanf_cell_8/d2" "barthmanf_cell_4/y" 1.10505
+cap "barthmanf_cell_6/d1" "barthmanf_cell_4/y" 1.34067
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/inr" 4.04056
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/ip" 18.0997
+cap "barthmanf_cell_6/inr" "barthmanf_cell_8/d1" 1.4046
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_6/d2" 2.31369
+cap "barthmanf_cell_6/d1" "barthmanf_cell_4/om" 0.16382
+cap "barthmanf_cell_4/om" "barthmanf_cell_4/ip" 21.1451
+cap "barthmanf_cell_5/inr" "barthmanf_cell_6/d1" 1.4046
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/ip" 30.3865
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/gnd" 22.0126
+cap "barthmanf_cell_6/d1" "barthmanf_cell_8/d1" 0.667198
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_9/out" 0.0340466
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/d2" 0.333599
+cap "barthmanf_cell_8/d1" "barthmanf_cell_4/ip" 0.768795
+cap "barthmanf_cell_4/om" "barthmanf_cell_4/gnd" -29.3961
+cap "barthmanf_cell_6/inr" "barthmanf_cell_4/ip" 88.3008
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/gnd" 2.04732
+cap "barthmanf_cell_4/y" "barthmanf_cell_5/d2" 3.27117
+cap "barthmanf_cell_6/d1" "barthmanf_cell_5/d1" 0.333599
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_8/d1" 2.936
+cap "barthmanf_cell_6/d1" "barthmanf_cell_8/d2" 0.00500446
+cap "barthmanf_cell_4/y" "barthmanf_cell_6/d2" 1.01955
+cap "barthmanf_cell_6/d1" "barthmanf_cell_4/ip" 0.768795
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/gnd" 2.04732
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/ip" 11.0923
+cap "barthmanf_cell_9/d1" "barthmanf_cell_8/d2" 1.21898
+cap "barthmanf_cell_5/om" "barthmanf_cell_8/d1" 2.84217e-14
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/gnd" -16.5009
+cap "barthmanf_cell_9/inr" "barthmanf_cell_5/gnd" 3.0693
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/d1" 0.0869354
+cap "barthmanf_cell_5/y" "barthmanf_cell_8/d1" 0.768795
+cap "barthmanf_cell_9/d2" "barthmanf_cell_8/d2" 0.333599
+cap "barthmanf_cell_6/d1" "barthmanf_cell_5/om" 1.10505
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/gnd" 11.1755
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/ip" -0.036714
+cap "barthmanf_cell_9/out" "barthmanf_cell_8/d2" 3.75611
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/om" 3.27117
+cap "barthmanf_cell_8/d2" "barthmanf_cell_6/inr" 0.768795
+cap "barthmanf_cell_8/d1" "barthmanf_cell_5/gnd" 0.824307
+cap "barthmanf_cell_8/d2" "barthmanf_cell_5/om" 4.26326e-14
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/d2" 0.768795
+cap "barthmanf_cell_9/d1" "barthmanf_cell_5/om" 3.75611
+cap "barthmanf_cell_8/d2" "barthmanf_cell_5/ip" 0.0869354
+cap "barthmanf_cell_5/y" "barthmanf_cell_8/d2" 1.56842
+cap "barthmanf_cell_6/d2" "barthmanf_cell_5/gnd" 1.11991
+cap "barthmanf_cell_9/d1" "barthmanf_cell_5/ip" 0.768795
+cap "barthmanf_cell_9/d1" "barthmanf_cell_5/y" 1.4046
+cap "barthmanf_cell_9/d2" "barthmanf_cell_5/om" 1.10505
+cap "barthmanf_cell_9/out" "barthmanf_cell_5/om" 4.50057
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/om" 4.70918
+cap "barthmanf_cell_8/d2" "barthmanf_cell_5/gnd" 0.140672
+cap "barthmanf_cell_9/out" "barthmanf_cell_5/y" 8.57936
+cap "barthmanf_cell_9/out" "barthmanf_cell_5/ip" 2.40533
+cap "barthmanf_cell_9/d1" "barthmanf_cell_8/d1" 0.667198
+cap "barthmanf_cell_9/d1" "barthmanf_cell_5/gnd" 2.936
+cap "barthmanf_cell_5/y" "barthmanf_cell_6/inr" 4.04626
+cap "barthmanf_cell_6/d1" "barthmanf_cell_8/d2" 0.00500446
+cap "barthmanf_cell_9/inr" "barthmanf_cell_5/om" 1.59082
+cap "barthmanf_cell_6/d2" "barthmanf_cell_8/d2" 0.333599
+cap "barthmanf_cell_9/d2" "barthmanf_cell_5/gnd" 1.43112
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/om" 31.1432
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/ip" 5.2498
+cap "barthmanf_cell_9/d2" "barthmanf_cell_8/d1" 0.00500446
+cap "barthmanf_cell_9/out" "barthmanf_cell_8/d1" 1.26887
+cap "barthmanf_cell_9/inr" "barthmanf_cell_5/ip" 0.318933
+cap "barthmanf_cell_9/out" "barthmanf_cell_5/gnd" 9.88393
+cap "barthmanf_cell_5/y" "barthmanf_cell_9/inr" 6.73284
+cap "barthmanf_cell_8/d2" "barthmanf_cell_9/d2" 0.333599
+cap "barthmanf_cell_9/d2" "barthmanf_cell_8/inr" 0.768795
+cap "barthmanf_cell_8/d1" "barthmanf_cell_9/d2" 0.00500446
+cap "barthmanf_cell_8/out" "barthmanf_cell_8/gnd" 0.0340466
+cap "barthmanf_cell_9/d2" "barthmanf_cell_8/gnd" 0.484943
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/inl" 0.318933
+cap "barthmanf_cell_8/d2" "barthmanf_cell_8/gnd" 1.10505
+cap "barthmanf_cell_8/inr" "barthmanf_cell_8/gnd" 1.82856
+cap "barthmanf_cell_8/out" "barthmanf_cell_9/inr" 4.47349
+cap "barthmanf_cell_9/d2" "barthmanf_cell_8/inl" 0.0869354
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/inr" 4.04056
+cap "barthmanf_cell_8/out" "barthmanf_cell_9/d2" 0.16382
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/gnd" 4.36219
+cap "barthmanf_cell_0/d1" "barthmanf_cell_0/ip" 0.0025239
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/gnd" 58.2867
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/inr" 14.713
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/gnd" 6.85508
+cap "barthmanf_edge_0/lo" "barthmanf_cell_0/ip" 0.265516
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/inl" 49.0433
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/ip" 15.0415
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/gnd" -3.10181
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/gnd" -10.4213
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/gnd" -62.6276
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/inr" 5.82021
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/gnd" -7.89555
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/ip" 14.3937
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/gnd" 7.52813
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/gnd" -23.553
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/inl" 2.19539
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/inl" 2.19539
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/om" 53.7993
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/inl" 8.54287
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/x" 1.22491
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/gnd" 18.9444
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/om" 86.9756
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/om" 1.22491
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/ip" 5.82021
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/inr" 0.309311
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/om" 7.19687
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/inr" -3.55271e-15
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/ip" 1.22491
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/om" -10.1762
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/ip" -42.9214
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/x" 15.7597
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" -47.3475
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/out" 23.9896
+cap "barthmanf_cell_1/out" "barthmanf_cell_1/gnd" -31.4328
+cap "barthmanf_cell_1/out" "barthmanf_cell_1/x" 40.6612
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/inr" 7.19687
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/gnd" -62.6276
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/x" 12.1983
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/gnd" 19.7062
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/y" 13.0171
+cap "barthmanf_cell_1/y" "barthmanf_cell_1/gnd" -47.3475
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/x" 37.3846
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/x" 47.644
+cap "barthmanf_cell_1/y" "barthmanf_cell_1/x" 13.4233
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/ip" 7.19687
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/om" 23.9896
+cap "barthmanf_cell_2/ip" "barthmanf_cell_2/gnd" -83.5035
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/om" -41.9105
+cap "barthmanf_cell_2/ip" "barthmanf_cell_2/y" 7.19687
+cap "barthmanf_cell_2/om" "barthmanf_cell_2/y" 23.9896
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/gnd" 19.7062
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/y" 9.64669
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/y" -27.6641
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/op" 36.1597
+cap "barthmanf_cell_3/ip" "barthmanf_cell_3/x" 43.3565
+cap "barthmanf_cell_3/ip" "barthmanf_cell_3/gnd" -104.379
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/gnd" 19.7062
+cap "barthmanf_cell_3/om" "barthmanf_cell_3/y" 23.9896
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/om" 23.9896
+cap "barthmanf_cell_3/om" "barthmanf_cell_3/gnd" -52.3881
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/y" 7.35443
+cap "barthmanf_cell_3/ip" "barthmanf_cell_3/y" 7.19687
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/gnd" -43.4466
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/ip" 51.966
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/gnd" 19.7062
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/y" 23.8388
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/y" -31.5878
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/om" 41.8861
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/y" 8.42178
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/om" -31.4328
+cap "barthmanf_cell_4/x" "barthmanf_cell_4/ip" 36.1597
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/om" 29.8098
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/ip" -30.7433
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/ip" 7.31796
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/gnd" -15.3357
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/ip" -55.0995
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/om" 46.4473
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/gnd" -22.0025
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/ip" 1.22491
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/y" 5.82021
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/gnd" 7.87984
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/ip" -6.27916
+cap "barthmanf_cell_8/gnd" "barthmanf_cell_8/im" 7.52813
+cap "barthmanf_cell_8/inr" "barthmanf_cell_8/im" -4.69217
+cap "barthmanf_cell_8/out" "barthmanf_cell_8/im" 8.54287
+cap "barthmanf_cell_8/inl" "barthmanf_cell_8/im" 2.19539
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" -3.10181
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/inl" 14.713
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/inl" 1.23661
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/out" 14.713
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/gnd" -15.387
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inl" 62.8891
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/gnd" -8.53192
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/inl" 0.00615277
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gnd" -0.0798422
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inl" -53.1158
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/bp" -0.0386286
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/out" 20.2663
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/om" 5.87257
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" -4.84476
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/x" 15.6297
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/x" 1.77636e-15
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 37.0527
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/out" 2.19539
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/om" 11.8198
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/inr" -11.4346
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/om" 1.23593
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/x" -62.7345
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/bp" -0.0798422
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/x" 2.19539
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/x" 8.4328
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/out" 8.4328
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/gnd" -31.4328
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gnd" -0.0798422
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/x" -3.55271e-15
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/inl" 7.19687
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/gnd" 26.2021
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/gnd" -15.387
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/out" 7.19687
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/x" 13.0694
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/ip" 72.3193
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/x" -27.7021
+cap "barthmanf_cell_0/om" "barthmanf_cell_0/gnd" 38.0218
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/bp" -0.0386286
+cap "barthmanf_cell_0/ip" "barthmanf_cell_0/inl" 7.19687
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/gnd" -62.6276
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/y" 5.87257
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/gnd" 3.79735
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/im" 12.1983
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/gnd" -0.0798422
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/im" -0.0386286
+cap "barthmanf_cell_1/im" "barthmanf_cell_1/gnd" -62.6276
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/y" 1.23593
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/op" 15.4655
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/y" -15.387
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/op" -5.23077
+cap "barthmanf_cell_1/im" "barthmanf_cell_1/op" 7.19687
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/y" -36.8223
+cap "barthmanf_cell_2/im" "barthmanf_cell_2/gnd" -83.5035
+cap "barthmanf_cell_2/im" "barthmanf_cell_2/bp" -0.0515048
+cap "barthmanf_cell_2/bp" "barthmanf_cell_2/gnd" -0.106456
+cap "barthmanf_cell_2/op" "barthmanf_cell_2/gnd" -41.9105
+cap "barthmanf_cell_2/im" "barthmanf_cell_2/y" 7.19687
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/gnd" 29.3256
+cap "barthmanf_cell_2/im" "barthmanf_cell_2/inr" 7.19687
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/op" 7.19687
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/gnd" -68.8368
+cap "barthmanf_cell_2/inr" "barthmanf_cell_2/op" 40.2571
+cap "barthmanf_cell_3/im" "barthmanf_cell_3/x" 7.19687
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/y" 14.3054
+cap "barthmanf_cell_3/im" "barthmanf_cell_3/y" 7.19687
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_3/inr" -52.3881
+cap "barthmanf_cell_3/bp" "barthmanf_cell_3/gnd" -0.13307
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/ip" 36.1597
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/inr" 7.19687
+cap "barthmanf_cell_3/im" "barthmanf_cell_3/bp" -0.0643809
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/y" 7.19687
+cap "barthmanf_cell_3/im" "barthmanf_cell_3/gnd" -104.379
+cap "barthmanf_cell_3/x" "barthmanf_cell_3/gnd" -78.3554
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_3/y" 24.1966
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/op" 7.19687
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/x" 20.4634
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/op" 12.1983
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/x" -62.7345
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/bp" -0.0386286
+cap "barthmanf_cell_4/op" "barthmanf_cell_4/gnd" -31.4328
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/gnd" -0.0798422
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/om" 5.87257
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/om" 1.23593
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/im" 1.23593
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/ip" 11.7451
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/gnd" 8.25252
+cap "barthmanf_cell_4/y" "barthmanf_cell_4/x" -3.55271e-15
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/ip" 69.0207
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/gnd" -36.4255
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/x" 7.19687
+cap "barthmanf_cell_4/ip" "barthmanf_cell_4/gnd" 42.8923
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/gnd" -0.0798422
+cap "barthmanf_cell_5/ip" "barthmanf_cell_5/gnd" 9.51181
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/x" -62.7345
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/gnd" 23.6395
+cap "barthmanf_cell_5/ip" "barthmanf_cell_5/x" 2.19539
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/gnd" 27.7274
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/x" -3.55271e-15
+cap "barthmanf_cell_5/om" "barthmanf_cell_5/y" 5.87257
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/x" 12.1881
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/gnd" -14.5496
+cap "barthmanf_cell_5/ip" "barthmanf_cell_5/op" 3.43132
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/y" 18.0607
+cap "barthmanf_cell_5/im" "barthmanf_cell_5/gnd" -62.6276
+cap "barthmanf_cell_5/im" "barthmanf_cell_5/bp" -0.0386286
+cap "barthmanf_cell_5/ip" "barthmanf_cell_5/im" 2.19539
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/im" 12.1881
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/inr" 7.10543e-15
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/x" 2.19539
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/im" 2.19539
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/out" 1.23593
+cap "barthmanf_cell_8/gnd" "barthmanf_cell_8/op" -5.0635
+cap "barthmanf_cell_8/gnd" "barthmanf_cell_8/im" 9.51181
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/inr" 3.75821
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/out" 60.8665
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/bp" 34.981
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/out" 0.110877
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inl" 0.575577
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/gnd" 46.8791
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/inl" 39.5042
+cap "barthmanf_cell_0/bp" "barthmanf_cell_1/vdd" 0.0165738
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/out" 9.79723
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/out" 6.24034
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" -15.517
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/bp" 3.59685
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/out" 3.57725
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gnd" -28.1714
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/inr" 0.398945
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/bp" 0.0963404
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gnd" 3.94591
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inr" 0.564181
+cap "barthmanf_cell_0/vreg" "barthmanf_edge_0/hi" 1.06349
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 0.0792115
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/inr" 66.1304
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/inr" -5.02718
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/out" 1.95587
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/inr" 13.1779
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inr" 1.64785
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/inr" 9.13731
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/inr" 1.81956
+cap "barthmanf_cell_0/x" "barthmanf_cell_1/out" 0.0945643
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/bp" 10.1907
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_1/out" 3.93992
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_2/inl" 0.165636
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/inl" 8.78155
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/inl" -2.82881
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/inr" 1.58337
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/out" 2.06363
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 19.8597
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/bp" -6.23395
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inl" 0.48244
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/out" 1.17524
+cap "barthmanf_cell_0/out" "barthmanf_edge_0/hi" 3.6913
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_0/bp" -0.744491
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/inr" 8.38463
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/inl" 0.318933
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/vreg" 0.48244
+cap "barthmanf_cell_0/vreg" "barthmanf_edge_0/hi" 0.49536
+cap "barthmanf_cell_0/out" "barthmanf_cell_0/gnd" -24.7296
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/bp" -63.1315
+cap "barthmanf_cell_2/inl" "barthmanf_cell_1/out" 0.170843
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inl" 3.78581
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/vreg" 0.110877
+cap "barthmanf_cell_0/out" "barthmanf_cell_1/out" 11.4408
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/bp" 5.01012
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gnd" 0.0364045
+cap "barthmanf_cell_2/inl" "barthmanf_cell_0/inr" 4.04626
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/inl" 2.42036
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/inr" -1.77636e-15
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_2/inl" 0.823927
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/out" 30.0519
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/out" -31.0655
+cap "barthmanf_cell_2/inl" "barthmanf_cell_0/x" 4.92601
+cap "barthmanf_cell_0/bp" "barthmanf_cell_2/inl" 3.04787
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/out" 0.0752453
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/x" 3.10734
+cap "barthmanf_cell_2/inl" "barthmanf_cell_0/inr" 9.14301
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/bp" -5.58005
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/gnd" 9.89446
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/inl" 0.318933
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_1/out" 3.93992
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/out" -0.378995
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inr" 0.648077
+cap "barthmanf_cell_0/inl" "barthmanf_cell_1/out" 0.019319
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/x" 10.0202
+cap "barthmanf_cell_2/inl" "barthmanf_cell_0/out" 29.1064
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/x" 1.2502
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/out" 0.194773
+cap "barthmanf_cell_0/bp" "barthmanf_cell_4/vdd" -0.580571
+cap "barthmanf_cell_2/inl" "barthmanf_cell_0/gnd" 9.89446
+cap "barthmanf_cell_1/inr" "barthmanf_cell_2/inl" 152.076
+cap "barthmanf_cell_2/inl" "barthmanf_cell_1/out" 8.76362
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gnd" 8.88178e-16
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/inr" 0.823927
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/out" 1.95587
+cap "barthmanf_cell_0/x" "barthmanf_cell_0/out" 0.901078
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/out" -0.182809
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/x" 7.87984
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/x" 18.3826
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gnd" -62.5835
+cap "barthmanf_cell_0/bp" "barthmanf_cell_1/inr" -8.61815
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/x" 12.5215
+cap "barthmanf_cell_0/bp" "barthmanf_cell_1/out" 2.81612
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/inr" 4.04056
+cap "barthmanf_cell_0/inr" "barthmanf_cell_1/out" 0.170843
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/op" -21.1711
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/vreg" -4.11738
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/op" 111.274
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/vreg" 0.165636
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/bp" -62.0356
+cap "barthmanf_cell_1/x" "barthmanf_cell_5/vdd" 1.11022e-15
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/vreg" -3.55271e-15
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/bp" 4.70271
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/vreg" 6.47026
+cap "barthmanf_cell_1/op" "barthmanf_cell_2/inl" 0.318933
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/y" 13.2594
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/inr" 0.00569977
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/gnd" 23.8829
+cap "barthmanf_cell_1/out" "barthmanf_cell_1/vreg" 0.110877
+cap "barthmanf_cell_2/inl" "barthmanf_cell_1/vreg" 0.48244
+cap "barthmanf_cell_1/y" "barthmanf_cell_1/vreg" 0.338943
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/bp" 2.63037
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/vreg" 0.398544
+cap "barthmanf_cell_1/x" "barthmanf_cell_2/inl" 10.3126
+cap "barthmanf_cell_1/x" "barthmanf_cell_1/y" 8.51664
+cap "barthmanf_cell_5/vdd" "barthmanf_cell_1/bp" -0.416652
+cap "barthmanf_cell_2/bp" "barthmanf_cell_2/op" -0.00904847
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/inr" 2.84704
+cap "barthmanf_cell_6/out" "barthmanf_cell_2/vreg" 0.00330439
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/vreg" 5.26656
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/gnd" -8.88178e-16
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/inr" 9.89446
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/inr" 23.7552
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_6/inl" 0.0310025
+cap "barthmanf_cell_2/bp" "barthmanf_cell_2/vreg" -2.5645
+cap "barthmanf_cell_2/bp" "barthmanf_cell_2/inr" 3.04787
+cap "barthmanf_cell_2/bp" "barthmanf_cell_6/vdd" -0.16213
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/gnd" 17.7743
+cap "barthmanf_cell_2/op" "barthmanf_cell_2/vreg" 0.958561
+cap "barthmanf_cell_2/y" "barthmanf_cell_6/inl" 0.00569977
+cap "barthmanf_cell_2/op" "barthmanf_cell_2/inr" 123.422
+cap "barthmanf_cell_2/bp" "barthmanf_cell_2/gnd" -81.3991
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/bp" 13.0681
+cap "barthmanf_cell_2/y" "barthmanf_cell_2/op" 37.6461
+cap "barthmanf_cell_2/op" "barthmanf_cell_2/gnd" -41.4207
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_3/bp" -101.749
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/vreg" 0.0310025
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/out" 0.00330439
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_8/inl" 0.0310025
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_8/out" 0.00330439
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/vreg" 6.29662
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/x" 1.05802
+cap "barthmanf_cell_3/y" "barthmanf_cell_6/inl" 7.45128
+cap "barthmanf_cell_6/inl" "barthmanf_cell_3/x" 91.5352
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/x" 28.7875
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/y" 28.7932
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/gnd" 3.55271e-15
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/gnd" -51.7759
+cap "barthmanf_cell_8/vdd" "barthmanf_cell_3/bp" -0.202663
+cap "barthmanf_cell_8/inl" "barthmanf_cell_3/x" 0.00569977
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/im" 0.48244
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/x" 20.8911
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_3/x" 9.89446
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/gnd" 17.7743
+cap "barthmanf_cell_3/im" "barthmanf_cell_3/x" 9.13731
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/im" 1.49418
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/bp" -3.20562
+cap "barthmanf_cell_6/inl" "barthmanf_cell_3/bp" 0.234697
+cap "barthmanf_cell_3/inr" "barthmanf_cell_3/bp" -0.304682
+cap "barthmanf_cell_3/bp" "barthmanf_cell_3/x" 3.04787
+cap "barthmanf_cell_3/y" "barthmanf_cell_3/bp" 13.0681
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_6/inl" 0.958561
+cap "barthmanf_cell_4/x" "barthmanf_cell_8/inl" 0.00569977
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_6/inl" 9.89446
+cap "barthmanf_cell_8/out" "barthmanf_cell_4/y" 6.3773
+cap "barthmanf_cell_8/inl" "barthmanf_cell_4/vreg" 0.823927
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/bp" 3.04787
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/vreg" -3.55271e-15
+cap "barthmanf_cell_4/x" "barthmanf_cell_6/inl" 48.1432
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_6/inl" 0.398544
+cap "barthmanf_cell_4/im" "barthmanf_cell_8/out" 6.15343
+cap "barthmanf_cell_8/inl" "barthmanf_cell_4/y" 8.93446
+cap "barthmanf_cell_8/inl" "barthmanf_cell_4/op" 20.0059
+cap "barthmanf_cell_4/x" "barthmanf_cell_4/vreg" 0.413986
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/y" 7.87984
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/op" -31.0655
+cap "barthmanf_cell_8/inl" "barthmanf_cell_4/bp" 0.234697
+cap "barthmanf_cell_4/y" "barthmanf_cell_6/inl" 13.1993
+cap "barthmanf_cell_6/inl" "barthmanf_cell_4/op" 28.7875
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/bp" -61.0493
+cap "barthmanf_cell_4/x" "barthmanf_cell_4/y" 3.28194
+cap "barthmanf_cell_4/im" "barthmanf_cell_8/inl" 152.076
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/op" 0.110877
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/y" 3.83209
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/gnd" 9.89446
+cap "barthmanf_cell_4/bp" "barthmanf_cell_6/inl" 2.81318
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/vreg" -1.92337
+cap "barthmanf_cell_4/im" "barthmanf_cell_6/inl" -3.33067e-15
+cap "barthmanf_cell_4/x" "barthmanf_cell_4/im" 4.04056
+cap "barthmanf_cell_9/vdd" "barthmanf_cell_4/bp" -0.121598
+cap "barthmanf_cell_8/out" "barthmanf_cell_6/inl" 1.5386
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/vreg" 0.575577
+cap "barthmanf_cell_8/out" "barthmanf_cell_4/vreg" 1.8117
+cap "barthmanf_cell_8/inl" "barthmanf_cell_4/gnd" 6.10865
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/y" 10.0202
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/op" -0.182809
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/y" 10.3474
+cap "barthmanf_cell_4/im" "barthmanf_cell_4/op" 28.7875
+cap "barthmanf_cell_8/inl" "barthmanf_cell_6/inl" 13.1779
+cap "barthmanf_cell_6/inl" "barthmanf_cell_5/vreg" 0.083896
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/y" 13.1779
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/gnd" 3.78581
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/vreg" 0.48244
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/bp" -8.48072
+cap "barthmanf_cell_8/out" "barthmanf_cell_5/y" 13.6942
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/bp" -63.1315
+cap "barthmanf_cell_9/vdd" "barthmanf_cell_5/bp" -0.744491
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_5/bp" -6.31139
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_8/out" 7.87984
+cap "barthmanf_cell_8/out" "barthmanf_cell_5/vreg" 2.09674
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/y" 57.1371
+cap "barthmanf_cell_8/out" "barthmanf_cell_6/inl" 0.901078
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/gnd" -27.1256
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/vreg" 1.8117
+cap "barthmanf_cell_5/gp" "barthmanf_cell_5/y" -1.77636e-15
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/bp" -2.82881
+cap "barthmanf_cell_8/inl" "barthmanf_cell_8/out" -0.378995
+cap "barthmanf_cell_5/im" "barthmanf_cell_5/y" 13.1836
+cap "barthmanf_cell_5/im" "barthmanf_cell_5/vreg" 0.896427
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/op" 11.2019
+cap "barthmanf_cell_8/out" "barthmanf_cell_5/bp" 7.09491
+cap "barthmanf_cell_5/op" "barthmanf_cell_5/bp" 4.82732
+cap "barthmanf_cell_5/op" "barthmanf_cell_8/out" 11.4408
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/im" 0.318933
+cap "barthmanf_cell_5/im" "barthmanf_cell_8/out" 3.95628
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/y" 16.0661
+cap "barthmanf_cell_5/y" "barthmanf_cell_5/vreg" 1.9029
+cap "barthmanf_cell_5/y" "barthmanf_cell_6/inl" 0.318933
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/vreg" -1.77636e-15
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/inr" 4.04056
+cap "barthmanf_cell_8/inr" "barthmanf_cell_8/vreg" 0.134634
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/out" 1.26444
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/bp" 4.01901e-14
+cap "barthmanf_cell_8/out" "barthmanf_cell_8/vreg" 0.107573
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/inl" 0.019319
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/gnd" -6.32937
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/bp" 2.81318
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/inl" 0.318933
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/op" 8.78155
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/inr" 0.170843
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/vreg" 0.14417
+cap "barthmanf_cell_8/im" "barthmanf_cell_8/gnd" 3.78581
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/out" 0.0752453
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/bp" 1.56337
+cap "barthmanf_cell_0/inl" "barthmanf_edge_0/hi" 3.6017
+cap "barthmanf_cell_0/gnd" "barthmanf_edge_0/hi" 0.83866
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/bp" -62.0803
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/op" 3.39428
+cap "barthmanf_cell_1/inl" "barthmanf_cell_0/vreg" 0.761607
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inl" 9.16366
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/vreg" 6.87367
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/vreg" 0.303969
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/op" 5.93707
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inr" 1.20864
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vdd" 5.65959
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/op" 2.42389
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/op" 1.27063
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vreg" -60.9902
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/bp" 6.66134e-15
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/inr" 0.469819
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/vreg" 3.67479
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/inr" 0.528126
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/op" 3.25035
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/vreg" 25.9865
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vdd" -17.4987
+cap "barthmanf_edge_0/hih" "barthmanf_cell_0/vreg" 7.24376
+cap "barthmanf_cell_0/gp" "barthmanf_edge_0/hi" 11.4302
+cap "barthmanf_cell_0/inl" "barthmanf_cell_0/vreg" 1.74552
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/bp" 37.8317
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/inr" 0.0676165
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vreg" 32.8189
+cap "barthmanf_edge_0/hih" "barthmanf_cell_0/gp" 24.7304
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/inl" 7.34943
+cap "barthmanf_edge_0/hi" "barthmanf_cell_0/bp" 1.95188
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/gp" 26.4615
+cap "barthmanf_cell_1/out" "barthmanf_cell_2/inr" 0.113497
+cap "barthmanf_cell_0/vreg" "barthmanf_edge_0/hi" 2.3379
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/op" 0.467126
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gp" -0.118454
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/out" 7.02522
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/vreg" 0.303969
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/inl" 3.69033
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inr" 3.69033
+cap "barthmanf_edge_0/hih" "barthmanf_cell_0/vreg" 0.662664
+cap "barthmanf_cell_0/op" "barthmanf_cell_1/inr" 0.867449
+cap "barthmanf_cell_2/inl" "barthmanf_cell_1/out" 1.00369
+cap "barthmanf_cell_0/op" "barthmanf_edge_0/hi" 1.5747
+cap "barthmanf_cell_0/op" "barthmanf_cell_1/out" 4.36
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/inl" 1.96102
+cap "barthmanf_cell_0/op" "barthmanf_cell_1/inl" 2.38117
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gnd" 14.1829
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gnd" -28.9555
+cap "barthmanf_edge_0/hih" "barthmanf_cell_0/gp" 5.36862
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/vreg" 10.1154
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gnd" -28.8371
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/out" 0.964773
+cap "barthmanf_cell_0/inr" "barthmanf_cell_1/out" 1.37748
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/vreg" 7.84086
+cap "barthmanf_cell_0/op" "barthmanf_cell_0/gnd" 0.0143827
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/vdd" 1.77636e-14
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_2/inl" 0.776096
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/gnd" -5.53423
+cap "barthmanf_cell_0/inr" "barthmanf_cell_1/inl" 2.74333
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/op" 8.40678
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vreg" -78.8438
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gp" 3.64193
+cap "barthmanf_cell_1/out" "barthmanf_cell_0/inl" 0.753952
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/inr" 1.96102
+cap "barthmanf_cell_1/inr" "barthmanf_cell_2/out" 1.37748
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/bp" -28.8371
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/vreg" 6.44955
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/out" 7.02522
+cap "barthmanf_cell_3/inl" "barthmanf_cell_2/out" 1.00369
+cap "barthmanf_cell_2/inr" "barthmanf_cell_1/out" 0.753952
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gp" 0.691873
+cap "barthmanf_cell_1/out" "barthmanf_cell_2/inl" 1.37748
+cap "barthmanf_cell_0/inr" "barthmanf_cell_1/out" 1.00369
+cap "barthmanf_cell_0/op" "barthmanf_cell_2/out" 0.113497
+cap "barthmanf_cell_2/inr" "barthmanf_cell_0/vreg" 1.96102
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/out" 0.964773
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_2/inl" 3.69033
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vdd" -28.9555
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vreg" -75.8775
+cap "barthmanf_cell_0/inr" "barthmanf_cell_0/vreg" 0.776096
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_1/inl" 1.96102
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/out" 3.39522
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vreg" 11.0229
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/bp" 1.82077e-14
+cap "barthmanf_cell_1/inr" "barthmanf_cell_0/vreg" 3.69033
+cap "barthmanf_cell_2/out" "barthmanf_cell_0/vreg" 7.02522
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/gp" -7.11215
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/vreg" 4.49254
+cap "barthmanf_cell_1/inr" "barthmanf_cell_2/inl" 2.74333
+cap "barthmanf_cell_3/inl" "barthmanf_cell_0/vreg" 2.45191
+cap "barthmanf_cell_0/op" "barthmanf_cell_1/out" 0.964773
+cap "barthmanf_cell_0/bp" "barthmanf_cell_0/gp" -0.118454
+cap "barthmanf_cell_0/op" "barthmanf_cell_0/vreg" 0.87008
+cap "barthmanf_cell_0/inl" "barthmanf_cell_1/out" 0.113497
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/inl" 0.753952
+cap "barthmanf_cell_3/out" "barthmanf_cell_0/vreg" 0.90975
+cap "barthmanf_cell_3/out" "barthmanf_cell_1/vreg" 10.7053
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_1/gp" 0.41849
+cap "barthmanf_cell_2/inr" "barthmanf_cell_3/inl" 2.74333
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/out" 4.36
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/vreg" 5.17695
+cap "barthmanf_cell_1/gp" "barthmanf_cell_1/gnd" -7.18545
+cap "barthmanf_cell_1/op" "barthmanf_cell_1/vreg" 1.39491
+cap "barthmanf_cell_2/out" "barthmanf_cell_1/op" 0.753952
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_1/vreg" 13.8303
+cap "barthmanf_cell_2/inr" "barthmanf_cell_3/out" 2.38117
+cap "barthmanf_cell_2/inr" "barthmanf_cell_1/vreg" 3.69033
+cap "barthmanf_cell_1/vreg" "barthmanf_cell_1/gnd" 15.233
+cap "barthmanf_cell_4/inr" "barthmanf_cell_3/out" 0.867449
+cap "barthmanf_cell_4/inr" "barthmanf_cell_1/vreg" 0.566112
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/gp" -0.118454
+cap "barthmanf_cell_1/inr" "barthmanf_cell_1/vreg" 0.776096
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_1/gnd" -28.9555
+cap "barthmanf_cell_4/out" "barthmanf_cell_3/out" 2.66238
+cap "barthmanf_cell_4/out" "barthmanf_cell_1/vreg" 0.90975
+cap "barthmanf_cell_2/inl" "barthmanf_cell_3/out" 0.867449
+cap "barthmanf_cell_2/inl" "barthmanf_cell_1/vreg" 1.96102
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/vreg" 5.77186
+cap "barthmanf_cell_3/inl" "barthmanf_cell_1/vreg" 2.01452
+cap "barthmanf_cell_2/out" "barthmanf_cell_3/inl" 1.37748
+cap "barthmanf_cell_1/gp" "barthmanf_cell_1/vreg" -68.6536
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/vdd" 1.28786e-14
+cap "barthmanf_cell_1/bp" "barthmanf_cell_1/gnd" -28.8371
+cap "barthmanf_cell_3/out" "barthmanf_cell_4/inl" 2.38117
+cap "barthmanf_cell_4/inl" "barthmanf_cell_1/vreg" 2.45191
+cap "barthmanf_cell_1/out" "barthmanf_cell_1/vreg" 0.303969
+cap "barthmanf_cell_4/out" "barthmanf_cell_5/inr" 0.867449
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_3/out" 3.03427
+cap "barthmanf_cell_5/inl" "barthmanf_cell_2/vreg" 4.46643
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_5/inr" 1.96102
+cap "barthmanf_cell_2/gp" "barthmanf_cell_6/gp" 0.00569977
+cap "barthmanf_cell_2/gp" "barthmanf_cell_2/bp" -0.157939
+cap "barthmanf_cell_5/inl" "barthmanf_cell_4/inr" 1.37167
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/vreg" 10.5732
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/vdd" -38.6074
+cap "barthmanf_cell_4/out" "barthmanf_cell_2/op" 2.38117
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_4/out" 10.7053
+cap "barthmanf_cell_4/out" "barthmanf_cell_5/out" 2.66238
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/inr" 0.776096
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/op" 4.35792
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/vdd" 1.557
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_5/out" 3.04335
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/gp" -9.62946
+cap "barthmanf_cell_4/out" "barthmanf_cell_3/inl" 0.867449
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_4/inr" 1.39491
+cap "barthmanf_cell_6/inl" "barthmanf_cell_2/vreg" 0.108509
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_3/inl" 1.96102
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/gp" -122.787
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/bp" -38.4495
+cap "barthmanf_cell_2/gp" "barthmanf_cell_2/vdd" 0.375732
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/out" 0.303969
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_4/inl" 2.01452
+cap "barthmanf_cell_2/op" "barthmanf_cell_4/inl" 2.74333
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_6/out" 0.00908278
+cap "barthmanf_cell_4/out" "barthmanf_cell_3/out" 2.66238
+cap "barthmanf_cell_5/inl" "barthmanf_cell_4/out" 2.38117
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_2/bp" 6.43929e-15
+cap "barthmanf_cell_2/vreg" "barthmanf_cell_2/bp" 0.116535
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_6/inr" 1.96102
+cap "barthmanf_cell_3/gp" "barthmanf_cell_3/gnd" -12.0735
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_4/out" 3.04335
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/out" 0.00908278
+cap "barthmanf_cell_6/inl" "barthmanf_cell_3/vreg" 4.35792
+cap "barthmanf_cell_3/gp" "barthmanf_cell_3/gp" 0.00569977
+cap "barthmanf_cell_8/out" "barthmanf_cell_3/vreg" 0.00908278
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/gnd" 10.1235
+cap "barthmanf_cell_5/inl" "barthmanf_cell_4/inr" 1.37167
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/gnd" -48.2592
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_8/inl" 0.108509
+cap "barthmanf_cell_5/out" "barthmanf_cell_4/inl" 0.867449
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_5/inl" 1.39491
+cap "barthmanf_cell_3/gnd" "barthmanf_cell_3/bp" -48.0618
+cap "barthmanf_cell_5/out" "barthmanf_cell_4/inr" 2.38117
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/gp" -163.819
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/gp" 0.332974
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_4/inl" 1.96102
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_5/out" 10.7053
+cap "barthmanf_cell_3/gp" "barthmanf_cell_3/bp" -0.197423
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_5/inr" 2.01452
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_4/inr" 4.46643
+cap "barthmanf_cell_5/out" "barthmanf_cell_6/out" 2.66238
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/vreg" -3.33554
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_3/bp" -4.32652
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/bp" 5.32907e-15
+cap "barthmanf_cell_3/vreg" "barthmanf_cell_6/out" 3.03427
+cap "barthmanf_cell_5/out" "barthmanf_cell_6/inr" 0.867449
+cap "barthmanf_cell_6/inl" "barthmanf_cell_5/out" 2.38117
+cap "barthmanf_cell_5/out" "barthmanf_cell_4/out" 2.66238
+cap "barthmanf_cell_3/op" "barthmanf_cell_3/vreg" 0.108509
+cap "barthmanf_cell_6/inl" "barthmanf_cell_5/inr" 1.37167
+cap "barthmanf_cell_8/out" "barthmanf_cell_6/out" 4.36
+cap "barthmanf_cell_8/inl" "barthmanf_cell_6/inr" 2.74333
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_8/inr" 1.96102
+cap "barthmanf_cell_8/inr" "barthmanf_cell_6/out" 0.867449
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_8/inl" 3.69033
+cap "barthmanf_cell_8/inl" "barthmanf_cell_6/out" 2.38117
+cap "barthmanf_cell_5/inr" "barthmanf_cell_4/vreg" 2.45191
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_6/inl" 1.39491
+cap "barthmanf_cell_5/inr" "barthmanf_cell_6/out" 2.38117
+cap "barthmanf_cell_4/gnd" "barthmanf_cell_4/gp" -7.18545
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_9/inl" 0.776096
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_5/out" 0.90975
+cap "barthmanf_cell_4/vdd" "barthmanf_cell_4/gnd" -28.9555
+cap "barthmanf_cell_5/out" "barthmanf_cell_6/out" 2.66238
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/gnd" 15.233
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/op" 0.303969
+cap "barthmanf_cell_4/vdd" "barthmanf_cell_4/gp" 0.41849
+cap "barthmanf_cell_8/out" "barthmanf_cell_6/inl" 0.753952
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_6/inr" 2.01452
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/gp" -68.6536
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/vdd" 13.8303
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/gnd" -28.8371
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_5/inl" 0.566112
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_6/out" 10.7053
+cap "barthmanf_cell_6/out" "barthmanf_cell_5/inl" 0.867449
+cap "barthmanf_cell_8/out" "barthmanf_cell_6/inr" 1.37748
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/gp" -0.118454
+cap "barthmanf_cell_4/bp" "barthmanf_cell_4/vdd" 8.88178e-15
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_8/out" 5.17695
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/bp" 5.77186
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/op" 0.753952
+cap "barthmanf_cell_9/inl" "barthmanf_cell_8/inr" 2.74333
+cap "barthmanf_cell_6/out" "barthmanf_cell_5/vreg" 0.90975
+cap "barthmanf_cell_6/inl" "barthmanf_cell_5/vreg" 0.566112
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/gp" -0.118454
+cap "barthmanf_cell_6/out" "barthmanf_cell_8/out" 0.964773
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_5/op" 5.17695
+cap "barthmanf_cell_8/inl" "barthmanf_cell_5/vreg" 1.96102
+cap "barthmanf_cell_5/gp" "barthmanf_cell_5/vreg" -75.8877
+cap "barthmanf_cell_6/inl" "barthmanf_cell_8/out" 0.113497
+cap "barthmanf_cell_5/op" "barthmanf_cell_8/out" 4.36
+cap "barthmanf_cell_9/inr" "barthmanf_cell_5/vreg" 1.96102
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/vreg" 3.87757
+cap "barthmanf_cell_8/inr" "barthmanf_cell_5/op" 1.37748
+cap "barthmanf_cell_9/inr" "barthmanf_cell_8/out" 0.867449
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_8/out" 8.8644
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/vdd" -28.9555
+cap "barthmanf_cell_8/inr" "barthmanf_cell_5/vreg" 3.69033
+cap "barthmanf_cell_6/inr" "barthmanf_cell_5/vreg" 2.45191
+cap "barthmanf_cell_6/inr" "barthmanf_cell_8/out" 1.00369
+cap "barthmanf_cell_5/gp" "barthmanf_cell_5/gnd" -7.11215
+cap "barthmanf_cell_5/gp" "barthmanf_cell_5/vdd" 0.691873
+cap "barthmanf_cell_9/inl" "barthmanf_cell_5/vreg" 3.69033
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/gnd" -28.8371
+cap "barthmanf_cell_9/inl" "barthmanf_cell_8/out" 2.38117
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/vdd" 1.77636e-14
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/vreg" 11.1984
+cap "barthmanf_cell_5/vdd" "barthmanf_cell_5/vreg" 6.49203
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/gp" 1.69235
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/out" 0.294886
+cap "barthmanf_cell_8/inl" "barthmanf_cell_8/op" 0.113497
+cap "barthmanf_cell_8/out" "barthmanf_cell_8/op" 0.964773
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/inr" 0.667587
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/gnd" 1.97588
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/vdd" 3.1828
+cap "barthmanf_cell_8/op" "barthmanf_cell_8/inr" 1.00369
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/bp" 1.86551
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/op" 1.84827
+cap "barthmanf_cell_0/vreg" "barthmanf_edge_0/hih" 6.3797
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/gp" 11.45
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_1/bp" -0.332161
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gp" 9.47218
+cap "barthmanf_cell_0/vdd" "barthmanf_edge_0/hih" 1.50618
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vreg" 5.70156
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/vreg" 4.80612
+cap "barthmanf_cell_0/gp" "barthmanf_edge_0/hih" 12.6831
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gnd" -17.8639
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_1/bp" 0.0319744
+cap "barthmanf_cell_0/vreg" "barthmanf_edge_0/hih" 2.23198
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_2/bp" -0.862647
+cap "barthmanf_cell_0/vdd" "barthmanf_edge_0/hih" 3.84613
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vreg" 0.0213226
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gp" 12.261
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/gp" 8.88178e-16
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/vreg" 18.6638
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gnd" -32.091
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_2/bp" -5.55112e-17
+cap "barthmanf_cell_0/vdd" "barthmanf_cell_0/gp" 8.26815
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/gnd" 1.33227e-15
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vdd" 14.4715
+cap "barthmanf_cell_0/gnd" "barthmanf_cell_0/vdd" -32.9201
+cap "barthmanf_cell_0/gp" "barthmanf_cell_0/vreg" 12.261
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/gnd" -1.77636e-15
+cap "barthmanf_cell_0/vreg" "barthmanf_cell_0/vdd" 19.3216
+cap "barthmanf_cell_4/bp" "barthmanf_cell_0/gnd" 8.67362e-19
+cap "barthmanf_cell_4/bp" "barthmanf_cell_0/vdd" -0.724247
+cap "barthmanf_cell_1/gp" "barthmanf_cell_1/vreg" 16.6796
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_5/bp" -0.585846
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_1/vreg" 21.4033
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_5/bp" -1.73472e-18
+cap "barthmanf_cell_1/vdd" "barthmanf_cell_1/gp" 14.1226
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/vreg" 4.44089e-15
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/gp" 1.33227e-15
+cap "barthmanf_cell_5/bp" "barthmanf_cell_1/vreg" -2.77556e-17
+cap "barthmanf_cell_1/gnd" "barthmanf_cell_1/vdd" -32.6382
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_6/bp" -4.33681e-19
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_2/gp" 22.113
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/gp" 8.88178e-16
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_2/vreg" 20.8009
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_6/gp" 0.148274
+cap "barthmanf_cell_2/vdd" "barthmanf_cell_6/bp" -0.448968
+cap "barthmanf_cell_2/gnd" "barthmanf_cell_2/vdd" -42.8412
+cap "barthmanf_cell_2/gp" "barthmanf_cell_2/vreg" 12.261
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/gp" 0.148274
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/vreg" 18.6078
+cap "barthmanf_cell_3/vdd" "barthmanf_cell_3/gnd" -53.5515
+cap "barthmanf_cell_3/gp" "barthmanf_cell_3/vreg" 12.261
+cap "barthmanf_cell_3/gp" "barthmanf_cell_3/vdd" 21.3951
+cap "barthmanf_cell_8/bp" "barthmanf_cell_3/vdd" -0.56121
+cap "barthmanf_cell_8/bp" "barthmanf_cell_3/gnd" 1.73472e-18
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/gnd" 3.55271e-15
+cap "barthmanf_cell_4/vdd" "barthmanf_cell_4/gnd" -33.4837
+cap "barthmanf_cell_4/gp" "barthmanf_cell_4/vreg" 16.6796
+cap "barthmanf_cell_4/gp" "barthmanf_cell_4/vdd" 6.64019
+cap "barthmanf_cell_4/vreg" "barthmanf_cell_4/vdd" 20.2961
+cap "barthmanf_cell_9/bp" "barthmanf_cell_4/vdd" -1.00105
+cap "barthmanf_cell_5/bp" "barthmanf_cell_5/vdd" -0.862647
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_5/bp" -5.55112e-17
+cap "barthmanf_cell_5/gp" "barthmanf_cell_5/vdd" 11.1112
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/gp" 8.88178e-16
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/vdd" -33.2019
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_5/gp" 12.261
+cap "barthmanf_cell_5/vreg" "barthmanf_cell_5/vdd" 18.4394
+cap "barthmanf_cell_5/gnd" "barthmanf_cell_5/vreg" 2.66454e-15
+cap "barthmanf_cell_8/vreg" "barthmanf_cell_8/vdd" 2.39802
+cap "barthmanf_cell_8/gp" "barthmanf_cell_8/vreg" 1.71191
+cap "barthmanf_cell_8/gp" "barthmanf_cell_8/vdd" 0.717908
+merge "barthmanf_cell_9/x" "barthmanf_cell_8/x" -1536.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28800 -960 -216000 -7560 -57600 -2040 0 0
+merge "barthmanf_cell_8/x" "barthmanf_cell_6/x"
+merge "barthmanf_cell_6/x" "barthmanf_cell_5/inr"
+merge "barthmanf_cell_5/inr" "barthmanf_cell_5/x"
+merge "barthmanf_cell_5/x" "m3_n1560_1320#"
+merge "m3_n1560_1320#" "barthmanf_cell_4/inl"
+merge "barthmanf_cell_4/inl" "barthmanf_cell_4/x"
+merge "barthmanf_cell_4/x" "m3_n3240_1320#"
+merge "m3_n3240_1320#" "barthmanf_cell_3/inl"
+merge "barthmanf_cell_3/inl" "barthmanf_cell_3/x"
+merge "barthmanf_cell_3/x" "m3_n4440_1320#"
+merge "m3_n4440_1320#" "barthmanf_cell_3/out"
+merge "barthmanf_cell_3/out" "m2_n4200_1320#"
+merge "m2_n4200_1320#" "barthmanf_cell_2/inr"
+merge "barthmanf_cell_2/inr" "barthmanf_cell_2/x"
+merge "barthmanf_cell_2/x" "m3_n5160_1320#"
+merge "m3_n5160_1320#" "barthmanf_cell_2/out"
+merge "barthmanf_cell_2/out" "m2_n5400_1320#"
+merge "m2_n5400_1320#" "barthmanf_cell_1/x"
+merge "barthmanf_cell_1/x" "barthmanf_edge_0/x"
+merge "barthmanf_edge_0/x" "barthmanf_cell_0/x"
+merge "barthmanf_cell_0/x" "x"
+merge "barthmanf_cell_9/gnd" "barthmanf_cell_8/gnd" -14280.8 0 0 0 0 0 0 -1296000 -43200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1296000 -43200 0 0 -1555200 -44400 0 0 0 0
+merge "barthmanf_cell_8/gnd" "barthmanf_cell_6/gnd"
+merge "barthmanf_cell_6/gnd" "barthmanf_cell_5/gnd"
+merge "barthmanf_cell_5/gnd" "barthmanf_cell_4/gnd"
+merge "barthmanf_cell_4/gnd" "barthmanf_cell_3/gnd"
+merge "barthmanf_cell_3/gnd" "barthmanf_cell_2/gnd"
+merge "barthmanf_cell_2/gnd" "barthmanf_cell_1/gnd"
+merge "barthmanf_cell_1/gnd" "barthmanf_edge_0/gnd"
+merge "barthmanf_edge_0/gnd" "gnd"
+merge "gnd" "barthmanf_cell_0/gnd"
+merge "barthmanf_cell_0/gnd" "VSUBS"
+merge "barthmanf_cell_9/inl" "barthmanf_cell_9/y" -2866.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43200 -1440 -259200 -8880 -86400 -2880 0 0
+merge "barthmanf_cell_9/y" "m3_1560_840#"
+merge "m3_1560_840#" "barthmanf_cell_8/inr"
+merge "barthmanf_cell_8/inr" "barthmanf_cell_8/y"
+merge "barthmanf_cell_8/y" "m3_840_840#"
+merge "m3_840_840#" "barthmanf_cell_6/y"
+merge "barthmanf_cell_6/y" "barthmanf_cell_6/out"
+merge "barthmanf_cell_6/out" "m2_n600_840#"
+merge "m2_n600_840#" "barthmanf_cell_5/inl"
+merge "barthmanf_cell_5/inl" "barthmanf_cell_5/y"
+merge "barthmanf_cell_5/y" "m3_n2040_840#"
+merge "m3_n2040_840#" "barthmanf_cell_5/out"
+merge "barthmanf_cell_5/out" "m2_n1800_840#"
+merge "m2_n1800_840#" "barthmanf_cell_4/inr"
+merge "barthmanf_cell_4/inr" "barthmanf_cell_4/y"
+merge "barthmanf_cell_4/y" "m3_n2760_840#"
+merge "m3_n2760_840#" "barthmanf_cell_4/out"
+merge "barthmanf_cell_4/out" "m2_n3000_840#"
+merge "m2_n3000_840#" "barthmanf_cell_3/y"
+merge "barthmanf_cell_3/y" "barthmanf_cell_2/y"
+merge "barthmanf_cell_2/y" "barthmanf_cell_1/inl"
+merge "barthmanf_cell_1/inl" "barthmanf_cell_1/y"
+merge "barthmanf_cell_1/y" "m3_n6840_840#"
+merge "m3_n6840_840#" "barthmanf_edge_0/y"
+merge "barthmanf_edge_0/y" "y"
+merge "y" "barthmanf_cell_0/inr"
+merge "barthmanf_cell_0/inr" "barthmanf_cell_0/y"
+merge "barthmanf_cell_0/y" "m3_n7560_840#"
+merge "barthmanf_cell_9/ip" "barthmanf_cell_8/inl" -1237.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -172800 -6000 -43200 -1440 0 0
+merge "barthmanf_cell_8/inl" "barthmanf_cell_8/ip"
+merge "barthmanf_cell_8/ip" "m3_360_360#"
+merge "m3_360_360#" "barthmanf_cell_6/inl"
+merge "barthmanf_cell_6/inl" "barthmanf_cell_6/ip"
+merge "barthmanf_cell_6/ip" "m3_n840_360#"
+merge "m3_n840_360#" "barthmanf_cell_5/ip"
+merge "barthmanf_cell_5/ip" "barthmanf_cell_4/ip"
+merge "barthmanf_cell_4/ip" "barthmanf_cell_3/ip"
+merge "barthmanf_cell_3/ip" "barthmanf_cell_2/ip"
+merge "barthmanf_cell_2/ip" "barthmanf_cell_1/inr"
+merge "barthmanf_cell_1/inr" "barthmanf_cell_1/ip"
+merge "barthmanf_cell_1/ip" "m3_n6360_360#"
+merge "m3_n6360_360#" "barthmanf_edge_0/ip"
+merge "barthmanf_edge_0/ip" "barthmanf_cell_0/ip"
+merge "barthmanf_cell_0/ip" "ip"
+merge "barthmanf_cell_9/vreg" "barthmanf_cell_8/vreg" -4377.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -388800 -11040 0 0 0 0
+merge "barthmanf_cell_8/vreg" "barthmanf_cell_6/vreg"
+merge "barthmanf_cell_6/vreg" "barthmanf_cell_5/vreg"
+merge "barthmanf_cell_5/vreg" "barthmanf_cell_4/vreg"
+merge "barthmanf_cell_4/vreg" "barthmanf_cell_3/vreg"
+merge "barthmanf_cell_3/vreg" "barthmanf_cell_2/vreg"
+merge "barthmanf_cell_2/vreg" "barthmanf_cell_1/vreg"
+merge "barthmanf_cell_1/vreg" "barthmanf_edge_0/vreg"
+merge "barthmanf_edge_0/vreg" "barthmanf_cell_0/vreg"
+merge "barthmanf_cell_0/vreg" "vreg"
+merge "barthmanf_cell_9/op" "barthmanf_cell_9/out" -2009.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144000 -2880 -864000 -18480 -72000 -1440 0 0
+merge "barthmanf_cell_9/out" "m2_1800_2280#"
+merge "m2_1800_2280#" "barthmanf_cell_8/op"
+merge "barthmanf_cell_8/op" "barthmanf_cell_6/op"
+merge "barthmanf_cell_6/op" "barthmanf_cell_5/op"
+merge "barthmanf_cell_5/op" "barthmanf_cell_4/op"
+merge "barthmanf_cell_4/op" "barthmanf_cell_3/inr"
+merge "barthmanf_cell_3/inr" "barthmanf_cell_3/op"
+merge "barthmanf_cell_3/op" "m3_n3960_2280#"
+merge "m3_n3960_2280#" "barthmanf_cell_2/op"
+merge "barthmanf_cell_2/op" "barthmanf_cell_1/op"
+merge "barthmanf_cell_1/op" "barthmanf_edge_0/op"
+merge "barthmanf_edge_0/op" "op"
+merge "op" "barthmanf_cell_0/op"
+merge "barthmanf_cell_0/op" "barthmanf_cell_0/out"
+merge "barthmanf_cell_0/out" "m2_n7800_2280#"
+merge "barthmanf_cell_9/vdd" "barthmanf_cell_8/vdd" -7561.89 -1296000 -23760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -259200 -8640 0 0 -648000 -14160 0 0 0 0
+merge "barthmanf_cell_8/vdd" "barthmanf_cell_6/vdd"
+merge "barthmanf_cell_6/vdd" "barthmanf_cell_5/vdd"
+merge "barthmanf_cell_5/vdd" "barthmanf_cell_4/vdd"
+merge "barthmanf_cell_4/vdd" "barthmanf_cell_3/vdd"
+merge "barthmanf_cell_3/vdd" "barthmanf_cell_2/vdd"
+merge "barthmanf_cell_2/vdd" "barthmanf_cell_1/vdd"
+merge "barthmanf_cell_1/vdd" "barthmanf_edge_0/vdd"
+merge "barthmanf_edge_0/vdd" "vdd"
+merge "vdd" "barthmanf_cell_0/vdd"
+merge "barthmanf_cell_9/gp" "barthmanf_cell_8/gp" -1405.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -129600 -4560 0 0 0 0
+merge "barthmanf_cell_8/gp" "barthmanf_cell_6/gp"
+merge "barthmanf_cell_6/gp" "barthmanf_cell_5/gp"
+merge "barthmanf_cell_5/gp" "barthmanf_cell_4/gp"
+merge "barthmanf_cell_4/gp" "barthmanf_cell_3/gp"
+merge "barthmanf_cell_3/gp" "barthmanf_cell_2/gp"
+merge "barthmanf_cell_2/gp" "barthmanf_cell_1/gp"
+merge "barthmanf_cell_1/gp" "barthmanf_edge_0/gp"
+merge "barthmanf_edge_0/gp" "barthmanf_cell_0/gp"
+merge "barthmanf_cell_0/gp" "gp"
+merge "barthmanf_cell_9/om" "barthmanf_cell_8/om" -2124.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144000 -2880 -864000 -18480 -72000 -1440 0 0
+merge "barthmanf_cell_8/om" "barthmanf_cell_8/out"
+merge "barthmanf_cell_8/out" "m2_600_n600#"
+merge "m2_600_n600#" "barthmanf_cell_6/om"
+merge "barthmanf_cell_6/om" "barthmanf_cell_5/om"
+merge "barthmanf_cell_5/om" "barthmanf_cell_4/om"
+merge "barthmanf_cell_4/om" "barthmanf_cell_3/om"
+merge "barthmanf_cell_3/om" "barthmanf_cell_2/inl"
+merge "barthmanf_cell_2/inl" "barthmanf_cell_2/om"
+merge "barthmanf_cell_2/om" "m3_n5640_n600#"
+merge "m3_n5640_n600#" "barthmanf_cell_1/om"
+merge "barthmanf_cell_1/om" "barthmanf_cell_1/out"
+merge "barthmanf_cell_1/out" "m2_n6600_n600#"
+merge "m2_n6600_n600#" "barthmanf_edge_0/om"
+merge "barthmanf_edge_0/om" "barthmanf_cell_0/om"
+merge "barthmanf_cell_0/om" "om"
+merge "barthmanf_cell_9/inr" "barthmanf_cell_9/im" -847.679 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -172800 -6000 -43200 -1440 0 0
+merge "barthmanf_cell_9/im" "m3_2040_1800#"
+merge "m3_2040_1800#" "barthmanf_cell_8/im"
+merge "barthmanf_cell_8/im" "barthmanf_cell_6/inr"
+merge "barthmanf_cell_6/inr" "barthmanf_cell_6/im"
+merge "barthmanf_cell_6/im" "m3_n360_1800#"
+merge "m3_n360_1800#" "barthmanf_cell_5/im"
+merge "barthmanf_cell_5/im" "barthmanf_cell_4/im"
+merge "barthmanf_cell_4/im" "barthmanf_cell_3/im"
+merge "barthmanf_cell_3/im" "barthmanf_cell_2/im"
+merge "barthmanf_cell_2/im" "barthmanf_cell_1/im"
+merge "barthmanf_cell_1/im" "barthmanf_edge_0/im"
+merge "barthmanf_edge_0/im" "im"
+merge "im" "barthmanf_cell_0/inl"
+merge "barthmanf_cell_0/inl" "barthmanf_cell_0/im"
+merge "barthmanf_cell_0/im" "m3_n8040_1800#"
+merge "barthmanf_cell_9/bp" "barthmanf_cell_8/bp" -5556.03 -1425600 -25920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -244800 -8400 0 0 -129600 -4560 0 0 0 0
+merge "barthmanf_cell_8/bp" "barthmanf_cell_6/bp"
+merge "barthmanf_cell_6/bp" "barthmanf_cell_5/bp"
+merge "barthmanf_cell_5/bp" "barthmanf_cell_4/bp"
+merge "barthmanf_cell_4/bp" "barthmanf_cell_3/bp"
+merge "barthmanf_cell_3/bp" "barthmanf_cell_2/bp"
+merge "barthmanf_cell_2/bp" "barthmanf_cell_1/bp"
+merge "barthmanf_cell_1/bp" "barthmanf_edge_0/bp"
+merge "barthmanf_edge_0/bp" "bp"
+merge "bp" "barthmanf_cell_0/bp"

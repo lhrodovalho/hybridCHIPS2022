@@ -1,0 +1,161 @@
+magic
+tech gf180mcuC
+timestamp 1663414815
+<< metal1 >>
+rect -1008 288 -996 300
+rect 1032 288 1044 300
+<< via2 >>
+rect -888 192 -876 252
+rect -408 192 -396 252
+rect -48 192 -36 252
+rect 72 192 84 252
+rect 432 192 444 252
+rect 912 192 924 252
+rect -648 96 -636 108
+rect -528 96 -516 108
+rect 552 96 564 108
+rect 672 96 684 108
+rect -768 -48 -756 12
+rect -288 -48 -276 12
+rect -168 -48 -156 12
+rect 192 -48 204 12
+rect 312 -48 324 12
+rect 792 -48 804 12
+<< metal3 >>
+rect -1044 492 -1032 552
+rect -1044 438 -1032 456
+rect -1044 420 -1032 432
+rect -1044 288 -456 300
+rect 492 288 1068 300
+rect -1044 192 -1032 252
+rect -1044 144 -1032 156
+rect -1044 96 -1032 108
+rect -1044 48 -1032 60
+rect -1044 -48 -1032 12
+rect -1044 -168 -1032 -108
+<< via3 >>
+rect -432 192 -420 252
+rect -264 192 -252 252
+rect 288 192 300 252
+rect 456 192 468 252
+rect -912 144 -900 156
+rect -504 144 -492 156
+rect -24 144 -12 156
+rect 48 144 60 156
+rect 528 144 540 156
+rect 936 144 948 156
+rect -864 96 -852 108
+rect -792 96 -780 108
+rect -624 96 -612 108
+rect -552 96 -540 108
+rect -144 96 -132 108
+rect -72 96 -60 108
+rect 96 96 108 108
+rect 168 96 180 108
+rect 576 96 588 108
+rect 648 96 660 108
+rect 816 96 828 108
+rect 888 96 900 108
+rect -744 48 -732 60
+rect -672 48 -660 60
+rect -192 48 -180 60
+rect 216 48 228 60
+rect 696 48 708 60
+rect 768 48 780 60
+rect -384 -48 -372 12
+rect -312 -48 -300 12
+rect 336 -48 348 12
+rect 408 -48 420 12
+use barthnauta_cell  barthnauta_cell_0
+timestamp 1663271470
+transform 1 0 -228 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_1
+timestamp 1663271470
+transform 1 0 -108 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_2
+timestamp 1663271470
+transform 1 0 12 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_3
+timestamp 1663271470
+transform 1 0 132 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_4
+timestamp 1663271470
+transform 1 0 252 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_5
+timestamp 1663271470
+transform 1 0 372 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_6
+timestamp 1663271470
+transform 1 0 492 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_7
+timestamp 1663271470
+transform 1 0 612 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_8
+timestamp 1663271470
+transform -1 0 264 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_9
+timestamp 1663271470
+transform -1 0 144 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_10
+timestamp 1663271470
+transform -1 0 24 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_11
+timestamp 1663271470
+transform -1 0 -96 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_12
+timestamp 1663271470
+transform -1 0 -216 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_13
+timestamp 1663271470
+transform -1 0 -336 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_14
+timestamp 1663271470
+transform -1 0 -456 0 1 -36
+box -720 -132 -588 612
+use barthnauta_cell  barthnauta_cell_15
+timestamp 1663271470
+transform -1 0 -576 0 1 -36
+box -720 -132 -588 612
+use barthnauta_edge  barthnauta_edge_0
+timestamp 1663411696
+transform 1 0 -276 0 1 -36
+box -756 -132 -660 612
+use barthnauta_edge  barthnauta_edge_1
+timestamp 1663411696
+transform -1 0 312 0 1 -36
+box -756 -132 -660 612
+<< labels >>
+rlabel metal3 -1044 48 -1032 60 0 ip
+port 1 nsew
+rlabel metal3 -1044 144 -1032 156 0 im
+port 2 nsew
+rlabel metal3 -1044 192 -1032 252 0 op
+port 3 nsew
+rlabel metal3 -1044 -48 -1032 12 0 om
+port 4 nsew
+rlabel metal3 -1044 492 -1032 552 0 vdd
+port 5 nsew
+rlabel metal3 -1044 420 -1032 432 0 gp
+port 6 nsew
+rlabel metal3 -1044 288 -1032 300 0 bp
+port 7 nsew
+rlabel metal3 -1044 444 -1032 456 0 vreg
+port 8 nsew
+rlabel metal3 -1044 -168 -1032 -108 0 gnd
+port 9 nsew
+rlabel metal3 -1044 96 -1032 108 0 x
+<< end >>

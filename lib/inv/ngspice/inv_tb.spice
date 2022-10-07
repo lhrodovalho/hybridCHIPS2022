@@ -1,0 +1,19 @@
+* inverter testbench
+
+.include "../../../gf180mcuA/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuA/libs.tech/ngspice/sm141064.ngspice" typical
+
+.include "../magic/inv.spice"
+
+vdd vdd 0 3.3
+vss vss 0 0
+
+vin in vss 0
+
+x0 in out vdd vss inv
+
+.control
+	dc vin 0 3.3 1m
+	plot in out
+	plot db(abs(deriv(out))) vs out
+.endc

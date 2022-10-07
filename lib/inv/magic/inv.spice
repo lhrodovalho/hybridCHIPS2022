@@ -1,0 +1,43 @@
+* NGSPICE file created from inv.ext - technology: gf180mcuC
+
+.subckt inv in out gp vdx vdh vss bp
+X0 d2 in out vss nmos_3p3 w=1.8u l=0.6u
+X1 d3 in vss vss nmos_3p3 w=1.8u l=0.6u
+X2 vdh gp vdx vdh pmos_6p0 w=1.8u l=0.6u
+X3 vdx in out bp pmos_3p3 w=1.5u l=0.6u
+X4 vdx in out bp pmos_3p3 w=1.5u l=0.6u
+X5 out in vdx bp pmos_3p3 w=1.5u l=0.6u
+X6 vdx gp vdh vdh pmos_6p0 w=1.8u l=0.6u
+X7 out in d1 vss nmos_3p3 w=1.8u l=0.6u
+X8 out in vdx bp pmos_3p3 w=1.5u l=0.6u
+X9 out in vdx bp pmos_3p3 w=1.5u l=0.6u
+X10 vdx in out bp pmos_3p3 w=1.5u l=0.6u
+X11 vdh gp vdx vdh pmos_6p0 w=1.8u l=0.6u
+X12 vdh gp vdx vdh pmos_6p0 w=1.8u l=0.6u
+X13 vdx gp vdh vdh pmos_6p0 w=1.8u l=0.6u
+X14 d1 in vss vss nmos_3p3 w=1.8u l=0.6u
+X15 vdx gp vdh vdh pmos_6p0 w=1.8u l=0.6u
+X16 vdx in out bp pmos_3p3 w=1.5u l=0.6u
+X17 vss in d4 vss nmos_3p3 w=1.8u l=0.6u
+X18 vdx gp vdh vdh pmos_6p0 w=1.8u l=0.6u
+X19 out in vdx bp pmos_3p3 w=1.5u l=0.6u
+X20 vdh gp vdx vdh pmos_6p0 w=1.8u l=0.6u
+X21 vss in d2 vss nmos_3p3 w=1.8u l=0.6u
+X22 out in d3 vss nmos_3p3 w=1.8u l=0.6u
+X23 d4 in out vss nmos_3p3 w=1.8u l=0.6u
+C0 vdx bp 0.70fF
+C1 in out 1.28fF
+C2 vdx gp 3.50fF
+C3 d4 out 0.19fF
+C4 d3 out 0.19fF
+C5 vdx vdh 2.88fF
+C6 vdx out 1.57fF
+C7 vdh bp 0.30fF
+C8 d2 out 0.19fF
+C9 vdh gp 1.27fF
+C10 out bp 0.36fF
+C11 vdx in 0.49fF
+C12 in bp 0.90fF
+C13 d1 out 0.19fF
+.ends
+

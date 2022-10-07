@@ -1,0 +1,141 @@
+* NGSPICE file created from nautanauta.ext - technology: gf180mcuC
+
+.subckt nautanauta_cell inl inr out gp vreg op xm im ip xp om vdd gnd bp
+X0 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X1 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X4 dr inr out gnd nmos_3p3 w=1.8u l=0.6u
+X5 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X6 dl inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X7 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X8 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
+X9 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
+X10 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+C0 out om 0.12fF
+C1 out op 0.12fF
+C2 inr inl 0.55fF
+C3 vreg bp 0.92fF
+C4 inr out 0.19fF
+C5 inl bp 0.32fF
+C6 gp vreg 1.98fF
+C7 out vreg 0.78fF
+C8 out bp 0.15fF
+C9 inr om 0.18fF
+C10 inr op 0.20fF
+C11 vreg vdd 1.41fF
+C12 out inl 0.17fF
+C13 xm op 1.35fF
+C14 xp om 1.35fF
+C15 gp vdd 0.66fF
+C16 inl om 0.18fF
+C17 inl op 0.20fF
+C18 inr bp 0.32fF
+C19 out gnd 1.48fF
+C20 inr gnd 2.23fF
+C21 inl gnd 2.25fF
+C22 vreg gnd 0.72fF
+C23 gp gnd 1.56fF
+C24 bp gnd 6.58fF
+C25 vdd gnd 6.08fF
+C26 dr gnd 0.18fF
+C27 dl gnd 0.18fF
+.ends
+
+.subckt nautanauta_edge gp vreg im ip xm op xp om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 xp om 0.98fF
+C1 bp hi 0.28fF
+C2 xm op 0.98fF
+C3 gp vreg 1.01fF
+C4 hih vdd 0.45fF
+C5 vreg hi 0.11fF
+C6 bp vreg 0.23fF
+C7 vreg vdd 0.22fF
+C8 vreg gnd 0.44fF
+C9 bp gnd 4.35fF
+C10 vdd gnd 4.01fF
+C11 lo gnd 0.84fF
+C12 hi gnd 0.46fF
+C13 hih gnd 0.46fF
+.ends
+
+.subckt nautanauta ip im op om vdd gp bp vreg gnd
+Xnautanauta_cell_0 im im xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_1 xp xm xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_2 xm xp xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_3 ip ip xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_5 ip xp om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_4 xm im op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_6 om op om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_7 op om op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_8 xp ip om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_20 xm im op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_30 ip xp om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_31 xm im op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_9 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_21 ip xp om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_10 xm im op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_22 om op om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_11 ip xp om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_23 op om op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_12 om op om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_24 xp ip om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_13 op om op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_25 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_14 xp ip om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_26 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_15 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_16 im im xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_27 xp ip om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_18 xm xp xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_17 xp xm xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_28 op om op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_29 om op om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_19 ip ip xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_edge_0 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
+Xnautanauta_edge_1 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
+X0 om xp mim_2p0fF c_width=199.8u c_length=7.2u
+X1 op xm mim_2p0fF c_width=199.8u c_length=7.2u
+C0 op bp 0.15fF
+C1 op xm 47.85fF
+C2 ip im 3.03fF
+C3 gp vreg -2.33fF
+C4 om xm 0.80fF
+C5 om op 1.03fF
+C6 xp xm 0.57fF
+C7 xp op 1.07fF
+C8 vdd gp 0.35fF
+C9 vdd vreg 0.76fF
+C10 om xp 50.10fF
+C11 im xm 0.18fF
+C12 gp xm 0.36fF
+C13 ip xm 1.22fF
+C14 im op 0.66fF
+C15 gp op 0.50fF
+C16 vreg xm 0.49fF
+C17 ip op 0.84fF
+C18 op vreg 0.92fF
+C19 om im 1.05fF
+C20 om ip 0.93fF
+C21 om vreg 0.28fF
+C22 xp im 1.38fF
+C23 vdd xm 3.77fF
+C24 ip xp 0.86fF
+C25 vdd op 3.66fF
+C26 xp vreg 0.15fF
+C27 bp gnd 195.93fF
+C28 im gnd 49.01fF
+C29 vdd gnd 172.70fF
+C30 om gnd 84.86fF
+C31 ip gnd 48.72fF
+C32 op gnd 69.89fF
+C33 xm gnd 37.41fF
+C34 xp gnd 42.00fF
+C35 vreg gnd 8.66fF
+C36 gp gnd 44.30fF
+.ends
+

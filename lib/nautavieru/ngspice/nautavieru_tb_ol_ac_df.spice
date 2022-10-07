@@ -1,0 +1,63 @@
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+
+.include "../../inv/ngspice/inv.spice"
+.include "../magic/nautavieru.spice"
+
+.param pVDD = 5.0
+.param pIB  = 45.0u
+
+VDD vdd 0 dc {pVDD}
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+
+vin in cm dc 0 ac 1
+eip ip cm in cm  0.5
+eim im cm in cm -0.5
+
+ib vdd ib {pIB}
+xb ib      vdd gp bp vreg vss inv_bias
+xq q   q   vdd gp bp vreg vss inv0
+
+vd0 vdd vd0 0
+x0 xp xm op om vd0 gp bp vreg vss nautavieru
+lp xp om 1T
+lm xm op 1T
+cip ip xp 1T
+cim im xm 1T
+cp op cm 10p
+cm om cm 10p
+
+.option gmin=1e-15
+.control
+	op
+	ac dec 10 1k 1T
+
+	let av = db(ac1.op-ac1.om)	
+	let ph = cphase(ac1.op-ac1.om)*180/pi
+
+	let id = op1.i(vd0)
+
+	plot av
+	plot ph
+
+	meas ac gbw when av=0
+
+	print id
+	
+	meas ac pm find ph at=gbw
+	
+	meas ac av_1khz find av at=1k
+	
+	let fom = 100*gbw*10p/id
+	
+	print fom
+	
+*	wrdata ../data/ac_df_av.txt av0 av1 av2 av3 av4 av5 av6 av7
+*	wrdata ../data/ac_df_ph.txt ph0 ph1 ph2 ph3 ph4 ph5 ph6 ph7
+		
+.endc
+
+.end

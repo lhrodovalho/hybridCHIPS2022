@@ -1,0 +1,438 @@
+magic
+tech gf180mcuC
+timestamp 1665007256
+<< via2 >>
+rect -288 276 -276 300
+rect 312 276 324 300
+rect 672 276 684 300
+rect 792 276 804 300
+rect 1152 276 1164 300
+rect 1272 276 1284 300
+rect 1632 276 1644 300
+rect 2232 276 2244 300
+rect -888 252 -876 264
+rect -768 252 -756 264
+rect 192 252 204 264
+rect 1752 252 1764 264
+rect 2712 252 2724 264
+rect 2832 252 2844 264
+rect -288 216 -276 240
+rect 312 216 324 240
+rect 672 216 684 240
+rect 792 216 804 240
+rect 1152 216 1164 240
+rect 1272 216 1284 240
+rect 1632 216 1644 240
+rect 2232 216 2244 240
+rect -168 120 -156 132
+rect -48 120 -36 132
+rect 1992 120 2004 132
+rect 2112 120 2124 132
+rect -408 12 -396 36
+rect 432 12 444 36
+rect 552 12 564 36
+rect 912 12 924 36
+rect 1032 12 1044 36
+rect 1392 12 1404 36
+rect 1512 12 1524 36
+rect 2352 12 2364 36
+rect -648 -12 -636 0
+rect -528 -12 -516 0
+rect 72 -12 84 0
+rect 1872 -12 1884 0
+rect 2472 -12 2484 0
+rect 2592 -12 2604 0
+rect -408 -48 -396 -24
+rect 432 -48 444 -24
+rect 552 -48 564 -24
+rect 912 -48 924 -24
+rect 1032 -48 1044 -24
+rect 1392 -48 1404 -24
+rect 1512 -48 1524 -24
+rect 2352 -48 2364 -24
+<< mimcap >>
+rect -1020 792 2976 840
+rect -1020 708 -1008 792
+rect -924 708 2976 792
+rect -1020 696 2976 708
+rect -1020 -252 2976 -240
+rect -1020 -336 -1008 -252
+rect -924 -336 2976 -252
+rect -1020 -384 2976 -336
+<< mimcapcontact >>
+rect -1008 708 -924 792
+rect -1008 -336 -924 -252
+<< metal3 >>
+rect -1044 540 -1032 600
+rect -1044 486 -1032 504
+rect -1044 468 -1032 480
+rect -1044 336 -1032 348
+rect -1104 298 -1032 300
+rect -1104 272 -1102 298
+rect -1094 272 -1054 298
+rect -1046 272 -1032 298
+rect -1104 270 -1032 272
+rect -1104 262 -1032 264
+rect -1104 254 -1078 262
+rect -1070 254 -1032 262
+rect -1104 252 -1032 254
+rect -1104 244 -1032 246
+rect -1104 218 -1102 244
+rect -1094 218 -1054 244
+rect -1046 218 -1032 244
+rect -1104 216 -1032 218
+rect -1044 168 -1032 180
+rect -1044 120 -1032 132
+rect -1044 72 -1032 84
+rect -1104 34 -1032 36
+rect -1104 8 -1102 34
+rect -1094 8 -1054 34
+rect -1046 8 -1032 34
+rect -1104 6 -1032 8
+rect -1104 -2 -1032 0
+rect -1104 -10 -1078 -2
+rect -1070 -10 -1032 -2
+rect -1104 -12 -1032 -10
+rect -1104 -20 -1032 -18
+rect -1104 -46 -1102 -20
+rect -1094 -46 -1054 -20
+rect -1046 -46 -1032 -20
+rect -1104 -48 -1032 -46
+rect -1044 -168 -1032 -108
+<< via3 >>
+rect -1102 272 -1094 298
+rect -1054 272 -1046 298
+rect -24 276 -12 300
+rect 1968 276 1980 300
+rect -1078 254 -1070 262
+rect -864 252 -852 264
+rect -672 252 -660 264
+rect -312 252 -300 264
+rect -264 252 -252 264
+rect 288 252 300 264
+rect 336 252 348 264
+rect 1608 252 1620 264
+rect 1656 252 1668 264
+rect 2208 252 2220 264
+rect 2256 252 2268 264
+rect 2616 252 2628 264
+rect 2808 252 2820 264
+rect -1102 218 -1094 244
+rect -1054 218 -1046 244
+rect -24 216 -12 240
+rect 1968 216 1980 240
+rect -624 168 -612 180
+rect -504 168 -492 180
+rect 648 168 660 180
+rect 696 168 708 180
+rect 768 168 780 180
+rect 816 168 828 180
+rect 1128 168 1140 180
+rect 1176 168 1188 180
+rect 1248 168 1260 180
+rect 1296 168 1308 180
+rect 2448 168 2460 180
+rect 2568 168 2580 180
+rect -144 120 -132 132
+rect -72 120 -60 132
+rect 48 120 60 132
+rect 96 120 108 132
+rect 168 120 180 132
+rect 216 120 228 132
+rect 1728 120 1740 132
+rect 1776 120 1788 132
+rect 1848 120 1860 132
+rect 1896 120 1908 132
+rect 2016 120 2028 132
+rect 2088 120 2100 132
+rect -912 72 -900 84
+rect -792 72 -780 84
+rect 528 72 540 84
+rect 576 72 588 84
+rect 888 72 900 84
+rect 936 72 948 84
+rect 1008 72 1020 84
+rect 1056 72 1068 84
+rect 1368 72 1380 84
+rect 1416 72 1428 84
+rect 2736 72 2748 84
+rect 2856 72 2868 84
+rect -1102 8 -1094 34
+rect -1054 8 -1046 34
+rect -192 12 -180 36
+rect 2136 12 2148 36
+rect -1078 -10 -1070 -2
+rect -744 -12 -732 0
+rect -552 -12 -540 0
+rect -432 -12 -420 0
+rect -384 -12 -372 0
+rect 408 -12 420 0
+rect 456 -12 468 0
+rect 1488 -12 1500 0
+rect 1536 -12 1548 0
+rect 2328 -12 2340 0
+rect 2376 -12 2388 0
+rect 2496 -12 2508 0
+rect 2688 -12 2700 0
+rect -1102 -46 -1094 -20
+rect -1054 -46 -1046 -20
+rect -192 -48 -180 -24
+rect 2136 -48 2148 -24
+<< metal4 >>
+rect -1032 840 2988 852
+rect -1104 696 -1092 708
+rect -1104 648 -1092 684
+rect -1104 298 -1092 636
+rect -1104 272 -1102 298
+rect -1094 272 -1092 298
+rect -1104 244 -1092 272
+rect -1104 218 -1102 244
+rect -1094 218 -1092 244
+rect -1104 216 -1092 218
+rect -1080 672 -1068 708
+rect -1080 262 -1068 660
+rect -1080 254 -1078 262
+rect -1070 254 -1068 262
+rect -1080 216 -1068 254
+rect -1056 696 -1044 708
+rect -1056 648 -1044 684
+rect -1032 696 -1020 840
+rect 2976 696 2988 840
+rect -1032 672 2988 696
+rect -1032 660 -1020 672
+rect 2976 660 2988 672
+rect -1056 298 -1044 636
+rect -1056 272 -1054 298
+rect -1046 272 -1044 298
+rect -1056 244 -1044 272
+rect -1056 218 -1054 244
+rect -1046 218 -1044 244
+rect -1056 216 -1044 218
+rect -1104 34 -1092 36
+rect -1104 8 -1102 34
+rect -1094 8 -1092 34
+rect -1104 -20 -1092 8
+rect -1104 -46 -1102 -20
+rect -1094 -46 -1092 -20
+rect -1104 -180 -1092 -46
+rect -1104 -228 -1092 -192
+rect -1104 -252 -1092 -240
+rect -1080 -2 -1068 36
+rect -1080 -10 -1078 -2
+rect -1070 -10 -1068 -2
+rect -1080 -204 -1068 -10
+rect -1080 -252 -1068 -216
+rect -1056 34 -1044 36
+rect -1056 8 -1054 34
+rect -1046 8 -1044 34
+rect -1056 -20 -1044 8
+rect -1056 -46 -1054 -20
+rect -1046 -46 -1044 -20
+rect -1056 -180 -1044 -46
+rect -1056 -228 -1044 -192
+rect -1056 -252 -1044 -240
+rect -1032 -216 -1020 -204
+rect 2976 -216 2988 -204
+rect -1032 -240 2988 -216
+rect -1032 -384 -1020 -240
+rect 2976 -384 2988 -240
+rect -1032 -396 2988 -384
+<< via4 >>
+rect -1104 684 -1092 696
+rect -1104 636 -1092 648
+rect -1080 660 -1068 672
+rect -1056 684 -1044 696
+rect -1020 660 2976 672
+rect -1056 636 -1044 648
+rect -1104 -192 -1092 -180
+rect -1104 -240 -1092 -228
+rect -1080 -216 -1068 -204
+rect -1056 -192 -1044 -180
+rect -1056 -240 -1044 -228
+rect -1020 -216 2976 -204
+<< metal5 >>
+rect -1032 792 2988 852
+rect -1032 708 -1008 792
+rect -924 708 2988 792
+rect -1032 696 2988 708
+rect -1116 684 -1104 696
+rect -1092 684 -1056 696
+rect -1044 684 2988 696
+rect -1116 660 -1080 672
+rect -1068 660 -1020 672
+rect 2976 660 2988 672
+rect -1116 636 -1104 648
+rect -1092 636 -1056 648
+rect -1044 636 2988 648
+rect -1116 -192 -1104 -180
+rect -1092 -192 -1056 -180
+rect -1044 -192 2988 -180
+rect -1116 -216 -1080 -204
+rect -1068 -216 -1020 -204
+rect 2976 -216 2988 -204
+rect -1116 -240 -1104 -228
+rect -1092 -240 -1056 -228
+rect -1044 -240 2988 -228
+rect -1032 -252 2988 -240
+rect -1032 -336 -1008 -252
+rect -924 -336 2988 -252
+rect -1032 -396 2988 -336
+use nautavieru_cell  nautavieru_cell_0
+timestamp 1664012841
+transform 1 0 -228 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_1
+timestamp 1664012841
+transform 1 0 12 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_2
+timestamp 1664012841
+transform 1 0 -108 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_3
+timestamp 1664012841
+transform 1 0 132 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_4
+timestamp 1664012841
+transform 1 0 252 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_5
+timestamp 1664012841
+transform 1 0 372 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_6
+timestamp 1664012841
+transform 1 0 492 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_7
+timestamp 1664012841
+transform 1 0 612 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_8
+timestamp 1664012841
+transform 1 0 732 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_9
+timestamp 1664012841
+transform 1 0 972 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_10
+timestamp 1664012841
+transform 1 0 1092 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_11
+timestamp 1664012841
+transform 1 0 852 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_12
+timestamp 1664012841
+transform 1 0 1212 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_13
+timestamp 1664012841
+transform 1 0 1332 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_14
+timestamp 1664012841
+transform 1 0 1452 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_15
+timestamp 1664012841
+transform 1 0 1572 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_16
+timestamp 1664012841
+transform -1 0 2184 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_17
+timestamp 1664012841
+transform -1 0 2064 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_18
+timestamp 1664012841
+transform -1 0 1944 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_19
+timestamp 1664012841
+transform -1 0 1824 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_20
+timestamp 1664012841
+transform -1 0 1704 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_21
+timestamp 1664012841
+transform -1 0 1584 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_22
+timestamp 1664012841
+transform -1 0 1464 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_23
+timestamp 1664012841
+transform -1 0 1224 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_24
+timestamp 1664012841
+transform -1 0 1344 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_25
+timestamp 1664012841
+transform -1 0 984 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_26
+timestamp 1664012841
+transform -1 0 1104 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_27
+timestamp 1664012841
+transform -1 0 744 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_28
+timestamp 1664012841
+transform -1 0 864 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_29
+timestamp 1664012841
+transform -1 0 504 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_30
+timestamp 1664012841
+transform -1 0 624 0 1 -36
+box -720 -132 -588 660
+use nautavieru_cell  nautavieru_cell_31
+timestamp 1664012841
+transform -1 0 384 0 1 -36
+box -720 -132 -588 660
+use nautavieru_edge  nautavieru_edge_0
+timestamp 1664012880
+transform 1 0 -276 0 1 -36
+box -756 -132 -660 660
+use nautavieru_edge  nautavieru_edge_1
+timestamp 1664012880
+transform -1 0 2232 0 1 -36
+box -756 -132 -660 660
+<< labels >>
+rlabel metal3 -1044 -168 -1032 -108 0 gnd
+port 9 nsew
+rlabel metal3 -1044 72 -1032 84 0 ip
+port 1 nsew
+rlabel metal3 -1044 -48 -1032 -36 0 om
+port 4 nsew
+rlabel metal3 -1044 -12 -1032 0 0 xp
+rlabel metal3 -1044 168 -1032 180 0 im
+port 2 nsew
+rlabel metal3 -1044 288 -1032 300 0 op
+port 3 nsew
+rlabel metal3 -1044 540 -1032 600 0 vdd
+port 5 nsew
+rlabel metal3 -1044 468 -1032 480 0 gp
+port 6 nsew
+rlabel metal3 -1044 336 -1032 348 0 bp
+port 7 nsew
+rlabel metal3 -1044 492 -1032 504 0 vreg
+port 8 nsew
+rlabel metal3 -1044 252 -1032 264 0 xm
+rlabel metal3 -1044 120 -1032 132 0 x
+<< end >>

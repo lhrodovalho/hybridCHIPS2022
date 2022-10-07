@@ -1,0 +1,43 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuA/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuA/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuA/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+
+.include "../../inv/ngspice/inv.spice"
+.include "../magic/nautavieru.spice"
+
+.param pVDD = 5.0
+.param pIB  = 45.0u
+
+VDD vdd 0 dc {pVDD}
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+
+vin in cm dc 0 ac 1
+eip ip cm in cm  1.0
+eim im cm in cm  1.0
+
+ib vdd ib {pIB}
+xb ib      vdd gp bp vreg vss inv_bias
+xq q   q   vdd gp bp vreg vss inv0
+
+x0 ip im op om vdd gp bp vreg vss nautavieru
+
+.param dx = 1.5
+.dc vin {-dx} {dx} {dx/1001}
+.option gmin = 1e-15
+.control
+	run
+	
+	let vi = in
+	let vo = (op+om)/2
+	let av = abs(deriv(vo))
+	plot vo vs vi vi vs vi q vs vi vreg vs vi
+	plot op vs vi om vs vi vi vs vi q vs vi vreg vs vi
+	plot av vs vi ylog ylimit 0.01 10
+		
+.endc
+
+.end

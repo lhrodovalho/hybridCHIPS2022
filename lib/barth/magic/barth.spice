@@ -1,0 +1,108 @@
+* NGSPICE file created from barth.ext - technology: gf180mcuC
+
+.subckt barth_cell inl inr out gp vreg op im ip om vss vdd m3_n7200_1320# bp
+X0 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X1 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X4 d2 inr out vss nmos_3p3 w=1.8u l=0.6u
+X5 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X6 d1 inl vss vss nmos_3p3 w=1.8u l=0.6u
+X7 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X8 vss inr d2 vss nmos_3p3 w=1.8u l=0.6u
+X9 out inl d1 vss nmos_3p3 w=1.8u l=0.6u
+X10 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+C0 out om 0.11fF
+C1 inr om 0.18fF
+C2 om inl 0.18fF
+C3 out op 0.11fF
+C4 inr op 0.20fF
+C5 op inl 0.20fF
+C6 inr out 0.19fF
+C7 out vreg 0.78fF
+C8 out inl 0.17fF
+C9 out bp 0.15fF
+C10 inr inl 0.55fF
+C11 vreg gp 1.98fF
+C12 inr bp 0.32fF
+C13 bp vreg 0.92fF
+C14 bp inl 0.32fF
+C15 vreg vdd 1.41fF
+C16 vdd gp 0.66fF
+C17 out vss 1.53fF
+C18 inr vss 2.28fF
+C19 inl vss 2.29fF
+C20 vreg vss 0.72fF
+C21 gp vss 1.56fF
+C22 bp vss 6.58fF
+C23 vdd vss 6.08fF
+C24 d2 vss 0.18fF
+C25 d1 vss 0.18fF
+.ends
+
+.subckt barth_edge gp vreg op x im ip om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 bp vreg 0.23fF
+C1 vdd vreg 0.22fF
+C2 hi vreg 0.11fF
+C3 vreg gp 1.01fF
+C4 hi bp 0.28fF
+C5 vdd hih 0.45fF
+C6 vreg gnd 0.44fF
+C7 bp gnd 4.35fF
+C8 vdd gnd 4.01fF
+C9 lo gnd 0.84fF
+C10 hi gnd 0.46fF
+C11 hih gnd 0.46fF
+.ends
+
+.subckt barth ip im op om vdd gp bp vreg gnd
+Xbarth_cell_10 ip x x gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_2 ip x x gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_11 im x op gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_3 x im x gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_4 ip x om gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_5 x im op gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_7 ip x om gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_6 x im op gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_8 x im x gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_9 x ip om gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_edge_0 gp vreg op x im ip om vdd gnd bp barth_edge
+Xbarth_edge_1 gp vreg op x im ip om vdd gnd bp barth_edge
+Xbarth_cell_0 im x op gp vreg op im ip om gnd vdd x bp barth_cell
+Xbarth_cell_1 x ip om gp vreg op im ip om gnd vdd x bp barth_cell
+C0 bp gnd -1.22fF
+C1 vdd gp 0.17fF
+C2 x gnd 0.21fF
+C3 vreg gp -0.88fF
+C4 ip om 0.27fF
+C5 im om 0.40fF
+C6 im ip 0.79fF
+C7 vdd gnd -0.77fF
+C8 ip op 0.24fF
+C9 im op 0.38fF
+C10 vreg x 0.16fF
+C11 vreg gnd 0.20fF
+C12 x om 0.65fF
+C13 x ip 0.48fF
+C14 im x 0.25fF
+C15 vreg vdd 0.30fF
+C16 x op 0.55fF
+C17 om gnd -0.53fF
+C18 ip gnd -0.42fF
+C19 gnd op -0.31fF
+C20 gnd 0 -18.78fF
+C21 vdd 0 70.19fF
+C22 om 0 20.05fF
+C23 ip 0 22.91fF
+C24 im 0 22.89fF
+C25 op 0 19.60fF
+C26 gp 0 16.84fF
+C27 bp 0 79.74fF
+C28 x 0 39.82fF
+C29 vreg 0 3.28fF
+.ends
+

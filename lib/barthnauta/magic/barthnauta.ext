@@ -1,0 +1,2139 @@
+timestamp 1663414815
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use barthnauta_cell barthnauta_cell_0 1 0 -2280 0 1 -360
+use barthnauta_edge barthnauta_edge_0 1 0 -2760 0 1 -360
+use barthnauta_cell barthnauta_cell_1 1 0 -1080 0 1 -360
+use barthnauta_cell barthnauta_cell_2 1 0 120 0 1 -360
+use barthnauta_cell barthnauta_cell_3 1 0 1320 0 1 -360
+use barthnauta_cell barthnauta_cell_4 1 0 2520 0 1 -360
+use barthnauta_cell barthnauta_cell_5 1 0 3720 0 1 -360
+use barthnauta_cell barthnauta_cell_6 1 0 4920 0 1 -360
+use barthnauta_cell barthnauta_cell_7 1 0 6120 0 1 -360
+use barthnauta_cell barthnauta_cell_15 -1 0 -5760 0 1 -360
+use barthnauta_cell barthnauta_cell_14 -1 0 -4560 0 1 -360
+use barthnauta_cell barthnauta_cell_13 -1 0 -3360 0 1 -360
+use barthnauta_cell barthnauta_cell_12 -1 0 -2160 0 1 -360
+use barthnauta_cell barthnauta_cell_11 -1 0 -960 0 1 -360
+use barthnauta_cell barthnauta_cell_10 -1 0 240 0 1 -360
+use barthnauta_cell barthnauta_cell_9 -1 0 1440 0 1 -360
+use barthnauta_cell barthnauta_cell_8 -1 0 2640 0 1 -360
+use barthnauta_edge barthnauta_edge_1 -1 0 3120 0 1 -360
+port "gnd" 9 -10440 -1680 -10320 -1080 m3
+port "om" 4 -10440 -480 -10320 120 m3
+port "ip" 1 -10440 480 -10320 600 m3
+port "im" 2 -10440 1440 -10320 1560 m3
+port "op" 3 -10440 1920 -10320 2520 m3
+port "bp" 7 -10440 2880 -10320 3000 m3
+port "gp" 6 -10440 4200 -10320 4320 m3
+port "vreg" 8 -10440 4440 -10320 4560 m3
+port "vdd" 5 -10440 4920 -10320 5520 m3
+node "gnd" 0 111.909 -10440 -1680 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_4080_n480#" 1 154.065 4080 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_3360_n480#" 1 113.156 3360 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n3120_n480#" 1 113.156 -3120 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n3840_n480#" 1 154.065 -3840 -480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "om" 0 106.605 -10440 -480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_7680_480#" 0 54.8624 7680 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_6960_480#" 0 54.8624 6960 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_2160_480#" 0 61.6396 2160 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n1920_480#" 0 61.6396 -1920 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6720_480#" 0 54.8624 -6720 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7440_480#" 0 54.8624 -7440 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "ip" 0 25.4741 -10440 480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_8880_960#" 0 54.8624 8880 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_8160_960#" 0 54.0412 8160 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_6480_960#" 0 45.312 6480 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_5760_960#" 0 45.3207 5760 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_1680_960#" 0 54.8624 1680 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_960_960#" 0 54.8464 960 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n720_960#" 0 54.8464 -720 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n1440_960#" 0 54.8624 -1440 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5520_960#" 0 45.3207 -5520 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6240_960#" 0 45.312 -6240 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7920_960#" 0 54.0412 -7920 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n8640_960#" 0 54.8624 -8640 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "x" 0 25.4741 -10440 960 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_9360_1440#" 0 61.1742 9360 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_5280_1440#" 0 61.1742 5280 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_480_1440#" 0 54.8624 480 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n240_1440#" 0 54.8624 -240 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5040_1440#" 0 61.1742 -5040 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n9120_1440#" 0 60.3107 -9120 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "im" 0 24.8571 -10440 1440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_4560_1920#" 1 148.67 4560 1920 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_2880_1920#" 1 188.081 2880 1920 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n2640_1920#" 1 188.081 -2640 1920 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "m3_n4320_1920#" 1 148.67 -4320 1920 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0
+node "op" 0 103.945 -10440 1920 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_4920_2880#" 4 947.558 4920 2880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 691200 11760 0 0 0 0
+node "bp" 4 936.878 -10440 2880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 705600 12000 0 0 0 0
+node "gp" 0 27.8306 -10440 4200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "vreg" 0 33.0726 -10440 4440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 600 0 0 0 0
+node "vdd" 0 110.21 -10440 4920 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m2_7920_n480#" 1 255.867 7920 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_3120_n480#" 1 206.105 3120 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_1920_n480#" 1 241.897 1920 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n1680_n480#" 1 241.897 -1680 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n2880_n480#" 1 206.105 -2880 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n7680_n480#" 1 255.867 -7680 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_6720_960#" 0 72.777 6720 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_5520_960#" 0 73.0812 5520 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n5280_960#" 0 73.0812 -5280 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n6480_960#" 0 72.777 -6480 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_9120_1920#" 1 250.563 9120 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_4320_1920#" 1 218.554 4320 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_720_1920#" 1 241.897 720 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n480_1920#" 1 241.897 -480 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n4080_1920#" 1 218.554 -4080 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n8880_1920#" 1 250.065 -8880 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m1_10320_2880#" 0 72.4289 10320 2880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+node "m1_n10080_2880#" 0 72.4289 -10080 2880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m3_n8640_960#" "m3_n7920_960#" 14.844
+cap "m3_n1440_960#" "m3_n720_960#" 14.844
+cap "op" "m2_n8880_1920#" 14.2068
+cap "m3_3360_n480#" "m2_1920_n480#" 4.84416
+cap "m3_6480_960#" "m2_6720_960#" 35.2212
+cap "m3_8160_960#" "m3_6480_960#" 2.42093
+cap "m3_4920_2880#" "m3_5280_1440#" 4.7988
+cap "im" "m3_n9120_1440#" 3.99826
+cap "m3_4920_2880#" "m2_9120_1920#" 26.2089
+cap "m3_n9120_1440#" "bp" 4.7988
+cap "m3_9360_1440#" "m3_4920_2880#" 4.7988
+cap "m3_5760_960#" "m2_5520_960#" 35.2244
+cap "m2_n1680_n480#" "m2_n2880_n480#" 44.8651
+cap "m3_n6240_960#" "m3_n7920_960#" 2.42093
+cap "m2_n480_1920#" "m2_720_1920#" 44.8651
+cap "m3_7680_480#" "m3_6960_480#" 14.844
+cap "m3_960_960#" "m3_n720_960#" 4.78816
+cap "m3_3360_n480#" "m2_3120_n480#" 176.122
+cap "m3_n6240_960#" "m2_n5280_960#" 2.4831
+cap "vreg" "vdd" 10.258
+cap "m3_6480_960#" "m2_5520_960#" 2.4831
+cap "m3_n5040_1440#" "bp" 4.7988
+cap "m3_8160_960#" "m3_8880_960#" 14.844
+cap "m3_6480_960#" "m3_5760_960#" 14.844
+cap "m3_2880_1920#" "m2_4320_1920#" 21.4182
+cap "m3_n7920_960#" "m2_n6480_960#" 4.28364
+cap "m3_4560_1920#" "m2_4320_1920#" 176.106
+cap "bp" "m1_n10080_2880#" 7.28572
+cap "m3_n3120_n480#" "m2_n1680_n480#" 4.84416
+cap "m3_8160_960#" "m2_6720_960#" 4.28364
+cap "m3_n6240_960#" "m3_n5520_960#" 14.844
+cap "m3_n5520_960#" "m2_n5280_960#" 35.2244
+cap "m3_960_960#" "m3_1680_960#" 14.844
+cap "m3_n6240_960#" "m2_n6480_960#" 35.2212
+cap "m3_4080_n480#" "m2_3120_n480#" 12.4155
+cap "m2_n5280_960#" "m2_n6480_960#" 3.66909
+cap "m3_n3840_n480#" "m2_n2880_n480#" 12.4155
+cap "m3_n4320_1920#" "m3_n2640_1920#" 12.1046
+cap "bp" "m2_n8880_1920#" 26.2089
+cap "m3_n3120_n480#" "m2_n2880_n480#" 176.122
+cap "im" "op" 10.258
+cap "m3_2880_1920#" "m3_4560_1920#" 12.1046
+cap "m1_10320_2880#" "m3_4920_2880#" 7.28572
+cap "m3_4080_n480#" "m3_3360_n480#" 74.2198
+cap "op" "bp" 10.258
+cap "gp" "bp" 3.0774
+cap "m3_n4320_1920#" "m2_n4080_1920#" 176.106
+cap "vreg" "gp" 61.548
+cap "m3_n2640_1920#" "m2_n4080_1920#" 21.4182
+cap "ip" "om" 10.258
+cap "m3_n5520_960#" "m2_n6480_960#" 2.4831
+cap "m3_480_1440#" "m3_n240_1440#" 14.844
+cap "om" "gnd" 6.1548
+cap "m3_n3840_n480#" "m3_n3120_n480#" 74.2198
+cap "m2_6720_960#" "m2_5520_960#" 3.66909
+cap "ip" "x" 10.258
+cap "m3_5760_960#" "m2_6720_960#" 2.4831
+cap "im" "x" 10.258
+cap "m3_n6720_480#" "m3_n7440_480#" 14.844
+cap "m2_3120_n480#" "m2_1920_n480#" 44.8651
+cap "barthnauta_cell_0/out" "barthnauta_edge_0/lo" 0.484943
+cap "barthnauta_cell_0/d2" "barthnauta_cell_0/gnd" 1.44586
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/om" 29.4853
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/om" 16.8856
+cap "barthnauta_cell_0/d1" "barthnauta_edge_0/lo" 1.9842
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" 5.67225
+cap "barthnauta_cell_0/gnd" "barthnauta_edge_0/lo" 3.68594
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/gnd" 2.28107
+cap "barthnauta_cell_0/inl" "barthnauta_edge_0/lo" 38.0111
+cap "barthnauta_cell_0/d2" "barthnauta_edge_0/lo" 0.333599
+cap "barthnauta_cell_0/d1" "barthnauta_cell_0/gnd" 4.08313
+cap "barthnauta_cell_0/om" "barthnauta_edge_0/lo" 7.0802
+cap "barthnauta_cell_0/inr" "barthnauta_edge_0/lo" 4.35616
+cap "barthnauta_cell_1/d1" "barthnauta_cell_0/gnd" 1.11991
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" 44.4154
+cap "barthnauta_cell_0/d1" "barthnauta_cell_0/om" 1.57978
+cap "barthnauta_cell_0/d2" "barthnauta_cell_0/om" 3.75611
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inl" 0.318933
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/inl" 10.7734
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/om" 32.5689
+cap "barthnauta_cell_2/d1" "barthnauta_cell_0/gnd" 1.11991
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/d2" 0.768795
+cap "barthnauta_cell_0/d1" "barthnauta_cell_1/d2" 0.00500446
+cap "barthnauta_cell_1/d1" "barthnauta_cell_2/d1" 0.333599
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/d2" 1.4046
+cap "barthnauta_edge_0/lo" "barthnauta_cell_0/d2" 0.811798
+cap "barthnauta_cell_2/d2" "barthnauta_cell_1/d1" 0.00500446
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" -0.036714
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inr" 10.7791
+cap "barthnauta_cell_0/inl" "barthnauta_cell_1/d1" 0.768795
+cap "barthnauta_edge_0/lo" "barthnauta_cell_0/inr" 1.81956
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/gnd" -12.8717
+cap "barthnauta_cell_1/d1" "barthnauta_cell_0/om" 4.26326e-14
+cap "barthnauta_cell_0/d2" "barthnauta_cell_0/gnd" 0.150681
+cap "barthnauta_cell_0/d2" "barthnauta_cell_1/d1" 1.21898
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/om" 4.50057
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/gnd" 5.11662
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" 15.5367
+cap "barthnauta_cell_0/ip" "barthnauta_cell_1/d1" 0.768795
+cap "barthnauta_cell_0/inr" "barthnauta_cell_1/d1" 1.65535
+cap "barthnauta_edge_0/lo" "barthnauta_cell_0/gnd" 2.95745
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/out" 1.59082
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/inr" 8.57936
+cap "barthnauta_cell_0/d2" "barthnauta_cell_1/d2" 0.333599
+cap "barthnauta_cell_0/out" "barthnauta_edge_0/lo" 6.64529
+cap "barthnauta_cell_0/d1" "barthnauta_cell_0/om" 1.26887
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/d1" 0.0869354
+cap "barthnauta_cell_1/d1" "barthnauta_cell_0/gnd" 3.42094
+cap "barthnauta_cell_0/d1" "barthnauta_cell_0/inr" 0.768795
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/gnd" 17.4124
+cap "barthnauta_cell_0/out" "barthnauta_cell_1/d1" 3.75611
+cap "barthnauta_cell_1/d2" "barthnauta_cell_0/gnd" 1.43112
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/om" 6.06431
+cap "barthnauta_cell_0/d1" "barthnauta_cell_0/gnd" 0.824307
+cap "barthnauta_cell_0/out" "barthnauta_cell_1/d2" 1.10505
+cap "barthnauta_cell_0/d1" "barthnauta_cell_1/d1" 0.667198
+cap "barthnauta_cell_0/inr" "barthnauta_cell_3/inr" 1.59082
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/ip" 0.814511
+cap "barthnauta_cell_2/d1" "barthnauta_cell_3/inr" 0.0869354
+cap "barthnauta_cell_2/d1" "barthnauta_cell_0/inr" 1.70141
+cap "barthnauta_cell_0/ip" "barthnauta_cell_3/inr" 0.318933
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/ip" 31.4281
+cap "barthnauta_cell_2/d1" "barthnauta_cell_0/ip" 1.4046
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/om" 6.09139
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/gnd" 0.0340466
+cap "barthnauta_cell_2/d1" "barthnauta_cell_0/om" 3.75611
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/ip" 32.5689
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inl" 0.318933
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" 28.2365
+cap "barthnauta_cell_1/d1" "barthnauta_cell_0/inr" 1.10505
+cap "barthnauta_cell_0/d2" "barthnauta_cell_0/gnd" 1.11991
+cap "barthnauta_cell_0/out" "barthnauta_cell_1/d2" 0.16382
+cap "barthnauta_cell_2/d1" "barthnauta_cell_0/gnd" 3.42094
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/gnd" 15.4496
+cap "barthnauta_cell_3/d1" "barthnauta_cell_0/inr" 3.27117
+cap "barthnauta_cell_1/d1" "barthnauta_cell_2/d1" 0.333599
+cap "barthnauta_cell_0/inr" "barthnauta_cell_1/d2" 5.2937
+cap "barthnauta_cell_3/d1" "barthnauta_cell_2/d1" 0.333599
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/gnd" -31.9335
+cap "barthnauta_cell_2/d1" "barthnauta_cell_1/d2" 1.21898
+cap "barthnauta_cell_0/d2" "barthnauta_cell_1/d2" 0.333599
+cap "barthnauta_cell_2/d2" "barthnauta_cell_0/om" 1.10505
+cap "barthnauta_cell_1/d2" "barthnauta_cell_0/ip" 1.4046
+cap "barthnauta_cell_0/om" "barthnauta_cell_1/d2" 3.90799e-14
+cap "barthnauta_cell_0/d1" "barthnauta_cell_1/d2" 0.00500446
+cap "barthnauta_cell_3/d2" "barthnauta_cell_0/inr" 1.10505
+cap "barthnauta_cell_2/d2" "barthnauta_cell_0/gnd" 1.43112
+cap "barthnauta_cell_1/d1" "barthnauta_cell_0/gnd" 1.43112
+cap "barthnauta_cell_1/d2" "barthnauta_cell_0/inl" 0.0869354
+cap "barthnauta_cell_3/d1" "barthnauta_cell_0/gnd" 1.11991
+cap "barthnauta_cell_3/d2" "barthnauta_cell_2/d1" 0.00500446
+cap "barthnauta_cell_1/d2" "barthnauta_cell_0/gnd" 0.145676
+cap "barthnauta_cell_2/d2" "barthnauta_cell_1/d2" 0.333599
+cap "barthnauta_cell_1/out" "barthnauta_cell_3/inr" 17.326
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/d1" 0.609489
+cap "barthnauta_cell_3/d2" "barthnauta_cell_1/gnd" 2.78524
+cap "barthnauta_cell_1/inl" "barthnauta_cell_4/d2" 1.10505
+cap "barthnauta_cell_3/d1" "barthnauta_cell_1/out" 0.0869354
+cap "barthnauta_cell_2/d2" "barthnauta_cell_3/inr" 0.768795
+cap "barthnauta_cell_1/inl" "barthnauta_cell_4/inl" 8.75544
+cap "barthnauta_cell_1/out" "barthnauta_cell_3/d2" 0.768795
+cap "barthnauta_cell_4/d1" "barthnauta_cell_1/inl" 3.27117
+cap "barthnauta_cell_2/d2" "barthnauta_cell_3/d1" 1.21898
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/inl" 37.8835
+cap "barthnauta_cell_3/d1" "barthnauta_cell_2/d1" 0.333599
+cap "barthnauta_cell_2/d2" "barthnauta_cell_3/d2" 0.667198
+cap "barthnauta_cell_1/inr" "barthnauta_cell_3/inr" 0.318933
+cap "barthnauta_cell_3/d1" "barthnauta_cell_1/inr" 0.768795
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_4/inl" 2.04732
+cap "barthnauta_cell_1/out" "barthnauta_cell_1/inl" 22.2403
+cap "barthnauta_cell_4/d1" "barthnauta_cell_1/gnd" 1.11991
+cap "barthnauta_cell_3/d2" "barthnauta_cell_2/d1" 0.00500446
+cap "barthnauta_cell_2/d2" "barthnauta_cell_1/inl" 5.16071
+cap "barthnauta_cell_3/d2" "barthnauta_cell_1/inr" 0.0869354
+cap "barthnauta_cell_1/d2" "barthnauta_cell_1/gnd" 1.11991
+cap "barthnauta_cell_4/out" "barthnauta_cell_3/inr" 3.87018
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/out" 0.16382
+cap "barthnauta_cell_1/out" "barthnauta_cell_1/gnd" -31.1607
+cap "barthnauta_cell_2/d1" "barthnauta_cell_1/inl" 1.10505
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/out" 0.484943
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/inr" 8.32937
+cap "barthnauta_cell_2/d2" "barthnauta_cell_1/gnd" -0.339267
+cap "barthnauta_cell_1/inl" "barthnauta_cell_3/inr" 11.5879
+cap "barthnauta_cell_3/d1" "barthnauta_cell_1/inl" 1.88954
+cap "barthnauta_cell_1/inl" "barthnauta_cell_4/out" 3.06479
+cap "barthnauta_cell_2/d1" "barthnauta_cell_1/gnd" 1.43112
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/inr" 5.11662
+cap "barthnauta_cell_4/inl" "barthnauta_cell_3/inr" 30.3808
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/d2" 0.00500446
+cap "barthnauta_cell_3/d2" "barthnauta_cell_1/inl" 0.932616
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/inl" 0.768795
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/d1" 0.333599
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/d2" 0.333599
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_3/inr" 14.0496
+cap "barthnauta_cell_3/d1" "barthnauta_cell_1/gnd" 3.42094
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/inl" 1.4046
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_4/out" 0.0340466
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/out" 3.27117
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_4/d2" 2.78524
+cap "barthnauta_cell_5/inr" "barthnauta_cell_4/d2" 0.768795
+cap "barthnauta_cell_4/out" "barthnauta_cell_3/inr" 4.70918
+cap "barthnauta_cell_4/d1" "barthnauta_cell_2/om" 0.932616
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/d1" 0.609489
+cap "barthnauta_cell_2/inr" "barthnauta_cell_2/om" 1.13344
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/d1" 0.333599
+cap "barthnauta_cell_4/inl" "barthnauta_cell_2/gnd" 15.4129
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/d2" 0.333599
+cap "barthnauta_cell_2/inr" "barthnauta_cell_4/out" 3.84111
+cap "barthnauta_cell_4/d1" "barthnauta_cell_3/inr" 1.4046
+cap "barthnauta_cell_4/inl" "barthnauta_cell_5/inr" 0.318933
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/out" 1.10505
+cap "barthnauta_cell_4/d2" "barthnauta_cell_2/om" 1.88954
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/d2" 0.609489
+cap "barthnauta_cell_5/d2" "barthnauta_cell_4/out" 1.10505
+cap "barthnauta_cell_4/d2" "barthnauta_cell_3/inr" 0.768795
+cap "barthnauta_cell_4/d1" "barthnauta_cell_2/inr" 1.25374
+cap "barthnauta_cell_5/inr" "barthnauta_cell_2/gnd" 3.0693
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/d1" 0.333599
+cap "barthnauta_cell_4/inl" "barthnauta_cell_2/om" 16.8499
+cap "barthnauta_cell_5/d2" "barthnauta_cell_4/d1" 0.00500446
+cap "barthnauta_cell_6/d1" "barthnauta_cell_2/gnd" 0.0148669
+cap "barthnauta_cell_4/inl" "barthnauta_cell_3/inr" 57.92
+cap "barthnauta_cell_2/inr" "barthnauta_cell_4/d2" 0.250756
+cap "barthnauta_cell_3/d1" "barthnauta_cell_4/d2" 0.00500446
+cap "barthnauta_cell_3/d2" "barthnauta_cell_2/gnd" 3.17187
+cap "barthnauta_cell_5/d2" "barthnauta_cell_4/d2" 0.333599
+cap "barthnauta_cell_2/d2" "barthnauta_cell_2/gnd" 1.11991
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/om" -19.2308
+cap "barthnauta_cell_5/d1" "barthnauta_cell_2/gnd" 3.18673
+cap "barthnauta_cell_5/inr" "barthnauta_cell_2/om" 6.73284
+cap "barthnauta_cell_2/inr" "barthnauta_cell_4/inl" 10.6087
+cap "barthnauta_cell_2/ip" "barthnauta_cell_2/gnd" 0.218768
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_4/out" 17.9692
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_3/inr" 6.26123
+cap "barthnauta_cell_5/inr" "barthnauta_cell_4/out" 1.59082
+cap "barthnauta_cell_2/inr" "barthnauta_cell_2/gnd" 6.98338
+cap "barthnauta_cell_4/d1" "barthnauta_cell_2/gnd" 3.42094
+cap "barthnauta_cell_5/d2" "barthnauta_cell_2/gnd" 1.43112
+cap "barthnauta_cell_3/d1" "barthnauta_cell_2/gnd" 1.43112
+cap "barthnauta_cell_4/out" "barthnauta_cell_2/om" 6.95946
+cap "barthnauta_cell_3/d2" "barthnauta_cell_4/out" 3.27117
+cap "barthnauta_cell_4/d1" "barthnauta_cell_5/inr" 0.0869354
+cap "barthnauta_cell_2/ip" "barthnauta_cell_2/om" 0.00569977
+cap "barthnauta_cell_2/om" "barthnauta_cell_3/inr" 5.44792
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_3/om" -11.6598
+cap "barthnauta_cell_4/d1" "barthnauta_cell_3/om" 1.10505
+cap "barthnauta_cell_5/d1" "barthnauta_cell_6/d1" 0.333599
+cap "barthnauta_cell_6/d1" "barthnauta_cell_3/om" 3.27117
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_7/d1" 0.0148669
+cap "barthnauta_cell_4/d2" "barthnauta_cell_5/d1" 0.609489
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/inl" 0.768795
+cap "barthnauta_cell_3/d2" "barthnauta_cell_3/gnd" 0.0148669
+cap "barthnauta_cell_4/d2" "barthnauta_cell_3/om" 3.27117
+cap "barthnauta_cell_5/inr" "barthnauta_cell_4/inl" 0.318933
+cap "barthnauta_cell_4/inl" "barthnauta_cell_3/om" 8.32367
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_5/d2" 3.42094
+cap "barthnauta_cell_4/d1" "barthnauta_cell_5/d2" 0.00500446
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/out" 0.484943
+cap "barthnauta_cell_5/inr" "barthnauta_cell_4/out" 0.814511
+cap "barthnauta_cell_5/d2" "barthnauta_cell_6/d1" 0.609489
+cap "barthnauta_cell_4/out" "barthnauta_cell_3/om" 6.12047
+cap "barthnauta_cell_3/inr" "barthnauta_cell_3/om" 0.00569977
+cap "barthnauta_cell_5/d1" "barthnauta_cell_6/d2" 0.00500446
+cap "barthnauta_cell_4/d2" "barthnauta_cell_5/d2" 0.333599
+cap "barthnauta_cell_4/inl" "barthnauta_cell_5/d2" 0.0869354
+cap "barthnauta_cell_6/d2" "barthnauta_cell_3/om" 1.10505
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/m3_n7200_1320#" 0.0869354
+cap "barthnauta_cell_4/d1" "barthnauta_cell_3/gnd" 1.43112
+cap "barthnauta_cell_5/inr" "barthnauta_cell_4/m3_n7200_1320#" 6.73854
+cap "barthnauta_cell_5/d1" "barthnauta_cell_3/ip" 0.768795
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/om" 1.90976
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_6/d1" 3.17187
+cap "barthnauta_cell_5/d1" "barthnauta_cell_3/om" 1.56842
+cap "barthnauta_cell_4/out" "barthnauta_cell_5/d2" 0.16382
+cap "barthnauta_cell_3/ip" "barthnauta_cell_3/om" 8.74974
+cap "barthnauta_cell_3/ip" "barthnauta_cell_5/inr" 44.1504
+cap "barthnauta_cell_5/inr" "barthnauta_cell_3/om" 11.2961
+cap "barthnauta_cell_4/d2" "barthnauta_cell_3/gnd" 3.18673
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_4/inl" 3.0693
+cap "barthnauta_cell_5/d2" "barthnauta_cell_6/d2" 0.333599
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_5/d2" 0.768795
+cap "barthnauta_cell_4/out" "barthnauta_cell_3/gnd" 1.83271
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_3/inr" 0.218768
+cap "barthnauta_cell_3/ip" "barthnauta_cell_5/d2" 1.4046
+cap "barthnauta_cell_5/d2" "barthnauta_cell_3/om" 1.25374
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_6/d2" 1.43112
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/gnd" 3.28807
+cap "barthnauta_cell_5/d1" "barthnauta_cell_3/gnd" 2.78524
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/d1" 0.333599
+cap "barthnauta_cell_3/ip" "barthnauta_cell_3/gnd" 6.26123
+cap "barthnauta_cell_5/inr" "barthnauta_cell_3/gnd" 15.4129
+cap "barthnauta_cell_15/inr" "barthnauta_cell_4/gnd" 2.04732
+cap "barthnauta_cell_5/d1" "barthnauta_cell_4/om" 1.10505
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_5/m3_n7200_1320#" 21.5949
+cap "barthnauta_cell_4/ip" "barthnauta_cell_7/d1" 0.768795
+cap "barthnauta_cell_7/out" "barthnauta_cell_4/om" 2.25028
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_5/d2" 1.11991
+cap "barthnauta_cell_7/d2" "barthnauta_cell_4/gnd" 1.43112
+cap "barthnauta_cell_7/inr" "barthnauta_cell_6/d1" 0.0869354
+cap "barthnauta_cell_6/d2" "barthnauta_cell_5/inr" 0.768795
+cap "barthnauta_cell_6/d1" "barthnauta_cell_5/m3_n7200_1320#" 0.768795
+cap "barthnauta_cell_7/inr" "barthnauta_cell_4/om" 1.59082
+cap "barthnauta_cell_5/d1" "barthnauta_cell_6/d2" 0.00500446
+cap "barthnauta_cell_5/d2" "barthnauta_cell_6/d1" 0.609489
+cap "barthnauta_cell_4/ip" "barthnauta_cell_5/inr" 30.3808
+cap "barthnauta_cell_7/out" "barthnauta_cell_6/d2" 0.484943
+cap "barthnauta_cell_4/om" "barthnauta_cell_5/m3_n7200_1320#" 30.0434
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_6/d1" 1.67799
+cap "barthnauta_cell_5/d2" "barthnauta_cell_4/om" 3.27117
+cap "barthnauta_cell_7/d2" "barthnauta_cell_6/d1" 0.00500446
+cap "barthnauta_cell_4/ip" "barthnauta_cell_7/out" 0.814511
+cap "barthnauta_cell_7/d1" "barthnauta_cell_5/m3_n7200_1320#" 1.4046
+cap "barthnauta_cell_7/d2" "barthnauta_cell_4/om" 1.10505
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/om" -14.2988
+cap "barthnauta_cell_7/inr" "barthnauta_cell_6/d2" 0.768795
+cap "barthnauta_cell_15/d2" "barthnauta_cell_4/gnd" 1.11991
+cap "barthnauta_cell_15/out" "barthnauta_cell_4/gnd" 0.0340466
+cap "barthnauta_cell_6/d2" "barthnauta_cell_5/m3_n7200_1320#" 1.4046
+cap "barthnauta_cell_7/d1" "barthnauta_cell_4/gnd" 2.936
+cap "barthnauta_cell_4/ip" "barthnauta_cell_7/inr" 0.318933
+cap "barthnauta_cell_5/d2" "barthnauta_cell_6/d2" 0.333599
+cap "barthnauta_cell_6/d1" "barthnauta_cell_4/om" 1.25374
+cap "barthnauta_cell_4/ip" "barthnauta_cell_5/m3_n7200_1320#" 10.7734
+cap "barthnauta_cell_5/inr" "barthnauta_cell_5/m3_n7200_1320#" 4.04626
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_6/d2" 2.31369
+cap "barthnauta_cell_7/d2" "barthnauta_cell_6/d2" 0.333599
+cap "barthnauta_cell_7/out" "barthnauta_cell_5/m3_n7200_1320#" 3.87018
+cap "barthnauta_cell_7/d1" "barthnauta_cell_6/d1" 0.667198
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_5/inr" 2.04732
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/gnd" 9.18078
+cap "barthnauta_cell_7/d1" "barthnauta_cell_4/om" 3.75611
+cap "barthnauta_cell_7/out" "barthnauta_cell_4/gnd" 1.79867
+cap "barthnauta_cell_7/inr" "barthnauta_cell_5/m3_n7200_1320#" 6.73284
+cap "barthnauta_cell_6/d2" "barthnauta_cell_4/om" 0.250756
+cap "barthnauta_cell_6/d1" "barthnauta_cell_5/inr" 1.4046
+cap "barthnauta_cell_15/inr" "barthnauta_cell_5/m3_n7200_1320#" 0.00569977
+cap "barthnauta_cell_5/d1" "barthnauta_cell_6/d1" 0.333599
+cap "barthnauta_cell_7/inr" "barthnauta_cell_4/gnd" 3.0693
+cap "barthnauta_cell_7/d1" "barthnauta_cell_6/d2" 1.21898
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/om" 21.1961
+cap "barthnauta_cell_4/om" "barthnauta_cell_5/inr" 4.70918
+cap "barthnauta_cell_7/out" "barthnauta_cell_6/d1" 0.16382
+cap "barthnauta_cell_7/d1" "barthnauta_cell_15/d1" 0.00500446
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_7/out" 14.6939
+cap "barthnauta_cell_14/d1" "barthnauta_cell_15/d2" 0.00500446
+cap "barthnauta_cell_6/inr" "barthnauta_cell_7/out" 6.3
+cap "barthnauta_cell_6/d1" "barthnauta_cell_7/d2" 0.00500446
+cap "barthnauta_cell_5/om" "barthnauta_cell_7/d2" 0.16382
+cap "barthnauta_cell_5/ip" "barthnauta_cell_7/d2" 0.0869354
+cap "barthnauta_cell_15/d2" "barthnauta_cell_7/out" 3.75611
+cap "barthnauta_cell_7/inr" "barthnauta_cell_15/out" 8.57936
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_15/d1" 1.43112
+cap "barthnauta_cell_6/d2" "barthnauta_cell_7/out" 3.27117
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_7/d2" 0.145676
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/inr" 88.3008
+cap "barthnauta_cell_6/inr" "barthnauta_cell_7/d2" 1.53759
+cap "barthnauta_cell_5/om" "barthnauta_cell_5/gnd" -31.1267
+cap "barthnauta_cell_7/d1" "barthnauta_cell_6/inr" 0.0869354
+cap "barthnauta_cell_7/d1" "barthnauta_cell_5/gnd" 0.824307
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/om" 3.65898
+cap "barthnauta_cell_7/d2" "barthnauta_cell_15/d2" 1.21898
+cap "barthnauta_cell_6/d2" "barthnauta_cell_7/d2" 0.333599
+cap "barthnauta_cell_7/d1" "barthnauta_cell_15/d2" 0.667198
+cap "barthnauta_cell_5/ip" "barthnauta_cell_15/d2" 0.0869354
+cap "barthnauta_cell_5/om" "barthnauta_cell_15/d2" 0.16382
+cap "barthnauta_cell_15/out" "barthnauta_cell_7/out" 4.50057
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/gnd" 7.12723
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/out" 8.57936
+cap "barthnauta_cell_6/inr" "barthnauta_cell_15/d2" 1.53759
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_15/d2" 3.42094
+cap "barthnauta_cell_6/d2" "barthnauta_cell_5/gnd" 1.11991
+cap "barthnauta_cell_7/inr" "barthnauta_cell_5/om" 12.8093
+cap "barthnauta_cell_14/d2" "barthnauta_cell_5/gnd" 1.11991
+cap "barthnauta_cell_7/d2" "barthnauta_cell_15/out" 3.75611
+cap "barthnauta_cell_5/ip" "barthnauta_cell_7/inr" 0.318933
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/d2" 1.4046
+cap "barthnauta_cell_7/d1" "barthnauta_cell_15/out" 1.26887
+cap "barthnauta_cell_14/d2" "barthnauta_cell_15/d2" 0.333599
+cap "barthnauta_cell_15/d1" "barthnauta_cell_7/out" 1.10505
+cap "barthnauta_cell_15/inr" "barthnauta_cell_5/om" 12.8093
+cap "barthnauta_cell_7/d1" "barthnauta_cell_15/inr" 0.768795
+cap "barthnauta_cell_7/inr" "barthnauta_cell_5/gnd" 0.0366274
+cap "barthnauta_cell_5/ip" "barthnauta_cell_15/inr" 0.318933
+cap "barthnauta_cell_6/inr" "barthnauta_cell_7/inr" 10.7791
+cap "barthnauta_cell_6/inr" "barthnauta_cell_15/out" 2.40533
+cap "barthnauta_cell_7/inr" "barthnauta_cell_15/d2" 1.4046
+cap "barthnauta_cell_6/d1" "barthnauta_cell_7/out" 1.10505
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_15/out" 9.88393
+cap "barthnauta_cell_5/om" "barthnauta_cell_7/out" 2.25028
+cap "barthnauta_cell_5/ip" "barthnauta_cell_7/out" 1.59082
+cap "barthnauta_cell_15/inr" "barthnauta_cell_5/gnd" 15.4129
+cap "barthnauta_cell_15/inr" "barthnauta_cell_6/inr" 14.8197
+cap "barthnauta_cell_7/d2" "barthnauta_cell_15/d1" 0.333599
+cap "barthnauta_cell_7/om" "barthnauta_cell_13/d2" 3.27117
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_15/out" 7.70041
+cap "barthnauta_cell_15/d2" "barthnauta_cell_14/d2" 0.333599
+cap "barthnauta_cell_7/inl" "barthnauta_cell_15/out" 8.57936
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_13/inr" 2.04732
+cap "barthnauta_cell_7/inl" "barthnauta_cell_13/inr" 4.04626
+cap "barthnauta_cell_7/om" "barthnauta_cell_15/d2" 1.10505
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/ip" -3.55271e-15
+cap "barthnauta_cell_13/d1" "barthnauta_cell_14/d2" 0.00500446
+cap "barthnauta_cell_7/om" "barthnauta_cell_14/d2" 0.250756
+cap "barthnauta_cell_13/d1" "barthnauta_cell_7/om" 1.10505
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_14/d1" 1.43112
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/gnd" 3.0693
+cap "barthnauta_cell_14/d1" "barthnauta_cell_15/d1" 0.333599
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/inl" 6.73284
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/out" 0.0340466
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/out" 0.814511
+cap "barthnauta_cell_7/out" "barthnauta_cell_15/d1" 0.16382
+cap "barthnauta_cell_7/ip" "barthnauta_cell_15/out" 1.59082
+cap "barthnauta_cell_15/out" "barthnauta_cell_14/d2" 3.75611
+cap "barthnauta_cell_14/d2" "barthnauta_cell_13/inr" 0.768795
+cap "barthnauta_cell_7/d1" "barthnauta_cell_15/d1" 0.00500446
+cap "barthnauta_cell_7/om" "barthnauta_cell_15/out" 4.50057
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_15/d1" 0.145676
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/gnd" 15.4496
+cap "barthnauta_cell_7/inl" "barthnauta_cell_15/d1" 1.49153
+cap "barthnauta_cell_7/om" "barthnauta_cell_13/inr" 4.70918
+cap "barthnauta_cell_7/inr" "barthnauta_cell_7/gnd" 2.04732
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_13/d2" 1.11991
+cap "barthnauta_cell_7/inr" "barthnauta_cell_15/d1" 0.768795
+cap "barthnauta_cell_7/inr" "barthnauta_cell_7/inl" 4.04626
+cap "barthnauta_cell_15/inr" "barthnauta_cell_14/d2" 0.768795
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/ip" 0.0942752
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/d2" 1.11991
+cap "barthnauta_cell_7/d2" "barthnauta_cell_15/d1" 0.333599
+cap "barthnauta_cell_15/inr" "barthnauta_cell_7/om" 1.59082
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_15/d2" 1.43112
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_14/d2" 3.42094
+cap "barthnauta_cell_7/ip" "barthnauta_cell_7/gnd" 3.0693
+cap "barthnauta_cell_7/ip" "barthnauta_cell_15/d1" 0.768795
+cap "barthnauta_cell_15/d1" "barthnauta_cell_14/d2" 1.21898
+cap "barthnauta_cell_7/inl" "barthnauta_cell_14/d2" 1.4046
+cap "barthnauta_cell_7/ip" "barthnauta_cell_7/inl" 7.20883
+cap "barthnauta_cell_14/d1" "barthnauta_cell_15/out" 1.10505
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/gnd" -4.75238
+cap "barthnauta_cell_7/om" "barthnauta_cell_15/d1" 3.75611
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/inl" 33.7024
+cap "barthnauta_cell_13/d2" "barthnauta_cell_14/d2" 0.333599
+cap "barthnauta_cell_15/om" "barthnauta_cell_13/inr" 19.9055
+cap "barthnauta_cell_12/d2" "barthnauta_cell_15/om" 3.27117
+cap "barthnauta_cell_13/inr" "barthnauta_cell_15/ip" 88.3008
+cap "barthnauta_cell_15/inl" "barthnauta_cell_15/gnd" 5.11662
+cap "barthnauta_cell_12/d2" "barthnauta_cell_13/d1" 0.609489
+cap "barthnauta_cell_12/out" "barthnauta_cell_13/d2" 0.16382
+cap "barthnauta_cell_15/om" "barthnauta_cell_12/inl" 6.92201
+cap "barthnauta_cell_15/om" "barthnauta_cell_14/d2" 1.10505
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/gnd" 4.66997
+cap "barthnauta_cell_12/inl" "barthnauta_cell_13/d1" 0.768795
+cap "barthnauta_cell_14/d2" "barthnauta_cell_13/d1" 0.00500446
+cap "barthnauta_cell_14/d1" "barthnauta_cell_13/d2" 1.21898
+cap "barthnauta_cell_13/d1" "barthnauta_cell_15/gnd" 2.78524
+cap "barthnauta_cell_15/gnd" "barthnauta_cell_15/ip" 2.70273
+cap "barthnauta_cell_12/inl" "barthnauta_cell_13/inr" 0.318933
+cap "barthnauta_cell_13/inr" "barthnauta_cell_15/gnd" 15.4129
+cap "barthnauta_cell_12/out" "barthnauta_cell_15/om" 6.12047
+cap "barthnauta_cell_12/d1" "barthnauta_cell_13/d2" 0.00500446
+cap "barthnauta_cell_12/d2" "barthnauta_cell_15/gnd" 1.11991
+cap "barthnauta_cell_12/out" "barthnauta_cell_13/d1" 0.484943
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/gnd" 0.0340466
+cap "barthnauta_cell_15/inl" "barthnauta_cell_13/d2" 0.768795
+cap "barthnauta_cell_15/om" "barthnauta_cell_14/d1" 4.52491
+cap "barthnauta_cell_12/out" "barthnauta_cell_13/inr" 0.814511
+cap "barthnauta_cell_14/d2" "barthnauta_cell_15/gnd" 1.43112
+cap "barthnauta_cell_14/d1" "barthnauta_cell_13/d1" 0.667198
+cap "barthnauta_cell_15/om" "barthnauta_cell_13/d2" 1.25374
+cap "barthnauta_cell_15/om" "barthnauta_cell_12/d1" 1.10505
+cap "barthnauta_cell_13/d2" "barthnauta_cell_15/ip" 1.4046
+cap "barthnauta_cell_13/inr" "barthnauta_cell_14/d1" 1.4046
+cap "barthnauta_cell_12/d1" "barthnauta_cell_13/d1" 0.333599
+cap "barthnauta_cell_12/out" "barthnauta_cell_15/gnd" 0.0340466
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/inl" 1.90976
+cap "barthnauta_cell_15/d1" "barthnauta_cell_15/gnd" 1.11991
+cap "barthnauta_cell_15/inl" "barthnauta_cell_13/d1" 0.0869354
+cap "barthnauta_cell_12/d2" "barthnauta_cell_13/d2" 0.333599
+cap "barthnauta_cell_14/d1" "barthnauta_cell_15/gnd" -0.339267
+cap "barthnauta_cell_12/inl" "barthnauta_cell_13/d2" 0.0869354
+cap "barthnauta_cell_15/om" "barthnauta_cell_13/d1" 1.56842
+cap "barthnauta_cell_13/inr" "barthnauta_cell_15/inl" 6.73854
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/ip" 27.6943
+cap "barthnauta_cell_14/d2" "barthnauta_cell_13/d2" 0.333599
+cap "barthnauta_cell_13/d2" "barthnauta_cell_15/gnd" 3.42094
+cap "barthnauta_cell_13/d1" "barthnauta_cell_15/ip" 0.768795
+cap "barthnauta_cell_12/out" "barthnauta_cell_14/m3_n7200_1320#" 3.84111
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/d2" 0.768795
+cap "barthnauta_cell_11/d2" "barthnauta_cell_14/gnd" 3.18673
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/out" 3.27117
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/d2" 0.00500446
+cap "barthnauta_cell_12/d2" "barthnauta_cell_14/gnd" 3.42094
+cap "barthnauta_cell_13/d1" "barthnauta_cell_12/d1" 0.333599
+cap "barthnauta_cell_13/inr" "barthnauta_cell_14/gnd" 3.0693
+cap "barthnauta_cell_13/inr" "barthnauta_cell_12/out" 1.59082
+cap "barthnauta_cell_14/out" "barthnauta_cell_12/d1" 0.932616
+cap "barthnauta_cell_13/d2" "barthnauta_cell_12/d1" 0.00500446
+cap "barthnauta_cell_11/inr" "barthnauta_cell_14/gnd" 6.48
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/out" 4.70918
+cap "barthnauta_cell_12/d1" "barthnauta_cell_14/m3_n7200_1320#" 1.25374
+cap "barthnauta_cell_11/d1" "barthnauta_cell_14/gnd" 1.43112
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/d1" 0.609489
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/out" 1.10505
+cap "barthnauta_cell_12/out" "barthnauta_cell_14/gnd" 17.9692
+cap "barthnauta_cell_14/gnd" "barthnauta_cell_14/inl" 2.04732
+cap "barthnauta_cell_14/out" "barthnauta_cell_12/inl" 9.64206
+cap "barthnauta_cell_13/inr" "barthnauta_cell_12/d1" 0.0869354
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/m3_n7200_1320#" 1.13344
+cap "barthnauta_cell_10/d2" "barthnauta_cell_14/gnd" 0.0148669
+cap "barthnauta_cell_12/inl" "barthnauta_cell_14/m3_n7200_1320#" 10.6087
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/d1" 1.4046
+cap "barthnauta_cell_13/d1" "barthnauta_cell_12/d2" 0.609489
+cap "barthnauta_cell_14/d1" "barthnauta_cell_14/gnd" 1.11991
+cap "barthnauta_cell_14/out" "barthnauta_cell_12/d2" 1.88954
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/d1" 0.333599
+cap "barthnauta_cell_13/d2" "barthnauta_cell_12/d2" 0.333599
+cap "barthnauta_cell_14/out" "barthnauta_cell_13/inr" 6.73284
+cap "barthnauta_cell_12/d1" "barthnauta_cell_14/gnd" 2.78524
+cap "barthnauta_cell_12/d2" "barthnauta_cell_14/m3_n7200_1320#" 0.250756
+cap "barthnauta_cell_13/inr" "barthnauta_cell_12/inl" 0.318933
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/d2" 0.333599
+cap "barthnauta_cell_14/out" "barthnauta_cell_11/inr" 4.04626
+cap "barthnauta_cell_13/d1" "barthnauta_cell_14/gnd" 3.17187
+cap "barthnauta_cell_13/d1" "barthnauta_cell_12/out" 3.27117
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/inl" 44.1504
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/gnd" -26.4913
+cap "barthnauta_cell_14/out" "barthnauta_cell_12/out" 6.95946
+cap "barthnauta_cell_13/d2" "barthnauta_cell_14/gnd" 1.43112
+cap "barthnauta_cell_13/d2" "barthnauta_cell_12/out" 1.10505
+cap "barthnauta_cell_13/inr" "barthnauta_cell_12/d2" 0.768795
+cap "barthnauta_cell_12/inl" "barthnauta_cell_14/gnd" 14.0496
+cap "barthnauta_cell_14/gnd" "barthnauta_cell_14/m3_n7200_1320#" 5.12078
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/inl" 0.00569977
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_12/d2" 1.10505
+cap "barthnauta_cell_12/out" "barthnauta_cell_13/m3_n7200_1320#" 3.06479
+cap "barthnauta_cell_11/d2" "barthnauta_cell_13/gnd" 2.78524
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/inl" 44.1504
+cap "barthnauta_cell_11/d2" "barthnauta_cell_13/inl" 0.768795
+cap "barthnauta_cell_10/d2" "barthnauta_cell_13/gnd" 3.17187
+cap "barthnauta_cell_12/inl" "barthnauta_cell_13/gnd" 6.48
+cap "barthnauta_cell_11/d1" "barthnauta_cell_10/d2" 0.609489
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/inl" 0.768795
+cap "barthnauta_cell_11/d2" "barthnauta_cell_10/d1" 0.00500446
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/ip" 8.32937
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/d2" 0.333599
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/out" 0.484943
+cap "barthnauta_cell_11/inr" "barthnauta_cell_13/gnd" 14.0496
+cap "barthnauta_cell_13/gnd" "barthnauta_cell_9/d2" 0.0148669
+cap "barthnauta_cell_12/d1" "barthnauta_cell_13/m3_n7200_1320#" 3.27117
+cap "barthnauta_cell_11/d1" "barthnauta_cell_13/gnd" 3.42094
+cap "barthnauta_cell_13/d1" "barthnauta_cell_13/gnd" 0.0148669
+cap "barthnauta_cell_11/inr" "barthnauta_cell_13/inl" 18.7333
+cap "barthnauta_cell_11/d1" "barthnauta_cell_13/inl" 0.0869354
+cap "barthnauta_cell_13/gnd" "barthnauta_cell_13/inl" -48.7032
+cap "barthnauta_cell_10/d1" "barthnauta_cell_13/gnd" 1.43112
+cap "barthnauta_cell_11/d2" "barthnauta_cell_13/ip" 0.0869354
+cap "barthnauta_cell_11/d1" "barthnauta_cell_10/d1" 0.333599
+cap "barthnauta_cell_11/d2" "barthnauta_cell_13/m3_n7200_1320#" 0.932616
+cap "barthnauta_cell_13/gnd" "barthnauta_cell_12/d2" 1.43112
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/out" 3.87018
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/d2" 0.00500446
+cap "barthnauta_cell_12/out" "barthnauta_cell_13/gnd" 1.83271
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/out" 0.16382
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_10/d2" 3.27117
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/d1" 0.609489
+cap "barthnauta_cell_12/inl" "barthnauta_cell_13/m3_n7200_1320#" 8.74974
+cap "barthnauta_cell_11/inr" "barthnauta_cell_13/ip" 0.318933
+cap "barthnauta_cell_13/ip" "barthnauta_cell_13/gnd" 3.28807
+cap "barthnauta_cell_11/d1" "barthnauta_cell_13/ip" 0.768795
+cap "barthnauta_cell_11/inr" "barthnauta_cell_13/m3_n7200_1320#" 4.85507
+cap "barthnauta_cell_11/d1" "barthnauta_cell_13/m3_n7200_1320#" 1.88954
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/gnd" 41.4761
+cap "barthnauta_cell_11/d2" "barthnauta_cell_10/d2" 0.333599
+cap "barthnauta_cell_11/d2" "barthnauta_cell_12/inl" 1.4046
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/inl" 13.9045
+cap "barthnauta_cell_12/d1" "barthnauta_cell_13/gnd" 3.18673
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/d1" 0.333599
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_10/d1" 1.10505
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/m3_n7200_1320#" 3.27117
+cap "barthnauta_cell_10/d1" "barthnauta_cell_12/ip" 1.4046
+cap "barthnauta_cell_8/out" "barthnauta_cell_12/gnd" 0.0340466
+cap "barthnauta_cell_12/gnd" "barthnauta_cell_12/ip" 21.5949
+cap "barthnauta_cell_10/d1" "barthnauta_cell_9/d2" 1.21898
+cap "barthnauta_cell_11/d2" "barthnauta_cell_10/d2" 0.333599
+cap "barthnauta_cell_10/d1" "barthnauta_cell_12/m3_n7200_1320#" 1.70141
+cap "barthnauta_cell_9/d1" "barthnauta_cell_10/d2" 0.00500446
+cap "barthnauta_cell_11/inr" "barthnauta_cell_10/d2" 0.768795
+cap "barthnauta_cell_11/d1" "barthnauta_cell_10/d2" 0.609489
+cap "barthnauta_cell_10/d1" "barthnauta_cell_12/om" 0.484943
+cap "barthnauta_cell_9/d2" "barthnauta_cell_12/gnd" 2.936
+cap "barthnauta_cell_9/d2" "barthnauta_cell_12/ip" 1.4046
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/gnd" 33.2407
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/ip" 30.9521
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/gnd" -29.3961
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/ip" 24.2008
+cap "barthnauta_cell_9/d2" "barthnauta_cell_12/m3_n7200_1320#" 4.52491
+cap "barthnauta_cell_10/d1" "barthnauta_cell_11/d2" 0.00500446
+cap "barthnauta_cell_10/d1" "barthnauta_cell_9/d1" 0.333599
+cap "barthnauta_cell_12/gnd" "barthnauta_cell_10/d2" 1.67799
+cap "barthnauta_cell_11/inr" "barthnauta_cell_10/d1" 0.0869354
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/m3_n7200_1320#" 15.0596
+cap "barthnauta_cell_12/ip" "barthnauta_cell_10/d2" 0.768795
+cap "barthnauta_cell_11/d1" "barthnauta_cell_10/d1" 0.333599
+cap "barthnauta_cell_9/d1" "barthnauta_cell_12/gnd" 1.43112
+cap "barthnauta_cell_8/d2" "barthnauta_cell_12/gnd" 1.11991
+cap "barthnauta_cell_11/d1" "barthnauta_cell_12/gnd" 1.11991
+cap "barthnauta_cell_9/d2" "barthnauta_cell_10/d2" 0.667198
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/ip" 0.318933
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_10/d2" 1.97648
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_11/d2" 1.10505
+cap "barthnauta_cell_12/om" "barthnauta_cell_10/d2" 0.16382
+cap "barthnauta_cell_9/d1" "barthnauta_cell_12/m3_n7200_1320#" 1.10505
+cap "barthnauta_cell_11/inr" "barthnauta_cell_12/m3_n7200_1320#" 6.92201
+cap "barthnauta_cell_10/d1" "barthnauta_cell_12/gnd" 2.31369
+cap "barthnauta_cell_9/d1" "barthnauta_cell_11/ip" 0.768795
+cap "barthnauta_cell_8/inl" "barthnauta_cell_11/gnd" 3.0693
+cap "barthnauta_cell_11/m3_n7200_1320#" "barthnauta_cell_11/gnd" 15.5367
+cap "barthnauta_cell_8/out" "barthnauta_cell_11/ip" 2.40533
+cap "barthnauta_cell_8/inl" "barthnauta_cell_9/d1" 0.768795
+cap "barthnauta_cell_11/m3_n7200_1320#" "barthnauta_cell_9/d1" 1.65535
+cap "barthnauta_cell_10/d1" "barthnauta_cell_11/gnd" 1.11991
+cap "barthnauta_cell_10/d2" "barthnauta_cell_9/d1" 0.00500446
+cap "barthnauta_cell_8/out" "barthnauta_cell_11/m3_n7200_1320#" 8.57936
+cap "barthnauta_cell_10/d1" "barthnauta_cell_9/d1" 0.333599
+cap "barthnauta_cell_9/d2" "barthnauta_cell_11/om" 2.84217e-14
+cap "barthnauta_cell_8/d2" "barthnauta_cell_11/om" 3.75611
+cap "barthnauta_cell_8/d1" "barthnauta_cell_11/om" 1.10505
+cap "barthnauta_cell_8/inl" "barthnauta_cell_11/ip" 0.318933
+cap "barthnauta_cell_11/m3_n7200_1320#" "barthnauta_cell_11/ip" 14.8197
+cap "barthnauta_cell_8/d2" "barthnauta_edge_1/lo" 0.811798
+cap "barthnauta_cell_9/d2" "barthnauta_cell_8/d2" 0.667198
+cap "barthnauta_cell_9/d2" "barthnauta_cell_8/d1" 0.00500446
+cap "barthnauta_cell_11/om" "barthnauta_cell_11/gnd" -16.5009
+cap "barthnauta_cell_8/inl" "barthnauta_cell_11/m3_n7200_1320#" 6.73284
+cap "barthnauta_edge_1/lo" "barthnauta_cell_11/gnd" 2.95745
+cap "barthnauta_cell_11/om" "barthnauta_cell_9/d1" 4.26326e-14
+cap "barthnauta_cell_8/d2" "barthnauta_cell_11/gnd" 3.42595
+cap "barthnauta_cell_9/d2" "barthnauta_cell_11/gnd" 0.824307
+cap "barthnauta_cell_8/d1" "barthnauta_cell_11/gnd" 1.43112
+cap "barthnauta_cell_8/d2" "barthnauta_cell_9/d1" 1.21898
+cap "barthnauta_cell_8/out" "barthnauta_cell_11/om" 4.50057
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/d1" 0.333599
+cap "barthnauta_cell_11/om" "barthnauta_cell_11/ip" 8.36815
+cap "barthnauta_cell_9/d2" "barthnauta_cell_8/out" 1.26887
+cap "barthnauta_cell_9/d1" "barthnauta_cell_11/gnd" 0.145676
+cap "barthnauta_cell_8/d2" "barthnauta_cell_11/ip" 0.768795
+cap "barthnauta_cell_8/inl" "barthnauta_cell_11/om" 1.59082
+cap "barthnauta_cell_11/m3_n7200_1320#" "barthnauta_cell_11/om" 36.41
+cap "barthnauta_cell_8/out" "barthnauta_cell_11/gnd" 9.88393
+cap "barthnauta_cell_8/out" "barthnauta_cell_9/d1" 3.75611
+cap "barthnauta_cell_10/d2" "barthnauta_cell_11/om" 1.10505
+cap "barthnauta_edge_1/lo" "barthnauta_cell_11/m3_n7200_1320#" 1.81956
+cap "barthnauta_cell_9/d2" "barthnauta_cell_8/inl" 0.0869354
+cap "barthnauta_cell_9/d2" "barthnauta_cell_11/m3_n7200_1320#" 0.768795
+cap "barthnauta_cell_8/d2" "barthnauta_cell_11/m3_n7200_1320#" 1.4046
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/ip" 2.01061
+cap "barthnauta_cell_10/d1" "barthnauta_cell_11/om" 3.27117
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/d1" 0.333599
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/gnd" 3.58572
+cap "barthnauta_edge_1/lo" "barthnauta_cell_8/inl" 37.3252
+cap "barthnauta_cell_8/d2" "barthnauta_cell_9/gnd" 1.43112
+cap "barthnauta_cell_9/inl" "barthnauta_cell_9/gnd" 5.11662
+cap "barthnauta_cell_9/out" "barthnauta_cell_9/gnd" -31.1607
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_8/inl" 42.0427
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/inr" 0.0869354
+cap "barthnauta_edge_1/lo" "barthnauta_cell_9/gnd" 5.66398
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/inl" 0.768795
+cap "barthnauta_edge_1/lo" "barthnauta_cell_8/out" 7.13023
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/out" 0.16382
+cap "barthnauta_cell_8/d1" "barthnauta_edge_1/lo" 1.9842
+cap "barthnauta_cell_9/d1" "barthnauta_cell_9/gnd" 1.11991
+cap "barthnauta_cell_8/d1" "barthnauta_cell_9/d2" 0.00500446
+cap "barthnauta_edge_1/lo" "barthnauta_cell_8/d2" 0.333599
+cap "barthnauta_cell_9/inr" "barthnauta_cell_8/inl" 0.318933
+cap "barthnauta_cell_8/out" "barthnauta_cell_9/gnd" 12.6024
+cap "barthnauta_cell_9/inl" "barthnauta_cell_8/inl" 4.04056
+cap "barthnauta_cell_9/out" "barthnauta_cell_8/inl" 27.4604
+cap "barthnauta_edge_1/lo" "barthnauta_cell_9/inl" 4.35616
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inl" 15.0415
+cap "barthnauta_cell_0/ip" "barthnauta_edge_0/lo" 0.265516
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/gnd" -10.456
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/inl" 14.713
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/d1" 0.0025239
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" 4.59608
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/inl" 49.0433
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/gnd" -3.10181
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/inl" 58.2867
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/gnd" -62.6257
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/inl" 2.19539
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/out" -3.55271e-15
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/om" -23.553
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/gnd" 18.9444
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inl" 2.19539
+cap "barthnauta_cell_0/ip" "barthnauta_cell_0/inr" 14.3937
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/om" 8.54287
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" 7.52813
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/om" 53.7993
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" -7.76826
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/inr" 5.82021
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/ip" 53.7993
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/gnd" -29.8824
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/ip" -23.2132
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/ip" 1.22491
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/ip" 14.5513
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/gnd" -24.7092
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/out" 23.9896
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/im" 41.9799
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/im" 1.53422
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/out" 40.6612
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/gnd" 19.7062
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/out" -31.4328
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/op" 1.22491
+cap "barthnauta_cell_1/inr" "barthnauta_cell_1/im" 7.19687
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/gnd" 0.42377
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/inr" 12.1983
+cap "barthnauta_cell_1/inr" "barthnauta_cell_1/gnd" -62.6257
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/om" 25.2145
+cap "barthnauta_cell_2/inr" "barthnauta_cell_2/gnd" -69.7116
+cap "barthnauta_cell_2/ip" "barthnauta_cell_2/gnd" -83.5009
+cap "barthnauta_cell_2/om" "barthnauta_cell_2/gnd" -22.2042
+cap "barthnauta_cell_2/inr" "barthnauta_cell_2/om" 8.42178
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/gnd" 35.4659
+cap "barthnauta_cell_2/ip" "barthnauta_cell_2/om" 7.19687
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/im" 36.1597
+cap "barthnauta_cell_2/inr" "barthnauta_cell_2/op" 13.0171
+cap "barthnauta_cell_2/ip" "barthnauta_cell_2/op" 7.19687
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_3/op" 19.7062
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/ip" 7.19687
+cap "barthnauta_cell_3/om" "barthnauta_cell_4/m3_n7200_1320#" 7.19687
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/gnd" -23.2516
+cap "barthnauta_cell_3/ip" "barthnauta_cell_3/gnd" -104.376
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/gnd" -78.7004
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/op" -7.41724
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/op" 7.19687
+cap "barthnauta_cell_3/ip" "barthnauta_cell_3/op" 43.3565
+cap "barthnauta_cell_4/op" "barthnauta_cell_5/m3_n7200_1320#" 5.82021
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/gnd" -42.9195
+cap "barthnauta_cell_4/ip" "barthnauta_cell_5/m3_n7200_1320#" -1.26745
+cap "barthnauta_cell_4/om" "barthnauta_cell_4/ip" 29.8098
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/gnd" -15.3359
+cap "barthnauta_cell_4/om" "barthnauta_cell_4/gnd" -22.0025
+cap "barthnauta_cell_4/op" "barthnauta_cell_4/ip" 37.3846
+cap "barthnauta_cell_4/om" "barthnauta_cell_5/m3_n7200_1320#" 47.7063
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/om" 50.4289
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/im" 7.50618
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/ip" 14.3937
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/gnd" 39.4124
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/op" 1.22491
+cap "barthnauta_cell_5/op" "barthnauta_cell_5/ip" 1.77636e-14
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_5/op" 23.6395
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/op" 11.6404
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/om" 7.31796
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/ip" 2.19539
+cap "barthnauta_cell_5/om" "barthnauta_cell_5/gnd" -31.4328
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/gnd" -39.6921
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_5/ip" -62.6257
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/inl" -7.80778
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/ip" 14.3937
+cap "barthnauta_cell_7/out" "barthnauta_cell_7/inl" 7.04512
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/om" 55.0242
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/out" 7.87984
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/ip" -62.6257
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/om" -15.6732
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/out" 35.63
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/inl" 5.00148
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/gnd" -2.29633
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/gnd" 19.7062
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/inl" 7.19687
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/inl" 7.19687
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/ip" 29.6887
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/out" 62.9861
+cap "barthnauta_cell_15/inl" "barthnauta_cell_15/gnd" -47.2202
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/gnd" -50.4476
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/op" -17.8328
+cap "barthnauta_cell_14/inl" "barthnauta_cell_14/gnd" -83.5009
+cap "barthnauta_cell_14/inl" "barthnauta_cell_14/op" 7.19687
+cap "barthnauta_cell_14/m3_n7200_1320#" "barthnauta_cell_14/gnd" -62.9603
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/inl" 7.19687
+cap "barthnauta_cell_14/m3_n7200_1320#" "barthnauta_cell_14/op" 13.0171
+cap "barthnauta_cell_14/im" "barthnauta_cell_14/op" 36.1597
+cap "barthnauta_cell_14/m3_n7200_1320#" "barthnauta_cell_14/out" 8.42178
+cap "barthnauta_cell_14/gnd" "barthnauta_cell_14/op" 35.4659
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/gnd" -28.5336
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/m3_n7200_1320#" 8.42178
+cap "barthnauta_cell_13/op" "barthnauta_cell_13/m3_n7200_1320#" 1.22491
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/inl" 23.9896
+cap "barthnauta_cell_13/gnd" "barthnauta_cell_13/ip" -104.376
+cap "barthnauta_cell_13/ip" "barthnauta_cell_13/m3_n7200_1320#" 7.19687
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/op" 41.9799
+cap "barthnauta_cell_13/gnd" "barthnauta_cell_13/m3_n7200_1320#" -43.2345
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/ip" 7.19687
+cap "barthnauta_cell_13/inl" "barthnauta_cell_13/gnd" -52.3881
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/gnd" 19.7062
+cap "barthnauta_cell_13/inl" "barthnauta_cell_13/m3_n7200_1320#" 23.9896
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/m3_n7200_1320#" 25.2145
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/ip" 19.5528
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/gnd" -11.7543
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/ip" 46.4814
+cap "barthnauta_cell_12/om" "barthnauta_cell_12/gnd" -31.4328
+cap "barthnauta_cell_12/gnd" "barthnauta_cell_12/ip" -30.7414
+cap "barthnauta_cell_11/ip" "barthnauta_cell_11/m3_n7200_1320#" -4.07355
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/m3_n7200_1320#" -7.76826
+cap "barthnauta_cell_11/ip" "barthnauta_cell_11/gnd" -55.0976
+cap "barthnauta_cell_11/ip" "barthnauta_cell_11/om" 7.31796
+cap "barthnauta_cell_11/m3_n7200_1320#" "barthnauta_cell_11/om" 53.7993
+cap "barthnauta_cell_11/ip" "barthnauta_cell_11/op" 1.22491
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/m3_n7200_1320#" 5.82021
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/om" -22.0025
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/op" 7.87984
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/gnd" 65.8148
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/inl" 9.09995
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/op" 11.0646
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/inr" 15.9875
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/inl" -47.2202
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/out" 54.5166
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/inr" -62.6257
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/out" -31.4328
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/out" -3.10181
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/inl" 0.00615277
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/bp" -0.0975024
+cap "barthnauta_cell_0/gnd" "barthnauta_edge_0/vreg" -6.93889e-18
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/gnd" -0.0798422
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/inr" -15.387
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" 45.5027
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/out" 73.5649
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/inr" 5.79404
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" -55.1139
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/inr" 77.7627
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/bp" -0.705684
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/gnd" -0.0798422
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/om" 1.2194
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/out" 10.9769
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/gnd" 7.87984
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/out" -12.4872
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/inr" -32.0973
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/inr" 24.0038
+cap "barthnauta_edge_0/vreg" "barthnauta_cell_0/gnd" -2.42861e-17
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/ip" 14.3937
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/inl" -0.0386286
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/ip" 39.3513
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/gnd" -0.0798422
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/ip" 73.1881
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/om" 3.55271e-15
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/om" 7.87984
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/ip" 7.01344
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/gnd" -62.6257
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/vreg" -1.04083e-17
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/out" -31.4328
+cap "barthnauta_cell_0/inl" "barthnauta_cell_0/inr" -3.55271e-15
+cap "barthnauta_cell_0/gnd" "barthnauta_cell_0/inr" 0.372681
+cap "barthnauta_cell_0/om" "barthnauta_cell_0/ip" 5.79404
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/bp" -2.03979
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/bp" -0.0798422
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/inl" 32.2122
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/inl" 13.4177
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/vreg" -1.73472e-17
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/inl" 62.2111
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/im" -42.95
+cap "barthnauta_cell_1/gnd" "barthnauta_cell_1/op" -31.4328
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/im" 77.938
+cap "barthnauta_cell_2/om" "barthnauta_cell_2/op" 11.3754
+cap "barthnauta_cell_2/om" "barthnauta_cell_2/im" 7.19687
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/im" -0.0515048
+cap "barthnauta_cell_2/om" "barthnauta_cell_2/inr" 1.2194
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/op" -6.47513
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/vreg" -6.93889e-18
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/im" -83.5009
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/inr" -20.516
+cap "barthnauta_cell_2/om" "barthnauta_cell_2/gnd" 19.6757
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/im" 30.9589
+cap "barthnauta_cell_2/gnd" "barthnauta_cell_2/bp" -0.106456
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/inr" 5.79404
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/op" 47.5724
+cap "barthnauta_cell_3/ip" "barthnauta_cell_3/op" 36.1597
+cap "barthnauta_cell_3/op" "barthnauta_cell_3/inr" 7.19687
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/inr" 7.19687
+cap "barthnauta_cell_3/op" "barthnauta_cell_3/gnd" -32.7124
+cap "barthnauta_cell_3/om" "barthnauta_cell_3/gnd" 35.4353
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/gnd" -25.645
+cap "barthnauta_cell_3/bp" "barthnauta_cell_3/inr" -0.0643809
+cap "barthnauta_cell_3/bp" "barthnauta_cell_3/gnd" -0.13307
+cap "barthnauta_cell_3/gnd" "barthnauta_cell_3/inr" -104.376
+cap "barthnauta_cell_3/vreg" "barthnauta_cell_3/gnd" -6.93889e-18
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/im" 7.19687
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/im" -62.6257
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/bp" -0.0798422
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/gnd" 16.4525
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/op" 57.8664
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/vreg" -1.73472e-17
+cap "barthnauta_cell_4/bp" "barthnauta_cell_4/im" -0.0386286
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/im" 12.1983
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/op" -31.4328
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/om" 5.79404
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/op" 66.7858
+cap "barthnauta_cell_4/gnd" "barthnauta_cell_4/om" 15.7597
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/om" 7.01344
+cap "barthnauta_cell_4/om" "barthnauta_cell_4/im" -3.55271e-15
+cap "barthnauta_cell_4/ip" "barthnauta_cell_4/gnd" 19.6757
+cap "barthnauta_cell_5/gnd" "barthnauta_cell_5/im" -23.2744
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/op" 12.1963
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/gnd" -0.0798422
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/gnd" -7.87518
+cap "barthnauta_cell_5/om" "barthnauta_cell_5/im" 2.4388
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/im" -0.0386286
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/im" 2.19539
+cap "barthnauta_cell_5/op" "barthnauta_cell_5/gnd" 17.5242
+cap "barthnauta_cell_5/op" "barthnauta_cell_5/im" 83.5567
+cap "barthnauta_cell_6/vreg" "barthnauta_cell_5/gnd" -2.42861e-17
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/inr" -32.0973
+cap "barthnauta_cell_7/inr" "barthnauta_cell_7/gnd" -62.6257
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/gnd" -0.0798422
+cap "barthnauta_cell_7/inr" "barthnauta_cell_7/bp" -0.0386286
+cap "barthnauta_cell_7/out" "barthnauta_cell_7/inl" 78.9821
+cap "barthnauta_cell_7/out" "barthnauta_cell_7/gnd" -48.8705
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/inl" 7.01344
+cap "barthnauta_cell_7/gnd" "barthnauta_cell_7/vreg" -1.04083e-17
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/gnd" 15.7597
+cap "barthnauta_cell_7/om" "barthnauta_cell_7/inr" -3.55271e-15
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/gnd" 23.9643
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/gnd" 12.1638
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/im" 5.00148
+cap "barthnauta_cell_15/im" "barthnauta_cell_15/om" 7.19687
+cap "barthnauta_cell_15/om" "barthnauta_cell_15/gnd" 35.4353
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/om" 5.79404
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/gnd" -1.73472e-17
+cap "barthnauta_cell_15/im" "barthnauta_cell_15/out" 7.19687
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/gnd" -11.7572
+cap "barthnauta_cell_15/inl" "barthnauta_cell_15/gnd" -15.387
+cap "barthnauta_cell_15/im" "barthnauta_cell_15/bp" -0.0386286
+cap "barthnauta_cell_15/gnd" "barthnauta_cell_15/bp" -0.0798422
+cap "barthnauta_cell_15/ip" "barthnauta_cell_15/out" 97.3267
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/om" 21.7441
+cap "barthnauta_cell_15/im" "barthnauta_cell_15/gnd" -62.6257
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/gnd" 19.6757
+cap "barthnauta_cell_14/m3_n7200_1320#" "barthnauta_cell_14/gnd" -20.516
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/gnd" -6.93889e-18
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/m3_n7200_1320#" 1.2194
+cap "barthnauta_cell_14/im" "barthnauta_cell_14/bp" -0.0515048
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/im" 43.3565
+cap "barthnauta_cell_14/im" "barthnauta_cell_14/gnd" -83.5009
+cap "barthnauta_cell_14/gnd" "barthnauta_cell_14/bp" -0.106456
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/gnd" -6.47513
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/im" 7.19687
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/out" 37.2037
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/m3_n7200_1320#" 5.79404
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/op" 62.441
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/im" -38.0747
+cap "barthnauta_cell_13/bp" "barthnauta_cell_13/gnd" -0.13307
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/op" 37.2037
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/gnd" -6.93889e-18
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/gnd" -84.7005
+cap "barthnauta_cell_13/op" "barthnauta_cell_13/gnd" -52.3881
+cap "barthnauta_cell_13/bp" "barthnauta_cell_13/im" -2.06555
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/gnd" 9.79034
+cap "barthnauta_cell_12/im" "barthnauta_cell_12/bp" -0.0386286
+cap "barthnauta_cell_12/im" "barthnauta_cell_12/ip" 12.1983
+cap "barthnauta_cell_12/im" "barthnauta_cell_12/gnd" -62.6257
+cap "barthnauta_cell_12/bp" "barthnauta_cell_12/gnd" -0.0798422
+cap "barthnauta_cell_12/ip" "barthnauta_cell_12/op" 60.9917
+cap "barthnauta_cell_12/ip" "barthnauta_cell_12/gnd" 31.8395
+cap "barthnauta_cell_12/im" "barthnauta_cell_12/m3_n7200_1320#" 7.19687
+cap "barthnauta_cell_12/op" "barthnauta_cell_12/gnd" -31.4328
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/ip" 7.01344
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/op" 35.9843
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/gnd" 20.0483
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/gnd" -1.73472e-17
+cap "barthnauta_cell_12/ip" "barthnauta_cell_12/om" 5.79404
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/om" 1.2194
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/ip" 2.19539
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/gnd" -62.6257
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/m3_n7200_1320#" 14.3937
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/ip" 12.1963
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/op" 1.76449
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/m3_n7200_1320#" 77.7627
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/bp" -0.0798422
+cap "barthnauta_cell_11/om" "barthnauta_cell_11/gnd" 15.7597
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_10/vreg" -2.42861e-17
+cap "barthnauta_cell_11/om" "barthnauta_cell_11/m3_n7200_1320#" 5.79404
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/ip" 7.51182
+cap "barthnauta_cell_11/gnd" "barthnauta_cell_11/m3_n7200_1320#" 24.0038
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/bp" -0.0386286
+cap "barthnauta_cell_11/om" "barthnauta_cell_11/im" -3.55271e-15
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/out" 1.2194
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/vreg" -2.08167e-17
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/bp" -2.03979
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/gnd" -0.0798422
+cap "barthnauta_cell_9/inl" "barthnauta_cell_9/gnd" -15.387
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/op" 79.9375
+cap "barthnauta_cell_9/gnd" "barthnauta_cell_9/op" -45.6846
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/gnd" 3.09484
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/bp" 2.62113
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/bp" -0.438412
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_1/out" 0.414846
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/vss" -11.9622
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vreg" 1.11022e-16
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/bp" 15.9777
+cap "barthnauta_cell_0/m3_n7200_1320#" "barthnauta_cell_0/bp" 0.927071
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/im" 35.6119
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vss" 7.04638
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/op" 3.30658
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/m3_n7200_1320#" 0.146828
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/im" 39.4059
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/vreg" 4.73828
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/op" 4.63249
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" 0.0165738
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/m3_n7200_1320#" 4.22802
+cap "barthnauta_edge_0/hi" "barthnauta_cell_0/im" 43.1059
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/m3_n7200_1320#" 2.53443
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/bp" -28.1714
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/im" 2.3211
+cap "barthnauta_cell_0/vss" "barthnauta_cell_1/out" 3.93992
+cap "barthnauta_cell_0/vreg" "barthnauta_edge_0/hi" 2.83326
+cap "barthnauta_cell_0/m3_n7200_1320#" "barthnauta_cell_0/bp" -5.02718
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_1/out" 8.98109
+cap "barthnauta_cell_0/op" "barthnauta_cell_1/inr" 2.04269
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/vreg" 10.4704
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_2/inl" 0.941732
+cap "barthnauta_cell_0/im" "barthnauta_cell_1/out" 2.76662
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/m3_n7200_1320#" -8.88178e-15
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vss" 0.950373
+cap "barthnauta_cell_0/m3_n7200_1320#" "barthnauta_edge_0/hi" 1.81956
+cap "barthnauta_cell_1/out" "barthnauta_cell_0/bp" 5.01012
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/m3_n7200_1320#" 8.99947
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/bp" -3.3094
+cap "barthnauta_cell_0/m3_n7200_1320#" "barthnauta_cell_1/out" 8.99778
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_1/inr" 2.44346
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vreg" 4.44089e-16
+cap "barthnauta_cell_0/im" "barthnauta_cell_0/vss" 2.57896
+cap "barthnauta_cell_2/inl" "barthnauta_cell_0/m3_n7200_1320#" 4.04626
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/bp" -63.1315
+cap "barthnauta_cell_0/im" "barthnauta_cell_1/inr" 0.318933
+cap "barthnauta_cell_0/im" "barthnauta_cell_0/vreg" 2.44346
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/m3_n7200_1320#" 15.2916
+cap "barthnauta_cell_0/op" "barthnauta_edge_0/hi" 5.266
+cap "barthnauta_cell_0/op" "barthnauta_cell_1/out" 15.8008
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/bp" -4.34025
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" -0.744491
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/m3_n7200_1320#" 9.44337
+cap "barthnauta_cell_1/inr" "barthnauta_cell_0/m3_n7200_1320#" 9.13731
+cap "barthnauta_cell_2/inl" "barthnauta_cell_1/out" 1.17453
+cap "barthnauta_cell_0/im" "barthnauta_cell_0/bp" -3.29508
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vreg" -8.88178e-16
+cap "barthnauta_cell_0/im" "barthnauta_cell_0/m3_n7200_1320#" 13.1779
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/vss" -3.96224
+cap "barthnauta_cell_0/vss" "barthnauta_cell_2/inl" 7.61854
+cap "barthnauta_cell_0/inr" "barthnauta_cell_1/inr" 21.8635
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/bp" -62.5835
+cap "barthnauta_cell_2/inl" "barthnauta_cell_0/im" 0.318933
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/vreg" 18.8404
+cap "barthnauta_cell_1/inr" "barthnauta_cell_0/vreg" 4.51426
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" -0.580571
+cap "barthnauta_cell_1/inr" "barthnauta_cell_1/out" -0.378995
+cap "barthnauta_cell_0/inr" "barthnauta_cell_1/out" 17.8452
+cap "barthnauta_cell_0/vss" "barthnauta_cell_1/inr" 7.61854
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/vss" 7.87984
+cap "barthnauta_cell_1/out" "barthnauta_cell_0/vreg" 8.98109
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/inr" 1.55431e-15
+cap "barthnauta_cell_0/op" "barthnauta_cell_1/inr" 0.856749
+cap "barthnauta_cell_1/inr" "barthnauta_cell_0/im" 0.318933
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/im" 1.01458
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/vreg" 1.77636e-15
+cap "barthnauta_cell_0/bp" "barthnauta_cell_2/inl" 3.04787
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/vdd" 2.22045e-16
+cap "barthnauta_cell_0/vss" "barthnauta_cell_1/out" 3.93992
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vreg" -1.11022e-15
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/im" 0.650008
+cap "barthnauta_cell_0/op" "barthnauta_cell_0/vreg" 0.414846
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vreg" 4.44089e-16
+cap "barthnauta_cell_1/out" "barthnauta_cell_0/im" 0.132816
+cap "barthnauta_cell_0/op" "barthnauta_cell_1/out" 1.04002
+cap "barthnauta_cell_0/inr" "barthnauta_cell_2/inl" 13.6613
+cap "barthnauta_cell_1/inr" "barthnauta_cell_2/inl" 130.024
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/op" -15.387
+cap "barthnauta_cell_0/bp" "barthnauta_cell_1/inr" -8.61815
+cap "barthnauta_cell_0/inr" "barthnauta_cell_0/bp" 10.0202
+cap "barthnauta_cell_2/inl" "barthnauta_cell_0/vreg" 4.51426
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vreg" -5.58005
+cap "barthnauta_cell_2/inl" "barthnauta_cell_1/out" 8.20394
+cap "barthnauta_cell_0/bp" "barthnauta_cell_1/out" 2.81612
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/inl" 20.538
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/inl" 27.6434
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/out" 0.414846
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/inl" -6.10623e-15
+cap "barthnauta_cell_4/inr" "barthnauta_cell_1/inl" 2.36162
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/vss" -1.5099e-14
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/im" 39.3322
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/bp" 0.0155399
+cap "barthnauta_cell_2/inl" "barthnauta_cell_1/im" 0.318933
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/vreg" 4.44089e-16
+cap "barthnauta_cell_4/inr" "barthnauta_cell_1/vreg" 0.650008
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/inl" 14.6837
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/vss" 7.61854
+cap "barthnauta_cell_1/im" "barthnauta_cell_1/vreg" 1.79345
+cap "barthnauta_cell_1/inr" "barthnauta_cell_1/inl" 0.00569977
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/inl" 18.9865
+cap "barthnauta_cell_1/bp" "barthnauta_cell_1/inl" 4.70271
+cap "barthnauta_cell_1/inl" "barthnauta_cell_1/gp" -1.02141e-14
+cap "barthnauta_cell_1/im" "barthnauta_cell_4/inr" 7.73565
+cap "barthnauta_cell_2/inl" "barthnauta_cell_1/inl" 11.18
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/vss" -15.387
+cap "barthnauta_cell_1/bp" "barthnauta_cell_1/vss" -62.0356
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/inr" 0.941732
+cap "barthnauta_cell_1/op" "barthnauta_cell_1/vreg" 4.03069
+cap "barthnauta_cell_1/bp" "barthnauta_cell_1/vreg" -4.11738
+cap "barthnauta_cell_2/inl" "barthnauta_cell_1/vreg" 2.44346
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/gp" 9.99201e-16
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/bp" -0.416652
+cap "barthnauta_cell_5/out" "barthnauta_cell_2/vreg" 4.07673
+cap "barthnauta_cell_4/inr" "barthnauta_cell_2/vreg" 1.79345
+cap "barthnauta_cell_2/op" "barthnauta_cell_5/inl" 9.70367
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/vreg" 1.11022e-16
+cap "barthnauta_cell_2/im" "barthnauta_cell_5/inl" 0.00569977
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/out" 23.3215
+cap "barthnauta_cell_4/inr" "barthnauta_cell_6/inl" 0.00569977
+cap "barthnauta_cell_5/inl" "barthnauta_cell_2/vreg" 5.45599
+cap "barthnauta_cell_5/out" "barthnauta_cell_4/inr" 3.71536
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/bp" 13.0681
+cap "barthnauta_cell_2/out" "barthnauta_cell_2/vreg" 7.86437
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/gp" -1.77636e-15
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/vss" -5.01762
+cap "barthnauta_cell_2/im" "barthnauta_cell_2/op" 100.071
+cap "barthnauta_cell_2/im" "barthnauta_cell_2/bp" 0.234697
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/vss" -81.3991
+cap "barthnauta_cell_6/out" "barthnauta_cell_2/vreg" 0.0123872
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/vreg" 18.5839
+cap "barthnauta_cell_5/inl" "barthnauta_cell_4/inr" 65.0122
+cap "barthnauta_cell_2/im" "barthnauta_cell_2/vreg" 5.31648
+cap "barthnauta_cell_2/gp" "barthnauta_cell_2/vreg" 2.77556e-17
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/vreg" -2.5645
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_2/vss" -2.66454e-15
+cap "barthnauta_cell_4/inr" "barthnauta_cell_2/out" 1.17568
+cap "barthnauta_cell_2/op" "barthnauta_cell_5/out" 9.27716
+cap "barthnauta_cell_2/op" "barthnauta_cell_4/inr" 8.75831
+cap "barthnauta_cell_4/inr" "barthnauta_cell_2/bp" 3.04787
+cap "barthnauta_cell_2/im" "barthnauta_cell_4/inr" 5.44222
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_6/inl" 0.139511
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/op" -8.88178e-16
+cap "barthnauta_cell_4/inr" "barthnauta_cell_2/vss" 7.61854
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/bp" -0.16213
+cap "barthnauta_cell_3/vdd" "barthnauta_cell_3/vreg" 1.33227e-15
+cap "barthnauta_cell_4/inr" "barthnauta_cell_5/out" 5.66311
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/op" 9.14301
+cap "barthnauta_cell_3/vdd" "barthnauta_cell_3/bp" -0.202663
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_5/inl" 0.318933
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/vreg" 2.58297
+cap "barthnauta_cell_4/inr" "barthnauta_cell_3/op" 4.04056
+cap "barthnauta_cell_5/inl" "barthnauta_cell_4/inr" 65.0122
+cap "barthnauta_cell_5/out" "barthnauta_cell_3/vss" 7.87984
+cap "barthnauta_cell_4/inr" "barthnauta_cell_3/vreg" 5.45599
+cap "barthnauta_cell_3/vss" "barthnauta_cell_3/op" -18.0265
+cap "barthnauta_cell_5/inl" "barthnauta_cell_3/vss" 7.61854
+cap "barthnauta_cell_5/out" "barthnauta_cell_6/inl" 5.79188
+cap "barthnauta_cell_3/vss" "barthnauta_cell_3/bp" -101.749
+cap "barthnauta_cell_5/out" "barthnauta_cell_6/out" 8.42041
+cap "barthnauta_cell_5/inl" "barthnauta_cell_5/out" -0.378995
+cap "barthnauta_cell_5/out" "barthnauta_cell_3/op" 10.0841
+cap "barthnauta_cell_3/im" "barthnauta_cell_5/inl" 0.00569977
+cap "barthnauta_cell_3/op" "barthnauta_cell_6/inl" 80.5092
+cap "barthnauta_cell_5/inl" "barthnauta_cell_6/inl" 4.04056
+cap "barthnauta_cell_3/out" "barthnauta_cell_3/vreg" 0.0123872
+cap "barthnauta_cell_3/im" "barthnauta_cell_3/vreg" 0.139511
+cap "barthnauta_cell_5/out" "barthnauta_cell_3/vreg" 13.5503
+cap "barthnauta_cell_3/op" "barthnauta_cell_6/out" 3.71536
+cap "barthnauta_cell_6/inl" "barthnauta_cell_3/vreg" 5.31648
+cap "barthnauta_cell_5/inl" "barthnauta_cell_6/out" 0.856749
+cap "barthnauta_cell_5/out" "barthnauta_cell_3/bp" 10.0202
+cap "barthnauta_cell_6/out" "barthnauta_cell_3/vreg" 4.06434
+cap "barthnauta_cell_5/inl" "barthnauta_cell_3/op" 12.8527
+cap "barthnauta_cell_3/op" "barthnauta_cell_3/vreg" 9.12267
+cap "barthnauta_cell_3/bp" "barthnauta_cell_6/inl" 0.234697
+cap "barthnauta_cell_5/inl" "barthnauta_cell_3/vreg" 1.79345
+cap "barthnauta_cell_3/op" "barthnauta_cell_3/bp" 3.04787
+cap "barthnauta_cell_5/inl" "barthnauta_cell_3/bp" 3.04787
+cap "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_5/out" 2.04269
+cap "barthnauta_cell_3/bp" "barthnauta_cell_3/vreg" -3.20562
+cap "barthnauta_cell_6/inl" "barthnauta_cell_6/out" -0.378995
+cap "barthnauta_cell_6/out" "barthnauta_cell_5/inl" 2.04269
+cap "barthnauta_cell_4/bp" "barthnauta_cell_6/out" 10.0202
+cap "barthnauta_cell_4/op" "barthnauta_cell_5/m3_n7200_1320#" 9.64
+cap "barthnauta_cell_4/op" "barthnauta_cell_4/vss" -15.387
+cap "barthnauta_cell_6/out" "barthnauta_cell_5/m3_n7200_1320#" 8.99947
+cap "barthnauta_cell_5/out" "barthnauta_cell_6/out" 8.42041
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/vreg" 1.77636e-15
+cap "barthnauta_cell_6/out" "barthnauta_cell_4/vss" 7.87984
+cap "barthnauta_cell_4/im" "barthnauta_cell_4/vreg" 3.38519
+cap "barthnauta_cell_6/inl" "barthnauta_cell_4/vreg" 1.79345
+cap "barthnauta_cell_6/inl" "barthnauta_cell_4/im" 0.318933
+cap "barthnauta_cell_5/inl" "barthnauta_cell_4/vreg" 0.650008
+cap "barthnauta_cell_4/gp" "barthnauta_cell_4/vreg" -4.44089e-16
+cap "barthnauta_cell_6/inl" "barthnauta_cell_5/inl" 7.73565
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/bp" -0.121598
+cap "barthnauta_cell_4/op" "barthnauta_cell_6/out" 16.4004
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_5/m3_n7200_1320#" 3.10862e-15
+cap "barthnauta_cell_4/bp" "barthnauta_cell_4/vreg" -1.92337
+cap "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/vreg" 7.10436
+cap "barthnauta_cell_4/im" "barthnauta_cell_5/m3_n7200_1320#" 9.14301
+cap "barthnauta_cell_5/out" "barthnauta_cell_4/vreg" 1.1648
+cap "barthnauta_cell_4/vss" "barthnauta_cell_4/vreg" -3.55271e-15
+cap "barthnauta_cell_6/inl" "barthnauta_cell_4/bp" 2.81318
+cap "barthnauta_cell_6/inl" "barthnauta_cell_5/out" 3.58659
+cap "barthnauta_cell_6/inl" "barthnauta_cell_5/m3_n7200_1320#" 13.1779
+cap "barthnauta_cell_5/inl" "barthnauta_cell_5/m3_n7200_1320#" 0.318933
+cap "barthnauta_cell_6/inl" "barthnauta_cell_4/vss" 7.61854
+cap "barthnauta_cell_4/gp" "barthnauta_cell_5/m3_n7200_1320#" -5.32907e-15
+cap "barthnauta_cell_4/bp" "barthnauta_cell_5/m3_n7200_1320#" 3.28257
+cap "barthnauta_cell_4/bp" "barthnauta_cell_4/vss" -61.0493
+cap "barthnauta_cell_4/op" "barthnauta_cell_4/vreg" 10.2694
+cap "barthnauta_cell_6/out" "barthnauta_cell_4/vreg" 13.5503
+cap "barthnauta_cell_5/out" "barthnauta_cell_5/m3_n7200_1320#" 0.856749
+cap "barthnauta_cell_6/out" "barthnauta_cell_4/im" 2.04269
+cap "barthnauta_cell_4/vss" "barthnauta_cell_5/m3_n7200_1320#" 12.6581
+cap "barthnauta_cell_4/op" "barthnauta_cell_6/inl" 37.6305
+cap "barthnauta_cell_5/im" "barthnauta_cell_6/inl" 0.318933
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/op" 16.8244
+cap "barthnauta_cell_5/gp" "barthnauta_cell_5/op" 6.66134e-16
+cap "barthnauta_cell_5/im" "barthnauta_cell_6/out" 0.856749
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/im" 9.02852
+cap "barthnauta_cell_6/inl" "barthnauta_cell_5/op" 1.01458
+cap "barthnauta_cell_5/gp" "barthnauta_cell_5/vreg" -8.88178e-16
+cap "barthnauta_cell_5/im" "barthnauta_cell_6/inr" 30.4077
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/bp" -5.57028
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_6/inl" 0.650008
+cap "barthnauta_cell_5/im" "barthnauta_cell_5/vss" 15.2371
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/vdd" 4.44089e-16
+cap "barthnauta_cell_5/im" "barthnauta_cell_14/inl" 0.318933
+cap "barthnauta_cell_6/out" "barthnauta_cell_5/op" 6.10352
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/op" 19.9546
+cap "barthnauta_cell_14/out" "barthnauta_cell_5/im" 0.856749
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/bp" -0.744491
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/op" 9.38958
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_6/out" 1.1648
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/op" 12.105
+cap "barthnauta_cell_5/vss" "barthnauta_cell_5/op" -3.56724
+cap "barthnauta_cell_14/inl" "barthnauta_cell_5/op" 0.132816
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_6/inr" 8.69454
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/bp" -6.31139
+cap "barthnauta_cell_14/out" "barthnauta_cell_5/op" 1.04002
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/vss" -3.55271e-15
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/bp" -2.82881
+cap "barthnauta_cell_6/inr" "barthnauta_cell_5/vss" 2.57896
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_14/out" 0.414846
+cap "barthnauta_cell_5/vss" "barthnauta_cell_5/bp" -63.1315
+cap "barthnauta_cell_5/gp" "barthnauta_cell_5/im" -8.88178e-15
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/vss" -62.5835
+cap "barthnauta_cell_14/out" "barthnauta_cell_7/vreg" 8.98109
+cap "barthnauta_cell_7/inl" "barthnauta_cell_14/out" 7.82494
+cap "barthnauta_cell_14/out" "barthnauta_cell_7/op" 18.5455
+cap "barthnauta_cell_7/im" "barthnauta_cell_14/inl" 0.0942752
+cap "barthnauta_cell_13/out" "barthnauta_cell_7/vreg" 1.1648
+cap "barthnauta_cell_13/out" "barthnauta_cell_7/inl" 0.856749
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/vdd" -0.580571
+cap "barthnauta_cell_7/im" "barthnauta_cell_7/vreg" 3.38519
+cap "barthnauta_cell_13/inl" "barthnauta_cell_7/vreg" 0.650008
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/vreg" -5.58005
+cap "barthnauta_cell_7/im" "barthnauta_cell_7/inl" 13.1836
+cap "barthnauta_cell_7/inl" "barthnauta_cell_13/inl" 0.318933
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/inl" -5.57028
+cap "barthnauta_cell_7/im" "barthnauta_cell_7/op" 1.17453
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/op" 2.81612
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/inl" 15.2371
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/vreg" 1.77636e-15
+cap "barthnauta_cell_13/out" "barthnauta_cell_14/out" 6.10352
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/op" -11.4471
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/out" 1.01458
+cap "barthnauta_cell_7/im" "barthnauta_cell_14/out" 1.90988
+cap "barthnauta_cell_7/bp" "barthnauta_cell_14/out" 10.0202
+cap "barthnauta_cell_14/inl" "barthnauta_cell_7/vreg" 2.44346
+cap "barthnauta_cell_7/inl" "barthnauta_cell_14/inl" 9.6133
+cap "barthnauta_cell_14/inl" "barthnauta_cell_7/op" 1.90988
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/vreg" -1.11022e-15
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/inl" -8.88178e-15
+cap "barthnauta_cell_7/vss" "barthnauta_cell_14/out" 7.87984
+cap "barthnauta_cell_7/vdd" "barthnauta_cell_7/vreg" 4.44089e-16
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/vreg" 9.02852
+cap "barthnauta_cell_7/op" "barthnauta_cell_7/vreg" 12.2618
+cap "barthnauta_cell_7/inl" "barthnauta_cell_7/op" 12.8608
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/inl" -0.378995
+cap "barthnauta_cell_13/out" "barthnauta_cell_15/op" 10.0841
+cap "barthnauta_cell_13/out" "barthnauta_cell_14/out" 10.7373
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/bp" -4.11738
+cap "barthnauta_cell_15/op" "barthnauta_cell_15/bp" 3.04787
+cap "barthnauta_cell_14/out" "barthnauta_cell_15/bp" -2.19401
+cap "barthnauta_cell_13/out" "barthnauta_cell_13/inl" -0.378995
+cap "barthnauta_cell_13/out" "barthnauta_cell_15/vss" 7.87984
+cap "barthnauta_cell_12/inr" "barthnauta_cell_15/vreg" 2.86589
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_14/inl" 4.51426
+cap "barthnauta_cell_15/op" "barthnauta_cell_14/inl" 130.024
+cap "barthnauta_cell_15/vss" "barthnauta_cell_15/bp" -62.0356
+cap "barthnauta_cell_13/inl" "barthnauta_cell_15/bp" 2.81318
+cap "barthnauta_cell_12/inr" "barthnauta_cell_15/op" 4.04056
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/bp" -0.416652
+cap "barthnauta_cell_12/inr" "barthnauta_cell_13/inl" 35.7456
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/inl" 13.1779
+cap "barthnauta_cell_14/inl" "barthnauta_cell_15/vss" 5.03958
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/m3_n7200_1320#" 3.38519
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/op" 4.81975
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_14/out" 6.98865
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/gp" 9.99201e-16
+cap "barthnauta_cell_15/op" "barthnauta_cell_15/m3_n7200_1320#" 9.14301
+cap "barthnauta_cell_13/out" "barthnauta_cell_15/bp" 10.0202
+cap "barthnauta_cell_15/op" "barthnauta_cell_14/out" 5.59374
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_13/inl" 1.79345
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/vss" -1.5099e-14
+cap "barthnauta_cell_15/m3_n7200_1320#" "barthnauta_cell_13/inl" 0.318933
+cap "barthnauta_cell_15/op" "barthnauta_cell_15/vss" -7.76846
+cap "barthnauta_cell_13/out" "barthnauta_cell_12/inr" 5.66311
+cap "barthnauta_cell_13/out" "barthnauta_cell_14/inl" 9.37847
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/out" 1.88487
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/vdd" 4.44089e-16
+cap "barthnauta_cell_15/op" "barthnauta_cell_13/inl" 11.3222
+cap "barthnauta_cell_14/inl" "barthnauta_cell_15/bp" -6.17141
+cap "barthnauta_cell_13/inl" "barthnauta_cell_15/vss" 7.61854
+cap "barthnauta_cell_13/out" "barthnauta_cell_15/vreg" 13.5503
+cap "barthnauta_cell_12/inr" "barthnauta_cell_14/inl" 0.00569977
+cap "barthnauta_cell_13/out" "barthnauta_cell_15/m3_n7200_1320#" 2.04269
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_10/out" 0.0123872
+cap "barthnauta_cell_14/vss" "barthnauta_cell_12/inr" 7.61854
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/vdd" 1.11022e-16
+cap "barthnauta_cell_14/op" "barthnauta_cell_12/inr" 8.75831
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/vreg" 5.31648
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/im" 70.6753
+cap "barthnauta_cell_12/inr" "barthnauta_cell_14/m3_n7200_1320#" 1.17568
+cap "barthnauta_cell_14/bp" "barthnauta_cell_14/vreg" -2.5645
+cap "barthnauta_cell_14/inl" "barthnauta_cell_12/inr" 0.00569977
+cap "barthnauta_cell_14/out" "barthnauta_cell_14/vreg" 0.414846
+cap "barthnauta_cell_13/out" "barthnauta_cell_14/vreg" 4.06434
+cap "barthnauta_cell_14/bp" "barthnauta_cell_14/vdd" -0.16213
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/op" -5.01762
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/bp" 0.234697
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_12/inr" 2.5901
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/m3_n7200_1320#" 23.3215
+cap "barthnauta_cell_14/im" "barthnauta_cell_14/vreg" 5.45599
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/gp" -1.77636e-15
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/vreg" -2.66454e-15
+cap "barthnauta_cell_13/inl" "barthnauta_cell_12/inr" 94.2789
+cap "barthnauta_cell_14/bp" "barthnauta_cell_12/inr" 3.04787
+cap "barthnauta_cell_13/out" "barthnauta_cell_12/inr" 3.71536
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/im" 0.00569977
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/vreg" 17.7873
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/vdd" -8.88178e-16
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/bp" -81.3991
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/m3_n7200_1320#" 6.65969
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/inl" 0.941732
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/gp" 2.77556e-17
+cap "barthnauta_cell_13/inl" "barthnauta_cell_14/op" 11.2341
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/bp" 13.0681
+cap "barthnauta_cell_14/im" "barthnauta_cell_12/inr" 4.04056
+cap "barthnauta_cell_13/out" "barthnauta_cell_14/op" 9.27716
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/op" -25.645
+cap "barthnauta_cell_10/inl" "barthnauta_cell_13/im" 0.318933
+cap "barthnauta_cell_13/vdd" "barthnauta_cell_13/vreg" 1.33227e-15
+cap "barthnauta_cell_13/op" "barthnauta_cell_13/m3_n7200_1320#" 18.9808
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/im" 1.79345
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_9/inr" 0.00569977
+cap "barthnauta_cell_13/op" "barthnauta_cell_13/im" 68.7276
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_12/inr" 2.36162
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/inl" 0.139511
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/bp" -101.749
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/bp" 13.3028
+cap "barthnauta_cell_13/im" "barthnauta_cell_12/inr" 9.13731
+cap "barthnauta_cell_13/vdd" "barthnauta_cell_13/bp" -0.202663
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/m3_n7200_1320#" 15.4984
+cap "barthnauta_cell_13/im" "barthnauta_cell_13/bp" 0.250237
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/out" 0.0123872
+cap "barthnauta_cell_10/inl" "barthnauta_cell_13/vreg" 2.44346
+cap "barthnauta_cell_13/vdd" "barthnauta_cell_13/m3_n7200_1320#" -8.88178e-16
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/im" 7.61854
+cap "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_13/im" 4.51832
+cap "barthnauta_cell_13/op" "barthnauta_cell_13/vreg" 9.53272
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_9/out" 0.0123872
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_9/inr" 0.139511
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_12/inr" 2.44346
+cap "barthnauta_cell_13/inl" "barthnauta_cell_13/im" 0.00569977
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/bp" -3.20562
+cap "barthnauta_cell_10/inl" "barthnauta_cell_13/m3_n7200_1320#" 11.18
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/m3_n7200_1320#" 25.5213
+cap "barthnauta_cell_9/inr" "barthnauta_cell_10/inl" 130.024
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_9/inr" 4.51426
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/vdd" 4.44089e-16
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/bp" -61.0493
+cap "barthnauta_cell_12/op" "barthnauta_cell_12/vreg" 0.414846
+cap "barthnauta_cell_12/vss" "barthnauta_cell_10/inl" 7.61854
+cap "barthnauta_cell_12/im" "barthnauta_cell_10/inl" 0.318933
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/vss" -3.55271e-15
+cap "barthnauta_cell_12/gp" "barthnauta_cell_12/vreg" -4.44089e-16
+cap "barthnauta_cell_9/inr" "barthnauta_cell_12/m3_n7200_1320#" 22.562
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/im" 0.650008
+cap "barthnauta_cell_10/inl" "barthnauta_cell_12/bp" 3.04787
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/bp" -1.92337
+cap "barthnauta_cell_10/inl" "barthnauta_cell_9/out" 5.59374
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_10/inl" 2.5901
+cap "barthnauta_cell_12/vdd" "barthnauta_cell_12/bp" -0.121598
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/vss" 15.4984
+cap "barthnauta_cell_12/gp" "barthnauta_cell_12/m3_n7200_1320#" -1.77636e-15
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_9/out" 6.98865
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/im" 9.77834
+cap "barthnauta_cell_9/inr" "barthnauta_cell_12/vss" 5.03958
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_12/bp" 12.8334
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/vdd" 1.77636e-15
+cap "barthnauta_cell_9/inr" "barthnauta_cell_12/bp" 0.234697
+cap "barthnauta_cell_12/op" "barthnauta_cell_12/vss" -15.387
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_10/inl" 13.6613
+cap "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_9/out" 12.6222
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/m3_n7200_1320#" 22.7597
+cap "barthnauta_cell_11/im" "barthnauta_cell_9/inr" 0.318933
+cap "barthnauta_cell_11/op" "barthnauta_edge_1/hi" 1.7551
+cap "barthnauta_cell_11/vreg" "barthnauta_edge_1/hi" 1.17185
+cap "barthnauta_cell_11/op" "barthnauta_cell_9/out" 15.8008
+cap "barthnauta_cell_11/bp" "barthnauta_cell_11/m3_n7200_1320#" -5.02718
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/vss" -11.4316
+cap "barthnauta_cell_9/out" "barthnauta_cell_11/vreg" 10.9735
+cap "barthnauta_cell_11/vss" "barthnauta_cell_11/vreg" -3.55271e-15
+cap "barthnauta_cell_9/inr" "barthnauta_cell_11/m3_n7200_1320#" 13.1779
+cap "barthnauta_cell_11/im" "barthnauta_cell_9/out" 2.04269
+cap "barthnauta_cell_11/bp" "barthnauta_cell_9/inr" -2.82881
+cap "barthnauta_cell_10/inl" "barthnauta_cell_11/vreg" 2.86589
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/vreg" -8.88178e-16
+cap "barthnauta_edge_1/hi" "barthnauta_cell_11/m3_n7200_1320#" 1.81956
+cap "barthnauta_cell_9/out" "barthnauta_cell_11/m3_n7200_1320#" 16.1176
+cap "barthnauta_cell_11/vss" "barthnauta_cell_11/m3_n7200_1320#" 15.2916
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/vreg" 8.47798
+cap "barthnauta_cell_11/vdd" "barthnauta_cell_11/vreg" 4.44089e-16
+cap "barthnauta_cell_9/out" "barthnauta_cell_11/bp" 7.09491
+cap "barthnauta_cell_11/vss" "barthnauta_cell_11/bp" -63.1315
+cap "barthnauta_cell_10/inl" "barthnauta_cell_11/m3_n7200_1320#" 4.04626
+cap "barthnauta_cell_9/out" "barthnauta_cell_9/inr" -0.378995
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/vreg" 2.44346
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/m3_n7200_1320#" -8.88178e-15
+cap "barthnauta_cell_11/vss" "barthnauta_cell_9/inr" 2.57896
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/m3_n7200_1320#" 7.82494
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_11/m3_n7200_1320#" 10.8433
+cap "barthnauta_cell_11/vss" "barthnauta_cell_9/out" 7.87984
+cap "barthnauta_cell_11/op" "barthnauta_cell_11/bp" 2.50664
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_11/bp" -6.27557
+cap "barthnauta_cell_11/im" "barthnauta_cell_11/m3_n7200_1320#" 9.13731
+cap "barthnauta_cell_11/op" "barthnauta_cell_9/inr" 2.76662
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_9/inr" 2.44346
+cap "barthnauta_cell_11/vdd" "barthnauta_cell_11/bp" -0.744491
+cap "barthnauta_cell_10/inl" "barthnauta_cell_9/out" 3.78473
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/vreg" 2.3211
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/out" 0.856749
+cap "barthnauta_cell_9/vdd" "barthnauta_cell_9/vreg" 2.22045e-16
+cap "barthnauta_cell_9/im" "barthnauta_edge_1/hi" 40.3626
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/vreg" 9.77832
+cap "barthnauta_cell_9/inr" "barthnauta_cell_9/im" 0.318933
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/op" -0.648339
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/m3_n7200_1320#" 0.927071
+cap "barthnauta_cell_9/op" "barthnauta_cell_9/m3_n7200_1320#" 1.17453
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/vss" 49.8472
+cap "barthnauta_cell_9/vreg" "barthnauta_cell_9/op" 6.62493
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vreg" 12.3035
+cap "barthnauta_cell_9/out" "barthnauta_cell_9/op" 1.04002
+cap "barthnauta_cell_9/vreg" "barthnauta_cell_9/m3_n7200_1320#" 2.53443
+cap "barthnauta_cell_9/bp" "barthnauta_edge_1/hi" -0.534752
+cap "barthnauta_edge_1/hi" "barthnauta_cell_9/m3_n7200_1320#" 4.22802
+cap "barthnauta_edge_1/hi" "barthnauta_cell_9/op" 6.81748
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/bp" 33.6623
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vdd" -0.121598
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/op" 7.10543e-15
+cap "barthnauta_cell_9/im" "barthnauta_cell_9/m3_n7200_1320#" 4.04056
+cap "barthnauta_cell_9/out" "barthnauta_cell_9/vreg" 0.414846
+cap "barthnauta_cell_9/inr" "barthnauta_cell_9/op" 0.132816
+cap "barthnauta_edge_1/hi" "barthnauta_cell_9/vreg" 6.3997
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/bp" -49.3511
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/op" -3.61395
+cap "barthnauta_cell_0/vss" "barthnauta_edge_0/hi" 0.83866
+cap "barthnauta_cell_0/gp" "barthnauta_edge_0/hi" 11.4302
+cap "barthnauta_cell_0/out" "barthnauta_cell_0/vss" 2.44208
+cap "barthnauta_cell_0/bp" "barthnauta_edge_0/hi" 2.48663
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vss" 26.0604
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vss" 32.2744
+cap "barthnauta_cell_0/gp" "barthnauta_edge_0/hih" 35.5507
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/out" 5.93707
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/vreg" 13.6235
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vreg" -62.2987
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vss" -62.0803
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/bp" 37.8317
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vss" -16.0095
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vreg" 13.6056
+cap "barthnauta_cell_0/vdd" "barthnauta_edge_0/hih" 4.84007
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/inl" 8.5657
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vreg" 11.6798
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vdd" 10.0906
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/inl" 7.34943
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" 1.24345e-14
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vdd" 30.2555
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/gp" -0.118454
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vss" -5.53423
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vss" -28.8371
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/vreg" 2.89465
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/vdd" 3.7512
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/out" -1.42109e-14
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vreg" -66.5666
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vdd" 18.9923
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vreg" 5.94716
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vdd" -0.336726
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vss" 13.2903
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vss" -29.0632
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/gp" 5.36862
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/vdd" -29.6509
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/vreg" 11.0229
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vdd" 19.5633
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vdd" 26.8784
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/gp" -7.11215
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vdd" -0.336726
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/bp" -28.8371
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vreg" -63.6165
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vreg" 4.49254
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/gp" -0.118454
+cap "barthnauta_cell_1/bp" "barthnauta_cell_1/gp" -0.118454
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/vdd" -29.6509
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/bp" -28.8371
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/vdd" 36.3409
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/bp" 5.77186
+cap "barthnauta_cell_1/bp" "barthnauta_cell_1/vdd" -0.336726
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/gp" -7.18545
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/gp" -51.974
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/vreg" 15.233
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/gp" 16.5948
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/vss" -39.5345
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/gp" 7.10543e-15
+cap "barthnauta_cell_6/gp" "barthnauta_cell_2/gp" 0.00569977
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_2/bp" 0.116535
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_2/vss" 10.5732
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_2/vdd" 22.3579
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/bp" 1.24345e-14
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/vss" -7.77156e-16
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/vdd" 4.88498e-15
+cap "barthnauta_cell_6/gp" "barthnauta_cell_2/vdd" 0.145353
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/gp" -0.157939
+cap "barthnauta_cell_2/vss" "barthnauta_cell_2/gp" -9.62946
+cap "barthnauta_cell_2/op" "barthnauta_cell_2/vreg" -3.06144e-14
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/gp" 21.7997
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/vss" -38.4495
+cap "barthnauta_cell_2/vreg" "barthnauta_cell_2/gp" -110.526
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_2/bp" -0.448968
+cap "barthnauta_cell_3/vreg" "barthnauta_cell_3/vdd" 15.2722
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vss" -12.0735
+cap "barthnauta_cell_3/bp" "barthnauta_cell_3/vdd" -0.56121
+cap "barthnauta_cell_3/vreg" "barthnauta_cell_3/vss" 10.1235
+cap "barthnauta_cell_3/bp" "barthnauta_cell_3/vss" -48.0618
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/gp" 0.00569977
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vreg" -151.558
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/bp" -0.197423
+cap "barthnauta_cell_3/vss" "barthnauta_cell_3/vdd" -49.4181
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vdd" 21.0764
+cap "barthnauta_cell_3/vreg" "barthnauta_cell_3/bp" -4.32652
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vdd" 0.145353
+cap "barthnauta_cell_4/vreg" "barthnauta_cell_4/bp" 5.77186
+cap "barthnauta_cell_4/gp" "barthnauta_cell_4/vss" -7.18545
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/vss" -29.6509
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/gp" 16.5948
+cap "barthnauta_cell_4/bp" "barthnauta_cell_4/vss" -28.8371
+cap "barthnauta_cell_4/bp" "barthnauta_cell_4/gp" -0.118454
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/bp" -0.336726
+cap "barthnauta_cell_4/vreg" "barthnauta_cell_4/op" -6.66134e-15
+cap "barthnauta_cell_4/vreg" "barthnauta_cell_4/vss" 15.233
+cap "barthnauta_cell_4/vreg" "barthnauta_cell_4/gp" -51.974
+cap "barthnauta_cell_4/vreg" "barthnauta_cell_4/vdd" 36.3409
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/gp" -0.118454
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/vss" -29.6509
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/gp" -60.2122
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/bp" 5.84625
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/op" -1.77636e-15
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/gp" 19.5633
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/bp" -0.336726
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/op" 7.10543e-15
+cap "barthnauta_cell_5/gp" "barthnauta_cell_5/vss" -7.11215
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/vdd" 31.9758
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/vss" -28.8371
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/op" -4.44089e-16
+cap "barthnauta_cell_5/vreg" "barthnauta_cell_5/vss" 12.9988
+cap "barthnauta_cell_5/op" "barthnauta_cell_5/vss" -3.33067e-16
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/vss" 11.0229
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/bp" -0.118454
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/out" -2.13163e-14
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/vdd" -0.336726
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/bp" 4.49254
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/bp" -28.8371
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/vdd" 19.5633
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/gp" -63.6165
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/vdd" 26.8784
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/vss" -7.11215
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/vdd" -29.6509
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/gp" 16.5948
+cap "barthnauta_cell_15/vss" "barthnauta_cell_15/vdd" -29.6509
+cap "barthnauta_cell_15/vss" "barthnauta_cell_15/gp" -7.18545
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/vdd" 36.3409
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/gp" -51.974
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/vss" 15.233
+cap "barthnauta_cell_15/out" "barthnauta_cell_15/vreg" 8.88178e-16
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/bp" -0.336726
+cap "barthnauta_cell_15/gp" "barthnauta_cell_15/bp" -0.118454
+cap "barthnauta_cell_15/vss" "barthnauta_cell_15/bp" -28.8371
+cap "barthnauta_cell_15/vreg" "barthnauta_cell_15/bp" 5.77186
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/vdd" 4.88498e-15
+cap "barthnauta_cell_14/vreg" "barthnauta_cell_14/gp" -110.526
+cap "barthnauta_cell_14/bp" "barthnauta_cell_14/vdd" -0.448968
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/gp" -9.62946
+cap "barthnauta_cell_10/gp" "barthnauta_cell_14/vdd" 0.145353
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/vreg" 10.5732
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/vreg" -2.70617e-14
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/gp" 2.66454e-15
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/op" -8.88178e-16
+cap "barthnauta_cell_10/gp" "barthnauta_cell_14/gp" 0.00569977
+cap "barthnauta_cell_14/bp" "barthnauta_cell_14/gp" -0.157939
+cap "barthnauta_cell_14/bp" "barthnauta_cell_14/vreg" 0.116535
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/bp" -38.4495
+cap "barthnauta_cell_14/op" "barthnauta_cell_14/bp" 7.10543e-15
+cap "barthnauta_cell_14/vdd" "barthnauta_cell_14/gp" 21.7997
+cap "barthnauta_cell_14/vdd" "barthnauta_cell_14/vreg" 22.3579
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/vdd" -39.5345
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/bp" -48.0618
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/gp" -151.558
+cap "barthnauta_cell_13/gp" "barthnauta_cell_13/vdd" 0.145353
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/vdd" 15.2722
+cap "barthnauta_cell_13/bp" "barthnauta_cell_13/gp" -0.197423
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/gp" -12.0735
+cap "barthnauta_cell_13/bp" "barthnauta_cell_13/vdd" -0.56121
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/vdd" -49.4181
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/vss" 10.1235
+cap "barthnauta_cell_13/vreg" "barthnauta_cell_13/bp" -4.32652
+cap "barthnauta_cell_13/gp" "barthnauta_cell_13/gp" 0.00569977
+cap "barthnauta_cell_13/vdd" "barthnauta_cell_13/gp" 21.0764
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/bp" -28.8371
+cap "barthnauta_cell_12/gp" "barthnauta_cell_12/bp" -0.118454
+cap "barthnauta_cell_12/vdd" "barthnauta_cell_12/bp" -0.336726
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/bp" 5.77186
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/gp" -7.18545
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/vdd" -29.6509
+cap "barthnauta_cell_12/gp" "barthnauta_cell_12/vdd" 16.5948
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/vreg" 15.233
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/gp" -51.974
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/vdd" 36.3409
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/vreg" -62.8709
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_11/vss" 13.0795
+cap "barthnauta_edge_1/hih" "barthnauta_cell_11/vreg" 2.89465
+cap "barthnauta_cell_11/vdd" "barthnauta_cell_11/vreg" 32.1701
+cap "barthnauta_cell_11/bp" "barthnauta_cell_11/vreg" 5.96122
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/vss" -7.11215
+cap "barthnauta_cell_11/gp" "barthnauta_edge_1/hih" 0.00569977
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/vdd" 18.7374
+cap "barthnauta_cell_11/vdd" "barthnauta_cell_11/vss" -29.6509
+cap "barthnauta_cell_11/vdd" "barthnauta_edge_1/hih" 1.16751
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/bp" -0.118454
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_11/op" 1.66533e-15
+cap "barthnauta_cell_11/bp" "barthnauta_cell_11/vss" -28.8371
+cap "barthnauta_cell_11/vdd" "barthnauta_cell_11/bp" -0.336726
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/vreg" 37.6101
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/vdd" -8.8127
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/op" 3.66312
+cap "barthnauta_cell_9/vss" "barthnauta_cell_8/inl" 16.7381
+cap "barthnauta_edge_1/hih" "barthnauta_cell_9/gp" 38.1703
+cap "barthnauta_cell_9/gp" "barthnauta_cell_9/vreg" -103.767
+cap "barthnauta_cell_9/gp" "barthnauta_cell_9/vdd" 13.314
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vreg" 15.8673
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vdd" 1.59872e-14
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/gp" 15.8771
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/bp" -59.8766
+cap "barthnauta_edge_1/hih" "barthnauta_cell_9/vreg" 13.6235
+cap "barthnauta_edge_1/hih" "barthnauta_cell_9/vdd" 7.42376
+cap "barthnauta_cell_9/gp" "barthnauta_cell_9/bp" -0.0295787
+cap "barthnauta_cell_9/vdd" "barthnauta_cell_9/vreg" 16.7772
+cap "barthnauta_cell_9/vreg" "barthnauta_cell_9/op" -1.42109e-14
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/gp" 0.914444
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vss" -19.3532
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/gp" 0.83864
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" -0.332161
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vss" 10.309
+cap "barthnauta_cell_0/vdd" "barthnauta_edge_0/hih" -3.3339
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vss" 0.0319744
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vss" 3.14561
+cap "barthnauta_edge_0/hih" "barthnauta_cell_0/vdd" 0.0949303
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/vdd" -31.9833
+cap "barthnauta_cell_0/bp" "barthnauta_cell_0/vdd" -0.525921
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vss" 8.88178e-16
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vdd" -7.08225
+cap "barthnauta_cell_0/vreg" "barthnauta_cell_0/vdd" -1.47634
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vreg" -1.10726
+cap "barthnauta_cell_0/gp" "barthnauta_cell_0/vss" 1.33227e-15
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/bp" -0.387521
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/vss" -32.2247
+cap "barthnauta_cell_0/vdd" "barthnauta_cell_0/gp" -4.39991
+cap "barthnauta_cell_0/vss" "barthnauta_cell_0/bp" 8.67362e-19
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/vss" -31.9429
+cap "barthnauta_cell_1/gp" "barthnauta_cell_1/vss" 1.33227e-15
+cap "barthnauta_cell_1/gp" "barthnauta_cell_1/vdd" -2.05369
+cap "barthnauta_cell_1/vreg" "barthnauta_cell_1/vdd" -1.10726
+cap "barthnauta_cell_1/vss" "barthnauta_cell_1/bp" -1.73472e-18
+cap "barthnauta_cell_1/vdd" "barthnauta_cell_1/bp" -0.24912
+cap "barthnauta_cell_2/vss" "barthnauta_cell_2/vdd" -41.9141
+cap "barthnauta_cell_2/gp" "barthnauta_cell_2/vss" 8.88178e-16
+cap "barthnauta_cell_2/vdd" "barthnauta_cell_6/gp" 0.00292088
+cap "barthnauta_cell_2/vss" "barthnauta_cell_2/bp" -4.33681e-19
+cap "barthnauta_cell_2/gp" "barthnauta_cell_2/vdd" 0.689072
+cap "barthnauta_cell_2/bp" "barthnauta_cell_2/vdd" 5.55112e-16
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vdd" 0.65172
+cap "barthnauta_cell_3/gp" "barthnauta_cell_3/vdd" 0.00292088
+cap "barthnauta_cell_3/vss" "barthnauta_cell_3/bp" 1.73472e-18
+cap "barthnauta_cell_3/vss" "barthnauta_cell_3/vdd" -52.3927
+cap "barthnauta_cell_4/vss" "barthnauta_cell_4/vdd" -32.7884
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/vreg" -2.21451
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/bp" -0.664321
+cap "barthnauta_cell_4/vdd" "barthnauta_cell_4/gp" -9.53612
+cap "barthnauta_cell_5/vss" "barthnauta_cell_5/gp" 8.88178e-16
+cap "barthnauta_cell_5/bp" "barthnauta_cell_5/vdd" -0.525921
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/vss" -32.5066
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/gp" -6.89405
+cap "barthnauta_cell_5/vdd" "barthnauta_cell_5/vreg" -1.47634
+cap "barthnauta_cell_7/gp" "barthnauta_cell_7/vdd" -4.39991
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/gp" 1.33227e-15
+cap "barthnauta_cell_7/vreg" "barthnauta_cell_7/vdd" -1.10726
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/vdd" -32.2247
+cap "barthnauta_cell_7/bp" "barthnauta_cell_7/vdd" -0.387521
+cap "barthnauta_cell_7/vss" "barthnauta_cell_7/bp" 8.67362e-19
+cap "barthnauta_cell_15/gp" "barthnauta_cell_15/vss" 1.33227e-15
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/bp" -0.24912
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/vreg" -1.10726
+cap "barthnauta_cell_15/gp" "barthnauta_cell_15/vdd" -2.05369
+cap "barthnauta_cell_15/vss" "barthnauta_cell_15/bp" -1.73472e-18
+cap "barthnauta_cell_15/vdd" "barthnauta_cell_15/vss" -31.9429
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/bp" -4.33681e-19
+cap "barthnauta_cell_14/gp" "barthnauta_cell_14/vss" 8.88178e-16
+cap "barthnauta_cell_14/vdd" "barthnauta_cell_10/gp" 0.00292088
+cap "barthnauta_cell_14/vdd" "barthnauta_cell_14/bp" 5.55112e-16
+cap "barthnauta_cell_14/gp" "barthnauta_cell_14/vdd" 0.689072
+cap "barthnauta_cell_14/vss" "barthnauta_cell_14/vdd" -41.9141
+cap "barthnauta_cell_13/gp" "barthnauta_cell_13/vdd" 0.00292088
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/bp" 1.73472e-18
+cap "barthnauta_cell_13/vdd" "barthnauta_cell_13/gp" 0.65172
+cap "barthnauta_cell_13/vss" "barthnauta_cell_13/vdd" -52.3927
+cap "barthnauta_cell_12/vreg" "barthnauta_cell_12/vdd" -2.21451
+cap "barthnauta_cell_12/vdd" "barthnauta_cell_12/bp" -0.664321
+cap "barthnauta_cell_12/gp" "barthnauta_cell_12/vdd" -9.53612
+cap "barthnauta_cell_12/vss" "barthnauta_cell_12/vdd" -32.7884
+cap "barthnauta_cell_11/vss" "barthnauta_cell_11/vdd" -32.5066
+cap "barthnauta_cell_11/vss" "barthnauta_cell_11/gp" 8.88178e-16
+cap "barthnauta_edge_1/hih" "barthnauta_cell_11/vdd" 0.0316718
+cap "barthnauta_cell_11/gp" "barthnauta_cell_11/vdd" -6.93433
+cap "barthnauta_cell_11/bp" "barthnauta_cell_11/vdd" -0.525921
+cap "barthnauta_cell_11/vreg" "barthnauta_cell_11/vdd" -1.47634
+cap "barthnauta_cell_9/gp" "barthnauta_cell_9/vss" 20.9723
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vdd" 4.44089e-16
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/vdd" -10.3782
+cap "barthnauta_cell_9/gp" "barthnauta_cell_9/vdd" 0.83864
+cap "barthnauta_cell_9/gp" "barthnauta_edge_1/hih" 0.914444
+cap "barthnauta_cell_9/vss" "barthnauta_cell_9/vreg" 4.71842
+cap "barthnauta_cell_9/bp" "barthnauta_cell_9/vss" 0.0559552
+cap "barthnauta_cell_9/vdd" "barthnauta_edge_1/hih" 0.091776
+merge "barthnauta_edge_1/om" "barthnauta_cell_8/om" -4811.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -432000 -8640 -1944000 -40080 -288000 -5760 0 0
+merge "barthnauta_cell_8/om" "barthnauta_cell_9/om"
+merge "barthnauta_cell_9/om" "barthnauta_cell_9/out"
+merge "barthnauta_cell_9/out" "m2_7920_n480#"
+merge "m2_7920_n480#" "barthnauta_cell_10/om"
+merge "barthnauta_cell_10/om" "barthnauta_cell_11/om"
+merge "barthnauta_cell_11/om" "barthnauta_cell_12/inr"
+merge "barthnauta_cell_12/inr" "barthnauta_cell_12/om"
+merge "barthnauta_cell_12/om" "m3_4080_n480#"
+merge "m3_4080_n480#" "barthnauta_cell_13/inl"
+merge "barthnauta_cell_13/inl" "barthnauta_cell_13/om"
+merge "barthnauta_cell_13/om" "m3_3360_n480#"
+merge "m3_3360_n480#" "barthnauta_cell_13/out"
+merge "barthnauta_cell_13/out" "m2_3120_n480#"
+merge "m2_3120_n480#" "barthnauta_cell_14/om"
+merge "barthnauta_cell_14/om" "barthnauta_cell_14/out"
+merge "barthnauta_cell_14/out" "m2_1920_n480#"
+merge "m2_1920_n480#" "barthnauta_cell_15/om"
+merge "barthnauta_cell_15/om" "barthnauta_cell_7/om"
+merge "barthnauta_cell_7/om" "barthnauta_cell_6/om"
+merge "barthnauta_cell_6/om" "barthnauta_cell_6/out"
+merge "barthnauta_cell_6/out" "m2_n1680_n480#"
+merge "m2_n1680_n480#" "barthnauta_cell_5/inl"
+merge "barthnauta_cell_5/inl" "barthnauta_cell_5/om"
+merge "barthnauta_cell_5/om" "m3_n3120_n480#"
+merge "m3_n3120_n480#" "barthnauta_cell_5/out"
+merge "barthnauta_cell_5/out" "m2_n2880_n480#"
+merge "m2_n2880_n480#" "barthnauta_cell_4/inr"
+merge "barthnauta_cell_4/inr" "barthnauta_cell_4/om"
+merge "barthnauta_cell_4/om" "m3_n3840_n480#"
+merge "m3_n3840_n480#" "barthnauta_cell_3/om"
+merge "barthnauta_cell_3/om" "barthnauta_cell_2/om"
+merge "barthnauta_cell_2/om" "barthnauta_cell_1/om"
+merge "barthnauta_cell_1/om" "barthnauta_cell_1/out"
+merge "barthnauta_cell_1/out" "m2_n7680_n480#"
+merge "m2_n7680_n480#" "barthnauta_edge_0/om"
+merge "barthnauta_edge_0/om" "barthnauta_cell_0/om"
+merge "barthnauta_cell_0/om" "om"
+merge "barthnauta_edge_1/gp" "barthnauta_cell_8/gp" -2621.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -244800 -8400 0 0 0 0
+merge "barthnauta_cell_8/gp" "barthnauta_cell_9/gp"
+merge "barthnauta_cell_9/gp" "barthnauta_cell_10/gp"
+merge "barthnauta_cell_10/gp" "barthnauta_cell_11/gp"
+merge "barthnauta_cell_11/gp" "barthnauta_cell_12/gp"
+merge "barthnauta_cell_12/gp" "barthnauta_cell_13/gp"
+merge "barthnauta_cell_13/gp" "barthnauta_cell_14/gp"
+merge "barthnauta_cell_14/gp" "barthnauta_cell_15/gp"
+merge "barthnauta_cell_15/gp" "barthnauta_cell_7/gp"
+merge "barthnauta_cell_7/gp" "barthnauta_cell_6/gp"
+merge "barthnauta_cell_6/gp" "barthnauta_cell_5/gp"
+merge "barthnauta_cell_5/gp" "barthnauta_cell_4/gp"
+merge "barthnauta_cell_4/gp" "barthnauta_cell_3/gp"
+merge "barthnauta_cell_3/gp" "barthnauta_cell_2/gp"
+merge "barthnauta_cell_2/gp" "barthnauta_cell_1/gp"
+merge "barthnauta_cell_1/gp" "barthnauta_edge_0/gp"
+merge "barthnauta_edge_0/gp" "barthnauta_cell_0/gp"
+merge "barthnauta_cell_0/gp" "gp"
+merge "barthnauta_edge_1/im" "barthnauta_cell_8/inl" -2014.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -331200 -11280 -86400 -2880 0 0
+merge "barthnauta_cell_8/inl" "barthnauta_cell_8/im"
+merge "barthnauta_cell_8/im" "m3_9360_1440#"
+merge "m3_9360_1440#" "barthnauta_cell_9/im"
+merge "barthnauta_cell_9/im" "barthnauta_cell_10/im"
+merge "barthnauta_cell_10/im" "barthnauta_cell_11/inr"
+merge "barthnauta_cell_11/inr" "barthnauta_cell_11/im"
+merge "barthnauta_cell_11/im" "m3_5280_1440#"
+merge "m3_5280_1440#" "barthnauta_cell_12/im"
+merge "barthnauta_cell_12/im" "barthnauta_cell_13/im"
+merge "barthnauta_cell_13/im" "barthnauta_cell_14/im"
+merge "barthnauta_cell_14/im" "barthnauta_cell_15/inr"
+merge "barthnauta_cell_15/inr" "barthnauta_cell_15/im"
+merge "barthnauta_cell_15/im" "m3_480_1440#"
+merge "m3_480_1440#" "barthnauta_cell_7/inr"
+merge "barthnauta_cell_7/inr" "barthnauta_cell_7/im"
+merge "barthnauta_cell_7/im" "m3_n240_1440#"
+merge "m3_n240_1440#" "barthnauta_cell_6/im"
+merge "barthnauta_cell_6/im" "barthnauta_cell_5/im"
+merge "barthnauta_cell_5/im" "barthnauta_cell_4/im"
+merge "barthnauta_cell_4/im" "barthnauta_cell_3/inr"
+merge "barthnauta_cell_3/inr" "barthnauta_cell_3/im"
+merge "barthnauta_cell_3/im" "m3_n5040_1440#"
+merge "m3_n5040_1440#" "barthnauta_cell_2/im"
+merge "barthnauta_cell_2/im" "barthnauta_cell_1/im"
+merge "barthnauta_cell_1/im" "barthnauta_edge_0/im"
+merge "barthnauta_edge_0/im" "im"
+merge "im" "barthnauta_cell_0/inl"
+merge "barthnauta_cell_0/inl" "barthnauta_cell_0/im"
+merge "barthnauta_cell_0/im" "m3_n9120_1440#"
+merge "barthnauta_edge_1/x" "barthnauta_cell_8/inr" -5290.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57600 -1920 -475200 -16200 -172800 -5880 0 0
+merge "barthnauta_cell_8/inr" "barthnauta_cell_8/m3_n7200_1320#"
+merge "barthnauta_cell_8/m3_n7200_1320#" "m3_8880_960#"
+merge "m3_8880_960#" "barthnauta_cell_9/inl"
+merge "barthnauta_cell_9/inl" "barthnauta_cell_9/m3_n7200_1320#"
+merge "barthnauta_cell_9/m3_n7200_1320#" "m3_8160_960#"
+merge "m3_8160_960#" "barthnauta_cell_10/inr"
+merge "barthnauta_cell_10/inr" "barthnauta_cell_10/out"
+merge "barthnauta_cell_10/out" "m2_6720_960#"
+merge "m2_6720_960#" "barthnauta_cell_10/m3_n7200_1320#"
+merge "barthnauta_cell_10/m3_n7200_1320#" "m3_6480_960#"
+merge "m3_6480_960#" "barthnauta_cell_11/inl"
+merge "barthnauta_cell_11/inl" "barthnauta_cell_11/m3_n7200_1320#"
+merge "barthnauta_cell_11/m3_n7200_1320#" "m3_5760_960#"
+merge "m3_5760_960#" "barthnauta_cell_11/out"
+merge "barthnauta_cell_11/out" "m2_5520_960#"
+merge "m2_5520_960#" "barthnauta_cell_12/m3_n7200_1320#"
+merge "barthnauta_cell_12/m3_n7200_1320#" "barthnauta_cell_13/m3_n7200_1320#"
+merge "barthnauta_cell_13/m3_n7200_1320#" "barthnauta_cell_14/inr"
+merge "barthnauta_cell_14/inr" "barthnauta_cell_14/m3_n7200_1320#"
+merge "barthnauta_cell_14/m3_n7200_1320#" "m3_1680_960#"
+merge "m3_1680_960#" "barthnauta_cell_15/inl"
+merge "barthnauta_cell_15/inl" "barthnauta_cell_15/m3_n7200_1320#"
+merge "barthnauta_cell_15/m3_n7200_1320#" "m3_960_960#"
+merge "m3_960_960#" "barthnauta_cell_7/inl"
+merge "barthnauta_cell_7/inl" "barthnauta_cell_7/m3_n7200_1320#"
+merge "barthnauta_cell_7/m3_n7200_1320#" "m3_n720_960#"
+merge "m3_n720_960#" "barthnauta_cell_6/inr"
+merge "barthnauta_cell_6/inr" "barthnauta_cell_6/m3_n7200_1320#"
+merge "barthnauta_cell_6/m3_n7200_1320#" "m3_n1440_960#"
+merge "m3_n1440_960#" "barthnauta_cell_5/m3_n7200_1320#"
+merge "barthnauta_cell_5/m3_n7200_1320#" "barthnauta_cell_4/m3_n7200_1320#"
+merge "barthnauta_cell_4/m3_n7200_1320#" "barthnauta_cell_3/inl"
+merge "barthnauta_cell_3/inl" "barthnauta_cell_3/m3_n7200_1320#"
+merge "barthnauta_cell_3/m3_n7200_1320#" "m3_n5520_960#"
+merge "m3_n5520_960#" "barthnauta_cell_3/out"
+merge "barthnauta_cell_3/out" "m2_n5280_960#"
+merge "m2_n5280_960#" "barthnauta_cell_2/inr"
+merge "barthnauta_cell_2/inr" "barthnauta_cell_2/m3_n7200_1320#"
+merge "barthnauta_cell_2/m3_n7200_1320#" "m3_n6240_960#"
+merge "m3_n6240_960#" "barthnauta_cell_2/out"
+merge "barthnauta_cell_2/out" "m2_n6480_960#"
+merge "m2_n6480_960#" "barthnauta_cell_1/inl"
+merge "barthnauta_cell_1/inl" "barthnauta_cell_1/m3_n7200_1320#"
+merge "barthnauta_cell_1/m3_n7200_1320#" "m3_n7920_960#"
+merge "m3_n7920_960#" "barthnauta_edge_0/x"
+merge "barthnauta_edge_0/x" "x"
+merge "x" "barthnauta_cell_0/inr"
+merge "barthnauta_cell_0/inr" "barthnauta_cell_0/m3_n7200_1320#"
+merge "barthnauta_cell_0/m3_n7200_1320#" "m3_n8640_960#"
+merge "barthnauta_edge_1/gnd" "barthnauta_cell_8/vss" -24554.7 0 0 0 0 0 0 -2203200 -73440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2203200 -73440 0 0 -2692800 -74640 0 0 0 0
+merge "barthnauta_cell_8/vss" "barthnauta_cell_8/gnd"
+merge "barthnauta_cell_8/gnd" "barthnauta_cell_9/vss"
+merge "barthnauta_cell_9/vss" "barthnauta_cell_9/gnd"
+merge "barthnauta_cell_9/gnd" "barthnauta_cell_10/vss"
+merge "barthnauta_cell_10/vss" "barthnauta_cell_10/gnd"
+merge "barthnauta_cell_10/gnd" "barthnauta_cell_11/vss"
+merge "barthnauta_cell_11/vss" "barthnauta_cell_11/gnd"
+merge "barthnauta_cell_11/gnd" "barthnauta_cell_12/vss"
+merge "barthnauta_cell_12/vss" "barthnauta_cell_12/gnd"
+merge "barthnauta_cell_12/gnd" "barthnauta_cell_13/vss"
+merge "barthnauta_cell_13/vss" "barthnauta_cell_13/gnd"
+merge "barthnauta_cell_13/gnd" "barthnauta_cell_14/vss"
+merge "barthnauta_cell_14/vss" "barthnauta_cell_14/gnd"
+merge "barthnauta_cell_14/gnd" "barthnauta_cell_15/vss"
+merge "barthnauta_cell_15/vss" "barthnauta_cell_15/gnd"
+merge "barthnauta_cell_15/gnd" "barthnauta_cell_7/vss"
+merge "barthnauta_cell_7/vss" "barthnauta_cell_7/gnd"
+merge "barthnauta_cell_7/gnd" "barthnauta_cell_6/vss"
+merge "barthnauta_cell_6/vss" "barthnauta_cell_6/gnd"
+merge "barthnauta_cell_6/gnd" "barthnauta_cell_5/vss"
+merge "barthnauta_cell_5/vss" "barthnauta_cell_5/gnd"
+merge "barthnauta_cell_5/gnd" "barthnauta_cell_4/vss"
+merge "barthnauta_cell_4/vss" "barthnauta_cell_4/gnd"
+merge "barthnauta_cell_4/gnd" "barthnauta_cell_3/vss"
+merge "barthnauta_cell_3/vss" "barthnauta_cell_3/gnd"
+merge "barthnauta_cell_3/gnd" "barthnauta_cell_2/vss"
+merge "barthnauta_cell_2/vss" "barthnauta_cell_2/gnd"
+merge "barthnauta_cell_2/gnd" "barthnauta_cell_1/vss"
+merge "barthnauta_cell_1/vss" "barthnauta_cell_1/gnd"
+merge "barthnauta_cell_1/gnd" "barthnauta_edge_0/gnd"
+merge "barthnauta_edge_0/gnd" "barthnauta_cell_0/vss"
+merge "barthnauta_cell_0/vss" "VSUBS"
+merge "VSUBS" "gnd"
+merge "gnd" "barthnauta_cell_0/gnd"
+merge "barthnauta_edge_1/op" "barthnauta_cell_8/op" -5529.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -432000 -9360 -1944000 -43320 -288000 -6240 0 0
+merge "barthnauta_cell_8/op" "barthnauta_cell_8/out"
+merge "barthnauta_cell_8/out" "m2_9120_1920#"
+merge "m2_9120_1920#" "barthnauta_cell_9/op"
+merge "barthnauta_cell_9/op" "barthnauta_cell_10/op"
+merge "barthnauta_cell_10/op" "barthnauta_cell_11/op"
+merge "barthnauta_cell_11/op" "barthnauta_cell_12/inl"
+merge "barthnauta_cell_12/inl" "barthnauta_cell_12/op"
+merge "barthnauta_cell_12/op" "m3_4560_1920#"
+merge "m3_4560_1920#" "barthnauta_cell_12/out"
+merge "barthnauta_cell_12/out" "m2_4320_1920#"
+merge "m2_4320_1920#" "barthnauta_cell_13/inr"
+merge "barthnauta_cell_13/inr" "barthnauta_cell_13/op"
+merge "barthnauta_cell_13/op" "m3_2880_1920#"
+merge "m3_2880_1920#" "barthnauta_cell_14/op"
+merge "barthnauta_cell_14/op" "barthnauta_cell_15/op"
+merge "barthnauta_cell_15/op" "barthnauta_cell_15/out"
+merge "barthnauta_cell_15/out" "m2_720_1920#"
+merge "m2_720_1920#" "barthnauta_cell_7/op"
+merge "barthnauta_cell_7/op" "barthnauta_cell_7/out"
+merge "barthnauta_cell_7/out" "m2_n480_1920#"
+merge "m2_n480_1920#" "barthnauta_cell_6/op"
+merge "barthnauta_cell_6/op" "barthnauta_cell_5/inr"
+merge "barthnauta_cell_5/inr" "barthnauta_cell_5/op"
+merge "barthnauta_cell_5/op" "m3_n2640_1920#"
+merge "m3_n2640_1920#" "barthnauta_cell_4/inl"
+merge "barthnauta_cell_4/inl" "barthnauta_cell_4/op"
+merge "barthnauta_cell_4/op" "m3_n4320_1920#"
+merge "m3_n4320_1920#" "barthnauta_cell_4/out"
+merge "barthnauta_cell_4/out" "m2_n4080_1920#"
+merge "m2_n4080_1920#" "barthnauta_cell_3/op"
+merge "barthnauta_cell_3/op" "barthnauta_cell_2/op"
+merge "barthnauta_cell_2/op" "barthnauta_cell_1/op"
+merge "barthnauta_cell_1/op" "barthnauta_edge_0/op"
+merge "barthnauta_edge_0/op" "op"
+merge "op" "barthnauta_cell_0/op"
+merge "barthnauta_cell_0/op" "barthnauta_cell_0/out"
+merge "barthnauta_cell_0/out" "m2_n8880_1920#"
+merge "barthnauta_edge_1/ip" "barthnauta_cell_8/ip" -1893.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -331200 -11400 -86400 -3000 0 0
+merge "barthnauta_cell_8/ip" "barthnauta_cell_9/inr"
+merge "barthnauta_cell_9/inr" "barthnauta_cell_9/ip"
+merge "barthnauta_cell_9/ip" "m3_7680_480#"
+merge "m3_7680_480#" "barthnauta_cell_10/inl"
+merge "barthnauta_cell_10/inl" "barthnauta_cell_10/ip"
+merge "barthnauta_cell_10/ip" "m3_6960_480#"
+merge "m3_6960_480#" "barthnauta_cell_11/ip"
+merge "barthnauta_cell_11/ip" "barthnauta_cell_12/ip"
+merge "barthnauta_cell_12/ip" "barthnauta_cell_13/ip"
+merge "barthnauta_cell_13/ip" "barthnauta_cell_14/inl"
+merge "barthnauta_cell_14/inl" "barthnauta_cell_14/ip"
+merge "barthnauta_cell_14/ip" "m3_2160_480#"
+merge "m3_2160_480#" "barthnauta_cell_15/ip"
+merge "barthnauta_cell_15/ip" "barthnauta_cell_7/ip"
+merge "barthnauta_cell_7/ip" "barthnauta_cell_6/inl"
+merge "barthnauta_cell_6/inl" "barthnauta_cell_6/ip"
+merge "barthnauta_cell_6/ip" "m3_n1920_480#"
+merge "m3_n1920_480#" "barthnauta_cell_5/ip"
+merge "barthnauta_cell_5/ip" "barthnauta_cell_4/ip"
+merge "barthnauta_cell_4/ip" "barthnauta_cell_3/ip"
+merge "barthnauta_cell_3/ip" "barthnauta_cell_2/inl"
+merge "barthnauta_cell_2/inl" "barthnauta_cell_2/ip"
+merge "barthnauta_cell_2/ip" "m3_n6720_480#"
+merge "m3_n6720_480#" "barthnauta_cell_1/inr"
+merge "barthnauta_cell_1/inr" "barthnauta_cell_1/ip"
+merge "barthnauta_cell_1/ip" "m3_n7440_480#"
+merge "m3_n7440_480#" "barthnauta_edge_0/ip"
+merge "barthnauta_edge_0/ip" "barthnauta_cell_0/ip"
+merge "barthnauta_cell_0/ip" "ip"
+merge "barthnauta_edge_1/vreg" "vreg" -8250.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -734400 -20760 0 0 0 0
+merge "vreg" "barthnauta_cell_8/vreg"
+merge "barthnauta_cell_8/vreg" "barthnauta_cell_9/vreg"
+merge "barthnauta_cell_9/vreg" "barthnauta_cell_10/vreg"
+merge "barthnauta_cell_10/vreg" "barthnauta_cell_11/vreg"
+merge "barthnauta_cell_11/vreg" "barthnauta_cell_12/vreg"
+merge "barthnauta_cell_12/vreg" "barthnauta_cell_13/vreg"
+merge "barthnauta_cell_13/vreg" "barthnauta_cell_14/vreg"
+merge "barthnauta_cell_14/vreg" "barthnauta_cell_15/vreg"
+merge "barthnauta_cell_15/vreg" "barthnauta_cell_7/vreg"
+merge "barthnauta_cell_7/vreg" "barthnauta_cell_6/vreg"
+merge "barthnauta_cell_6/vreg" "barthnauta_cell_5/vreg"
+merge "barthnauta_cell_5/vreg" "barthnauta_cell_4/vreg"
+merge "barthnauta_cell_4/vreg" "barthnauta_cell_3/vreg"
+merge "barthnauta_cell_3/vreg" "barthnauta_cell_2/vreg"
+merge "barthnauta_cell_2/vreg" "barthnauta_cell_1/vreg"
+merge "barthnauta_cell_1/vreg" "barthnauta_edge_0/vreg"
+merge "barthnauta_edge_0/vreg" "barthnauta_cell_0/vreg"
+merge "barthnauta_edge_1/vdd" "barthnauta_cell_8/vdd" -14202.8 -2448000 -44880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -489600 -16320 0 0 -1224000 -25680 0 0 0 0
+merge "barthnauta_cell_8/vdd" "barthnauta_cell_9/vdd"
+merge "barthnauta_cell_9/vdd" "barthnauta_cell_10/vdd"
+merge "barthnauta_cell_10/vdd" "barthnauta_cell_11/vdd"
+merge "barthnauta_cell_11/vdd" "barthnauta_cell_12/vdd"
+merge "barthnauta_cell_12/vdd" "barthnauta_cell_13/vdd"
+merge "barthnauta_cell_13/vdd" "barthnauta_cell_14/vdd"
+merge "barthnauta_cell_14/vdd" "barthnauta_cell_15/vdd"
+merge "barthnauta_cell_15/vdd" "barthnauta_cell_7/vdd"
+merge "barthnauta_cell_7/vdd" "barthnauta_cell_6/vdd"
+merge "barthnauta_cell_6/vdd" "barthnauta_cell_5/vdd"
+merge "barthnauta_cell_5/vdd" "barthnauta_cell_4/vdd"
+merge "barthnauta_cell_4/vdd" "barthnauta_cell_3/vdd"
+merge "barthnauta_cell_3/vdd" "barthnauta_cell_2/vdd"
+merge "barthnauta_cell_2/vdd" "barthnauta_cell_1/vdd"
+merge "barthnauta_cell_1/vdd" "barthnauta_edge_0/vdd"
+merge "barthnauta_edge_0/vdd" "vdd"
+merge "vdd" "barthnauta_cell_0/vdd"
+merge "barthnauta_edge_1/bp" "m1_10320_2880#" -12389 -2692800 -48960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -489600 -16800 0 0 -1627200 -31680 0 0 0 0
+merge "m1_10320_2880#" "barthnauta_cell_8/bp"
+merge "barthnauta_cell_8/bp" "barthnauta_cell_9/bp"
+merge "barthnauta_cell_9/bp" "barthnauta_cell_10/bp"
+merge "barthnauta_cell_10/bp" "barthnauta_cell_11/bp"
+merge "barthnauta_cell_11/bp" "barthnauta_cell_12/bp"
+merge "barthnauta_cell_12/bp" "m3_4920_2880#"
+merge "m3_4920_2880#" "barthnauta_cell_13/bp"
+merge "barthnauta_cell_13/bp" "barthnauta_cell_14/bp"
+merge "barthnauta_cell_14/bp" "barthnauta_cell_15/bp"
+merge "barthnauta_cell_15/bp" "barthnauta_cell_7/bp"
+merge "barthnauta_cell_7/bp" "barthnauta_cell_6/bp"
+merge "barthnauta_cell_6/bp" "barthnauta_cell_5/bp"
+merge "barthnauta_cell_5/bp" "barthnauta_cell_4/bp"
+merge "barthnauta_cell_4/bp" "barthnauta_cell_3/bp"
+merge "barthnauta_cell_3/bp" "barthnauta_cell_2/bp"
+merge "barthnauta_cell_2/bp" "barthnauta_cell_1/bp"
+merge "barthnauta_cell_1/bp" "barthnauta_edge_0/bp"
+merge "barthnauta_edge_0/bp" "m1_n10080_2880#"
+merge "m1_n10080_2880#" "barthnauta_cell_0/bp"
+merge "barthnauta_cell_0/bp" "bp"

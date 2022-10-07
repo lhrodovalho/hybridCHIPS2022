@@ -1,0 +1,49 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuA/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuA/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuA/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+
+.include "../../inv/ngspice/inv.spice"
+.include "../magic/manf.spice"
+
+.param pVDD = 5.0
+.param pIB  = 45.0u
+
+VDD vdd 0 dc {pVDD}
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+*ECM cm vss q vss 1
+
+vx  x  cm 0
+bin in cm v = {v(x,cm)*v(x,cm)*v(x,cm)}
+*vin in cm dc 0 ac 1
+eip ip cm in cm  1.0
+eim im cm in cm -1.0
+
+ib vdd ib {pIB}
+xb ib      vdd gp bp vreg vss inv_bias
+xq q   q   vdd gp bp vreg vss inv0
+
+vreg vreg vss 3.0
+
+x0 ip im op om vdd gp bp vreg vss manf
+
+.param dx = 0.1
+.dc vx {-pow(dx,1/3)} {pow(dx,1/3)} {pow(dx,1/3)/1k}
+*.param dx = 0.1
+*.dc vin {-dx} {dx} {dx/1001}
+.option gmin = 1e-15
+.control
+	run
+	
+	let vi = ip-im
+	let vo = op-om
+	let av = abs(deriv(vo)/deriv(vi))
+	plot vo vs vi
+	plot av vs vo ylog ylimit 0.1 10k
+		
+.endc
+
+.end

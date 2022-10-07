@@ -1,0 +1,164 @@
+* NGSPICE file created from barthnauta.ext - technology: gf180mcuC
+
+.subckt barthnauta_cell inl inr out gp vreg op im ip om vss vdd m3_n7200_1320# bp
+X0 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X1 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X4 d2 inr out vss nmos_3p3 w=1.8u l=0.6u
+X5 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X6 d1 inl vss vss nmos_3p3 w=1.8u l=0.6u
+X7 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X8 vss inr d2 vss nmos_3p3 w=1.8u l=0.6u
+X9 out inl d1 vss nmos_3p3 w=1.8u l=0.6u
+X10 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+C0 om inl 0.18fF
+C1 bp inl 0.32fF
+C2 inr out 0.19fF
+C3 vreg out 0.78fF
+C4 om inr 0.18fF
+C5 bp inr 0.32fF
+C6 op inl 0.20fF
+C7 bp vreg 0.92fF
+C8 inl inr 0.55fF
+C9 op inr 0.20fF
+C10 gp vreg 1.98fF
+C11 vdd gp 0.66fF
+C12 om out 0.11fF
+C13 bp out 0.15fF
+C14 vdd vreg 1.41fF
+C15 inl out 0.17fF
+C16 op out 0.11fF
+C17 om vss 1.14fF
+C18 ip vss 0.79fF
+C19 im vss 0.79fF
+C20 op vss 1.13fF
+C21 out vss 1.53fF
+C22 inr vss 2.28fF
+C23 inl vss 2.29fF
+C24 vreg vss 0.72fF
+C25 gp vss 1.56fF
+C26 bp vss 6.58fF
+C27 vdd vss 6.08fF
+C28 m3_n7200_1320# vss 0.79fF
+C29 d2 vss 0.18fF
+C30 d1 vss 0.18fF
+.ends
+
+.subckt barthnauta_edge gp vreg op x im ip om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 vreg bp 0.23fF
+C1 vreg hi 0.11fF
+C2 vreg gp 1.01fF
+C3 bp hi 0.28fF
+C4 vreg vdd 0.22fF
+C5 vdd hih 0.45fF
+C6 om gnd 0.85fF
+C7 ip gnd 0.58fF
+C8 x gnd 0.58fF
+C9 im gnd 0.58fF
+C10 op gnd 0.84fF
+C11 vreg gnd 0.44fF
+C12 bp gnd 4.35fF
+C13 vdd gnd 4.01fF
+C14 lo gnd 0.84fF
+C15 hi gnd 0.46fF
+C16 hih gnd 0.46fF
+.ends
+
+.subckt barthnauta ip im op om vdd gp bp vreg gnd
+Xbarthnauta_cell_9 x ip om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_edge_0 gp vreg op x im ip om vdd gnd bp barthnauta_edge
+Xbarthnauta_edge_1 gp vreg op x im ip om vdd gnd bp barthnauta_edge
+Xbarthnauta_cell_0 im x op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_10 ip x x gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_1 x ip om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_11 x im x gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_2 ip x x gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_12 op om op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_13 om op om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_3 x im x gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_14 ip x om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_4 op om op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_15 x im op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_5 om op om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_6 ip x om gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_8 im x op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+Xbarthnauta_cell_7 x im op gp vreg op im ip om gnd vdd x bp barthnauta_cell
+C0 im ip 0.11fF
+C1 gnd om -0.40fF
+C2 gnd bp -1.56fF
+C3 gnd op -0.11fF
+C4 gnd im -0.29fF
+C5 vdd vreg 0.39fF
+C6 gp vreg -1.15fF
+C7 gnd vreg 0.26fF
+C8 x om 0.65fF
+C9 op x 0.80fF
+C10 vdd gp 0.22fF
+C11 im x 0.20fF
+C12 op om 0.49fF
+C13 gnd vdd -0.98fF
+C14 op bp 0.11fF
+C15 gnd ip -0.67fF
+C16 im om 0.42fF
+C17 op im 1.16fF
+C18 x vreg 0.17fF
+C19 vreg om 0.14fF
+C20 op vreg 0.14fF
+C21 x ip 0.38fF
+C22 ip om 0.41fF
+C23 op ip 0.93fF
+C24 gnd 0 -24.44fF
+C25 vdd 0 91.18fF
+C26 barthnauta_cell_7/d2 0 0.18fF $ **FLOATING
+C27 barthnauta_cell_7/d1 0 0.18fF $ **FLOATING
+C28 barthnauta_cell_8/d2 0 0.18fF $ **FLOATING
+C29 barthnauta_cell_8/d1 0 0.18fF $ **FLOATING
+C30 barthnauta_cell_6/d2 0 0.18fF $ **FLOATING
+C31 barthnauta_cell_6/d1 0 0.18fF $ **FLOATING
+C32 barthnauta_cell_5/d2 0 0.18fF $ **FLOATING
+C33 barthnauta_cell_5/d1 0 0.18fF $ **FLOATING
+C34 barthnauta_cell_15/d2 0 0.18fF $ **FLOATING
+C35 barthnauta_cell_15/d1 0 0.18fF $ **FLOATING
+C36 barthnauta_cell_4/d2 0 0.18fF $ **FLOATING
+C37 barthnauta_cell_4/d1 0 0.18fF $ **FLOATING
+C38 barthnauta_cell_14/d2 0 0.18fF $ **FLOATING
+C39 barthnauta_cell_14/d1 0 0.18fF $ **FLOATING
+C40 barthnauta_cell_3/d2 0 0.18fF $ **FLOATING
+C41 barthnauta_cell_3/d1 0 0.18fF $ **FLOATING
+C42 barthnauta_cell_13/d2 0 0.18fF $ **FLOATING
+C43 barthnauta_cell_13/d1 0 0.18fF $ **FLOATING
+C44 barthnauta_cell_12/d2 0 0.18fF $ **FLOATING
+C45 barthnauta_cell_12/d1 0 0.18fF $ **FLOATING
+C46 barthnauta_cell_2/d2 0 0.18fF $ **FLOATING
+C47 barthnauta_cell_2/d1 0 0.18fF $ **FLOATING
+C48 barthnauta_cell_11/d2 0 0.18fF $ **FLOATING
+C49 barthnauta_cell_11/d1 0 0.18fF $ **FLOATING
+C50 barthnauta_cell_1/d2 0 0.18fF $ **FLOATING
+C51 barthnauta_cell_1/d1 0 0.18fF $ **FLOATING
+C52 barthnauta_cell_10/d2 0 0.18fF $ **FLOATING
+C53 barthnauta_cell_10/d1 0 0.18fF $ **FLOATING
+C54 om 0 35.48fF
+C55 ip 0 26.06fF
+C56 im 0 25.92fF
+C57 op 0 34.80fF
+C58 gp 0 22.45fF
+C59 bp 0 103.69fF
+C60 x 0 43.03fF
+C61 barthnauta_cell_0/d2 0 0.18fF $ **FLOATING
+C62 barthnauta_cell_0/d1 0 0.18fF $ **FLOATING
+C63 barthnauta_edge_1/lo 0 0.84fF $ **FLOATING
+C64 barthnauta_edge_1/hi 0 0.46fF $ **FLOATING
+C65 barthnauta_edge_1/hih 0 0.46fF $ **FLOATING
+C66 vreg 0 4.17fF
+C67 barthnauta_edge_0/lo 0 0.84fF $ **FLOATING
+C68 barthnauta_edge_0/hi 0 0.46fF $ **FLOATING
+C69 barthnauta_edge_0/hih 0 0.46fF $ **FLOATING
+C70 barthnauta_cell_9/d2 0 0.18fF $ **FLOATING
+C71 barthnauta_cell_9/d1 0 0.18fF $ **FLOATING
+.ends
+

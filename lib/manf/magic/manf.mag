@@ -1,0 +1,173 @@
+magic
+tech gf180mcuC
+timestamp 1663413369
+<< via2 >>
+rect -780 228 -768 288
+rect -60 228 -48 288
+rect 180 228 192 288
+rect 300 228 312 288
+rect 540 228 552 288
+rect 1260 228 1272 288
+rect -540 132 -528 144
+rect -420 132 -408 144
+rect 900 132 912 144
+rect 1020 132 1032 144
+rect -300 84 -288 96
+rect 780 84 792 96
+rect -660 -60 -648 0
+rect -180 -60 -168 0
+rect 60 -60 72 0
+rect 420 -60 432 0
+rect 660 -60 672 0
+rect 1140 -60 1152 0
+<< metal3 >>
+rect -936 528 -924 588
+rect -936 480 -924 492
+rect -936 456 -924 468
+rect -936 324 -924 336
+rect -936 228 -924 288
+rect -936 180 -924 192
+rect -936 132 -924 144
+rect -936 84 -924 96
+rect -936 36 -924 48
+rect -936 -60 -924 0
+rect -936 -180 -924 -120
+<< via3 >>
+rect -396 228 -384 288
+rect 876 228 888 288
+rect -804 180 -792 192
+rect -36 180 -24 192
+rect 204 180 216 192
+rect 276 180 288 192
+rect 516 180 528 192
+rect 1284 180 1296 192
+rect -516 132 -504 144
+rect -444 132 -432 144
+rect -324 132 -312 144
+rect 804 132 816 144
+rect 924 132 936 144
+rect 996 132 1008 144
+rect -756 84 -744 96
+rect -684 84 -672 96
+rect -276 84 -264 96
+rect -156 84 -144 96
+rect -84 84 -72 96
+rect 84 84 96 96
+rect 156 84 168 96
+rect 324 84 336 96
+rect 396 84 408 96
+rect 564 84 576 96
+rect 636 84 648 96
+rect 756 84 768 96
+rect 1164 84 1176 96
+rect 1236 84 1248 96
+rect -636 36 -624 48
+rect -204 36 -192 48
+rect 36 36 48 48
+rect 444 36 456 48
+rect 684 36 696 48
+rect 1116 36 1128 48
+rect -564 -60 -552 0
+rect 1044 -60 1056 0
+use manf_cell  manf_cell_0
+timestamp 1663176840
+transform 1 0 -120 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_1
+timestamp 1663176840
+transform 1 0 0 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_2
+timestamp 1663176840
+transform 1 0 120 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_3
+timestamp 1663176840
+transform 1 0 240 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_4
+timestamp 1663176840
+transform 1 0 360 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_5
+timestamp 1663176840
+transform 1 0 480 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_6
+timestamp 1663176840
+transform 1 0 600 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_7
+timestamp 1663176840
+transform 1 0 720 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_8
+timestamp 1663176840
+transform 1 0 840 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_9
+timestamp 1663176840
+transform -1 0 612 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_10
+timestamp 1663176840
+transform -1 0 492 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_11
+timestamp 1663176840
+transform -1 0 372 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_12
+timestamp 1663176840
+transform -1 0 252 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_13
+timestamp 1663176840
+transform -1 0 132 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_14
+timestamp 1663176840
+transform -1 0 12 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_15
+timestamp 1663176840
+transform -1 0 -228 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_16
+timestamp 1663176840
+transform -1 0 -108 0 1 -48
+box -720 -132 -588 660
+use manf_cell  manf_cell_17
+timestamp 1663176840
+transform -1 0 -348 0 1 -48
+box -720 -132 -588 660
+use manf_edge  manf_edge_0
+timestamp 1663179863
+transform 1 0 -168 0 1 -48
+box -756 -132 -660 660
+use manf_edge  manf_edge_1
+timestamp 1663179863
+transform -1 0 660 0 1 -48
+box -756 -132 -660 660
+<< labels >>
+rlabel metal3 -936 36 -924 48 0 ip
+port 1 nsew
+rlabel metal3 -936 180 -924 192 0 im
+port 2 nsew
+rlabel metal3 -936 228 -924 288 0 op
+port 3 nsew
+rlabel metal3 -936 -60 -924 0 0 om
+port 4 nsew
+rlabel metal3 -936 528 -924 588 0 vdd
+port 5 nsew
+rlabel metal3 -936 456 -924 468 0 gp
+port 6 nsew
+rlabel metal3 -936 324 -924 336 0 bp
+port 7 nsew
+rlabel metal3 -936 480 -924 492 0 vreg
+port 8 nsew
+rlabel metal3 -936 -180 -924 -120 0 gnd
+port 9 nsew
+rlabel metal3 -936 132 -924 144 0 x
+rlabel metal3 -936 84 -924 96 0 y
+<< end >>

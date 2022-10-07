@@ -1,0 +1,161 @@
+* NGSPICE file created from manfvieru.ext - technology: gf180mcuC
+
+.subckt manfvieru_edge gp vreg im ip xm op xp om x y vdd gnd bp
+X0 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+X1 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X2 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+C0 hi vreg 0.11fF
+C1 vreg bp 0.23fF
+C2 op xm 0.98fF
+C3 hi bp 0.28fF
+C4 vdd hih 0.45fF
+C5 xp om 0.98fF
+C6 vreg gp 1.01fF
+C7 vreg vdd 0.22fF
+C8 vreg gnd 0.44fF
+C9 bp gnd 4.35fF
+C10 vdd gnd 4.01fF
+C11 lo gnd 0.84fF
+C12 hi gnd 0.46fF
+C13 hih gnd 0.46fF
+.ends
+
+.subckt manfvieru_cell inl inr out gp vreg op xm im ip xp om x y vdd gnd bp
+X0 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X1 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+X2 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X3 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X4 dr inr out gnd nmos_3p3 w=1.8u l=0.6u
+X5 dl inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X6 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X7 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
+X8 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
+X9 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X10 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X11 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+C0 out bp 0.15fF
+C1 vdd gp 0.66fF
+C2 out inr 0.20fF
+C3 out vreg 0.78fF
+C4 gp vreg 1.98fF
+C5 inr om 0.18fF
+C6 out inl 0.18fF
+C7 op inr 0.20fF
+C8 xp om 1.35fF
+C9 om inl 0.18fF
+C10 op inl 0.20fF
+C11 xm op 1.35fF
+C12 inr bp 0.32fF
+C13 vdd vreg 1.41fF
+C14 bp vreg 0.92fF
+C15 out om 0.12fF
+C16 bp inl 0.32fF
+C17 inr inl 0.64fF
+C18 out op 0.12fF
+C19 out gnd 1.80fF
+C20 inr gnd 2.38fF
+C21 inl gnd 2.39fF
+C22 vreg gnd 0.72fF
+C23 gp gnd 1.56fF
+C24 bp gnd 6.58fF
+C25 vdd gnd 6.08fF
+C26 dr gnd 0.18fF
+C27 dl gnd 0.18fF
+.ends
+
+.subckt manfvieru ip im op om vdd gp bp vreg gnd
+Xmanfvieru_edge_0 gp vreg im ip xm op xp om x y vdd gnd bp manfvieru_edge
+Xmanfvieru_edge_1 gp vreg im ip xm op xp om x y vdd gnd bp manfvieru_edge
+Xmanfvieru_cell_0 im y xp gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_1 y ip xm gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_2 xp x x gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_30 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_3 x om y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_20 im y xp gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_31 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_4 y y y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_21 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_32 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_10 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_5 op x y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_22 xp x x gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_33 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_11 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_7 ip y xm gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_6 x xm x gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_23 y ip xm gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_12 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_8 y im xp gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_24 y y y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_9 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_13 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_25 x om y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_14 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_27 op x y gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_26 x xm x gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_15 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_16 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_17 xp ip om gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_28 ip y xm gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_18 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_29 y im xp gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+Xmanfvieru_cell_19 im xm op gp vreg op xm im ip xp om x y vdd gnd bp manfvieru_cell
+X0 om xp mim_2p0fF c_width=199.8u c_length=7.2u
+X1 op xm mim_2p0fF c_width=199.8u c_length=7.2u
+C0 om ip 0.66fF
+C1 gp xm 0.50fF
+C2 xm x 0.20fF
+C3 op im 0.52fF
+C4 vreg op 1.05fF
+C5 im x 0.15fF
+C6 op y 1.33fF
+C7 xm xp 0.49fF
+C8 op ip 0.71fF
+C9 gp vreg -2.47fF
+C10 vreg x 0.13fF
+C11 x y 0.53fF
+C12 x ip 0.37fF
+C13 im xp 2.10fF
+C14 vreg xp 0.14fF
+C15 y xp 0.69fF
+C16 ip xp 1.01fF
+C17 op vdd 4.12fF
+C18 om op 0.43fF
+C19 gp vdd 0.34fF
+C20 om x 0.41fF
+C21 xm im 0.11fF
+C22 om xp 47.01fF
+C23 vreg xm 0.83fF
+C24 gp op 0.65fF
+C25 op x 0.28fF
+C26 xm y 0.36fF
+C27 xm ip 1.12fF
+C28 im y 0.15fF
+C29 op xp 0.66fF
+C30 im ip 3.37fF
+C31 op bp 0.13fF
+C32 vreg y 0.20fF
+C33 x xp 0.27fF
+C34 y ip 0.20fF
+C35 xm vdd 4.47fF
+C36 om xm 0.66fF
+C37 xp bp 0.11fF
+C38 om im 1.05fF
+C39 vreg vdd 0.81fF
+C40 om vreg 0.16fF
+C41 om y 1.64fF
+C42 xm op 47.50fF
+C43 bp gnd 207.63fF
+C44 vdd gnd 183.59fF
+C45 om gnd 71.70fF
+C46 xp gnd 41.45fF
+C47 ip gnd 52.09fF
+C48 y gnd 63.10fF
+C49 x gnd 49.41fF
+C50 im gnd 52.08fF
+C51 op gnd 56.88fF
+C52 xm gnd 35.93fF
+C53 vreg gnd 9.15fF
+C54 gp gnd 47.11fF
+.ends
+

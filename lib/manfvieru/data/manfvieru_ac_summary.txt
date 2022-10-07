@@ -1,0 +1,2 @@
+manfvieru ac summary
+gbw: 2.11061E+07 pm: 60.9652 av: 73.3873 id: 0.0013723 vreg: 2.33827

@@ -1,0 +1,170 @@
+* NGSPICE file created from manf.ext - technology: gf180mcuC
+
+.subckt manf_edge vreg gp op im x y ip om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 hi vreg 0.11fF
+C1 hih vdd 0.45fF
+C2 vreg vdd 0.22fF
+C3 hi bp 0.28fF
+C4 vreg gp 1.01fF
+C5 vreg bp 0.23fF
+C6 om gnd 0.85fF
+C7 ip gnd 0.58fF
+C8 y gnd 0.58fF
+C9 x gnd 0.58fF
+C10 im gnd 0.58fF
+C11 op gnd 0.84fF
+C12 vreg gnd 0.44fF
+C13 bp gnd 4.35fF
+C14 vdd gnd 4.01fF
+C15 lo gnd 0.84fF
+C16 hi gnd 0.46fF
+C17 hih gnd 0.46fF
+.ends
+
+.subckt manf_cell inl inr out gp vreg op im x y ip om vdd gnd bp
+X0 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X1 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 d2 inr out gnd nmos_3p3 w=1.8u l=0.6u
+X4 d1 inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X5 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X6 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X7 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X8 gnd inr d2 gnd nmos_3p3 w=1.8u l=0.6u
+X9 out inl d1 gnd nmos_3p3 w=1.8u l=0.6u
+X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+C0 vdd gp 0.66fF
+C1 bp out 0.15fF
+C2 vdd vreg 1.41fF
+C3 out om 0.11fF
+C4 op inl 0.20fF
+C5 op inr 0.20fF
+C6 inl inr 0.60fF
+C7 vreg out 0.78fF
+C8 bp vreg 0.92fF
+C9 op out 0.11fF
+C10 gp vreg 1.98fF
+C11 inl out 0.17fF
+C12 inr out 0.20fF
+C13 bp inl 0.32fF
+C14 bp inr 0.32fF
+C15 inl om 0.18fF
+C16 inr om 0.18fF
+C17 om gnd 1.14fF
+C18 ip gnd 0.79fF
+C19 y gnd 0.79fF
+C20 x gnd 0.79fF
+C21 im gnd 0.79fF
+C22 op gnd 1.13fF
+C23 out gnd 1.69fF
+C24 inr gnd 2.35fF
+C25 inl gnd 2.36fF
+C26 vreg gnd 0.72fF
+C27 gp gnd 1.56fF
+C28 bp gnd 6.58fF
+C29 vdd gnd 6.08fF
+C30 d2 gnd 0.18fF
+C31 d1 gnd 0.18fF
+.ends
+
+.subckt manf ip im op om vdd gp bp vreg gnd
+Xmanf_edge_0 vreg gp op im x y ip om vdd gnd bp manf_edge
+Xmanf_edge_1 vreg gp op im x y ip om vdd gnd bp manf_edge
+Xmanf_cell_0 im y op gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_2 om x x gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_1 y ip om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_3 x op x gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_4 x y y gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_5 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_6 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_7 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_8 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_9 im y op gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_10 y ip om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_11 om x x gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_12 x op x gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_13 x y y gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_14 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_15 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_16 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
+Xmanf_cell_17 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
+C0 x ip 0.23fF
+C1 x vreg 0.12fF
+C2 om y 0.85fF
+C3 x op 0.96fF
+C4 x im 0.11fF
+C5 ip op 0.34fF
+C6 vreg op 0.12fF
+C7 ip im 0.86fF
+C8 gp vdd 0.25fF
+C9 op im 0.40fF
+C10 x y 0.19fF
+C11 om x 0.30fF
+C12 vreg vdd 0.44fF
+C13 y ip 1.07fF
+C14 y vreg 0.15fF
+C15 om ip 0.98fF
+C16 y op 0.82fF
+C17 om vreg 0.13fF
+C18 om op 0.32fF
+C19 y im 0.32fF
+C20 om im 0.44fF
+C21 gp vreg -1.33fF
+C22 bp gnd 113.77fF
+C23 vdd gnd 100.54fF
+C24 manf_cell_17/d2 gnd 0.19fF $ **FLOATING
+C25 manf_cell_17/d1 gnd 0.18fF $ **FLOATING
+C26 manf_cell_16/d2 gnd 0.19fF $ **FLOATING
+C27 manf_cell_16/d1 gnd 0.19fF $ **FLOATING
+C28 manf_cell_15/d2 gnd 0.19fF $ **FLOATING
+C29 manf_cell_15/d1 gnd 0.19fF $ **FLOATING
+C30 manf_cell_14/d2 gnd 0.19fF $ **FLOATING
+C31 manf_cell_14/d1 gnd 0.19fF $ **FLOATING
+C32 manf_cell_13/d2 gnd 0.18fF $ **FLOATING
+C33 manf_cell_13/d1 gnd 0.18fF $ **FLOATING
+C34 manf_cell_12/d2 gnd 0.18fF $ **FLOATING
+C35 manf_cell_12/d1 gnd 0.18fF $ **FLOATING
+C36 manf_cell_11/d2 gnd 0.19fF $ **FLOATING
+C37 manf_cell_11/d1 gnd 0.18fF $ **FLOATING
+C38 manf_cell_10/d2 gnd 0.19fF $ **FLOATING
+C39 manf_cell_10/d1 gnd 0.18fF $ **FLOATING
+C40 manf_cell_9/d2 gnd 0.19fF $ **FLOATING
+C41 manf_cell_9/d1 gnd 0.19fF $ **FLOATING
+C42 manf_cell_8/d2 gnd 0.18fF $ **FLOATING
+C43 manf_cell_8/d1 gnd 0.19fF $ **FLOATING
+C44 manf_cell_7/d2 gnd 0.18fF $ **FLOATING
+C45 manf_cell_7/d1 gnd 0.18fF $ **FLOATING
+C46 manf_cell_6/d2 gnd 0.18fF $ **FLOATING
+C47 manf_cell_6/d1 gnd 0.18fF $ **FLOATING
+C48 manf_cell_5/d2 gnd 0.19fF $ **FLOATING
+C49 manf_cell_5/d1 gnd 0.19fF $ **FLOATING
+C50 manf_cell_4/d2 gnd 0.19fF $ **FLOATING
+C51 manf_cell_4/d1 gnd 0.19fF $ **FLOATING
+C52 manf_cell_3/d2 gnd 0.19fF $ **FLOATING
+C53 manf_cell_3/d1 gnd 0.19fF $ **FLOATING
+C54 manf_cell_1/d2 gnd 0.18fF $ **FLOATING
+C55 manf_cell_1/d1 gnd 0.19fF $ **FLOATING
+C56 manf_cell_2/d2 gnd 0.18fF $ **FLOATING
+C57 manf_cell_2/d1 gnd 0.19fF $ **FLOATING
+C58 om gnd 33.51fF
+C59 ip gnd 26.57fF
+C60 y gnd 46.95fF
+C61 x gnd 33.99fF
+C62 im gnd 27.50fF
+C63 op gnd 33.62fF
+C64 vreg gnd 4.89fF
+C65 gp gnd 25.14fF
+C66 manf_cell_0/d2 gnd 0.18fF $ **FLOATING
+C67 manf_cell_0/d1 gnd 0.18fF $ **FLOATING
+C68 manf_edge_1/lo gnd 0.85fF $ **FLOATING
+C69 manf_edge_1/hi gnd 0.46fF $ **FLOATING
+C70 manf_edge_1/hih gnd 0.46fF $ **FLOATING
+C71 manf_edge_0/lo gnd 0.85fF $ **FLOATING
+C72 manf_edge_0/hi gnd 0.46fF $ **FLOATING
+C73 manf_edge_0/hih gnd 0.46fF $ **FLOATING
+.ends
+

@@ -1,0 +1,135 @@
+* NGSPICE file created from barthmanf.ext - technology: gf180mcuC
+
+.subckt barthmanf_edge vreg gp op im x y ip om vdd gnd bp
+X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 vdd vreg 0.22fF
+C1 hi vreg 0.11fF
+C2 hi bp 0.28fF
+C3 vdd hih 0.45fF
+C4 bp vreg 0.23fF
+C5 gp vreg 1.01fF
+C6 om gnd 0.85fF
+C7 ip gnd 0.58fF
+C8 y gnd 0.58fF
+C9 x gnd 0.58fF
+C10 im gnd 0.58fF
+C11 op gnd 0.84fF
+C12 vreg gnd 0.44fF
+C13 bp gnd 4.35fF
+C14 vdd gnd 4.01fF
+C15 lo gnd 0.84fF
+C16 hi gnd 0.46fF
+C17 hih gnd 0.46fF
+.ends
+
+.subckt barthmanf_cell inl inr out gp vreg op im x y ip om vdd gnd bp
+X0 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X1 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X2 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X3 d2 inr out gnd nmos_3p3 w=1.8u l=0.6u
+X4 d1 inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X5 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X6 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X7 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X8 gnd inr d2 gnd nmos_3p3 w=1.8u l=0.6u
+X9 out inl d1 gnd nmos_3p3 w=1.8u l=0.6u
+X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+C0 om inl 0.18fF
+C1 om inr 0.18fF
+C2 vreg bp 0.92fF
+C3 vdd gp 0.66fF
+C4 bp inl 0.32fF
+C5 inr bp 0.32fF
+C6 out op 0.11fF
+C7 out vreg 0.78fF
+C8 vreg gp 1.98fF
+C9 out inl 0.17fF
+C10 out inr 0.20fF
+C11 vdd vreg 1.41fF
+C12 op inl 0.20fF
+C13 inr op 0.20fF
+C14 om out 0.11fF
+C15 out bp 0.15fF
+C16 inr inl 0.60fF
+C17 om gnd 1.14fF
+C18 ip gnd 0.79fF
+C19 y gnd 0.79fF
+C20 x gnd 0.79fF
+C21 im gnd 0.79fF
+C22 op gnd 1.13fF
+C23 out gnd 1.69fF
+C24 inr gnd 2.35fF
+C25 inl gnd 2.36fF
+C26 vreg gnd 0.72fF
+C27 gp gnd 1.56fF
+C28 bp gnd 6.58fF
+C29 vdd gnd 6.08fF
+C30 d2 gnd 0.18fF
+C31 d1 gnd 0.18fF
+.ends
+
+.subckt barthmanf ip im op om vdd gp bp vreg gnd
+Xbarthmanf_edge_0 vreg gp op im x y ip om vdd gnd bp barthmanf_edge
+Xbarthmanf_cell_0 im y op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_1 y ip om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_3 x op x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_2 om x x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_4 x y y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_5 y x y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_6 ip im y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_8 ip y om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_9 y im op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+C0 vreg vdd 0.21fF
+C1 vdd gp 0.12fF
+C2 im y 0.12fF
+C3 op im 0.15fF
+C4 im om 0.19fF
+C5 op y 0.33fF
+C6 vreg y 0.10fF
+C7 ip im 0.40fF
+C8 x y 0.17fF
+C9 y om 0.32fF
+C10 x op 0.51fF
+C11 op om 0.12fF
+C12 vreg gp -0.59fF
+C13 ip y 0.18fF
+C14 x om 0.20fF
+C15 ip op 0.13fF
+C16 x ip 0.43fF
+C17 ip om 0.50fF
+C18 bp gnd 57.26fF
+C19 vdd gnd 50.73fF
+C20 barthmanf_cell_9/d2 gnd 0.18fF $ **FLOATING
+C21 barthmanf_cell_9/d1 gnd 0.18fF $ **FLOATING
+C22 barthmanf_cell_8/d2 gnd 0.18fF $ **FLOATING
+C23 barthmanf_cell_8/d1 gnd 0.18fF $ **FLOATING
+C24 barthmanf_cell_6/d2 gnd 0.18fF $ **FLOATING
+C25 barthmanf_cell_6/d1 gnd 0.18fF $ **FLOATING
+C26 barthmanf_cell_5/d2 gnd 0.19fF $ **FLOATING
+C27 barthmanf_cell_5/d1 gnd 0.19fF $ **FLOATING
+C28 barthmanf_cell_4/d2 gnd 0.19fF $ **FLOATING
+C29 barthmanf_cell_4/d1 gnd 0.19fF $ **FLOATING
+C30 barthmanf_cell_2/d2 gnd 0.18fF $ **FLOATING
+C31 barthmanf_cell_2/d1 gnd 0.19fF $ **FLOATING
+C32 barthmanf_cell_3/d2 gnd 0.19fF $ **FLOATING
+C33 barthmanf_cell_3/d1 gnd 0.19fF $ **FLOATING
+C34 barthmanf_cell_1/d2 gnd 0.18fF $ **FLOATING
+C35 barthmanf_cell_1/d1 gnd 0.19fF $ **FLOATING
+C36 om gnd 15.22fF
+C37 ip gnd 13.46fF
+C38 y gnd 24.71fF
+C39 x gnd 19.27fF
+C40 im gnd 13.99fF
+C41 op gnd 15.24fF
+C42 vreg gnd 2.69fF
+C43 gp gnd 12.68fF
+C44 barthmanf_cell_0/d2 gnd 0.18fF $ **FLOATING
+C45 barthmanf_cell_0/d1 gnd 0.18fF $ **FLOATING
+C46 barthmanf_edge_0/lo gnd 0.85fF $ **FLOATING
+C47 barthmanf_edge_0/hi gnd 0.46fF $ **FLOATING
+C48 barthmanf_edge_0/hih gnd 0.46fF $ **FLOATING
+.ends
+

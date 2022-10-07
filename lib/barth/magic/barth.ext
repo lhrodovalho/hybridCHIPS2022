@@ -1,0 +1,1617 @@
+timestamp 1663412335
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use barth_cell barth_cell_0 1 0 -2280 0 1 -360
+use barth_edge barth_edge_0 1 0 -2760 0 1 -360
+use barth_cell barth_cell_1 1 0 -1080 0 1 -360
+use barth_cell barth_cell_2 1 0 120 0 1 -360
+use barth_cell barth_cell_3 1 0 1320 0 1 -360
+use barth_cell barth_cell_4 1 0 2520 0 1 -360
+use barth_cell barth_cell_5 1 0 3720 0 1 -360
+use barth_cell barth_cell_6 -1 0 -8160 0 1 -360
+use barth_cell barth_cell_7 -1 0 -6960 0 1 -360
+use barth_cell barth_cell_8 -1 0 -5760 0 1 -360
+use barth_cell barth_cell_10 -1 0 -4560 0 1 -360
+use barth_cell barth_cell_9 -1 0 -3360 0 1 -360
+use barth_cell barth_cell_11 -1 0 -2160 0 1 -360
+use barth_edge barth_edge_1 -1 0 -1680 0 1 -360
+port "gnd" 9 -10440 -1680 -10320 -1080 m3
+port "om" 4 -10440 -480 -10320 120 m3
+port "ip" 1 -10440 480 -10320 600 m3
+port "im" 2 -10440 1440 -10320 1560 m3
+port "op" 3 -10440 1920 -10320 2520 m3
+port "bp" 7 -10440 2880 -10320 3000 m3
+port "gp" 6 -10440 4200 -10320 4320 m3
+port "vreg" 8 -10440 4440 -10320 4560 m3
+port "vdd" 5 -10440 4920 -10320 5520 m3
+node "gnd" 0 111.909 -10440 -1680 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "om" 0 106.605 -10440 -480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m3_2880_480#" 0 54.8624 2880 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_2160_480#" 0 54.8624 2160 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n240_480#" 0 61.6396 -240 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n4320_480#" 0 61.6396 -4320 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6720_480#" 0 54.8624 -6720 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7440_480#" 0 54.8624 -7440 480 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "ip" 0 25.4741 -10440 480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_4080_960#" 0 54.8624 4080 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_3360_960#" 0 54.0412 3360 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_1680_960#" 0 45.312 1680 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_960_960#" 0 45.312 960 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n720_960#" 0 54.0412 -720 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n1440_960#" 0 54.8464 -1440 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n3120_960#" 0 54.8464 -3120 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n3840_960#" 0 54.0412 -3840 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5520_960#" 0 45.312 -5520 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n6240_960#" 0 45.312 -6240 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n7920_960#" 0 54.0412 -7920 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n8640_960#" 0 54.8624 -8640 960 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "x" 0 25.4741 -10440 960 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "m3_4560_1440#" 0 61.1742 4560 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_480_1440#" 0 61.1742 480 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n1920_1440#" 0 54.397 -1920 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n2640_1440#" 0 54.397 -2640 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n5040_1440#" 0 61.1742 -5040 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "m3_n9120_1440#" 0 60.3107 -9120 1440 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0
+node "im" 0 24.8571 -10440 1440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "op" 0 103.945 -10440 1920 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "bp" 12 2569.9 -10440 2880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1958400 32880 0 0 0 0
+node "gp" 0 27.8306 -10440 4200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0
+node "vreg" 0 33.0726 -10440 4440 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 600 0 0 0 0
+node "vdd" 0 110.21 -10440 4920 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 0 0 0 0
+node "m2_3120_n480#" 1 255.867 3120 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n480_n480#" 1 255.867 -480 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n4080_n480#" 1 255.867 -4080 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n7680_n480#" 1 255.867 -7680 -480 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_1920_960#" 0 72.777 1920 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_720_960#" 0 72.777 720 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n5280_960#" 0 72.777 -5280 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_n6480_960#" 0 72.777 -6480 960 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 0 0 0 0
+node "m2_4320_1920#" 1 250.563 4320 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n1680_1920#" 1 236.593 -1680 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n2880_1920#" 1 236.593 -2880 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m2_n8880_1920#" 1 250.065 -8880 1920 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1440 72000 1440 0 0 0 0
+node "m1_5520_2880#" 0 72.4289 5520 2880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+node "m1_n10080_2880#" 0 72.4289 -10080 2880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m3_n7440_480#" "m3_n6720_480#" 14.844
+cap "m2_n1680_1920#" "m2_n2880_1920#" 44.8651
+cap "m2_n6480_960#" "m3_n6240_960#" 35.2212
+cap "m2_n6480_960#" "m2_n5280_960#" 3.66909
+cap "m2_1920_960#" "m3_3360_960#" 4.28364
+cap "m3_n6240_960#" "m2_n5280_960#" 2.4831
+cap "op" "bp" 10.258
+cap "m2_n1680_1920#" "bp" 26.2089
+cap "x" "im" 10.258
+cap "m3_n3120_960#" "m3_n3840_960#" 14.844
+cap "m3_960_960#" "m3_1680_960#" 14.844
+cap "vdd" "vreg" 10.258
+cap "m3_n2640_1440#" "bp" 4.7988
+cap "m3_4560_1440#" "bp" 4.7988
+cap "bp" "m2_n2880_1920#" 26.2089
+cap "m3_n7920_960#" "m2_n6480_960#" 4.28364
+cap "op" "m2_n8880_1920#" 14.2068
+cap "m3_3360_960#" "m3_1680_960#" 2.42093
+cap "m3_n7920_960#" "m3_n6240_960#" 2.42093
+cap "bp" "m1_n10080_2880#" 7.28572
+cap "m2_720_960#" "m2_1920_960#" 3.66909
+cap "om" "ip" 10.258
+cap "m3_n9120_1440#" "im" 3.99826
+cap "m3_n2640_1440#" "m3_n1920_1440#" 14.844
+cap "gp" "bp" 3.0774
+cap "m3_n1920_1440#" "bp" 4.7988
+cap "m2_n8880_1920#" "bp" 26.2089
+cap "m3_960_960#" "m3_n720_960#" 2.42093
+cap "m2_720_960#" "m3_1680_960#" 2.4831
+cap "m3_n7920_960#" "m3_n8640_960#" 14.844
+cap "m3_n5520_960#" "m3_n3840_960#" 2.42093
+cap "x" "ip" 10.258
+cap "m3_2880_480#" "m3_2160_480#" 14.844
+cap "m3_n9120_1440#" "bp" 4.7988
+cap "m3_3360_960#" "m3_4080_960#" 14.844
+cap "m2_1920_960#" "m3_1680_960#" 35.2212
+cap "m2_720_960#" "m3_960_960#" 35.2212
+cap "gp" "vreg" 61.548
+cap "m3_n3840_960#" "m2_n5280_960#" 4.28364
+cap "m3_n5040_1440#" "bp" 4.7988
+cap "m3_480_1440#" "bp" 4.7988
+cap "m3_n1440_960#" "m3_n720_960#" 14.844
+cap "op" "im" 10.258
+cap "m3_n5520_960#" "m2_n6480_960#" 2.4831
+cap "bp" "m1_5520_2880#" 7.28572
+cap "m3_n5520_960#" "m3_n6240_960#" 14.844
+cap "m3_n5520_960#" "m2_n5280_960#" 35.2212
+cap "m2_720_960#" "m3_n720_960#" 4.28364
+cap "m3_n3120_960#" "m3_n1440_960#" 4.78816
+cap "gnd" "om" 6.1548
+cap "m2_1920_960#" "m3_960_960#" 2.4831
+cap "bp" "m2_4320_1920#" 26.2089
+cap "barth_cell_0/inr" "barth_edge_0/lo" 4.35616
+cap "barth_cell_0/gnd" "barth_cell_0/out" 2.28107
+cap "barth_cell_0/om" "barth_edge_0/lo" 7.0802
+cap "barth_cell_0/gnd" "barth_cell_0/d1" 4.08313
+cap "barth_cell_0/d2" "barth_edge_0/lo" 0.333599
+cap "barth_cell_0/inl" "barth_edge_0/lo" 38.0111
+cap "barth_cell_0/inl" "barth_cell_0/om" 29.4853
+cap "barth_cell_0/gnd" "barth_edge_0/lo" 3.68594
+cap "barth_cell_0/inr" "barth_cell_0/gnd" 5.67225
+cap "barth_cell_0/gnd" "barth_cell_0/om" 16.8856
+cap "barth_cell_0/out" "barth_edge_0/lo" 0.484943
+cap "barth_cell_0/d1" "barth_edge_0/lo" 1.9842
+cap "barth_cell_0/gnd" "barth_cell_1/d1" 1.11991
+cap "barth_cell_0/d2" "barth_cell_0/gnd" 1.44586
+cap "barth_cell_0/inl" "barth_cell_0/gnd" 44.4154
+cap "barth_cell_0/d1" "barth_cell_0/om" 1.57978
+cap "barth_cell_0/inl" "barth_cell_0/om" 6.06431
+cap "barth_cell_0/inr" "barth_cell_1/d1" 1.65535
+cap "barth_cell_0/om" "barth_cell_0/d1" 1.26887
+cap "barth_cell_0/ip" "barth_cell_0/d1" 0.0869354
+cap "barth_cell_0/inl" "barth_cell_0/ip" 0.318933
+cap "barth_cell_1/d1" "barth_cell_0/gnd" 3.42094
+cap "barth_cell_0/inr" "barth_cell_0/gnd" 15.5367
+cap "barth_cell_1/d1" "barth_cell_2/d1" 0.333599
+cap "barth_cell_0/out" "barth_edge_0/lo" 6.64529
+cap "barth_cell_0/inl" "barth_cell_1/d1" 0.768795
+cap "barth_cell_0/gnd" "barth_cell_2/d1" 1.11991
+cap "barth_cell_1/d1" "barth_cell_0/d1" 0.667198
+cap "barth_cell_1/d2" "barth_cell_0/gnd" 1.43112
+cap "barth_cell_0/om" "barth_cell_0/out" 4.50057
+cap "barth_cell_0/inr" "barth_cell_0/d1" 0.768795
+cap "barth_cell_0/inl" "barth_cell_0/inr" 10.7734
+cap "barth_edge_0/lo" "barth_cell_0/d2" 0.811798
+cap "barth_cell_0/ip" "barth_cell_0/out" 1.59082
+cap "barth_cell_0/inl" "barth_cell_0/gnd" -0.036714
+cap "barth_cell_0/gnd" "barth_cell_0/d1" 0.824307
+cap "barth_cell_0/om" "barth_cell_0/d2" 3.75611
+cap "barth_cell_0/ip" "barth_cell_0/d2" 0.768795
+cap "barth_cell_1/d2" "barth_cell_0/d1" 0.00500446
+cap "barth_cell_1/d1" "barth_cell_0/out" 3.75611
+cap "barth_cell_0/inr" "barth_cell_0/out" 8.57936
+cap "barth_cell_1/d1" "barth_cell_2/d2" 0.00500446
+cap "barth_cell_0/out" "barth_cell_0/gnd" 17.4124
+cap "barth_cell_1/d1" "barth_cell_0/d2" 1.21898
+cap "barth_cell_1/d2" "barth_cell_0/out" 1.10505
+cap "barth_cell_0/inr" "barth_cell_0/d2" 1.4046
+cap "barth_cell_0/gnd" "barth_cell_0/d2" 0.150681
+cap "barth_cell_0/inr" "barth_edge_0/lo" 1.81956
+cap "barth_cell_0/gnd" "barth_edge_0/lo" 2.95745
+cap "barth_cell_1/d1" "barth_cell_0/om" 4.26326e-14
+cap "barth_cell_1/d2" "barth_cell_0/d2" 0.333599
+cap "barth_cell_0/inr" "barth_cell_0/om" 32.5689
+cap "barth_cell_0/ip" "barth_cell_1/d1" 0.768795
+cap "barth_cell_0/om" "barth_cell_0/gnd" -12.8717
+cap "barth_cell_0/inr" "barth_cell_0/ip" 10.7791
+cap "barth_cell_0/ip" "barth_cell_0/gnd" 5.11662
+cap "barth_cell_3/d2" "barth_cell_2/d1" 0.00500446
+cap "barth_cell_0/inl" "barth_cell_1/d2" 0.0869354
+cap "barth_cell_0/ip" "barth_cell_0/inr" 31.4281
+cap "barth_cell_1/d1" "barth_cell_2/d1" 0.333599
+cap "barth_cell_2/d2" "barth_cell_1/d2" 0.333599
+cap "barth_cell_0/om" "barth_cell_1/d2" 3.90799e-14
+cap "barth_cell_3/d2" "barth_cell_0/inr" 1.10505
+cap "barth_cell_2/d2" "barth_cell_0/gnd" 1.43112
+cap "barth_cell_1/d2" "barth_cell_2/d1" 1.21898
+cap "barth_cell_0/om" "barth_cell_0/gnd" -31.9335
+cap "barth_cell_0/d1" "barth_cell_1/d2" 0.00500446
+cap "barth_cell_0/gnd" "barth_cell_2/d1" 3.42094
+cap "barth_cell_3/inr" "barth_cell_2/d1" 0.0869354
+cap "barth_cell_1/d1" "barth_cell_0/inr" 1.10505
+cap "barth_cell_1/d2" "barth_cell_0/inr" 5.2937
+cap "barth_cell_0/om" "barth_cell_2/d2" 1.10505
+cap "barth_cell_0/out" "barth_cell_0/ip" 0.814511
+cap "barth_cell_0/om" "barth_cell_2/d1" 3.75611
+cap "barth_cell_0/gnd" "barth_cell_0/inr" 28.2365
+cap "barth_cell_3/inr" "barth_cell_0/inr" 1.59082
+cap "barth_cell_3/d1" "barth_cell_0/gnd" 1.11991
+cap "barth_cell_0/ip" "barth_cell_1/d2" 1.4046
+cap "barth_cell_0/om" "barth_cell_0/inr" 6.09139
+cap "barth_cell_0/d2" "barth_cell_1/d2" 0.333599
+cap "barth_cell_0/gnd" "barth_cell_0/ip" 15.4496
+cap "barth_cell_2/d1" "barth_cell_0/inr" 1.70141
+cap "barth_cell_0/out" "barth_cell_1/d2" 0.16382
+cap "barth_cell_3/inr" "barth_cell_0/ip" 0.318933
+cap "barth_cell_0/d2" "barth_cell_0/gnd" 1.11991
+cap "barth_cell_0/inl" "barth_cell_0/ip" 0.318933
+cap "barth_cell_3/d1" "barth_cell_2/d1" 0.333599
+cap "barth_cell_0/out" "barth_cell_0/gnd" 0.0340466
+cap "barth_cell_0/om" "barth_cell_0/ip" 32.5689
+cap "barth_cell_1/d1" "barth_cell_0/gnd" 1.43112
+cap "barth_cell_0/ip" "barth_cell_2/d1" 1.4046
+cap "barth_cell_3/d1" "barth_cell_0/inr" 3.27117
+cap "barth_cell_0/gnd" "barth_cell_1/d2" 0.145676
+cap "barth_cell_4/d1" "barth_cell_1/inl" 3.27117
+cap "barth_cell_1/gnd" "barth_cell_1/inr" 7.16395
+cap "barth_cell_1/inl" "barth_cell_1/inr" 17.0848
+cap "barth_cell_2/d1" "barth_cell_3/d2" 0.00500446
+cap "barth_cell_2/d2" "barth_cell_3/d1" 1.21898
+cap "barth_cell_3/inr" "barth_cell_2/d2" 0.768795
+cap "barth_cell_1/gnd" "barth_cell_1/inl" 37.8835
+cap "barth_cell_3/inr" "barth_cell_1/out" 15.865
+cap "barth_cell_1/out" "barth_cell_3/d1" 0.16382
+cap "barth_cell_4/d2" "barth_cell_1/inl" 1.10505
+cap "barth_cell_4/d1" "barth_cell_3/d1" 0.333599
+cap "barth_cell_1/inr" "barth_cell_3/d1" 1.53759
+cap "barth_cell_1/gnd" "barth_cell_1/d2" 1.11991
+cap "barth_cell_3/inr" "barth_cell_1/inr" 30.6997
+cap "barth_cell_2/d2" "barth_cell_3/d2" 0.667198
+cap "barth_cell_1/inl" "barth_cell_2/d1" 1.10505
+cap "barth_cell_1/gnd" "barth_cell_2/d1" 1.43112
+cap "barth_cell_1/gnd" "barth_cell_3/d1" 3.42094
+cap "barth_cell_3/inr" "barth_cell_1/gnd" 14.0496
+cap "barth_cell_1/out" "barth_cell_3/d2" 0.484943
+cap "barth_cell_1/inl" "barth_cell_3/d1" 1.97648
+cap "barth_cell_3/inr" "barth_cell_1/inl" 16.9191
+cap "barth_cell_4/d1" "barth_cell_3/d2" 0.609489
+cap "barth_cell_4/d2" "barth_cell_3/d1" 0.00500446
+cap "barth_cell_1/inr" "barth_cell_3/d2" 1.49153
+cap "barth_cell_1/gnd" "barth_cell_2/d2" -0.339267
+cap "barth_cell_1/inl" "barth_cell_2/d2" 5.16071
+cap "barth_cell_1/inl" "barth_cell_3/d2" 1.70141
+cap "barth_cell_2/d1" "barth_cell_3/d1" 0.333599
+cap "barth_cell_1/gnd" "barth_cell_3/d2" 2.78524
+cap "barth_cell_4/d2" "barth_cell_3/d2" 0.333599
+cap "barth_cell_1/out" "barth_cell_1/inl" 23.3954
+cap "barth_cell_1/out" "barth_cell_1/gnd" -31.1267
+cap "barth_cell_4/d1" "barth_cell_1/gnd" 1.11991
+cap "barth_cell_2/gnd" "barth_cell_5/inr" 3.0693
+cap "barth_cell_3/d1" "barth_cell_4/d2" 0.00500446
+cap "barth_cell_4/d1" "barth_cell_3/d1" 0.333599
+cap "barth_cell_2/inr" "barth_cell_4/d2" 1.65535
+cap "barth_cell_2/gnd" "barth_cell_5/d2" 1.43112
+cap "barth_cell_2/inr" "barth_cell_4/d1" 2.02253
+cap "barth_cell_2/ip" "barth_cell_2/gnd" 15.4129
+cap "barth_cell_2/gnd" "barth_cell_3/inr" 6.26123
+cap "barth_cell_2/inr" "barth_cell_5/out" 3.87018
+cap "barth_cell_6/d2" "barth_cell_2/gnd" 0.0148669
+cap "barth_cell_5/out" "barth_cell_4/d2" 0.484943
+cap "barth_cell_4/d1" "barth_cell_5/out" 0.16382
+cap "barth_cell_3/d2" "barth_cell_4/d2" 0.333599
+cap "barth_cell_2/om" "barth_cell_3/d1" 1.10505
+cap "barth_cell_4/d1" "barth_cell_3/d2" 0.609489
+cap "barth_cell_2/inr" "barth_cell_2/om" 20.5451
+cap "barth_cell_2/inr" "barth_cell_5/inr" 6.73284
+cap "barth_cell_3/inr" "barth_cell_2/inr" 5.44792
+cap "barth_cell_2/ip" "barth_cell_2/inr" 14.6493
+cap "barth_cell_4/d2" "barth_cell_5/d1" 0.609489
+cap "barth_cell_2/om" "barth_cell_4/d2" 3.90799e-14
+cap "barth_cell_4/d1" "barth_cell_5/d1" 0.333599
+cap "barth_cell_5/inr" "barth_cell_4/d2" 0.768795
+cap "barth_cell_5/inr" "barth_cell_4/d1" 0.0869354
+cap "barth_cell_4/d1" "barth_cell_2/om" 4.26326e-14
+cap "barth_cell_5/d2" "barth_cell_4/d2" 0.333599
+cap "barth_cell_3/inr" "barth_cell_4/d2" 0.768795
+cap "barth_cell_2/om" "barth_cell_5/out" 2.25028
+cap "barth_cell_4/d1" "barth_cell_5/d2" 0.00500446
+cap "barth_cell_3/inr" "barth_cell_4/d1" 1.4046
+cap "barth_cell_2/ip" "barth_cell_5/out" 0.814511
+cap "barth_cell_2/gnd" "barth_cell_6/inr" 0.218768
+cap "barth_cell_2/gnd" "barth_cell_3/d1" 1.43112
+cap "barth_cell_2/gnd" "barth_cell_2/inr" 27.513
+cap "barth_cell_2/om" "barth_cell_3/d2" 3.27117
+cap "barth_cell_2/gnd" "barth_cell_4/d2" 2.78524
+cap "barth_cell_2/gnd" "barth_cell_4/d1" 3.42094
+cap "barth_cell_2/om" "barth_cell_5/d1" 3.27117
+cap "barth_cell_2/gnd" "barth_cell_5/out" 1.83271
+cap "barth_cell_5/inr" "barth_cell_2/om" 1.59082
+cap "barth_cell_2/om" "barth_cell_5/d2" 1.10505
+cap "barth_cell_2/ip" "barth_cell_2/om" 11.9948
+cap "barth_cell_3/inr" "barth_cell_2/om" 4.70918
+cap "barth_cell_2/ip" "barth_cell_5/inr" 0.318933
+cap "barth_cell_2/gnd" "barth_cell_2/d2" 1.11991
+cap "barth_cell_2/ip" "barth_cell_3/inr" 57.92
+cap "barth_cell_2/gnd" "barth_cell_3/d2" 3.17187
+cap "barth_cell_2/inr" "barth_cell_6/inr" 0.00569977
+cap "barth_cell_2/gnd" "barth_cell_5/d1" 3.18673
+cap "barth_cell_2/gnd" "barth_cell_2/om" -23.6239
+cap "barth_cell_3/om" "barth_cell_5/out" 2.25028
+cap "barth_cell_3/om" "barth_cell_3/gnd" -50.1586
+cap "barth_cell_6/d2" "barth_cell_5/out" 3.27117
+cap "barth_cell_6/d2" "barth_cell_3/gnd" 3.17187
+cap "barth_cell_4/d2" "barth_cell_5/d1" 0.609489
+cap "barth_cell_4/d2" "barth_cell_5/d2" 0.333599
+cap "barth_cell_6/inr" "barth_cell_5/out" 4.70918
+cap "barth_cell_6/inr" "barth_cell_3/gnd" 6.26123
+cap "barth_cell_3/gnd" "barth_cell_5/d1" 2.78524
+cap "barth_cell_3/gnd" "barth_cell_5/d2" 3.42094
+cap "barth_cell_3/om" "barth_cell_5/d1" 0.484943
+cap "barth_cell_6/d1" "barth_cell_3/gnd" 1.43112
+cap "barth_cell_3/om" "barth_cell_5/d2" 0.16382
+cap "barth_cell_6/d1" "barth_cell_5/out" 1.10505
+cap "barth_cell_3/d2" "barth_cell_3/gnd" 0.0148669
+cap "barth_cell_4/inr" "barth_cell_5/out" 6.3
+cap "barth_cell_6/d2" "barth_cell_5/d1" 0.333599
+cap "barth_cell_3/gnd" "barth_cell_4/inr" 23.8176
+cap "barth_cell_3/ip" "barth_cell_5/out" 1.59082
+cap "barth_cell_3/ip" "barth_cell_3/gnd" 3.0693
+cap "barth_cell_3/inr" "barth_cell_3/gnd" 0.218768
+cap "barth_cell_6/d2" "barth_cell_5/d2" 0.609489
+cap "barth_cell_6/out" "barth_cell_5/out" 2.25028
+cap "barth_cell_6/out" "barth_cell_3/gnd" 1.83271
+cap "barth_cell_3/om" "barth_cell_4/inr" 15.865
+cap "barth_cell_6/inr" "barth_cell_5/d1" 0.768795
+cap "barth_cell_6/inr" "barth_cell_5/d2" 1.4046
+cap "barth_cell_5/inr" "barth_cell_3/gnd" 15.4129
+cap "barth_cell_6/d1" "barth_cell_5/d1" 0.00500446
+cap "barth_cell_5/inr" "barth_cell_3/om" 12.8093
+cap "barth_cell_4/d1" "barth_cell_5/out" 1.10505
+cap "barth_cell_4/inr" "barth_cell_5/d1" 1.49153
+cap "barth_cell_6/inr" "barth_cell_4/inr" 4.04056
+cap "barth_cell_7/d2" "barth_cell_3/gnd" 0.0148669
+cap "barth_cell_6/d1" "barth_cell_5/d2" 0.333599
+cap "barth_cell_4/inr" "barth_cell_5/d2" 1.53759
+cap "barth_cell_3/ip" "barth_cell_5/d1" 0.768795
+cap "barth_cell_4/d1" "barth_cell_3/gnd" 1.43112
+cap "barth_cell_6/out" "barth_cell_5/d1" 0.16382
+cap "barth_cell_6/out" "barth_cell_5/d2" 0.484943
+cap "barth_cell_3/ip" "barth_cell_5/d2" 0.0869354
+cap "barth_cell_6/inr" "barth_cell_5/inr" 44.1504
+cap "barth_cell_3/ip" "barth_cell_4/inr" 6.73284
+cap "barth_cell_6/out" "barth_cell_4/inr" 0.814511
+cap "barth_cell_3/inr" "barth_cell_4/inr" 0.00569977
+cap "barth_cell_4/d2" "barth_cell_5/out" 3.27117
+cap "barth_cell_4/d1" "barth_cell_5/d1" 0.333599
+cap "barth_cell_3/gnd" "barth_cell_4/d2" 3.18673
+cap "barth_cell_4/d1" "barth_cell_5/d2" 0.00500446
+cap "barth_cell_3/gnd" "barth_cell_5/out" 17.9692
+cap "barth_cell_5/inr" "barth_cell_4/inr" 10.7791
+cap "barth_cell_3/ip" "barth_cell_5/inr" 0.318933
+cap "barth_cell_6/out" "barth_cell_5/inr" 3.87018
+cap "barth_cell_6/out" "barth_cell_5/d1" 1.10505
+cap "barth_cell_6/d2" "barth_cell_4/ip" 0.0869354
+cap "barth_cell_6/d2" "barth_cell_5/out" 0.484943
+cap "barth_cell_6/out" "barth_cell_4/gnd" 16.8619
+cap "barth_cell_7/d2" "barth_cell_6/inr" 0.768795
+cap "barth_cell_4/gnd" "barth_cell_4/ip" 3.0693
+cap "barth_cell_6/d1" "barth_cell_4/om" 0.484943
+cap "barth_cell_4/gnd" "barth_cell_5/out" 0.0340466
+cap "barth_cell_8/inr" "barth_cell_4/gnd" 2.04732
+cap "barth_cell_6/d1" "barth_cell_5/inr" 0.768795
+cap "barth_cell_6/out" "barth_cell_4/ip" 1.59082
+cap "barth_cell_7/d2" "barth_cell_6/d2" 0.667198
+cap "barth_cell_5/inl" "barth_cell_4/om" 24.2008
+cap "barth_cell_5/inl" "barth_cell_6/inr" 16.1046
+cap "barth_cell_6/d1" "barth_cell_5/d1" 0.00500446
+cap "barth_cell_6/out" "barth_cell_5/out" 2.25028
+cap "barth_cell_7/d1" "barth_cell_6/d2" 0.00500446
+cap "barth_cell_5/d2" "barth_cell_6/d2" 0.609489
+cap "barth_cell_7/d2" "barth_cell_4/gnd" 2.936
+cap "barth_cell_6/d1" "barth_cell_4/gnd" 2.31369
+cap "barth_cell_4/om" "barth_cell_6/inr" 12.8093
+cap "barth_cell_5/inl" "barth_cell_6/d2" 1.53759
+cap "barth_cell_5/inl" "barth_cell_5/inr" 4.04626
+cap "barth_cell_4/gnd" "barth_cell_5/d2" 1.11991
+cap "barth_cell_6/out" "barth_cell_7/d2" 3.75611
+cap "barth_cell_6/inr" "barth_cell_5/inr" 30.3808
+cap "barth_cell_7/d1" "barth_cell_4/gnd" 1.43112
+cap "barth_cell_6/d1" "barth_cell_4/ip" 0.768795
+cap "barth_cell_4/om" "barth_cell_6/d2" 0.16382
+cap "barth_cell_5/inl" "barth_cell_4/gnd" 21.629
+cap "barth_cell_6/d1" "barth_cell_5/out" 0.16382
+cap "barth_cell_6/out" "barth_cell_5/d2" 3.27117
+cap "barth_cell_6/out" "barth_cell_7/d1" 1.10505
+cap "barth_cell_6/out" "barth_cell_5/inl" 10.1702
+cap "barth_cell_6/inr" "barth_cell_4/gnd" 9.18078
+cap "barth_cell_4/om" "barth_cell_4/gnd" -29.3961
+cap "barth_cell_5/inr" "barth_cell_6/d2" 1.4046
+cap "barth_cell_5/inl" "barth_cell_4/ip" 6.73284
+cap "barth_cell_6/d2" "barth_cell_5/d1" 0.333599
+cap "barth_cell_5/inl" "barth_cell_5/out" 0.814511
+cap "barth_cell_4/gnd" "barth_cell_5/inr" 2.04732
+cap "barth_cell_6/d1" "barth_cell_7/d2" 1.21898
+cap "barth_cell_6/out" "barth_cell_4/om" 2.25028
+cap "barth_cell_5/inl" "barth_cell_8/inr" 0.00569977
+cap "barth_cell_4/gnd" "barth_cell_6/d2" 1.67799
+cap "barth_cell_8/d2" "barth_cell_4/gnd" 1.11991
+cap "barth_cell_6/inr" "barth_cell_4/ip" 0.318933
+cap "barth_cell_6/inr" "barth_cell_5/out" 3.87018
+cap "barth_cell_6/d1" "barth_cell_5/d2" 0.333599
+cap "barth_cell_6/out" "barth_cell_5/inr" 4.70918
+cap "barth_cell_6/d1" "barth_cell_7/d1" 0.333599
+cap "barth_cell_5/inl" "barth_cell_7/d2" 1.4046
+cap "barth_cell_6/d1" "barth_cell_5/inl" 1.49153
+cap "barth_cell_6/out" "barth_cell_5/om" 2.25028
+cap "barth_cell_5/gnd" "barth_cell_6/out" 0.0340466
+cap "barth_cell_5/ip" "barth_cell_6/inr" 0.318933
+cap "barth_cell_5/gnd" "barth_cell_5/om" -16.5009
+cap "barth_cell_6/inl" "barth_cell_5/om" 14.4595
+cap "barth_cell_8/d1" "barth_cell_7/d1" 0.333599
+cap "barth_cell_5/gnd" "barth_cell_6/inl" 17.0452
+cap "barth_cell_5/om" "barth_cell_6/d2" 1.10505
+cap "barth_cell_8/d2" "barth_cell_7/d2" 0.667198
+cap "barth_cell_8/inr" "barth_cell_7/d2" 0.768795
+cap "barth_cell_8/d2" "barth_cell_5/ip" 1.49153
+cap "barth_cell_8/inr" "barth_cell_5/ip" 88.6198
+cap "barth_cell_10/d2" "barth_cell_8/d2" 0.333599
+cap "barth_cell_6/out" "barth_cell_7/d1" 0.16382
+cap "barth_cell_5/om" "barth_cell_7/d1" 3.90799e-14
+cap "barth_cell_6/inr" "barth_cell_5/om" 1.59082
+cap "barth_cell_5/gnd" "barth_cell_7/d1" 0.145676
+cap "barth_cell_5/om" "barth_cell_6/d1" 3.27117
+cap "barth_cell_5/gnd" "barth_cell_6/d1" 1.11991
+cap "barth_cell_6/inl" "barth_cell_7/d1" 5.2937
+cap "barth_cell_7/d1" "barth_cell_6/d2" 0.00500446
+cap "barth_cell_8/d2" "barth_cell_5/om" 3.75611
+cap "barth_cell_8/inr" "barth_cell_5/om" 20.5741
+cap "barth_cell_8/d1" "barth_cell_7/d2" 0.00500446
+cap "barth_cell_8/d2" "barth_cell_5/gnd" 3.42094
+cap "barth_cell_10/d1" "barth_cell_8/d2" 0.00500446
+cap "barth_cell_6/inr" "barth_cell_7/d1" 0.0869354
+cap "barth_cell_8/inr" "barth_cell_5/gnd" 15.4129
+cap "barth_cell_7/d1" "barth_cell_6/d1" 0.333599
+cap "barth_cell_5/om" "barth_cell_7/d2" 2.72282e-14
+cap "barth_cell_6/out" "barth_cell_5/ip" 0.814511
+cap "barth_cell_8/d2" "barth_cell_6/inl" 1.70141
+cap "barth_cell_5/ip" "barth_cell_5/om" 11.9948
+cap "barth_cell_5/gnd" "barth_cell_7/d2" 0.824307
+cap "barth_cell_8/inr" "barth_cell_6/inl" 15.6342
+cap "barth_cell_5/gnd" "barth_cell_5/ip" 0.0366274
+cap "barth_cell_10/d2" "barth_cell_5/gnd" 1.11991
+cap "barth_cell_6/inl" "barth_cell_7/d2" 1.3558
+cap "barth_cell_8/d2" "barth_cell_7/d1" 1.21898
+cap "barth_cell_8/inr" "barth_cell_7/d1" 1.4046
+cap "barth_cell_8/d1" "barth_cell_5/om" 1.10505
+cap "barth_cell_6/inl" "barth_cell_5/ip" 19.3585
+cap "barth_cell_8/d1" "barth_cell_5/gnd" 1.43112
+cap "barth_cell_10/d2" "barth_cell_8/inr" 0.768795
+cap "barth_cell_7/inr" "barth_cell_9/d2" 3.27117
+cap "barth_cell_7/inr" "barth_cell_8/d1" 5.24765
+cap "barth_cell_7/gnd" "barth_cell_10/d2" 3.42094
+cap "barth_cell_8/d2" "barth_cell_7/gnd" 1.43112
+cap "barth_cell_7/d1" "barth_cell_8/d1" 0.333599
+cap "barth_cell_7/d2" "barth_cell_8/d1" 0.00500446
+cap "barth_cell_7/inr" "barth_cell_7/out" 27.8689
+cap "barth_cell_8/d1" "barth_cell_7/out" 0.16382
+cap "barth_cell_7/inl" "barth_cell_10/d2" 0.768795
+cap "barth_cell_10/d2" "barth_cell_9/d2" 0.333599
+cap "barth_cell_7/inr" "barth_cell_9/d1" 1.10505
+cap "barth_cell_7/gnd" "barth_cell_8/inr" 3.0693
+cap "barth_cell_7/gnd" "barth_cell_10/d1" 1.43112
+cap "barth_cell_8/d1" "barth_cell_10/d2" 1.21898
+cap "barth_cell_7/inr" "barth_cell_10/d2" 5.24765
+cap "barth_cell_8/d2" "barth_cell_7/inr" 1.10505
+cap "barth_cell_10/d2" "barth_cell_7/out" 0.16382
+cap "barth_cell_7/inl" "barth_cell_8/inr" 0.0942752
+cap "barth_cell_7/inl" "barth_cell_7/gnd" 7.16395
+cap "barth_cell_10/d2" "barth_cell_9/d1" 0.00500446
+cap "barth_cell_7/gnd" "barth_cell_9/d2" 1.11991
+cap "barth_cell_8/d1" "barth_cell_10/d1" 0.333599
+cap "barth_cell_7/inr" "barth_cell_8/inr" 8.32367
+cap "barth_cell_7/inr" "barth_cell_10/d1" 1.10505
+cap "barth_cell_8/d2" "barth_cell_10/d2" 0.333599
+cap "barth_cell_7/gnd" "barth_cell_8/d1" 0.145676
+cap "barth_cell_7/gnd" "barth_cell_7/inr" 41.1192
+cap "barth_cell_7/d1" "barth_cell_7/gnd" 1.11991
+cap "barth_cell_7/gnd" "barth_cell_7/out" -31.1267
+cap "barth_cell_7/inl" "barth_cell_8/d1" 1.53759
+cap "barth_cell_7/inl" "barth_cell_7/inr" 21.6014
+cap "barth_cell_8/ip" "barth_cell_11/out" 0.814511
+cap "barth_cell_8/inl" "barth_cell_9/d1" 1.65535
+cap "barth_cell_8/ip" "barth_cell_8/gnd" 18.1157
+cap "barth_cell_8/om" "barth_cell_10/d1" 3.75611
+cap "barth_cell_8/ip" "barth_cell_10/d1" 1.4046
+cap "barth_cell_9/d1" "barth_cell_11/d2" 0.609489
+cap "barth_cell_8/inl" "barth_cell_9/d2" 2.02253
+cap "barth_cell_8/gnd" "barth_cell_11/out" 0.0340466
+cap "barth_cell_9/d1" "barth_cell_10/d2" 0.00500446
+cap "barth_cell_8/gnd" "barth_cell_10/d1" -0.339267
+cap "barth_cell_11/d1" "barth_cell_8/om" 1.10505
+cap "barth_cell_8/om" "barth_cell_9/d1" 3.90799e-14
+cap "barth_cell_9/d2" "barth_cell_11/d2" 0.333599
+cap "barth_cell_8/ip" "barth_cell_9/d1" 0.768795
+cap "barth_cell_9/d1" "barth_cell_11/inl" 0.768795
+cap "barth_cell_9/d2" "barth_cell_10/d2" 0.333599
+cap "barth_cell_9/d2" "barth_cell_8/om" 4.26326e-14
+cap "barth_cell_8/inl" "barth_cell_8/om" 20.5451
+cap "barth_cell_8/ip" "barth_cell_9/d2" 1.4046
+cap "barth_cell_11/out" "barth_cell_9/d1" 0.484943
+cap "barth_cell_8/gnd" "barth_cell_9/d1" 2.78524
+cap "barth_cell_8/inl" "barth_cell_8/ip" 25.4284
+cap "barth_cell_9/d2" "barth_cell_11/inl" 0.0869354
+cap "barth_cell_9/d1" "barth_cell_10/d1" 0.667198
+cap "barth_cell_8/inl" "barth_cell_11/inl" 5.33119
+cap "barth_cell_8/om" "barth_cell_11/d2" 3.27117
+cap "barth_cell_11/out" "barth_cell_9/d2" 0.16382
+cap "barth_cell_8/gnd" "barth_cell_9/d2" 3.42094
+cap "barth_cell_8/inl" "barth_cell_11/out" 3.87018
+cap "barth_cell_8/inl" "barth_cell_8/gnd" 23.0462
+cap "barth_cell_8/om" "barth_cell_10/d2" 1.10505
+cap "barth_cell_9/d2" "barth_cell_10/d1" 1.21898
+cap "barth_cell_8/inl" "barth_cell_10/d1" 0.768795
+cap "barth_cell_8/ip" "barth_cell_8/om" 28.9099
+cap "barth_cell_11/d1" "barth_cell_9/d1" 0.333599
+cap "barth_cell_8/gnd" "barth_cell_11/d2" 1.11991
+cap "barth_cell_8/om" "barth_cell_11/inl" 1.59082
+cap "barth_cell_8/ip" "barth_cell_11/inl" 0.318933
+cap "barth_cell_8/gnd" "barth_cell_10/d2" 1.43112
+cap "barth_cell_11/out" "barth_cell_8/om" 2.25028
+cap "barth_cell_11/d1" "barth_cell_9/d2" 0.00500446
+cap "barth_cell_8/gnd" "barth_cell_8/d1" 1.11991
+cap "barth_cell_8/gnd" "barth_cell_8/om" -4.78643
+cap "barth_cell_11/d1" "barth_cell_9/d1" 0.333599
+cap "barth_cell_9/d2" "barth_cell_11/out" 1.10505
+cap "barth_cell_11/d1" "barth_cell_10/out" 0.768795
+cap "barth_cell_9/d2" "barth_cell_11/d2" 0.333599
+cap "barth_cell_10/gnd" "barth_cell_9/d1" 3.17187
+cap "barth_cell_11/out" "barth_cell_10/om" 2.25028
+cap "barth_cell_11/d2" "barth_cell_10/om" 0.484943
+cap "barth_cell_10/out" "barth_edge_1/lo" 1.81956
+cap "barth_cell_10/out" "barth_cell_10/gnd" 21.7613
+cap "barth_cell_10/out" "barth_cell_11/inl" 5.44222
+cap "barth_cell_11/d1" "barth_edge_1/lo" 1.37471
+cap "barth_cell_10/inl" "barth_cell_11/out" 1.59082
+cap "barth_cell_11/d1" "barth_cell_10/gnd" 2.95002
+cap "barth_cell_10/inl" "barth_cell_11/d2" 0.768795
+cap "barth_cell_10/gnd" "barth_cell_10/d1" 1.11991
+cap "barth_cell_10/gnd" "barth_edge_1/lo" 7.75224
+cap "barth_cell_10/gnd" "barth_cell_11/inl" 40.6793
+cap "barth_cell_11/inl" "barth_edge_1/lo" 18.854
+cap "barth_cell_11/d1" "barth_cell_9/d2" 0.00500446
+cap "barth_cell_10/out" "barth_cell_10/om" 15.865
+cap "barth_cell_9/d1" "barth_cell_11/out" 3.27117
+cap "barth_cell_11/d1" "barth_cell_10/om" 0.16382
+cap "barth_cell_10/out" "barth_cell_11/out" 4.70918
+cap "barth_cell_9/d1" "barth_cell_11/d2" 0.609489
+cap "barth_cell_10/gnd" "barth_cell_9/d2" 1.43112
+cap "barth_cell_10/out" "barth_cell_11/d2" 1.4046
+cap "barth_cell_10/out" "barth_cell_10/inl" 6.73854
+cap "barth_cell_11/d1" "barth_cell_10/inl" 0.0869354
+cap "barth_cell_11/inl" "barth_cell_10/om" 27.4604
+cap "barth_cell_10/gnd" "barth_cell_10/om" -48.1995
+cap "barth_cell_10/gnd" "barth_cell_11/out" 20.6876
+cap "barth_cell_11/out" "barth_edge_1/lo" 6.64529
+cap "barth_cell_11/d2" "barth_edge_1/lo" 0.811798
+cap "barth_cell_10/gnd" "barth_cell_10/inl" 5.11662
+cap "barth_cell_10/gnd" "barth_cell_11/d2" 3.42595
+cap "barth_cell_11/inl" "barth_cell_10/inl" 0.318933
+cap "barth_edge_1/lo" "barth_cell_11/d1" 0.609489
+cap "barth_cell_9/gnd" "barth_cell_11/inl" 9.67578
+cap "barth_cell_9/gnd" "barth_cell_11/d2" 1.44586
+cap "barth_cell_9/gnd" "barth_cell_11/d1" 3.04918
+cap "barth_edge_1/lo" "barth_cell_9/inl" 4.35616
+cap "barth_edge_1/lo" "barth_cell_11/out" 0.484943
+cap "barth_cell_9/om" "barth_cell_9/gnd" -20.7965
+cap "barth_cell_9/gnd" "barth_cell_9/inl" 3.84369
+cap "barth_cell_9/gnd" "barth_cell_11/out" 2.28107
+cap "barth_edge_1/lo" "barth_cell_9/gnd" 0.869179
+cap "barth_cell_9/d1" "barth_cell_9/gnd" 0.0148669
+cap "barth_edge_1/lo" "barth_cell_11/d2" 0.333599
+cap "barth_edge_1/lo" "barth_cell_11/inl" 18.4713
+cap "barth_cell_0/inl" "barth_cell_0/inr" 14.713
+cap "barth_cell_0/inr" "barth_cell_0/gnd" 4.59608
+cap "barth_cell_0/inl" "barth_cell_0/gnd" 58.2867
+cap "barth_cell_0/ip" "barth_edge_0/lo" 0.265516
+cap "barth_cell_0/om" "barth_cell_0/inl" 49.0433
+cap "barth_cell_0/om" "barth_cell_0/gnd" -3.10181
+cap "barth_cell_0/ip" "barth_cell_0/d1" 0.0025239
+cap "barth_cell_0/inl" "barth_cell_0/ip" 15.0415
+cap "barth_cell_0/ip" "barth_cell_0/gnd" -10.456
+cap "barth_cell_0/out" "barth_cell_0/inr" 5.82021
+cap "barth_cell_0/gnd" "barth_cell_0/ip" -62.6257
+cap "barth_cell_0/gnd" "barth_cell_0/inl" 7.52813
+cap "barth_cell_0/om" "barth_cell_0/gnd" -23.553
+cap "barth_cell_0/gnd" "barth_cell_0/out" 18.9444
+cap "barth_cell_0/inl" "barth_cell_0/ip" 2.19539
+cap "barth_cell_0/gnd" "barth_cell_0/inr" -7.76826
+cap "barth_cell_0/out" "barth_cell_0/ip" -3.55271e-15
+cap "barth_cell_0/om" "barth_cell_0/inl" 8.54287
+cap "barth_cell_0/inr" "barth_cell_0/ip" 14.3937
+cap "barth_cell_0/inl" "barth_cell_0/inr" 2.19539
+cap "barth_cell_0/om" "barth_cell_0/inr" 53.7993
+cap "barth_cell_0/gnd" "barth_cell_0/ip" -23.2132
+cap "barth_cell_0/om" "barth_cell_0/ip" 53.7993
+cap "barth_cell_0/gnd" "barth_cell_0/om" -29.8824
+cap "barth_cell_0/out" "barth_cell_0/ip" 1.22491
+cap "barth_cell_0/inr" "barth_cell_0/ip" 14.5513
+cap "barth_cell_0/gnd" "barth_cell_0/inr" -24.7092
+cap "barth_cell_1/gnd" "barth_cell_1/inl" 0.42377
+cap "barth_cell_1/im" "barth_cell_1/out" 29.8098
+cap "barth_cell_1/inr" "barth_cell_1/inl" 12.1983
+cap "barth_cell_1/inr" "barth_cell_1/gnd" -62.6257
+cap "barth_cell_1/im" "barth_cell_1/inl" 1.53422
+cap "barth_cell_1/inl" "barth_cell_1/out" 41.8861
+cap "barth_cell_1/gnd" "barth_cell_1/im" 19.7062
+cap "barth_cell_1/gnd" "barth_cell_1/out" -31.4328
+cap "barth_cell_1/inr" "barth_cell_1/im" 43.3565
+cap "barth_cell_2/inr" "barth_cell_2/op" 5.82021
+cap "barth_cell_2/gnd" "barth_cell_2/om" -32.4802
+cap "barth_cell_2/inr" "barth_cell_2/ip" -0.44872
+cap "barth_cell_2/ip" "barth_cell_2/gnd" -63.7947
+cap "barth_cell_2/ip" "barth_cell_2/om" 23.9896
+cap "barth_cell_2/inr" "barth_cell_2/gnd" -50.0054
+cap "barth_cell_2/ip" "barth_cell_2/im" 36.1597
+cap "barth_cell_2/inr" "barth_cell_2/om" 23.9896
+cap "barth_cell_2/ip" "barth_cell_2/op" 1.22491
+cap "barth_cell_4/inr" "barth_cell_3/ip" 7.19687
+cap "barth_cell_3/gnd" "barth_cell_3/inr" 19.7062
+cap "barth_cell_4/inr" "barth_cell_3/gnd" -58.9941
+cap "barth_cell_3/om" "barth_cell_3/inr" 25.2145
+cap "barth_cell_3/op" "barth_cell_3/inr" 5.82021
+cap "barth_cell_4/inr" "barth_cell_3/om" 29.8098
+cap "barth_cell_4/inr" "barth_cell_3/op" 1.22491
+cap "barth_cell_4/inr" "barth_cell_3/inr" 0.309311
+cap "barth_cell_3/gnd" "barth_cell_3/ip" -104.376
+cap "barth_cell_3/op" "barth_cell_3/ip" -3.55271e-15
+cap "barth_cell_3/gnd" "barth_cell_3/om" -52.3881
+cap "barth_cell_3/op" "barth_cell_3/gnd" 15.7597
+cap "barth_cell_3/inr" "barth_cell_3/ip" 7.19687
+cap "barth_cell_4/om" "barth_cell_4/gnd" -31.4328
+cap "barth_cell_5/inl" "barth_cell_4/ip" 12.1983
+cap "barth_cell_5/inl" "barth_cell_4/im" 7.19687
+cap "barth_cell_5/inl" "barth_cell_4/op" 7.04512
+cap "barth_cell_5/inl" "barth_cell_4/gnd" -15.3359
+cap "barth_cell_4/om" "barth_cell_5/inl" 46.4814
+cap "barth_cell_4/im" "barth_cell_4/ip" 7.19687
+cap "barth_cell_4/op" "barth_cell_4/ip" -3.55271e-15
+cap "barth_cell_4/im" "barth_cell_4/op" 5.82021
+cap "barth_cell_4/gnd" "barth_cell_4/ip" -62.6257
+cap "barth_cell_4/op" "barth_cell_4/gnd" 15.7597
+cap "barth_cell_4/im" "barth_cell_4/gnd" 19.7062
+cap "barth_cell_4/om" "barth_cell_4/im" 25.2145
+cap "barth_cell_6/inl" "barth_cell_5/om" 7.31796
+cap "barth_cell_5/om" "barth_cell_5/gnd" -22.0025
+cap "barth_cell_5/ip" "barth_cell_5/im" 62.9861
+cap "barth_cell_5/ip" "barth_cell_5/op" 1.22491
+cap "barth_cell_5/ip" "barth_cell_6/inl" 8.32491
+cap "barth_cell_5/ip" "barth_cell_5/gnd" -42.9195
+cap "barth_cell_6/inl" "barth_cell_5/im" 8.42178
+cap "barth_cell_5/ip" "barth_cell_5/om" 23.9896
+cap "barth_cell_5/gnd" "barth_cell_5/im" 19.7062
+cap "barth_cell_5/om" "barth_cell_5/im" 29.8098
+cap "barth_cell_6/inl" "barth_cell_5/gnd" -25.0609
+cap "barth_cell_7/out" "barth_cell_7/gnd" -31.4328
+cap "barth_cell_7/inl" "barth_cell_7/inr" 14.3937
+cap "barth_cell_7/inr" "barth_cell_7/gnd" 15.8317
+cap "barth_cell_7/inr" "barth_cell_7/out" 50.4289
+cap "barth_cell_7/inl" "barth_cell_7/gnd" -62.6257
+cap "barth_cell_8/ip" "barth_cell_8/gnd" -30.7414
+cap "barth_cell_8/inl" "barth_cell_8/op" 5.82021
+cap "barth_cell_8/om" "barth_cell_8/inl" 23.9896
+cap "barth_cell_8/ip" "barth_cell_8/op" 1.22491
+cap "barth_cell_8/om" "barth_cell_8/gnd" -15.6732
+cap "barth_cell_8/om" "barth_cell_8/ip" 46.4814
+cap "barth_cell_8/inl" "barth_cell_8/gnd" -34.2653
+cap "barth_cell_8/ip" "barth_cell_8/inl" 4.55276
+cap "barth_cell_10/inl" "barth_cell_10/out" 7.19687
+cap "barth_cell_10/im" "barth_cell_10/gnd" 65.8148
+cap "barth_cell_10/om" "barth_cell_10/im" 54.5166
+cap "barth_cell_10/inl" "barth_cell_10/gnd" -83.5009
+cap "barth_cell_10/out" "barth_cell_10/gnd" -43.2145
+cap "barth_cell_10/om" "barth_cell_10/out" 29.8098
+cap "barth_cell_10/om" "barth_cell_10/gnd" -48.2398
+cap "barth_cell_10/inl" "barth_cell_10/op" -3.55271e-15
+cap "barth_cell_10/inl" "barth_cell_10/im" 15.9875
+cap "barth_cell_10/op" "barth_cell_10/gnd" 18.9444
+cap "barth_cell_10/out" "barth_cell_10/im" 9.09995
+cap "barth_cell_9/gnd" "barth_cell_9/ip" -41.7505
+cap "barth_cell_9/inl" "barth_cell_9/gnd" -31.4801
+cap "barth_cell_9/gnd" "barth_cell_9/om" -20.9552
+cap "barth_cell_0/gnd" "barth_edge_0/vreg" -6.93889e-18
+cap "barth_cell_0/gnd" "barth_cell_0/inr" -15.387
+cap "barth_cell_0/out" "barth_cell_0/inl" 73.5649
+cap "barth_edge_0/hi" "barth_cell_0/inl" 0.00615277
+cap "barth_cell_0/gnd" "barth_cell_0/inl" 45.5027
+cap "barth_cell_0/gnd" "barth_cell_0/out" -3.10181
+cap "barth_cell_0/bp" "barth_cell_0/inl" -0.0975024
+cap "barth_cell_0/gnd" "barth_cell_0/bp" -0.0798422
+cap "barth_cell_0/gnd" "barth_cell_0/om" 7.87984
+cap "barth_cell_0/inr" "barth_cell_0/gnd" 24.0038
+cap "barth_cell_0/out" "barth_cell_0/gnd" -12.4872
+cap "barth_cell_0/gnd" "barth_cell_0/inl" -55.1139
+cap "barth_edge_0/vreg" "barth_cell_0/gnd" -2.42861e-17
+cap "barth_cell_0/bp" "barth_cell_0/gnd" -0.0798422
+cap "barth_cell_0/inr" "barth_cell_0/om" 5.79404
+cap "barth_cell_0/inl" "barth_cell_0/om" 1.2194
+cap "barth_cell_0/out" "barth_cell_0/inr" 77.7627
+cap "barth_cell_0/inr" "barth_cell_0/inl" -32.0973
+cap "barth_cell_0/out" "barth_cell_0/inl" 10.9769
+cap "barth_cell_0/bp" "barth_cell_0/inl" -0.705684
+cap "barth_cell_0/out" "barth_cell_0/ip" 73.1881
+cap "barth_cell_0/bp" "barth_cell_0/inl" -0.0386286
+cap "barth_cell_0/bp" "barth_cell_0/gnd" -0.0798422
+cap "barth_cell_0/om" "barth_cell_0/ip" 5.79404
+cap "barth_cell_0/inr" "barth_cell_0/inl" -2.80938e-15
+cap "barth_cell_0/inl" "barth_cell_0/gnd" -62.6257
+cap "barth_cell_0/inr" "barth_cell_0/gnd" 0.372681
+cap "barth_cell_0/out" "barth_cell_0/gnd" -31.4328
+cap "barth_cell_0/ip" "barth_cell_0/inl" 14.3937
+cap "barth_cell_0/vreg" "barth_cell_0/gnd" -1.04083e-17
+cap "barth_cell_0/om" "barth_cell_0/inl" 3.55271e-15
+cap "barth_cell_0/ip" "barth_cell_0/gnd" 39.3513
+cap "barth_cell_0/inr" "barth_cell_0/ip" 7.01344
+cap "barth_cell_0/om" "barth_cell_0/gnd" 7.87984
+cap "barth_cell_1/gnd" "barth_cell_1/bp" -0.0798422
+cap "barth_cell_1/gnd" "barth_cell_1/im" -42.95
+cap "barth_cell_1/vreg" "barth_cell_1/gnd" -1.73472e-17
+cap "barth_cell_1/inr" "barth_cell_1/im" 36.1597
+cap "barth_cell_1/im" "barth_cell_1/bp" -2.03979
+cap "barth_cell_1/inl" "barth_cell_1/gnd" 32.2122
+cap "barth_cell_1/inl" "barth_cell_1/im" 13.4177
+cap "barth_cell_1/op" "barth_cell_1/gnd" -31.4328
+cap "barth_cell_1/op" "barth_cell_1/im" 35.9843
+cap "barth_cell_1/out" "barth_cell_1/im" 5.79404
+cap "barth_cell_1/op" "barth_cell_1/inl" 60.9917
+cap "barth_cell_1/out" "barth_cell_1/inl" 1.2194
+cap "barth_cell_2/vreg" "barth_cell_2/gnd" -6.93889e-18
+cap "barth_cell_2/inr" "barth_cell_2/im" 7.19687
+cap "barth_cell_2/inr" "barth_cell_2/op" 41.7784
+cap "barth_cell_2/ip" "barth_cell_2/gnd" 19.6757
+cap "barth_cell_2/im" "barth_cell_2/om" -3.55271e-15
+cap "barth_cell_2/bp" "barth_cell_2/gnd" -0.106456
+cap "barth_cell_2/ip" "barth_cell_2/im" 15.4619
+cap "barth_cell_2/inr" "barth_cell_2/ip" 5.79404
+cap "barth_cell_2/ip" "barth_cell_2/op" 37.2037
+cap "barth_cell_2/bp" "barth_cell_2/im" -0.0515048
+cap "barth_cell_2/im" "barth_cell_2/gnd" -83.5009
+cap "barth_cell_2/gnd" "barth_cell_2/op" -41.9105
+cap "barth_cell_2/inr" "barth_cell_2/gnd" -0.840346
+cap "barth_cell_2/gnd" "barth_cell_2/om" 15.7597
+cap "barth_cell_3/op" "barth_cell_3/inr" 41.7784
+cap "barth_cell_3/op" "barth_cell_3/gnd" -36.6284
+cap "barth_cell_4/inr" "barth_cell_3/op" 37.2037
+cap "barth_cell_3/bp" "barth_cell_3/inr" -2.06555
+cap "barth_cell_3/bp" "barth_cell_3/gnd" -0.13307
+cap "barth_cell_3/gnd" "barth_cell_3/inr" -84.7005
+cap "barth_cell_4/inr" "barth_cell_3/inr" 7.19687
+cap "barth_cell_4/inr" "barth_cell_3/gnd" -5.96935
+cap "barth_cell_3/om" "barth_cell_3/inr" 1.2194
+cap "barth_cell_3/vreg" "barth_cell_3/gnd" -6.93889e-18
+cap "barth_cell_3/om" "barth_cell_4/inr" 5.79404
+cap "barth_cell_4/gnd" "barth_cell_4/op" -15.6732
+cap "barth_cell_4/gnd" "barth_cell_4/bp" -0.0798422
+cap "barth_cell_5/inl" "barth_cell_4/om" 5.79404
+cap "barth_cell_4/im" "barth_cell_4/gnd" -42.95
+cap "barth_cell_5/inl" "barth_cell_4/op" 68.0052
+cap "barth_cell_5/inl" "barth_cell_4/im" -34.2927
+cap "barth_cell_4/im" "barth_cell_4/om" 1.2194
+cap "barth_cell_4/gnd" "barth_cell_4/vreg" -1.73472e-17
+cap "barth_cell_4/im" "barth_cell_4/op" 41.7784
+cap "barth_cell_4/im" "barth_cell_4/bp" -2.03979
+cap "barth_cell_5/inl" "barth_cell_4/gnd" 16.4525
+cap "barth_cell_5/om" "barth_cell_5/gnd" 15.7597
+cap "barth_cell_5/bp" "barth_cell_5/gnd" -0.0798422
+cap "barth_cell_5/im" "barth_cell_6/inl" 3.41479
+cap "barth_cell_6/vreg" "barth_cell_5/gnd" -2.42861e-17
+cap "barth_cell_5/im" "barth_cell_5/gnd" -42.95
+cap "barth_cell_5/im" "barth_cell_5/op" 35.9843
+cap "barth_cell_6/inl" "barth_cell_5/gnd" 0.0046591
+cap "barth_cell_5/im" "barth_cell_5/ip" 79.5162
+cap "barth_cell_5/op" "barth_cell_6/inl" 10.9769
+cap "barth_cell_6/inl" "barth_cell_5/ip" 5.79404
+cap "barth_cell_5/op" "barth_cell_5/gnd" -31.4328
+cap "barth_cell_5/ip" "barth_cell_5/gnd" 19.6757
+cap "barth_cell_5/op" "barth_cell_5/ip" 37.2037
+cap "barth_cell_5/om" "barth_cell_5/im" 5.79404
+cap "barth_cell_5/bp" "barth_cell_5/im" -2.03979
+cap "barth_cell_7/im" "barth_cell_7/gnd" -62.6257
+cap "barth_cell_7/inr" "barth_cell_7/gnd" 47.6038
+cap "barth_cell_7/bp" "barth_cell_7/im" -0.0386286
+cap "barth_cell_7/inr" "barth_cell_7/op" 71.9687
+cap "barth_cell_7/vreg" "barth_cell_7/gnd" -1.04083e-17
+cap "barth_cell_7/inr" "barth_cell_7/im" -32.0973
+cap "barth_cell_7/op" "barth_cell_7/gnd" -31.4328
+cap "barth_cell_7/inr" "barth_cell_7/out" 2.4388
+cap "barth_cell_7/bp" "barth_cell_7/gnd" -0.0798422
+cap "barth_cell_8/gnd" "barth_cell_8/im" -62.6257
+cap "barth_cell_8/im" "barth_cell_8/om" -3.55271e-15
+cap "barth_cell_8/gnd" "barth_cell_8/om" 15.7597
+cap "barth_cell_8/gnd" "barth_cell_8/vreg" -1.73472e-17
+cap "barth_cell_8/im" "barth_cell_8/bp" -0.0386286
+cap "barth_cell_8/gnd" "barth_cell_8/bp" -0.0798422
+cap "barth_cell_8/im" "barth_cell_8/ip" 12.1983
+cap "barth_cell_8/op" "barth_cell_8/gnd" -31.4328
+cap "barth_cell_8/gnd" "barth_cell_8/ip" 31.8395
+cap "barth_cell_8/im" "barth_cell_8/inl" 7.19687
+cap "barth_cell_8/gnd" "barth_cell_8/inl" 4.28865
+cap "barth_cell_8/om" "barth_cell_8/ip" 5.79404
+cap "barth_cell_8/op" "barth_cell_8/ip" 62.2111
+cap "barth_cell_8/op" "barth_cell_8/inl" 41.7784
+cap "barth_cell_8/inl" "barth_cell_8/ip" 5.79404
+cap "barth_cell_10/im" "barth_cell_10/gnd" -17.7804
+cap "barth_cell_10/out" "barth_cell_10/om" 5.79404
+cap "barth_cell_10/out" "barth_cell_10/op" 35.9843
+cap "barth_cell_10/im" "barth_cell_10/om" 1.2194
+cap "barth_cell_10/bp" "barth_cell_10/im" -2.05267
+cap "barth_cell_10/bp" "barth_cell_10/gnd" -0.106456
+cap "barth_cell_10/vreg" "barth_cell_10/gnd" -6.93889e-18
+cap "barth_cell_10/im" "barth_cell_10/op" 79.9375
+cap "barth_cell_10/op" "barth_cell_10/gnd" -22.9648
+cap "barth_cell_10/out" "barth_cell_10/im" 7.19687
+cap "barth_cell_10/out" "barth_cell_10/gnd" -0.800848
+cap "barth_cell_9/gnd" "barth_cell_9/bp" -0.0532281
+cap "barth_cell_9/gnd" "barth_cell_9/im" -41.7505
+cap "barth_cell_9/bp" "barth_cell_9/im" -0.0257524
+cap "barth_cell_9/gnd" "barth_cell_9/op" -20.9552
+cap "barth_cell_9/gnd" "barth_cell_9/inl" -10.258
+cap "barth_cell_1/out" "barth_cell_0/vreg" 0.414846
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/bp" 0.927071
+cap "barth_cell_0/vss" "barth_cell_0/im" 39.4059
+cap "barth_cell_0/vreg" "barth_cell_0/vss" 7.04638
+cap "barth_cell_0/op" "barth_cell_0/vreg" 4.63249
+cap "barth_cell_0/op" "barth_edge_0/hi" 3.30658
+cap "barth_cell_0/vss" "barth_cell_0/bp" -28.1714
+cap "barth_cell_0/vreg" "barth_cell_0/im" 2.3211
+cap "barth_cell_0/op" "barth_cell_0/bp" 2.62113
+cap "barth_edge_0/hi" "barth_cell_0/im" 43.1059
+cap "barth_cell_0/vreg" "barth_edge_0/hi" 4.73828
+cap "barth_cell_0/vreg" "barth_cell_0/vdd" 1.11022e-16
+cap "barth_cell_0/bp" "barth_cell_0/im" 35.6119
+cap "barth_cell_0/vreg" "barth_cell_0/bp" 15.9777
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/vss" 0.146828
+cap "barth_edge_0/hi" "barth_cell_0/bp" -0.438412
+cap "barth_cell_0/vdd" "barth_cell_0/bp" 0.0165738
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/vreg" 2.53443
+cap "barth_cell_0/op" "barth_cell_0/vss" -11.9622
+cap "barth_cell_0/m3_n7200_1320#" "barth_edge_0/hi" 4.22802
+cap "barth_cell_0/vreg" "barth_cell_0/vss" 0.950373
+cap "barth_edge_0/hi" "barth_cell_0/op" 5.266
+cap "barth_cell_0/vreg" "barth_cell_0/gp" -8.88178e-16
+cap "barth_edge_0/hi" "barth_cell_0/m3_n7200_1320#" 1.81956
+cap "barth_cell_0/vreg" "barth_cell_1/inr" 2.44346
+cap "barth_cell_0/vreg" "barth_cell_0/bp" -4.34025
+cap "barth_cell_0/vreg" "barth_cell_0/im" 2.44346
+cap "barth_cell_0/vss" "barth_cell_0/bp" -63.1315
+cap "barth_cell_0/vreg" "barth_cell_0/vdd" 4.44089e-16
+cap "barth_cell_0/vss" "barth_cell_0/im" 2.57896
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_2/inl" 4.04626
+cap "barth_cell_0/vreg" "barth_cell_0/op" 10.4704
+cap "barth_cell_2/inl" "barth_cell_1/out" 1.17453
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/vreg" 9.44337
+cap "barth_cell_1/inr" "barth_cell_0/im" 0.318933
+cap "barth_cell_0/im" "barth_cell_0/bp" -3.29508
+cap "barth_cell_0/vreg" "barth_cell_1/out" 8.98109
+cap "barth_cell_0/vss" "barth_cell_0/op" -3.96224
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.744491
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/vss" 15.2916
+cap "barth_cell_1/inr" "barth_cell_0/op" 2.04269
+cap "barth_cell_0/vss" "barth_cell_1/out" 3.93992
+cap "barth_cell_0/op" "barth_cell_0/bp" -3.3094
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_1/inr" 9.13731
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/gp" -8.88178e-15
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/bp" -5.02718
+cap "barth_cell_1/out" "barth_cell_0/bp" 5.01012
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/im" 13.1779
+cap "barth_cell_0/im" "barth_cell_1/out" 2.76662
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_0/op" 8.99947
+cap "barth_cell_0/op" "barth_cell_1/out" 15.8008
+cap "barth_cell_0/m3_n7200_1320#" "barth_cell_1/out" 8.99778
+cap "barth_edge_0/hi" "barth_cell_0/vreg" 2.83326
+cap "barth_cell_0/vreg" "barth_cell_2/inl" 0.941732
+cap "barth_cell_1/out" "barth_cell_0/im" 0.132816
+cap "barth_cell_1/out" "barth_cell_0/bp" 2.81612
+cap "barth_cell_0/inr" "barth_cell_0/vreg" 18.8404
+cap "barth_cell_0/inr" "barth_cell_0/vdd" 1.66533e-16
+cap "barth_cell_0/inr" "barth_cell_1/inr" 21.8635
+cap "barth_cell_0/vdd" "barth_cell_0/vreg" 4.44089e-16
+cap "barth_cell_0/inr" "barth_cell_2/inl" 13.6613
+cap "barth_cell_1/inr" "barth_cell_0/vreg" 4.51426
+cap "barth_cell_0/inr" "barth_cell_0/gp" 1.55431e-15
+cap "barth_cell_0/inr" "barth_cell_0/vss" 7.87984
+cap "barth_cell_0/op" "barth_cell_0/vreg" 0.414846
+cap "barth_cell_2/inl" "barth_cell_0/vreg" 4.51426
+cap "barth_cell_0/vreg" "barth_cell_0/gp" -1.11022e-15
+cap "barth_cell_0/inr" "barth_cell_0/im" 1.01458
+cap "barth_cell_0/vss" "barth_cell_0/vreg" 1.77636e-15
+cap "barth_cell_0/op" "barth_cell_1/inr" 0.856749
+cap "barth_cell_2/inl" "barth_cell_1/inr" 130.024
+cap "barth_cell_0/inr" "barth_cell_0/bp" 10.0202
+cap "barth_cell_0/vreg" "barth_cell_0/im" 0.650008
+cap "barth_cell_0/inr" "barth_cell_1/out" 17.8452
+cap "barth_cell_0/vss" "barth_cell_1/inr" 7.61854
+cap "barth_cell_0/vss" "barth_cell_0/op" -15.387
+cap "barth_cell_0/vss" "barth_cell_2/inl" 7.61854
+cap "barth_cell_1/out" "barth_cell_0/vreg" 8.98109
+cap "barth_cell_0/bp" "barth_cell_0/vreg" -5.58005
+cap "barth_cell_1/inr" "barth_cell_0/im" 0.318933
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.580571
+cap "barth_cell_2/inl" "barth_cell_0/im" 0.318933
+cap "barth_cell_1/inr" "barth_cell_0/bp" -8.61815
+cap "barth_cell_1/out" "barth_cell_1/inr" -0.378995
+cap "barth_cell_2/inl" "barth_cell_0/bp" 3.04787
+cap "barth_cell_2/inl" "barth_cell_1/out" 8.20394
+cap "barth_cell_0/op" "barth_cell_1/out" 1.04002
+cap "barth_cell_0/vss" "barth_cell_0/bp" -62.5835
+cap "barth_cell_0/vss" "barth_cell_1/out" 3.93992
+cap "barth_cell_1/bp" "barth_cell_1/im" 0.0155399
+cap "barth_cell_1/vss" "barth_cell_1/im" 7.61854
+cap "barth_cell_1/inl" "barth_cell_1/vreg" 28.2934
+cap "barth_cell_1/vdd" "barth_cell_1/vreg" 4.44089e-16
+cap "barth_cell_4/inl" "barth_cell_1/im" 35.7456
+cap "barth_cell_2/inl" "barth_cell_1/im" 0.318933
+cap "barth_cell_1/op" "barth_cell_1/vss" -15.387
+cap "barth_cell_1/inl" "barth_cell_1/inr" 0.00569977
+cap "barth_cell_1/inl" "barth_cell_1/bp" 4.70271
+cap "barth_cell_1/inl" "barth_cell_1/vss" 20.538
+cap "barth_cell_1/bp" "barth_cell_1/vdd" -0.416652
+cap "barth_cell_1/inl" "barth_cell_4/inl" 9.70937
+cap "barth_cell_1/inl" "barth_cell_2/inl" 11.18
+cap "barth_cell_4/out" "barth_cell_1/im" 3.58659
+cap "barth_cell_1/vreg" "barth_cell_1/inr" 0.941732
+cap "barth_cell_1/vreg" "barth_cell_1/vss" -1.5099e-14
+cap "barth_cell_1/bp" "barth_cell_1/vreg" -4.11738
+cap "barth_cell_1/inl" "barth_cell_1/gp" -9.76996e-15
+cap "barth_cell_1/bp" "barth_cell_1/vss" -62.0356
+cap "barth_cell_4/inl" "barth_cell_1/vreg" 2.86589
+cap "barth_cell_2/inl" "barth_cell_1/vreg" 2.44346
+cap "barth_cell_1/inl" "barth_cell_4/out" 9.27716
+cap "barth_cell_1/vreg" "barth_cell_1/gp" 9.99201e-16
+cap "barth_cell_1/vreg" "barth_cell_4/out" 1.1648
+cap "barth_cell_1/inl" "barth_cell_1/im" 22.4194
+cap "barth_cell_1/out" "barth_cell_1/vreg" 0.414846
+cap "barth_cell_1/vreg" "barth_cell_1/im" 1.79345
+cap "barth_cell_1/inl" "barth_cell_1/vdd" -6.10623e-15
+cap "barth_cell_2/vss" "barth_cell_2/op" -20.516
+cap "barth_cell_2/vss" "barth_cell_4/inl" 7.61854
+cap "barth_cell_4/out" "barth_cell_2/bp" 10.0202
+cap "barth_cell_2/vreg" "barth_cell_2/op" 4.07673
+cap "barth_cell_2/vreg" "barth_cell_4/inl" 2.5901
+cap "barth_cell_2/out" "barth_cell_2/bp" 3.04787
+cap "barth_cell_4/out" "barth_cell_2/op" 8.42041
+cap "barth_cell_4/out" "barth_cell_4/inl" -0.378995
+cap "barth_cell_2/vreg" "barth_cell_2/im" 7.89945
+cap "barth_cell_4/out" "barth_cell_2/im" 7.83457
+cap "barth_cell_2/out" "barth_cell_2/op" 3.71536
+cap "barth_cell_2/out" "barth_cell_4/inl" 16.8989
+cap "barth_cell_2/out" "barth_cell_2/im" 14.5909
+cap "barth_cell_2/vreg" "barth_cell_2/vdd" 1.11022e-16
+cap "barth_cell_2/bp" "barth_cell_4/inl" 3.04787
+cap "barth_cell_2/vreg" "barth_cell_2/vss" -2.66454e-15
+cap "barth_cell_2/vreg" "barth_cell_2/gp" 2.77556e-17
+cap "barth_cell_2/op" "barth_cell_4/inl" 0.856749
+cap "barth_cell_2/im" "barth_cell_2/bp" 0.234697
+cap "barth_cell_4/out" "barth_cell_2/vss" 7.87984
+cap "barth_cell_4/out" "barth_cell_2/vreg" 13.5503
+cap "barth_cell_2/im" "barth_cell_4/inl" 94.5978
+cap "barth_cell_2/out" "barth_cell_2/vss" 7.61854
+cap "barth_cell_2/vreg" "barth_cell_2/out" 15.1138
+cap "barth_cell_2/vdd" "barth_cell_2/bp" -0.16213
+cap "barth_cell_4/out" "barth_cell_2/out" 15.7472
+cap "barth_cell_2/vss" "barth_cell_2/bp" -81.3991
+cap "barth_cell_2/vreg" "barth_cell_2/bp" -2.5645
+cap "barth_cell_6/out" "barth_cell_2/vreg" 0.0123872
+cap "barth_cell_3/vreg" "barth_cell_7/out" 0.0123872
+cap "barth_cell_3/bp" "barth_cell_3/vdd" -0.202663
+cap "barth_cell_3/bp" "barth_cell_3/vreg" -3.20562
+cap "barth_cell_3/im" "barth_cell_3/vreg" 8.04609
+cap "barth_cell_4/out" "barth_cell_3/im" 0.856749
+cap "barth_cell_3/bp" "barth_cell_3/vss" -101.749
+cap "barth_cell_3/im" "barth_cell_3/vss" 7.61854
+cap "barth_cell_3/vreg" "barth_cell_4/inl" 2.44346
+cap "barth_cell_3/bp" "barth_cell_4/m3_n7200_1320#" 3.04787
+cap "barth_cell_3/im" "barth_cell_3/op" 9.12825
+cap "barth_cell_3/bp" "barth_cell_3/op" -11.0596
+cap "barth_cell_3/im" "barth_cell_4/m3_n7200_1320#" 17.2298
+cap "barth_cell_3/out" "barth_cell_3/vreg" 0.0123872
+cap "barth_cell_3/op" "barth_cell_4/inl" 2.04269
+cap "barth_cell_4/m3_n7200_1320#" "barth_cell_4/inl" 9.13731
+cap "barth_cell_3/vreg" "barth_cell_3/vdd" 1.33227e-15
+cap "barth_cell_3/bp" "barth_cell_3/im" 0.484934
+cap "barth_cell_4/out" "barth_cell_3/vreg" 4.07673
+cap "barth_cell_4/m3_n7200_1320#" "barth_cell_3/vreg" 9.83241
+cap "barth_cell_3/vreg" "barth_cell_3/op" 17.6147
+cap "barth_cell_3/op" "barth_cell_3/vss" -17.7652
+cap "barth_cell_4/out" "barth_cell_4/m3_n7200_1320#" 3.71536
+cap "barth_cell_3/im" "barth_cell_4/inl" 0.318933
+cap "barth_cell_4/m3_n7200_1320#" "barth_cell_3/vss" 7.61854
+cap "barth_cell_4/out" "barth_cell_3/op" 8.42041
+cap "barth_cell_4/m3_n7200_1320#" "barth_cell_3/op" 8.18355
+cap "barth_cell_4/vdd" "barth_cell_4/bp" -0.121598
+cap "barth_cell_4/vreg" "barth_cell_4/op" 14.7151
+cap "barth_cell_4/vreg" "barth_cell_4/bp" -1.92337
+cap "barth_cell_4/im" "barth_cell_4/op" 8.8707
+cap "barth_cell_5/m3_n7200_1320#" "barth_cell_4/vdd" 3.10862e-15
+cap "barth_cell_4/im" "barth_cell_4/bp" 0.0155399
+cap "barth_cell_4/vreg" "barth_cell_5/m3_n7200_1320#" 8.16921
+cap "barth_cell_5/m3_n7200_1320#" "barth_cell_4/im" 24.9655
+cap "barth_cell_4/vreg" "barth_cell_4/vss" -3.55271e-15
+cap "barth_cell_4/gp" "barth_cell_5/m3_n7200_1320#" -5.32907e-15
+cap "barth_cell_4/vss" "barth_cell_4/im" 7.61854
+cap "barth_cell_4/bp" "barth_cell_4/op" -4.12979
+cap "barth_cell_4/vreg" "barth_cell_7/inl" 2.44346
+cap "barth_cell_4/vreg" "barth_cell_7/out" 6.98865
+cap "barth_cell_7/inl" "barth_cell_4/im" 0.318933
+cap "barth_cell_4/im" "barth_cell_7/out" 1.88487
+cap "barth_cell_5/m3_n7200_1320#" "barth_cell_4/op" 11.8989
+cap "barth_cell_5/m3_n7200_1320#" "barth_cell_4/bp" 3.28257
+cap "barth_cell_4/vss" "barth_cell_4/op" -7.50716
+cap "barth_cell_4/vss" "barth_cell_4/bp" -61.0493
+cap "barth_cell_7/inl" "barth_cell_4/op" 2.04269
+cap "barth_cell_4/op" "barth_cell_7/out" 10.7373
+cap "barth_cell_4/vss" "barth_cell_5/m3_n7200_1320#" 12.6581
+cap "barth_cell_7/inl" "barth_cell_5/m3_n7200_1320#" 9.13731
+cap "barth_cell_5/m3_n7200_1320#" "barth_cell_7/out" 5.59374
+cap "barth_cell_4/vreg" "barth_cell_4/vdd" 1.77636e-15
+cap "barth_cell_4/vreg" "barth_cell_4/im" 5.60108
+cap "barth_cell_4/vreg" "barth_cell_4/gp" -4.44089e-16
+cap "barth_cell_5/vreg" "barth_cell_5/op" 1.1648
+cap "barth_cell_5/vreg" "barth_cell_7/inl" 4.51426
+cap "barth_cell_5/bp" "barth_cell_7/out" 7.09491
+cap "barth_cell_5/vreg" "barth_cell_5/im" 5.16427
+cap "barth_cell_5/gp" "barth_cell_6/m3_n7200_1320#" 2.22045e-16
+cap "barth_cell_7/out" "barth_cell_5/vss" 7.87984
+cap "barth_cell_6/m3_n7200_1320#" "barth_cell_7/out" 21.2492
+cap "barth_cell_5/vreg" "barth_cell_5/bp" -6.31139
+cap "barth_cell_5/op" "barth_cell_7/inl" 0.856749
+cap "barth_cell_5/vreg" "barth_cell_5/vss" -3.55271e-15
+cap "barth_cell_5/im" "barth_cell_7/inl" 130.343
+cap "barth_cell_5/vdd" "barth_cell_5/bp" -0.744491
+cap "barth_cell_5/vreg" "barth_cell_6/m3_n7200_1320#" 18.0905
+cap "barth_cell_10/inl" "barth_cell_5/im" 0.318933
+cap "barth_cell_5/bp" "barth_cell_7/inl" -8.61815
+cap "barth_cell_5/gp" "barth_cell_5/vreg" -8.88178e-16
+cap "barth_cell_5/im" "barth_cell_5/bp" 0.250237
+cap "barth_cell_6/m3_n7200_1320#" "barth_cell_5/vdd" -2.22045e-16
+cap "barth_cell_5/op" "barth_cell_5/vss" -15.387
+cap "barth_cell_7/inl" "barth_cell_5/vss" 7.61854
+cap "barth_cell_5/vreg" "barth_cell_7/out" 10.9735
+cap "barth_cell_5/im" "barth_cell_5/vss" 7.61854
+cap "barth_cell_6/m3_n7200_1320#" "barth_cell_7/inl" 21.3875
+cap "barth_cell_5/im" "barth_cell_6/m3_n7200_1320#" 17.7019
+cap "barth_cell_10/inl" "barth_cell_6/m3_n7200_1320#" 0.132816
+cap "barth_cell_5/bp" "barth_cell_5/vss" -63.1315
+cap "barth_cell_6/m3_n7200_1320#" "barth_cell_5/bp" 2.18132
+cap "barth_cell_7/out" "barth_cell_5/op" 6.10352
+cap "barth_cell_7/out" "barth_cell_7/inl" -0.378995
+cap "barth_cell_5/im" "barth_cell_7/out" 10.393
+cap "barth_cell_5/vreg" "barth_cell_5/vdd" 4.44089e-16
+cap "barth_cell_6/m3_n7200_1320#" "barth_cell_5/vss" 6.51888
+cap "barth_cell_10/inl" "barth_cell_7/m3_n7200_1320#" 11.1442
+cap "barth_cell_7/vdd" "barth_cell_7/m3_n7200_1320#" -7.54952e-15
+cap "barth_cell_7/bp" "barth_cell_7/vreg" -5.58005
+cap "barth_cell_7/inl" "barth_cell_7/m3_n7200_1320#" 5.22079
+cap "barth_cell_9/inr" "barth_cell_7/vreg" 2.86589
+cap "barth_cell_7/vss" "barth_cell_7/vreg" 1.77636e-15
+cap "barth_cell_7/m3_n7200_1320#" "barth_cell_7/gp" -2.35367e-14
+cap "barth_cell_7/out" "barth_cell_7/vreg" 0.414846
+cap "barth_cell_7/vdd" "barth_cell_7/bp" -0.580571
+cap "barth_cell_7/bp" "barth_cell_7/m3_n7200_1320#" 7.26609
+cap "barth_cell_7/im" "barth_cell_7/vreg" 2.44346
+cap "barth_cell_9/inr" "barth_cell_7/m3_n7200_1320#" 7.83099
+cap "barth_cell_7/vss" "barth_cell_7/m3_n7200_1320#" 27.0568
+cap "barth_cell_7/vss" "barth_cell_7/op" -15.387
+cap "barth_cell_9/out" "barth_cell_7/vreg" 1.1648
+cap "barth_cell_7/out" "barth_cell_7/m3_n7200_1320#" 1.89677
+cap "barth_cell_10/inl" "barth_cell_7/im" 0.0942752
+cap "barth_cell_7/vss" "barth_cell_7/bp" -62.5835
+cap "barth_cell_10/inl" "barth_cell_7/vreg" 2.44346
+cap "barth_cell_7/im" "barth_cell_7/m3_n7200_1320#" 11.0472
+cap "barth_cell_7/vdd" "barth_cell_7/vreg" 4.44089e-16
+cap "barth_cell_7/vreg" "barth_cell_7/m3_n7200_1320#" 27.6407
+cap "barth_cell_7/inl" "barth_cell_7/vreg" 0.941732
+cap "barth_cell_7/vreg" "barth_cell_7/gp" -1.11022e-15
+cap "barth_cell_9/out" "barth_cell_7/m3_n7200_1320#" 6.96027
+cap "barth_cell_8/vreg" "barth_cell_8/op" 1.1648
+cap "barth_cell_9/inr" "barth_cell_8/vss" 7.61854
+cap "barth_cell_9/out" "barth_cell_9/inr" -0.378995
+cap "barth_cell_8/out" "barth_cell_8/vdd" 1.22125e-15
+cap "barth_cell_8/bp" "barth_cell_8/vreg" -4.11738
+cap "barth_cell_9/out" "barth_cell_8/vss" 7.87984
+cap "barth_cell_8/out" "barth_cell_8/gp" -4.44089e-16
+cap "barth_cell_9/inr" "barth_cell_10/inl" 130.024
+cap "barth_cell_8/vreg" "barth_cell_8/vdd" 4.44089e-16
+cap "barth_cell_8/out" "barth_cell_8/im" 7.73565
+cap "barth_cell_9/out" "barth_cell_10/inl" 9.37847
+cap "barth_cell_8/vss" "barth_cell_10/inl" 5.03958
+cap "barth_cell_8/gp" "barth_cell_8/vreg" 9.99201e-16
+cap "barth_cell_9/inr" "barth_cell_8/op" 0.856749
+cap "barth_cell_8/out" "barth_cell_8/vreg" 15.448
+cap "barth_cell_8/bp" "barth_cell_9/inr" 3.04787
+cap "barth_cell_8/im" "barth_cell_8/vreg" 0.650008
+cap "barth_cell_9/out" "barth_cell_8/op" 8.42041
+cap "barth_cell_8/vss" "barth_cell_8/op" -15.387
+cap "barth_cell_8/bp" "barth_cell_8/vss" -62.0356
+cap "barth_cell_8/bp" "barth_cell_9/out" 10.0202
+cap "barth_cell_8/bp" "barth_cell_10/inl" -6.17141
+cap "barth_cell_9/inr" "barth_cell_8/im" 0.318933
+cap "barth_cell_8/out" "barth_cell_9/inr" 18.7773
+cap "barth_cell_9/out" "barth_cell_8/im" 2.04269
+cap "barth_cell_8/out" "barth_cell_9/out" 18.0641
+cap "barth_cell_8/out" "barth_cell_8/vss" 7.61854
+cap "barth_cell_9/inr" "barth_cell_8/vreg" 2.5901
+cap "barth_cell_8/out" "barth_cell_10/inl" 13.1836
+cap "barth_cell_9/out" "barth_cell_8/vreg" 13.5503
+cap "barth_cell_8/bp" "barth_cell_8/vdd" -0.416652
+cap "barth_cell_8/vss" "barth_cell_8/vreg" -1.5099e-14
+cap "barth_cell_8/vreg" "barth_cell_10/inl" 4.51426
+cap "barth_cell_8/out" "barth_cell_8/op" 3.58659
+cap "barth_cell_8/out" "barth_cell_8/bp" 0.619169
+cap "barth_cell_10/im" "barth_cell_9/inr" 0.318933
+cap "barth_cell_10/op" "barth_cell_10/im" 7.10543e-15
+cap "barth_cell_10/vreg" "barth_cell_10/out" 8.32142
+cap "barth_cell_10/vreg" "barth_cell_10/vdd" 1.11022e-16
+cap "barth_cell_10/out" "barth_cell_10/vdd" 1.66533e-16
+cap "barth_cell_10/op" "barth_cell_10/vss" -8.27083
+cap "barth_cell_10/bp" "barth_cell_10/im" 30.918
+cap "barth_cell_10/out" "barth_edge_1/hi" 1.81956
+cap "barth_cell_10/vreg" "barth_edge_1/hi" 6.44311
+cap "barth_cell_10/bp" "barth_cell_10/vss" -80.3827
+cap "barth_cell_10/op" "barth_cell_9/out" 8.42041
+cap "barth_cell_10/out" "barth_cell_10/inl" 0.00569977
+cap "barth_cell_10/vreg" "barth_cell_10/inl" 0.941732
+cap "barth_cell_10/vreg" "barth_cell_10/im" 1.79345
+cap "barth_cell_10/out" "barth_cell_10/im" 5.44222
+cap "barth_cell_10/out" "barth_cell_10/vss" 7.67306
+cap "barth_cell_10/vreg" "barth_cell_10/vss" 3.97282
+cap "barth_edge_1/hi" "barth_cell_10/im" 24.1829
+cap "barth_cell_10/op" "barth_cell_9/inr" 2.04269
+cap "barth_cell_10/vreg" "barth_cell_9/out" 4.06434
+cap "barth_cell_10/out" "barth_cell_9/out" 3.71536
+cap "barth_cell_10/bp" "barth_cell_10/op" -6.12127
+cap "barth_cell_10/vss" "barth_cell_10/im" 30.6335
+cap "barth_cell_10/vreg" "barth_cell_10/gp" 2.77556e-17
+cap "barth_cell_10/out" "barth_cell_9/inr" 9.13731
+cap "barth_cell_10/vreg" "barth_cell_10/op" 11.441
+cap "barth_cell_10/vreg" "barth_cell_9/inr" 2.44346
+cap "barth_cell_9/out" "barth_cell_10/im" 0.856749
+cap "barth_cell_10/out" "barth_cell_10/op" 5.41288
+cap "barth_cell_10/op" "barth_edge_1/hi" 7.78667
+cap "barth_cell_10/bp" "barth_cell_10/vdd" -0.16213
+cap "barth_cell_10/bp" "barth_cell_10/out" 3.82567
+cap "barth_cell_10/vreg" "barth_cell_10/bp" 7.40682
+cap "barth_cell_9/vreg" "barth_cell_9/out" 0.0123872
+cap "barth_cell_9/vss" "barth_cell_9/op" -9.97583
+cap "barth_cell_9/vreg" "barth_cell_9/im" 2.3211
+cap "barth_cell_9/op" "barth_cell_9/bp" 0.540636
+cap "barth_cell_9/vss" "barth_cell_9/m3_n7200_1320#" 0.146828
+cap "barth_edge_1/hi" "barth_cell_9/im" 16.1797
+cap "barth_cell_9/vreg" "barth_edge_1/hi" 1.12844
+cap "barth_cell_9/m3_n7200_1320#" "barth_cell_9/bp" 0.927071
+cap "barth_cell_9/vreg" "barth_cell_9/op" 2.91193
+cap "barth_edge_1/hi" "barth_cell_9/op" 0.785907
+cap "barth_cell_9/vss" "barth_cell_9/bp" -41.0189
+cap "barth_cell_9/vreg" "barth_cell_9/m3_n7200_1320#" 1.73221
+cap "barth_edge_1/hi" "barth_cell_9/m3_n7200_1320#" 4.22802
+cap "barth_cell_9/vss" "barth_cell_9/im" 1.41035
+cap "barth_cell_9/vdd" "barth_cell_9/bp" -0.0810651
+cap "barth_cell_9/vreg" "barth_cell_9/vss" 0.540636
+cap "barth_cell_9/im" "barth_cell_9/bp" 2.74433
+cap "barth_cell_9/vreg" "barth_cell_9/bp" 3.00908
+cap "barth_edge_1/hi" "barth_cell_9/bp" -0.534752
+cap "barth_cell_0/vdd" "barth_cell_0/vss" -16.0095
+cap "barth_cell_0/out" "barth_cell_0/vss" 2.44208
+cap "barth_cell_0/inl" "barth_cell_0/gp" 7.34943
+cap "barth_cell_0/vreg" "barth_cell_0/vdd" 11.6798
+cap "barth_cell_0/vreg" "barth_cell_0/out" -7.21645e-16
+cap "barth_cell_0/vdd" "barth_cell_0/bp" 1.24345e-14
+cap "barth_edge_0/hih" "barth_cell_0/vdd" 4.84007
+cap "barth_cell_0/vss" "barth_edge_0/hi" 0.83866
+cap "barth_cell_0/vdd" "barth_cell_0/gp" 10.0906
+cap "barth_cell_0/out" "barth_cell_0/gp" 5.93707
+cap "barth_cell_0/vreg" "barth_cell_0/vss" 32.2744
+cap "barth_cell_0/vss" "barth_cell_0/bp" -62.0803
+cap "barth_cell_0/vss" "barth_cell_0/gp" 26.0604
+cap "barth_cell_0/bp" "barth_edge_0/hi" 2.48663
+cap "barth_cell_0/vreg" "barth_edge_0/hih" 13.6235
+cap "barth_cell_0/vreg" "barth_cell_0/bp" 13.6056
+cap "barth_cell_0/gp" "barth_edge_0/hi" 11.4302
+cap "barth_cell_0/vreg" "barth_cell_0/gp" -62.2987
+cap "barth_edge_0/hih" "barth_cell_0/gp" 35.5507
+cap "barth_cell_0/bp" "barth_cell_0/gp" 37.8317
+cap "barth_cell_0/inl" "barth_cell_0/vss" 8.5657
+cap "barth_cell_0/vreg" "barth_edge_0/hih" 2.89465
+cap "barth_cell_0/vss" "barth_cell_0/bp" -28.8371
+cap "barth_cell_0/gp" "barth_cell_0/bp" -0.118454
+cap "barth_cell_0/gp" "barth_cell_0/vdd" 18.9923
+cap "barth_cell_0/vss" "barth_cell_0/vdd" -29.0632
+cap "barth_cell_0/vdd" "barth_edge_0/hih" 3.7512
+cap "barth_cell_0/vreg" "barth_cell_0/bp" 5.94716
+cap "barth_cell_0/vreg" "barth_cell_0/vdd" 30.2555
+cap "barth_cell_0/gp" "barth_cell_0/vss" -5.53423
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.336726
+cap "barth_cell_0/gp" "barth_edge_0/hih" 5.36862
+cap "barth_cell_0/vreg" "barth_cell_0/out" -1.42109e-14
+cap "barth_cell_0/vreg" "barth_cell_0/gp" -66.5666
+cap "barth_cell_0/vreg" "barth_cell_0/vss" 13.2903
+cap "barth_cell_0/vss" "barth_cell_0/vdd" -29.6509
+cap "barth_cell_0/gp" "barth_cell_0/bp" -0.118454
+cap "barth_cell_0/vreg" "barth_cell_0/gp" -63.6165
+cap "barth_cell_0/vreg" "barth_cell_0/bp" 4.49254
+cap "barth_cell_0/vss" "barth_cell_0/gp" -7.11215
+cap "barth_cell_0/vss" "barth_cell_0/bp" -28.8371
+cap "barth_cell_0/vss" "barth_cell_0/vreg" 11.0229
+cap "barth_cell_0/vdd" "barth_cell_0/gp" 19.5633
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.336726
+cap "barth_cell_0/vdd" "barth_cell_0/vreg" 26.8784
+cap "barth_cell_1/vss" "barth_cell_1/vreg" 15.233
+cap "barth_cell_1/bp" "barth_cell_1/vreg" 5.77186
+cap "barth_cell_1/gp" "barth_cell_1/vdd" 16.5948
+cap "barth_cell_1/gp" "barth_cell_1/vss" -7.18545
+cap "barth_cell_1/bp" "barth_cell_1/gp" -0.118454
+cap "barth_cell_1/vss" "barth_cell_1/vdd" -29.6509
+cap "barth_cell_1/bp" "barth_cell_1/vdd" -0.336726
+cap "barth_cell_1/gp" "barth_cell_1/vreg" -51.974
+cap "barth_cell_1/bp" "barth_cell_1/vss" -28.8371
+cap "barth_cell_1/vdd" "barth_cell_1/vreg" 36.3409
+cap "barth_cell_2/bp" "barth_cell_2/gp" -0.157939
+cap "barth_cell_6/gp" "barth_cell_2/gp" 0.00569977
+cap "barth_cell_2/bp" "barth_cell_2/vss" -38.4495
+cap "barth_cell_2/vdd" "barth_cell_2/bp" -0.448968
+cap "barth_cell_2/vdd" "barth_cell_6/gp" 0.145353
+cap "barth_cell_2/vss" "barth_cell_2/gp" -9.62946
+cap "barth_cell_2/vdd" "barth_cell_2/gp" 21.7997
+cap "barth_cell_2/bp" "barth_cell_2/vreg" 0.116535
+cap "barth_cell_2/vdd" "barth_cell_2/vss" -39.5345
+cap "barth_cell_2/op" "barth_cell_2/vreg" 2.77556e-17
+cap "barth_cell_2/vreg" "barth_cell_2/gp" -110.526
+cap "barth_cell_2/vss" "barth_cell_2/vreg" 10.5732
+cap "barth_cell_2/vdd" "barth_cell_2/vreg" 22.3579
+cap "barth_cell_3/vdd" "barth_cell_3/bp" -0.56121
+cap "barth_cell_3/gp" "barth_cell_3/vreg" -151.558
+cap "barth_cell_3/vss" "barth_cell_3/bp" -48.0618
+cap "barth_cell_3/gp" "barth_cell_3/vdd" 21.0764
+cap "barth_cell_3/gp" "barth_cell_3/gp" 0.00569977
+cap "barth_cell_3/vss" "barth_cell_3/gp" -12.0735
+cap "barth_cell_3/vdd" "barth_cell_3/vreg" 15.2722
+cap "barth_cell_3/vss" "barth_cell_3/vreg" 10.1235
+cap "barth_cell_3/gp" "barth_cell_3/vdd" 0.145353
+cap "barth_cell_3/vss" "barth_cell_3/vdd" -49.4181
+cap "barth_cell_3/gp" "barth_cell_3/bp" -0.197423
+cap "barth_cell_3/vreg" "barth_cell_3/op" 8.88178e-16
+cap "barth_cell_3/bp" "barth_cell_3/vreg" -4.32652
+cap "barth_cell_4/vreg" "barth_cell_4/vss" 15.233
+cap "barth_cell_4/vreg" "barth_cell_4/gp" -51.974
+cap "barth_cell_4/bp" "barth_cell_4/vdd" -0.336726
+cap "barth_cell_4/bp" "barth_cell_4/vss" -28.8371
+cap "barth_cell_4/vss" "barth_cell_4/vdd" -29.6509
+cap "barth_cell_4/vreg" "barth_cell_4/op" 3.9968e-15
+cap "barth_cell_4/bp" "barth_cell_4/gp" -0.118454
+cap "barth_cell_4/vdd" "barth_cell_4/gp" 16.5948
+cap "barth_cell_4/vss" "barth_cell_4/gp" -7.18545
+cap "barth_cell_4/bp" "barth_cell_4/vreg" 5.77186
+cap "barth_cell_4/vreg" "barth_cell_4/vdd" 36.3409
+cap "barth_cell_5/bp" "barth_cell_5/vdd" -0.336726
+cap "barth_cell_5/vss" "barth_cell_5/vdd" -29.6509
+cap "barth_cell_5/gp" "barth_cell_5/vreg" -60.2122
+cap "barth_cell_5/vreg" "barth_cell_5/bp" 5.84625
+cap "barth_cell_5/gp" "barth_cell_5/bp" -0.118454
+cap "barth_cell_5/vss" "barth_cell_5/vreg" 12.9988
+cap "barth_cell_5/vss" "barth_cell_5/gp" -7.11215
+cap "barth_cell_5/vss" "barth_cell_5/bp" -28.8371
+cap "barth_cell_5/vreg" "barth_cell_5/vdd" 31.9758
+cap "barth_cell_5/gp" "barth_cell_5/vdd" 19.5633
+cap "barth_cell_7/vss" "barth_cell_7/bp" -28.8371
+cap "barth_cell_7/vreg" "barth_cell_7/vdd" 26.8784
+cap "barth_cell_7/vreg" "barth_cell_7/gp" -63.6165
+cap "barth_cell_7/vreg" "barth_cell_7/bp" 4.49254
+cap "barth_cell_7/vdd" "barth_cell_7/gp" 19.5633
+cap "barth_cell_7/bp" "barth_cell_7/vdd" -0.336726
+cap "barth_cell_7/bp" "barth_cell_7/gp" -0.118454
+cap "barth_cell_7/vreg" "barth_cell_7/vss" 11.0229
+cap "barth_cell_7/vss" "barth_cell_7/vdd" -29.6509
+cap "barth_cell_7/vss" "barth_cell_7/gp" -7.11215
+cap "barth_cell_8/vreg" "barth_cell_8/bp" 5.77186
+cap "barth_cell_8/vreg" "barth_cell_8/vss" 15.233
+cap "barth_cell_8/vdd" "barth_cell_8/vreg" 36.3409
+cap "barth_cell_8/gp" "barth_cell_8/vreg" -51.974
+cap "barth_cell_8/vss" "barth_cell_8/bp" -28.8371
+cap "barth_cell_8/vdd" "barth_cell_8/bp" -0.336726
+cap "barth_cell_8/gp" "barth_cell_8/bp" -0.118454
+cap "barth_cell_8/vdd" "barth_cell_8/vss" -29.6509
+cap "barth_cell_8/gp" "barth_cell_8/vss" -7.18545
+cap "barth_cell_8/gp" "barth_cell_8/vdd" 16.5948
+cap "barth_cell_10/gp" "barth_edge_1/hih" 17.2357
+cap "barth_cell_10/op" "barth_cell_10/vreg" -3.08087e-15
+cap "barth_cell_10/vreg" "barth_cell_10/bp" 6.04808
+cap "barth_cell_10/vdd" "barth_cell_10/bp" -0.336726
+cap "barth_cell_10/vreg" "barth_cell_10/vdd" 25.8189
+cap "barth_cell_10/vss" "barth_cell_10/bp" -29.3039
+cap "barth_cell_10/vreg" "barth_cell_10/vss" 28.645
+cap "barth_cell_10/vdd" "barth_cell_10/vss" -37.411
+cap "barth_cell_10/gp" "barth_cell_10/bp" -0.128314
+cap "barth_cell_10/gp" "barth_cell_10/vreg" -120.656
+cap "barth_cell_10/gp" "barth_cell_10/vdd" 17.2025
+cap "barth_edge_1/hih" "barth_cell_10/vreg" 15.575
+cap "barth_edge_1/hih" "barth_cell_10/vdd" 7.23715
+cap "barth_cell_10/gp" "barth_cell_10/vss" -7.647
+cap "barth_cell_9/gp" "barth_edge_1/hih" 0.00569977
+cap "barth_cell_9/vdd" "barth_cell_9/bp" 1.7486e-15
+cap "barth_edge_1/hih" "barth_cell_9/vdd" 1.35412
+cap "barth_cell_9/vreg" "barth_cell_9/vdd" -2.27256
+cap "barth_cell_9/vdd" "barth_cell_9/vss" -18.5435
+cap "barth_cell_9/vreg" "barth_cell_9/bp" 6.68954
+cap "barth_cell_9/vdd" "barth_cell_9/gp" 8.76656
+cap "barth_cell_9/bp" "barth_cell_9/vss" -70.3837
+cap "barth_cell_9/gp" "barth_cell_9/bp" -0.0197191
+cap "barth_cell_9/vreg" "barth_edge_1/hih" 0.943088
+cap "barth_cell_9/gp" "barth_cell_9/vdd" 0.145353
+cap "barth_edge_1/hih" "barth_cell_9/gp" 20.9346
+cap "barth_cell_9/vreg" "barth_cell_9/vss" 4.17378
+cap "barth_cell_9/vreg" "barth_cell_9/gp" -82.064
+cap "barth_cell_9/gp" "barth_cell_9/vss" -3.17241
+cap "barth_cell_0/vss" "barth_cell_0/vdd" -19.3532
+cap "barth_cell_0/vreg" "barth_cell_0/vss" 3.14561
+cap "barth_cell_0/vss" "barth_cell_0/gp" 10.309
+cap "barth_cell_0/vdd" "barth_cell_0/gp" 0.83864
+cap "barth_edge_0/hih" "barth_cell_0/vdd" -3.3339
+cap "barth_cell_0/vss" "barth_cell_0/bp" 0.0319744
+cap "barth_edge_0/hih" "barth_cell_0/gp" 0.914444
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.332161
+cap "barth_cell_0/vreg" "barth_cell_0/vdd" -1.47634
+cap "barth_cell_0/vdd" "barth_cell_0/vss" -31.9833
+cap "barth_cell_0/vss" "barth_cell_0/gp" 8.88178e-16
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.525921
+cap "barth_cell_0/vdd" "barth_cell_0/gp" -7.08225
+cap "barth_cell_0/vdd" "barth_edge_0/hih" 0.0949303
+cap "barth_cell_0/gp" "barth_cell_0/vss" 1.33227e-15
+cap "barth_cell_0/vss" "barth_cell_0/bp" 8.67362e-19
+cap "barth_cell_0/vdd" "barth_cell_0/vss" -32.2247
+cap "barth_cell_0/gp" "barth_cell_0/vdd" -4.39991
+cap "barth_cell_0/vdd" "barth_cell_0/bp" -0.387521
+cap "barth_cell_0/vdd" "barth_cell_0/vreg" -1.10726
+cap "barth_cell_1/vdd" "barth_cell_1/gp" -2.05369
+cap "barth_cell_1/vdd" "barth_cell_1/vss" -31.9429
+cap "barth_cell_1/vdd" "barth_cell_1/bp" -0.24912
+cap "barth_cell_1/vss" "barth_cell_1/gp" 1.33227e-15
+cap "barth_cell_1/vss" "barth_cell_1/bp" -1.73472e-18
+cap "barth_cell_1/vdd" "barth_cell_1/vreg" -1.10726
+cap "barth_cell_2/vss" "barth_cell_2/bp" -4.33681e-19
+cap "barth_cell_2/vss" "barth_cell_2/gp" 8.88178e-16
+cap "barth_cell_2/vdd" "barth_cell_2/bp" 5.55112e-16
+cap "barth_cell_2/vdd" "barth_cell_2/gp" 0.689072
+cap "barth_cell_2/vdd" "barth_cell_6/gp" 0.00292088
+cap "barth_cell_2/vdd" "barth_cell_2/vss" -41.9141
+cap "barth_cell_3/gp" "barth_cell_3/vdd" 0.65172
+cap "barth_cell_3/bp" "barth_cell_3/vss" 1.73472e-18
+cap "barth_cell_3/vdd" "barth_cell_3/vss" -52.3927
+cap "barth_cell_3/vdd" "barth_cell_3/gp" 0.00292088
+cap "barth_cell_4/gp" "barth_cell_4/vdd" -9.53612
+cap "barth_cell_4/bp" "barth_cell_4/vdd" -0.664321
+cap "barth_cell_4/vreg" "barth_cell_4/vdd" -2.21451
+cap "barth_cell_4/vss" "barth_cell_4/vdd" -32.7884
+cap "barth_cell_5/vss" "barth_cell_5/vdd" -32.5066
+cap "barth_cell_5/vdd" "barth_cell_5/gp" -6.89405
+cap "barth_cell_5/vss" "barth_cell_5/gp" 8.88178e-16
+cap "barth_cell_5/bp" "barth_cell_5/vdd" -0.525921
+cap "barth_cell_5/vdd" "barth_cell_5/vreg" -1.47634
+cap "barth_cell_7/vdd" "barth_cell_7/gp" -4.39991
+cap "barth_cell_7/vdd" "barth_cell_7/vss" -32.2247
+cap "barth_cell_7/vdd" "barth_cell_7/bp" -0.387521
+cap "barth_cell_7/vdd" "barth_cell_7/vreg" -1.10726
+cap "barth_cell_7/gp" "barth_cell_7/vss" 1.33227e-15
+cap "barth_cell_7/vss" "barth_cell_7/bp" 8.67362e-19
+cap "barth_cell_8/vreg" "barth_cell_8/vdd" -1.10726
+cap "barth_cell_8/vss" "barth_cell_8/vdd" -31.9429
+cap "barth_cell_8/bp" "barth_cell_8/vdd" -0.24912
+cap "barth_cell_8/gp" "barth_cell_8/vdd" -2.05369
+cap "barth_cell_8/bp" "barth_cell_8/vss" -1.73472e-18
+cap "barth_cell_8/vss" "barth_cell_8/gp" 1.33227e-15
+cap "barth_cell_10/vss" "barth_cell_10/gp" 8.88178e-16
+cap "barth_cell_10/vss" "barth_cell_10/bp" -4.33681e-19
+cap "barth_cell_10/gp" "barth_edge_1/hih" 0.457222
+cap "barth_cell_10/vdd" "barth_cell_10/vss" -40.8647
+cap "barth_cell_10/vdd" "barth_edge_1/hih" 0.123448
+cap "barth_cell_10/vdd" "barth_cell_10/gp" 0.4091
+cap "barth_cell_10/vdd" "barth_cell_10/bp" 5.55112e-16
+cap "barth_cell_9/vss" "barth_cell_9/vdd" -20.3821
+cap "barth_cell_9/gp" "barth_cell_9/vdd" 0.00292088
+cap "barth_cell_9/vss" "barth_cell_9/gp" 0.0475406
+cap "barth_cell_9/gp" "barth_edge_1/hih" 0.457222
+cap "barth_cell_9/vdd" "barth_cell_9/gp" 0.798366
+merge "barth_edge_1/im" "barth_cell_11/inl" -1867.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -273600 -9360 -86400 -2880 0 0
+merge "barth_cell_11/inl" "barth_cell_11/im"
+merge "barth_cell_11/im" "m3_4560_1440#"
+merge "m3_4560_1440#" "barth_cell_9/im"
+merge "barth_cell_9/im" "barth_cell_10/im"
+merge "barth_cell_10/im" "barth_cell_8/inr"
+merge "barth_cell_8/inr" "barth_cell_8/im"
+merge "barth_cell_8/im" "m3_480_1440#"
+merge "m3_480_1440#" "barth_cell_7/im"
+merge "barth_cell_7/im" "barth_cell_6/inr"
+merge "barth_cell_6/inr" "barth_cell_6/im"
+merge "barth_cell_6/im" "m3_n1920_1440#"
+merge "m3_n1920_1440#" "barth_cell_5/inr"
+merge "barth_cell_5/inr" "barth_cell_5/im"
+merge "barth_cell_5/im" "m3_n2640_1440#"
+merge "m3_n2640_1440#" "barth_cell_4/im"
+merge "barth_cell_4/im" "barth_cell_3/inr"
+merge "barth_cell_3/inr" "barth_cell_3/im"
+merge "barth_cell_3/im" "m3_n5040_1440#"
+merge "m3_n5040_1440#" "barth_cell_2/im"
+merge "barth_cell_2/im" "barth_cell_1/im"
+merge "barth_cell_1/im" "barth_edge_0/im"
+merge "barth_edge_0/im" "im"
+merge "im" "barth_cell_0/inl"
+merge "barth_cell_0/inl" "barth_cell_0/im"
+merge "barth_cell_0/im" "m3_n9120_1440#"
+merge "barth_edge_1/ip" "barth_cell_11/ip" -1873.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -273600 -9480 -86400 -3000 0 0
+merge "barth_cell_11/ip" "barth_cell_9/inr"
+merge "barth_cell_9/inr" "barth_cell_9/ip"
+merge "barth_cell_9/ip" "m3_2880_480#"
+merge "m3_2880_480#" "barth_cell_10/inl"
+merge "barth_cell_10/inl" "barth_cell_10/ip"
+merge "barth_cell_10/ip" "m3_2160_480#"
+merge "m3_2160_480#" "barth_cell_8/ip"
+merge "barth_cell_8/ip" "barth_cell_7/inl"
+merge "barth_cell_7/inl" "barth_cell_7/ip"
+merge "barth_cell_7/ip" "m3_n240_480#"
+merge "m3_n240_480#" "barth_cell_6/ip"
+merge "barth_cell_6/ip" "barth_cell_5/ip"
+merge "barth_cell_5/ip" "barth_cell_4/inl"
+merge "barth_cell_4/inl" "barth_cell_4/ip"
+merge "barth_cell_4/ip" "m3_n4320_480#"
+merge "m3_n4320_480#" "barth_cell_3/ip"
+merge "barth_cell_3/ip" "barth_cell_2/inl"
+merge "barth_cell_2/inl" "barth_cell_2/ip"
+merge "barth_cell_2/ip" "m3_n6720_480#"
+merge "m3_n6720_480#" "barth_cell_1/inr"
+merge "barth_cell_1/inr" "barth_cell_1/ip"
+merge "barth_cell_1/ip" "m3_n7440_480#"
+merge "m3_n7440_480#" "barth_edge_0/ip"
+merge "barth_edge_0/ip" "barth_cell_0/ip"
+merge "barth_cell_0/ip" "ip"
+merge "barth_edge_1/vreg" "vreg" -6264.43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -561600 -15960 0 0 0 0
+merge "vreg" "barth_cell_11/vreg"
+merge "barth_cell_11/vreg" "barth_cell_9/vreg"
+merge "barth_cell_9/vreg" "barth_cell_10/vreg"
+merge "barth_cell_10/vreg" "barth_cell_8/vreg"
+merge "barth_cell_8/vreg" "barth_cell_7/vreg"
+merge "barth_cell_7/vreg" "barth_cell_6/vreg"
+merge "barth_cell_6/vreg" "barth_cell_5/vreg"
+merge "barth_cell_5/vreg" "barth_cell_4/vreg"
+merge "barth_cell_4/vreg" "barth_cell_3/vreg"
+merge "barth_cell_3/vreg" "barth_cell_2/vreg"
+merge "barth_cell_2/vreg" "barth_cell_1/vreg"
+merge "barth_cell_1/vreg" "barth_edge_0/vreg"
+merge "barth_edge_0/vreg" "barth_cell_0/vreg"
+merge "barth_edge_1/gnd" "barth_cell_11/vss" -18887.6 0 0 0 0 0 0 -1684800 -56160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1684800 -56160 0 0 -2059200 -57360 0 0 0 0
+merge "barth_cell_11/vss" "barth_cell_11/gnd"
+merge "barth_cell_11/gnd" "barth_cell_9/vss"
+merge "barth_cell_9/vss" "barth_cell_9/gnd"
+merge "barth_cell_9/gnd" "barth_cell_10/vss"
+merge "barth_cell_10/vss" "barth_cell_10/gnd"
+merge "barth_cell_10/gnd" "barth_cell_8/vss"
+merge "barth_cell_8/vss" "barth_cell_8/gnd"
+merge "barth_cell_8/gnd" "barth_cell_7/vss"
+merge "barth_cell_7/vss" "barth_cell_7/gnd"
+merge "barth_cell_7/gnd" "barth_cell_6/vss"
+merge "barth_cell_6/vss" "barth_cell_6/gnd"
+merge "barth_cell_6/gnd" "barth_cell_5/vss"
+merge "barth_cell_5/vss" "barth_cell_5/gnd"
+merge "barth_cell_5/gnd" "barth_cell_4/vss"
+merge "barth_cell_4/vss" "barth_cell_4/gnd"
+merge "barth_cell_4/gnd" "barth_cell_3/vss"
+merge "barth_cell_3/vss" "barth_cell_3/gnd"
+merge "barth_cell_3/gnd" "barth_cell_2/vss"
+merge "barth_cell_2/vss" "barth_cell_2/gnd"
+merge "barth_cell_2/gnd" "barth_cell_1/vss"
+merge "barth_cell_1/vss" "barth_cell_1/gnd"
+merge "barth_cell_1/gnd" "barth_edge_0/gnd"
+merge "barth_edge_0/gnd" "barth_cell_0/vss"
+merge "barth_cell_0/vss" "VSUBS"
+merge "VSUBS" "gnd"
+merge "gnd" "barth_cell_0/gnd"
+merge "barth_edge_1/x" "barth_cell_11/inr" -5327.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -57600 -1920 -417600 -14280 -172800 -5880 0 0
+merge "barth_cell_11/inr" "barth_cell_11/m3_n7200_1320#"
+merge "barth_cell_11/m3_n7200_1320#" "m3_4080_960#"
+merge "m3_4080_960#" "barth_cell_9/inl"
+merge "barth_cell_9/inl" "barth_cell_9/m3_n7200_1320#"
+merge "barth_cell_9/m3_n7200_1320#" "m3_3360_960#"
+merge "m3_3360_960#" "barth_cell_10/inr"
+merge "barth_cell_10/inr" "barth_cell_10/m3_n7200_1320#"
+merge "barth_cell_10/m3_n7200_1320#" "m3_1680_960#"
+merge "m3_1680_960#" "barth_cell_10/out"
+merge "barth_cell_10/out" "m2_1920_960#"
+merge "m2_1920_960#" "barth_cell_8/inl"
+merge "barth_cell_8/inl" "barth_cell_8/m3_n7200_1320#"
+merge "barth_cell_8/m3_n7200_1320#" "m3_960_960#"
+merge "m3_960_960#" "barth_cell_8/out"
+merge "barth_cell_8/out" "m2_720_960#"
+merge "m2_720_960#" "barth_cell_7/inr"
+merge "barth_cell_7/inr" "barth_cell_7/m3_n7200_1320#"
+merge "barth_cell_7/m3_n7200_1320#" "m3_n720_960#"
+merge "m3_n720_960#" "barth_cell_6/inl"
+merge "barth_cell_6/inl" "barth_cell_6/m3_n7200_1320#"
+merge "barth_cell_6/m3_n7200_1320#" "m3_n1440_960#"
+merge "m3_n1440_960#" "barth_cell_5/inl"
+merge "barth_cell_5/inl" "barth_cell_5/m3_n7200_1320#"
+merge "barth_cell_5/m3_n7200_1320#" "m3_n3120_960#"
+merge "m3_n3120_960#" "barth_cell_4/inr"
+merge "barth_cell_4/inr" "barth_cell_4/m3_n7200_1320#"
+merge "barth_cell_4/m3_n7200_1320#" "m3_n3840_960#"
+merge "m3_n3840_960#" "barth_cell_3/inl"
+merge "barth_cell_3/inl" "barth_cell_3/m3_n7200_1320#"
+merge "barth_cell_3/m3_n7200_1320#" "m3_n5520_960#"
+merge "m3_n5520_960#" "barth_cell_3/out"
+merge "barth_cell_3/out" "m2_n5280_960#"
+merge "m2_n5280_960#" "barth_cell_2/inr"
+merge "barth_cell_2/inr" "barth_cell_2/m3_n7200_1320#"
+merge "barth_cell_2/m3_n7200_1320#" "m3_n6240_960#"
+merge "m3_n6240_960#" "barth_cell_2/out"
+merge "barth_cell_2/out" "m2_n6480_960#"
+merge "m2_n6480_960#" "barth_cell_1/inl"
+merge "barth_cell_1/inl" "barth_cell_1/m3_n7200_1320#"
+merge "barth_cell_1/m3_n7200_1320#" "m3_n7920_960#"
+merge "m3_n7920_960#" "barth_edge_0/x"
+merge "barth_edge_0/x" "x"
+merge "x" "barth_cell_0/inr"
+merge "barth_cell_0/inr" "barth_cell_0/m3_n7200_1320#"
+merge "barth_cell_0/m3_n7200_1320#" "m3_n8640_960#"
+merge "barth_edge_1/vdd" "barth_cell_11/vdd" -10875.8 -1872000 -34320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -374400 -12480 0 0 -936000 -19920 0 0 0 0
+merge "barth_cell_11/vdd" "barth_cell_9/vdd"
+merge "barth_cell_9/vdd" "barth_cell_10/vdd"
+merge "barth_cell_10/vdd" "barth_cell_8/vdd"
+merge "barth_cell_8/vdd" "barth_cell_7/vdd"
+merge "barth_cell_7/vdd" "barth_cell_6/vdd"
+merge "barth_cell_6/vdd" "barth_cell_5/vdd"
+merge "barth_cell_5/vdd" "barth_cell_4/vdd"
+merge "barth_cell_4/vdd" "barth_cell_3/vdd"
+merge "barth_cell_3/vdd" "barth_cell_2/vdd"
+merge "barth_cell_2/vdd" "barth_cell_1/vdd"
+merge "barth_cell_1/vdd" "barth_edge_0/vdd"
+merge "barth_edge_0/vdd" "vdd"
+merge "vdd" "barth_cell_0/vdd"
+merge "barth_edge_1/op" "barth_cell_11/op" -2879.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288000 -6240 -1224000 -27720 0 0 0 0
+merge "barth_cell_11/op" "barth_cell_11/out"
+merge "barth_cell_11/out" "m2_4320_1920#"
+merge "m2_4320_1920#" "barth_cell_9/op"
+merge "barth_cell_9/op" "barth_cell_10/op"
+merge "barth_cell_10/op" "barth_cell_8/op"
+merge "barth_cell_8/op" "barth_cell_7/op"
+merge "barth_cell_7/op" "barth_cell_6/op"
+merge "barth_cell_6/op" "barth_cell_6/out"
+merge "barth_cell_6/out" "m2_n1680_1920#"
+merge "m2_n1680_1920#" "barth_cell_5/op"
+merge "barth_cell_5/op" "barth_cell_5/out"
+merge "barth_cell_5/out" "m2_n2880_1920#"
+merge "m2_n2880_1920#" "barth_cell_4/op"
+merge "barth_cell_4/op" "barth_cell_3/op"
+merge "barth_cell_3/op" "barth_cell_2/op"
+merge "barth_cell_2/op" "barth_cell_1/op"
+merge "barth_cell_1/op" "barth_edge_0/op"
+merge "barth_edge_0/op" "op"
+merge "op" "barth_cell_0/op"
+merge "barth_cell_0/op" "barth_cell_0/out"
+merge "barth_cell_0/out" "m2_n8880_1920#"
+merge "barth_edge_1/gp" "barth_cell_11/gp" -2003.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -187200 -6480 0 0 0 0
+merge "barth_cell_11/gp" "barth_cell_9/gp"
+merge "barth_cell_9/gp" "barth_cell_10/gp"
+merge "barth_cell_10/gp" "barth_cell_8/gp"
+merge "barth_cell_8/gp" "barth_cell_7/gp"
+merge "barth_cell_7/gp" "barth_cell_6/gp"
+merge "barth_cell_6/gp" "barth_cell_5/gp"
+merge "barth_cell_5/gp" "barth_cell_4/gp"
+merge "barth_cell_4/gp" "barth_cell_3/gp"
+merge "barth_cell_3/gp" "barth_cell_2/gp"
+merge "barth_cell_2/gp" "barth_cell_1/gp"
+merge "barth_cell_1/gp" "barth_edge_0/gp"
+merge "barth_edge_0/gp" "barth_cell_0/gp"
+merge "barth_cell_0/gp" "gp"
+merge "barth_edge_1/om" "barth_cell_11/om" -2571.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288000 -5760 -1224000 -25680 0 0 0 0
+merge "barth_cell_11/om" "barth_cell_9/om"
+merge "barth_cell_9/om" "barth_cell_9/out"
+merge "barth_cell_9/out" "m2_3120_n480#"
+merge "m2_3120_n480#" "barth_cell_10/om"
+merge "barth_cell_10/om" "barth_cell_8/om"
+merge "barth_cell_8/om" "barth_cell_7/om"
+merge "barth_cell_7/om" "barth_cell_7/out"
+merge "barth_cell_7/out" "m2_n480_n480#"
+merge "m2_n480_n480#" "barth_cell_6/om"
+merge "barth_cell_6/om" "barth_cell_5/om"
+merge "barth_cell_5/om" "barth_cell_4/om"
+merge "barth_cell_4/om" "barth_cell_4/out"
+merge "barth_cell_4/out" "m2_n4080_n480#"
+merge "m2_n4080_n480#" "barth_cell_3/om"
+merge "barth_cell_3/om" "barth_cell_2/om"
+merge "barth_cell_2/om" "barth_cell_1/om"
+merge "barth_cell_1/om" "barth_cell_1/out"
+merge "barth_cell_1/out" "m2_n7680_n480#"
+merge "m2_n7680_n480#" "barth_edge_0/om"
+merge "barth_edge_0/om" "barth_cell_0/om"
+merge "barth_cell_0/om" "om"
+merge "barth_edge_1/bp" "m1_5520_2880#" -10681 -2059200 -37440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -374400 -12960 0 0 -2131200 -38880 0 0 0 0
+merge "m1_5520_2880#" "barth_cell_11/bp"
+merge "barth_cell_11/bp" "barth_cell_9/bp"
+merge "barth_cell_9/bp" "barth_cell_10/bp"
+merge "barth_cell_10/bp" "barth_cell_8/bp"
+merge "barth_cell_8/bp" "barth_cell_7/bp"
+merge "barth_cell_7/bp" "barth_cell_6/bp"
+merge "barth_cell_6/bp" "barth_cell_5/bp"
+merge "barth_cell_5/bp" "barth_cell_4/bp"
+merge "barth_cell_4/bp" "barth_cell_3/bp"
+merge "barth_cell_3/bp" "barth_cell_2/bp"
+merge "barth_cell_2/bp" "barth_cell_1/bp"
+merge "barth_cell_1/bp" "barth_edge_0/bp"
+merge "barth_edge_0/bp" "m1_n10080_2880#"
+merge "m1_n10080_2880#" "barth_cell_0/bp"
+merge "barth_cell_0/bp" "bp"

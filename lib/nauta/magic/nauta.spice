@@ -1,0 +1,92 @@
+* NGSPICE file created from nauta.ext - technology: gf180mcuC
+
+.subckt nauta_edge gp vreg op im ip om vdd gnd bp
+X0 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
+X1 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
+X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
+C0 bp vreg 0.23fF
+C1 gp vreg 1.01fF
+C2 hi vreg 0.11fF
+C3 hi bp 0.28fF
+C4 hih vdd 0.45fF
+C5 vdd vreg 0.22fF
+C6 vreg gnd 0.44fF
+C7 bp gnd 4.35fF
+C8 vdd gnd 4.01fF
+C9 lo gnd 0.84fF
+C10 hi gnd 0.46fF
+C11 hih gnd 0.46fF
+.ends
+
+.subckt nauta_cell inl inr out gp vreg op im ip om vdd gnd bp
+X0 vreg inr out bp pmos_3p3 w=1.5u l=0.6u
+X1 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X2 out inr vreg bp pmos_3p3 w=1.5u l=0.6u
+X3 vreg inl out bp pmos_3p3 w=1.5u l=0.6u
+X4 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+X5 dr inr out gnd nmos_3p3 w=1.8u l=0.6u
+X6 dl inl gnd gnd nmos_3p3 w=1.8u l=0.6u
+X7 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
+X8 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
+X9 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
+X10 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
+X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
+C0 vreg out 0.78fF
+C1 bp inl 0.32fF
+C2 vreg bp 0.92fF
+C3 op inl 0.20fF
+C4 om inr 0.18fF
+C5 inr out 0.19fF
+C6 gp vreg 1.98fF
+C7 bp inr 0.32fF
+C8 op inr 0.20fF
+C9 om out 0.11fF
+C10 inr inl 0.51fF
+C11 bp out 0.15fF
+C12 gp vdd 0.66fF
+C13 vreg vdd 1.41fF
+C14 op out 0.11fF
+C15 om inl 0.18fF
+C16 out inl 0.17fF
+C17 out gnd 1.36fF
+C18 inr gnd 2.21fF
+C19 inl gnd 2.22fF
+C20 vreg gnd 0.72fF
+C21 gp gnd 1.56fF
+C22 bp gnd 6.58fF
+C23 vdd gnd 6.08fF
+C24 dr gnd 0.18fF
+C25 dl gnd 0.18fF
+.ends
+
+.subckt nauta ip im op om vdd gp bp vreg gnd
+Xnauta_edge_0 gp vreg op im ip om vdd gnd bp nauta_edge
+Xnauta_edge_1 gp vreg op im ip om vdd gnd bp nauta_edge
+Xnauta_cell_0 im op op gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_2 op ip om gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_1 im om op gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_3 ip om om gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_4 op im op gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_5 om im op gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_6 ip op om gp vreg op im ip om vdd gnd bp nauta_cell
+Xnauta_cell_7 om ip om gp vreg op im ip om vdd gnd bp nauta_cell
+C0 om im 0.24fF
+C1 vdd vreg 0.21fF
+C2 op im 0.99fF
+C3 ip om 0.38fF
+C4 op om 1.00fF
+C5 op ip 0.19fF
+C6 vreg om 0.10fF
+C7 op vreg 0.10fF
+C8 gp vdd 0.12fF
+C9 gp vreg -0.59fF
+C10 bp gnd 54.77fF
+C11 op gnd 23.12fF
+C12 vdd gnd 48.69fF
+C13 om gnd 23.19fF
+C14 ip gnd 15.05fF
+C15 im gnd 14.98fF
+C16 gp gnd 11.28fF
+C17 vreg gnd 2.53fF
+.ends
+
