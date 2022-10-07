@@ -1,0 +1,169 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "../../inv/ngspice/inv.spice"
+.include "../../nauta/magic/nauta.spice"
+.include "../../barth/magic/barth.spice"
+.include "../../manf/magic/manf.spice"
+.include "../../barthmanf/magic/barthmanf.spice"
+.include "../../barthnauta/magic/barthnauta.spice"
+.include "../../nautanauta/magic/nautanauta.spice"
+.include "../../nautavieru/magic/nautavieru.spice"
+.include "../../manfvieru/magic/manfvieru.spice"
+
+.param pVDD = 5.0
+.param pC   = 10p
+.param pIB  = 22u
+
+VDD  vdd 0 dc {pVDD}
+VSS  vss 0 0
+ECM  cm vss vdd vss 0.5
+
+vin in cm 0 ac 1
+eip ip cm in cm  1
+eim im cm in cm  1
+
+vd0 vd0 vss dc {pVDD}
+ib0 vdd ib0 {pIB}
+xb0 ib0             vdd gp0 bp0 vreg0 vss inv_bias
+x0  xp0 xm0 op0 om0 vd0 gp0 bp0 vreg0 vss nauta
+cxp0 ip  xp0 1T
+cxm0 im  xm0 1T
+lop0 op0 xm0 1T
+lom0 om0 xp0 1T
+cop0 op0 cm  {pC}
+com0 om0 cm  {pC}
+
+vd1 vd1 vss dc {pVDD}
+ib1 vdd ib1 {pIB}
+xb1 ib1             vdd gp1 bp1 vreg1 vss inv_bias
+x1  xp1 xm1 op1 om1 vd1 gp1 bp1 vreg1 vss barth
+cxp1 ip  xp1 1T
+cxm1 im  xm1 1T
+lop1 op1 xm1 1T
+lom1 om1 xp1 1T
+cop1 op1 cm  {pC}
+com1 om1 cm  {pC}
+
+vd2 vd2 vss dc {pVDD}
+ib2 vdd ib2 {pIB}
+xb2 ib2             vdd gp2 bp2 vreg2 vss inv_bias
+x2  xp2 xm2 op2 om2 vd2 gp2 bp2 vreg2 vss manf
+cxp2 ip  xp2 1T
+cxm2 im  xm2 1T
+lop2 op2 xm2 1T
+lom2 om2 xp2 1T
+cop2 op2 cm  {pC}
+com2 om2 cm  {pC}
+
+vd3 vd3 vss dc {pVDD}
+ib3 vdd ib3 {pIB}
+xb3 ib3             vdd gp3 bp3 vreg3 vss inv_bias
+x3  xp3 xm3 op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
+cxp3 ip  xp3 1T
+cxm3 im  xm3 1T
+lop3 op3 xm3 1T
+lom3 om3 xp3 1T
+cop3 op3 cm  {pC}
+com3 om3 cm  {pC}
+
+vd4 vd4 vss dc {pVDD}
+ib4 vdd ib4 {pIB}
+xb4 ib4             vdd gp4 bp4 vreg4 vss inv_bias
+x4  xp4 xm4 op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
+cxp4 ip  xp4 1T
+cxm4 im  xm4 1T
+lop4 op4 xm4 1T
+lom4 om4 xp4 1T
+cop4 op4 cm  {pC}
+com4 om4 cm  {pC}
+
+vd5 vd5 vss dc {pVDD}
+ib5 vdd ib5 {pIB}
+xb5 ib5             vdd gp5 bp5 vreg5 vss inv_bias
+x5  xp5 xm5 op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
+cxp5 ip  xp5 1T
+cxm5 im  xm5 1T
+lop5 op5 xm5 1T
+lom5 om5 xp5 1T
+cop5 op5 cm  {pC}
+com5 om5 cm  {pC}
+
+vd6 vd6 vss dc {pVDD}
+ib6 vdd ib6 {pIB}
+xb6 ib6             vdd gp6 bp6 vreg6 vss inv_bias
+x6  xp6 xm6 op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
+cxp6 ip  xp6 1T
+cxm6 im  xm6 1T
+lop6 op6 xm6 1T
+lom6 om6 xp6 1T
+cop6 op6 cm  {pC}
+com6 om6 cm  {pC}
+
+vd7 vd7 vss dc {pVDD}
+ib7 vdd ib7 {pIB}
+xb7 ib7             vdd gp7 bp7 vreg7 vss inv_bias
+x7  xp7 xm7 op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
+cxp7 ip  xp7 1T
+cxm7 im  xm7 1T
+lop7 op7 xm7 1T
+lom7 om7 xp7 1T
+cop7 op7 cm  {pC}
+com7 om7 cm  {pC}
+
+.option gmin=1e-15
+.ac dec 100 1 1T
+
+.control
+
+	set wr_vecnames
+
+	run
+
+	let av0 = dB((op0+om0)/2)
+	let av1 = dB((op1+om1)/2)
+	let av2 = dB((op2+om2)/2)
+	let av3 = dB((op3+om3)/2)
+	let av4 = dB((op4+om4)/2)
+	let av5 = dB((op5+om5)/2)
+	let av6 = dB((op6+om6)/2)
+	let av7 = dB((op7+om7)/2)
+
+	plot av0 av1 av2
+	plot av0 av3 av4
+	plot av5 av6 av7
+
+	meas ac av0_1hz find av0 at=1
+	meas ac av1_1hz find av1 at=1
+	meas ac av2_1hz find av2 at=1
+	meas ac av3_1hz find av3 at=1
+	meas ac av4_1hz find av4 at=1
+	meas ac av5_1hz find av5 at=1
+	meas ac av6_1hz find av6 at=1
+	meas ac av7_1hz find av7 at=1
+	
+	wrdata ../data/ac_cm_av_tt.csv av0 av1 av2 av3 av4 av5 av6 av7
+		
+	echo # Open-loop AC common-mode input simulation TT corner 27C summary > ../data/ac_cm_tt_summary.txt
+	echo # amp,avcm >> ../data/ac_cm_tt_summary.txt
+	echo N,$&av0_1hz >> ../data/ac_cm_tt_summary.txt
+	echo B,$&av1_1hz >> ../data/ac_cm_tt_summary.txt
+	echo M,$&av2_1hz >> ../data/ac_cm_tt_summary.txt
+	echo BN,$&av3_1hz >> ../data/ac_cm_tt_summary.txt
+	echo BM,$&av4_1hz >> ../data/ac_cm_tt_summary.txt
+	echo NN,$&av5_1hz >> ../data/ac_cm_tt_summary.txt
+	echo NV,$&av6_1hz >> ../data/ac_cm_tt_summary.txt
+	echo MV,$&av7_1hz >> ../data/ac_cm_tt_summary.txt
+
+.endc
+
+.end

@@ -4,12 +4,12 @@
 X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
 X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
 X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
-C0 vdd hih 0.45fF
-C1 vreg bp 0.23fF
+C0 vreg gp 1.01fF
+C1 vreg vdd 0.22fF
 C2 hi bp 0.28fF
-C3 vreg hi 0.11fF
-C4 vreg gp 1.01fF
-C5 vreg vdd 0.22fF
+C3 vreg bp 0.23fF
+C4 vreg hi 0.11fF
+C5 hih vdd 0.45fF
 C6 vreg gnd 0.44fF
 C7 bp gnd 4.35fF
 C8 vdd gnd 4.01fF
@@ -31,23 +31,23 @@ X8 gnd inr d2 gnd nmos_3p3 w=1.8u l=0.6u
 X9 out inl d1 gnd nmos_3p3 w=1.8u l=0.6u
 X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
 X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
-C0 inl bp 0.32fF
-C1 inl om 0.18fF
-C2 gp vreg 1.98fF
-C3 inl inr 0.60fF
-C4 out bp 0.15fF
-C5 out om 0.11fF
-C6 op inr 0.20fF
-C7 vdd vreg 1.41fF
-C8 out vreg 0.78fF
-C9 out inr 0.20fF
-C10 bp vreg 0.92fF
-C11 inl op 0.20fF
-C12 gp vdd 0.66fF
-C13 bp inr 0.32fF
-C14 om inr 0.18fF
-C15 inl out 0.17fF
-C16 op out 0.11fF
+C0 gp vreg 1.98fF
+C1 out bp 0.15fF
+C2 out vreg 0.78fF
+C3 out op 0.11fF
+C4 inl om 0.18fF
+C5 om inr 0.18fF
+C6 inl out 0.17fF
+C7 inr out 0.20fF
+C8 vdd vreg 1.41fF
+C9 bp vreg 0.92fF
+C10 om out 0.11fF
+C11 inl bp 0.32fF
+C12 inr bp 0.32fF
+C13 inl op 0.20fF
+C14 inr op 0.20fF
+C15 vdd gp 0.66fF
+C16 inl inr 0.60fF
 C17 out gnd 1.69fF
 C18 inr gnd 2.35fF
 C19 inl gnd 2.36fF
@@ -61,42 +61,54 @@ C25 d1 gnd 0.18fF
 
 .subckt barthmanf ip im op om vdd gp bp vreg gnd
 Xbarthmanf_edge_0 vreg gp op im x y ip om vdd gnd bp barthmanf_edge
+Xbarthmanf_edge_1 vreg gp op im x y ip om vdd gnd bp barthmanf_edge
 Xbarthmanf_cell_0 im y op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_1 y ip om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_3 x op x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_2 om x x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_4 x y y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_10 y ip om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_5 y x y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_12 x op x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_11 om x x gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_6 ip im y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_7 im y op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_13 x y y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_14 y x y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_8 ip y om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_15 ip im y gp vreg op im x y ip om vdd gnd bp barthmanf_cell
 Xbarthmanf_cell_9 y im op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
-C0 op y 0.33fF
-C1 x om 0.20fF
-C2 om im 0.19fF
-C3 op x 0.51fF
-C4 gp vdd 0.12fF
-C5 op om 0.12fF
-C6 op im 0.15fF
-C7 y ip 0.18fF
-C8 vreg y 0.10fF
-C9 x ip 0.43fF
-C10 om ip 0.50fF
-C11 ip im 0.40fF
-C12 x y 0.17fF
-C13 y om 0.32fF
-C14 op ip 0.13fF
-C15 y im 0.12fF
-C16 vreg vdd 0.21fF
-C17 vreg gp -0.59fF
-C18 bp gnd 57.26fF
-C19 vdd gnd 50.73fF
-C20 om gnd 15.22fF
-C21 ip gnd 13.46fF
-C22 y gnd 24.71fF
-C23 x gnd 19.27fF
-C24 im gnd 13.99fF
-C25 op gnd 15.24fF
-C26 vreg gnd 2.69fF
-C27 gp gnd 12.68fF
+Xbarthmanf_cell_16 ip y om gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+Xbarthmanf_cell_17 y im op gp vreg op im x y ip om vdd gnd bp barthmanf_cell
+C0 y ip 0.37fF
+C1 op x 1.03fF
+C2 ip im 0.80fF
+C3 y x 0.32fF
+C4 vreg y 0.21fF
+C5 y op 0.67fF
+C6 ip om 1.00fF
+C7 im x 0.18fF
+C8 gp vreg -1.33fF
+C9 vreg vdd 0.44fF
+C10 op im 0.40fF
+C11 om x 0.36fF
+C12 y im 0.31fF
+C13 op om 0.23fF
+C14 ip x 0.90fF
+C15 y om 0.63fF
+C16 ip op 0.26fF
+C17 gp vdd 0.25fF
+C18 vreg x 0.14fF
+C19 om im 0.42fF
+C20 bp gnd 113.77fF
+C21 vdd gnd 100.54fF
+C22 om gnd 30.16fF
+C23 ip gnd 26.68fF
+C24 y gnd 49.37fF
+C25 x gnd 38.39fF
+C26 im gnd 27.50fF
+C27 op gnd 30.24fF
+C28 vreg gnd 4.89fF
+C29 gp gnd 25.14fF
 .ends
 

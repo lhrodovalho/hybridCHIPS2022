@@ -1,0 +1,117 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "../../inv/ngspice/inv.spice"
+.include "../../nauta/magic/nauta.spice"
+.include "../../barth/magic/barth.spice"
+.include "../../manf/magic/manf.spice"
+.include "../../barthmanf/magic/barthmanf.spice"
+.include "../../barthnauta/magic/barthnauta.spice"
+.include "../../nautanauta/magic/nautanauta.spice"
+.include "../../nautavieru/magic/nautavieru.spice"
+.include "../../manfvieru/magic/manfvieru.spice"
+
+.param pVDD = 5.0
+.param pC   = 10p
+.param pIB  = 22u
+
+
+VDD  vdd 0 dc {pVDD}
+VSS  vss 0 0
+VCM  cm vss 1.2
+
+
+vin in vss 0
+
+vd0 vd0 vss dc {pVDD}
+ib0 vdd ib0 {pIB}
+xb0 ib0           vdd gp0 bp0 vreg0 vss inv_bias
+x0  in in op0 om0 vd0 gp0 bp0 vreg0 vss nauta
+
+vd1 vd1 vss dc {pVDD}
+ib1 vdd ib1 {pIB}
+xb1 ib1             vdd gp1 bp1 vreg1 vss inv_bias
+x1  in  in  op1 om1 vd1 gp1 bp1 vreg1 vss barth
+
+vd2 vd2 vss dc {pVDD}
+ib2 vdd ib2 {pIB}
+xb2 ib2             vdd gp2 bp2 vreg2 vss inv_bias
+x2  in  in  op2 om2 vd2 gp2 bp2 vreg2 vss manf
+
+vd3 vd3 vss dc {pVDD}
+ib3 vdd ib3 {pIB}
+xb3 ib3             vdd gp3 bp3 vreg3 vss inv_bias
+x3  in  in  op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
+
+vd4 vd4 vss dc {pVDD}
+ib4 vdd ib4 {pIB}
+xb4 ib4             vdd gp4 bp4 vreg4 vss inv_bias
+x4  in  in  op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
+
+vd5 vd5 vss dc {pVDD}
+ib5 vdd ib5 {pIB}
+xb5 ib5             vdd gp5 bp5 vreg5 vss inv_bias
+x5  in  in  op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
+
+vd6 vd6 vss dc {pVDD}
+ib6 vdd ib6 {pIB}
+xb6 ib6             vdd gp6 bp6 vreg6 vss inv_bias
+x6  in  in  op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
+
+vd7 vd7 vss dc {pVDD}
+ib7 vdd ib7 {pIB}
+xb7 ib7             vdd gp7 bp7 vreg7 vss inv_bias
+x7  in  in  op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
+
+
+.option gmin=1e-15
+.param dx = 1
+.dc vin 0 2.4 10m
+
+.control
+
+	set wr_vecnames
+
+	run
+
+	let o0 = (op0+om0)/2
+	let o1 = (op1+om1)/2
+	let o2 = (op2+om2)/2
+	let o3 = (op3+om3)/2
+	let o4 = (op4+om4)/2
+	let o5 = (op5+om5)/2
+	let o6 = (op6+om6)/2
+	let o7 = (op7+om7)/2
+
+	plot o0 o1 o2
+	plot o0 o3 o4
+	plot o5 o6 o7
+	
+	let av0 = db(abs(deriv(o0)/deriv(in)))
+	let av1 = db(abs(deriv(o1)/deriv(in)))
+	let av2 = db(abs(deriv(o2)/deriv(in)))
+	let av3 = db(abs(deriv(o3)/deriv(in)))
+	let av4 = db(abs(deriv(o4)/deriv(in)))
+	let av5 = db(abs(deriv(o5)/deriv(in)))
+	let av6 = db(abs(deriv(o6)/deriv(in)))
+	let av7 = db(abs(deriv(o7)/deriv(in)))
+
+	plot av0 av1 av2
+	plot av0 av3 av4
+	plot av5 av6 av7
+
+	wrdata ../data/dc_cm_vo_tt.csv o0 o1 o2 o3 o4 o5 o6 o7
+	wrdata ../data/dc_cm_av_tt.csv av0 av1 av2 av3 av4 av5 av6 av7
+	
+.endc
+
+.end

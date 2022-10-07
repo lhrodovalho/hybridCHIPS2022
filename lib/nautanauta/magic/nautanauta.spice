@@ -13,25 +13,25 @@ X8 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
 X9 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
 X10 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
 X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
-C0 out om 0.12fF
-C1 out op 0.12fF
-C2 inr inl 0.55fF
-C3 vreg bp 0.92fF
-C4 inr out 0.19fF
-C5 inl bp 0.32fF
-C6 gp vreg 1.98fF
-C7 out vreg 0.78fF
-C8 out bp 0.15fF
-C9 inr om 0.18fF
-C10 inr op 0.20fF
-C11 vreg vdd 1.41fF
-C12 out inl 0.17fF
-C13 xm op 1.35fF
-C14 xp om 1.35fF
-C15 gp vdd 0.66fF
-C16 inl om 0.18fF
-C17 inl op 0.20fF
-C18 inr bp 0.32fF
+C0 inr op 0.20fF
+C1 bp inr 0.32fF
+C2 gp vreg 1.98fF
+C3 vreg out 0.78fF
+C4 inl inr 0.55fF
+C5 out op 0.12fF
+C6 vdd vreg 1.41fF
+C7 bp out 0.15fF
+C8 inl out 0.17fF
+C9 om xp 1.35fF
+C10 xm op 1.35fF
+C11 om inl 0.18fF
+C12 inr out 0.19fF
+C13 bp vreg 0.92fF
+C14 om inr 0.18fF
+C15 inl op 0.20fF
+C16 vdd gp 0.66fF
+C17 bp inl 0.32fF
+C18 om out 0.12fF
 C19 out gnd 1.48fF
 C20 inr gnd 2.23fF
 C21 inl gnd 2.25fF
@@ -47,14 +47,14 @@ C27 dl gnd 0.18fF
 X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
 X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
 X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
-C0 xp om 0.98fF
-C1 bp hi 0.28fF
-C2 xm op 0.98fF
-C3 gp vreg 1.01fF
+C0 hi bp 0.28fF
+C1 vreg gp 1.01fF
+C2 xp om 0.98fF
+C3 vreg bp 0.23fF
 C4 hih vdd 0.45fF
-C5 vreg hi 0.11fF
-C6 bp vreg 0.23fF
-C7 vreg vdd 0.22fF
+C5 op xm 0.98fF
+C6 vreg vdd 0.22fF
+C7 vreg hi 0.11fF
 C8 vreg gnd 0.44fF
 C9 bp gnd 4.35fF
 C10 vdd gnd 4.01fF
@@ -91,51 +91,51 @@ Xnautanauta_cell_26 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cel
 Xnautanauta_cell_15 im xm op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_16 im im xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_27 xp ip om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
-Xnautanauta_cell_18 xm xp xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_17 xp xm xp gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
+Xnautanauta_cell_18 xm xp xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_28 op om op gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_29 om op om gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_cell_19 ip ip xm gp vreg op xm im ip xp om vdd gnd bp nautanauta_cell
 Xnautanauta_edge_0 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
 Xnautanauta_edge_1 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
-X0 om xp mim_2p0fF c_width=199.8u c_length=7.2u
-X1 op xm mim_2p0fF c_width=199.8u c_length=7.2u
-C0 op bp 0.15fF
-C1 op xm 47.85fF
-C2 ip im 3.03fF
-C3 gp vreg -2.33fF
-C4 om xm 0.80fF
-C5 om op 1.03fF
-C6 xp xm 0.57fF
-C7 xp op 1.07fF
-C8 vdd gp 0.35fF
-C9 vdd vreg 0.76fF
-C10 om xp 50.10fF
-C11 im xm 0.18fF
-C12 gp xm 0.36fF
-C13 ip xm 1.22fF
-C14 im op 0.66fF
-C15 gp op 0.50fF
-C16 vreg xm 0.49fF
-C17 ip op 0.84fF
-C18 op vreg 0.92fF
-C19 om im 1.05fF
-C20 om ip 0.93fF
-C21 om vreg 0.28fF
-C22 xp im 1.38fF
-C23 vdd xm 3.77fF
-C24 ip xp 0.86fF
-C25 vdd op 3.66fF
-C26 xp vreg 0.15fF
+X0 op xm mim_2p0fF c_width=199.2u c_length=7.2u
+X1 om xp mim_2p0fF c_width=199.2u c_length=7.2u
+C0 im xp 1.39fF
+C1 vreg vdd 0.76fF
+C2 xp xm 0.59fF
+C3 gp xm 0.36fF
+C4 om ip 0.92fF
+C5 im xm 0.20fF
+C6 xp op 1.08fF
+C7 gp op 0.49fF
+C8 vreg xp 0.15fF
+C9 gp vreg -1.31fF
+C10 om xp 41.46fF
+C11 im op 0.66fF
+C12 xm op 39.18fF
+C13 vreg xm 0.50fF
+C14 im om 1.04fF
+C15 xp ip 0.91fF
+C16 om xm 0.80fF
+C17 gp vdd 0.35fF
+C18 bp op 0.15fF
+C19 im ip 3.04fF
+C20 vreg op 0.91fF
+C21 xm vdd 3.94fF
+C22 xm ip 1.22fF
+C23 om op 1.07fF
+C24 om vreg 0.28fF
+C25 op vdd 3.60fF
+C26 op ip 0.84fF
 C27 bp gnd 195.93fF
-C28 im gnd 49.01fF
-C29 vdd gnd 172.70fF
-C30 om gnd 84.86fF
-C31 ip gnd 48.72fF
-C32 op gnd 69.89fF
-C33 xm gnd 37.41fF
-C34 xp gnd 42.00fF
+C28 im gnd 47.95fF
+C29 vdd gnd 173.66fF
+C30 om gnd 84.32fF
+C31 ip gnd 48.79fF
+C32 op gnd 71.19fF
+C33 xm gnd 37.48fF
+C34 xp gnd 42.42fF
 C35 vreg gnd 8.66fF
-C36 gp gnd 44.30fF
+C36 gp gnd 43.78fF
 .ends
 

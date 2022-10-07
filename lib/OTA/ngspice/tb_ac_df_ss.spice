@@ -1,0 +1,262 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" ss
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_ss
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "../../inv/ngspice/inv.spice"
+.include "../../nauta/magic/nauta.spice"
+.include "../../barth/magic/barth.spice"
+.include "../../manf/magic/manf.spice"
+.include "../../barthmanf/magic/barthmanf.spice"
+.include "../../barthnauta/magic/barthnauta.spice"
+.include "../../nautanauta/magic/nautanauta.spice"
+.include "../../nautavieru/magic/nautavieru.spice"
+.include "../../manfvieru/magic/manfvieru.spice"
+
+.param pVDD = 5.0
+.param pC   = 10p
+.param pIB  = 22u
+
+
+VDD  vdd 0 dc {pVDD}
+VSS  vss 0 0
+ECM  cm vss vdd vss 0.5
+
+vin in cm 0 ac 1
+eip ip cm in cm -0.5
+eim im cm in cm  0.5
+
+vd0 vd0 vss dc {pVDD}
+ib0 vdd ib0 {pIB}
+xb0 ib0             vdd gp0 bp0 vreg0 vss inv_bias
+x0  xp0 xm0 op0 om0 vd0 gp0 bp0 vreg0 vss nauta
+cxp0 ip  xp0 1T
+cxm0 im  xm0 1T
+lop0 op0 xm0 1T
+lom0 om0 xp0 1T
+cop0 op0 cm  {pC}
+com0 om0 cm  {pC}
+
+vd1 vd1 vss dc {pVDD}
+ib1 vdd ib1 {pIB}
+xb1 ib1             vdd gp1 bp1 vreg1 vss inv_bias
+x1  xp1 xm1 op1 om1 vd1 gp1 bp1 vreg1 vss barth
+cxp1 ip  xp1 1T
+cxm1 im  xm1 1T
+lop1 op1 xm1 1T
+lom1 om1 xp1 1T
+cop1 op1 cm  {pC}
+com1 om1 cm  {pC}
+
+vd2 vd2 vss dc {pVDD}
+ib2 vdd ib2 {pIB}
+xb2 ib2             vdd gp2 bp2 vreg2 vss inv_bias
+x2  xp2 xm2 op2 om2 vd2 gp2 bp2 vreg2 vss manf
+cxp2 ip  xp2 1T
+cxm2 im  xm2 1T
+lop2 op2 xm2 1T
+lom2 om2 xp2 1T
+cop2 op2 cm  {pC}
+com2 om2 cm  {pC}
+
+vd3 vd3 vss dc {pVDD}
+ib3 vdd ib3 {pIB}
+xb3 ib3             vdd gp3 bp3 vreg3 vss inv_bias
+x3  xp3 xm3 op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
+cxp3 ip  xp3 1T
+cxm3 im  xm3 1T
+lop3 op3 xm3 1T
+lom3 om3 xp3 1T
+cop3 op3 cm  {pC}
+com3 om3 cm  {pC}
+
+vd4 vd4 vss dc {pVDD}
+ib4 vdd ib4 {pIB}
+xb4 ib4             vdd gp4 bp4 vreg4 vss inv_bias
+x4  xp4 xm4 op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
+cxp4 ip  xp4 1T
+cxm4 im  xm4 1T
+lop4 op4 xm4 1T
+lom4 om4 xp4 1T
+cop4 op4 cm  {pC}
+com4 om4 cm  {pC}
+
+vd5 vd5 vss dc {pVDD}
+ib5 vdd ib5 {pIB}
+xb5 ib5             vdd gp5 bp5 vreg5 vss inv_bias
+x5  xp5 xm5 op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
+cxp5 ip  xp5 1T
+cxm5 im  xm5 1T
+lop5 op5 xm5 1T
+lom5 om5 xp5 1T
+cop5 op5 cm  {pC}
+com5 om5 cm  {pC}
+
+vd6 vd6 vss dc {pVDD}
+ib6 vdd ib6 {pIB}
+xb6 ib6             vdd gp6 bp6 vreg6 vss inv_bias
+x6  xp6 xm6 op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
+cxp6 ip  xp6 1T
+cxm6 im  xm6 1T
+lop6 op6 xm6 1T
+lom6 om6 xp6 1T
+cop6 op6 cm  {pC}
+com6 om6 cm  {pC}
+
+vd7 vd7 vss dc {pVDD}
+ib7 vdd ib7 {pIB}
+xb7 ib7             vdd gp7 bp7 vreg7 vss inv_bias
+x7  xp7 xm7 op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
+cxp7 ip  xp7 1T
+cxm7 im  xm7 1T
+lop7 op7 xm7 1T
+lom7 om7 xp7 1T
+cop7 op7 cm  {pC}
+com7 om7 cm  {pC}
+
+.option gmin=1e-15
+.param dx = 1
+
+.control
+
+	set wr_vecnames
+
+	op
+	ac dec 100 1 1T
+
+	let av0 = db(ac1.op0-ac1.om0)
+	let av1 = db(ac1.op1-ac1.om1)
+	let av2 = db(ac1.op2-ac1.om2)
+	let av3 = db(ac1.op3-ac1.om3)
+	let av4 = db(ac1.op4-ac1.om4)
+	let av5 = db(ac1.op5-ac1.om5)
+	let av6 = db(ac1.op6-ac1.om6)
+	let av7 = db(ac1.op7-ac1.om7)
+	
+	let ph0 = cphase(ac1.op0-ac1.om0)*180/pi
+	let ph1 = cphase(ac1.op1-ac1.om1)*180/pi
+	let ph2 = cphase(ac1.op2-ac1.om2)*180/pi
+	let ph3 = cphase(ac1.op3-ac1.om3)*180/pi
+	let ph4 = cphase(ac1.op4-ac1.om4)*180/pi
+	let ph5 = cphase(ac1.op5-ac1.om5)*180/pi
+	let ph6 = cphase(ac1.op6-ac1.om6)*180/pi
+	let ph7 = cphase(ac1.op7-ac1.om7)*180/pi
+
+	let id0 = abs(op1.i(vd0))
+	let id1 = abs(op1.i(vd1))
+	let id2 = abs(op1.i(vd2))
+	let id3 = abs(op1.i(vd3))
+	let id4 = abs(op1.i(vd4))
+	let id5 = abs(op1.i(vd5))
+	let id6 = abs(op1.i(vd6))
+	let id7 = abs(op1.i(vd7))
+
+	let os0 = (op1.op0-op1.om0)
+	let os1 = (op1.op1-op1.om1)
+	let os2 = (op1.op2-op1.om2)
+	let os3 = (op1.op3-op1.om3)
+	let os4 = (op1.op4-op1.om4)
+	let os5 = (op1.op5-op1.om5)
+	let os6 = (op1.op6-op1.om6)
+	let os7 = (op1.op7-op1.om7)
+
+*	let cm0 = (op1.op0+op1.om7)/2
+*	let cm1 = (op1.op1+op1.om7)/2
+*	let cm2 = (op1.op2+op1.om7)/2
+*	let cm3 = (op1.op3+op1.om7)/2
+*	let cm4 = (op1.op4+op1.om7)/2
+*	let cm5 = (op1.op5+op1.om7)/2
+*	let cm6 = (op1.op6+op1.om7)/2
+*	let cm7 = (op1.op7+op1.om7)/2
+
+	let cm0 = (op1.op0+op1.om7-op1.vreg0)/2
+	let cm1 = (op1.op1+op1.om7-op1.vreg1)/2
+	let cm2 = (op1.op2+op1.om7-op1.vreg2)/2
+	let cm3 = (op1.op3+op1.om7-op1.vreg3)/2
+	let cm4 = (op1.op4+op1.om7-op1.vreg4)/2
+	let cm5 = (op1.op5+op1.om7-op1.vreg5)/2
+	let cm6 = (op1.op6+op1.om7-op1.vreg6)/2
+	let cm7 = (op1.op7+op1.om7-op1.vreg7)/2
+
+	let vreg0 = op1.vreg0
+	let vreg1 = op1.vreg1
+	let vreg2 = op1.vreg2
+	let vreg3 = op1.vreg3
+	let vreg4 = op1.vreg4
+	let vreg5 = op1.vreg5
+	let vreg6 = op1.vreg6
+	let vreg7 = op1.vreg7
+	
+	plot av0 av1 av2
+	plot ph0 ph1 ph2
+
+	plot av0 av3 av4
+	plot ph0 ph3 ph4
+
+	plot av5 av6 av7
+	plot ph5 ph6 ph7
+	
+	meas ac gbw0 when av0=0
+	meas ac gbw1 when av1=0
+	meas ac gbw2 when av2=0
+	meas ac gbw3 when av3=0
+	meas ac gbw4 when av4=0
+	meas ac gbw5 when av5=0
+	meas ac gbw6 when av6=0
+	meas ac gbw7 when av7=0
+
+	print id0 id1 id2 id3 id4 id5 id6 id7
+	
+	meas ac pm0 find ph0 at=gbw0
+	meas ac pm1 find ph1 at=gbw1
+	meas ac pm2 find ph2 at=gbw2
+	meas ac pm3 find ph3 at=gbw3
+	meas ac pm4 find ph4 at=gbw4
+	meas ac pm5 find ph5 at=gbw5
+	meas ac pm6 find ph6 at=gbw6
+	meas ac pm7 find ph7 at=gbw7
+	
+	meas ac av0_1khz find av0 at=1k
+	meas ac av1_1khz find av1 at=1k
+	meas ac av2_1khz find av2 at=1k
+	meas ac av3_1khz find av3 at=1k
+	meas ac av4_1khz find av4 at=1k
+	meas ac av5_1khz find av5 at=1k
+	meas ac av6_1khz find av6 at=1k
+	meas ac av7_1khz find av7 at=1k
+	
+	let fom0 = 100*gbw0*10p/id0
+	let fom1 = 100*gbw1*10p/id1
+	let fom2 = 100*gbw2*10p/id2
+	let fom3 = 100*gbw3*10p/id3
+	let fom4 = 100*gbw4*10p/id4
+	let fom5 = 100*gbw5*10p/id5
+	let fom6 = 100*gbw6*10p/id6
+	let fom7 = 100*gbw7*10p/id7
+	
+	print fom0 fom1 fom2 fom3 fom4 fom5 fom6 fom7	
+	
+	echo # Open-loop AC simulation SS corner 27C summary > ../data/ac_df_ss_summary.txt
+	echo # amp,id,os,cm,vreg,gbw,pm,av,fom >> ../data/ac_df_ss_summary.txt
+	echo N,$&id0,$&os0,$&cm0,$&vreg0,&gbw0,$&pm0,$&av0_1khz,$&fom0 >> ../data/ac_df_ss_summary.txt
+	echo B,$&id1,$&os1,$&cm1,$&vreg1,$&gbw1,$&pm1,$&av1_1khz,$&fom1 >> ../data/ac_df_ss_summary.txt
+	echo M,$&id2,$&os2,$&cm2,$&vreg2,$&gbw2,$&pm2,$&av2_1khz,$&fom2 >> ../data/ac_df_ss_summary.txt
+	echo BN,$&id3,$&os3,$&cm3,$&vreg3,$&gbw3,$&pm3,$&av3_1khz,$&fom3 >> ../data/ac_df_ss_summary.txt
+	echo BM,$&id4,$&os4,$&cm4,$&vreg4,$&gbw4,$&pm4,$&av4_1khz,$&fom4 >> ../data/ac_df_ss_summary.txt
+	echo NN,$&id5,$&os5,$&cm5,$&vreg5,$&gbw5,$&pm5,$&av5_1khz,$&fom5 >> ../data/ac_df_ss_summary.txt
+	echo NV,$&id6,$&os6,$&cm6,$&vreg6,$&gbw6,$&pm6,$&av6_1khz,$&fom6 >> ../data/ac_df_ss_summary.txt
+	echo MV,$&id7,$&os7,$&cm7,$&vreg7,$&gbw7,$&pm7,$&av7_1khz,$&fom7 >> ../data/ac_df_ss_summary.txt
+	
+	wrdata ../data/ac_df_av_ss.csv av0 av1 av2 av3 av4 av5 av6 av7
+	wrdata ../data/ac_df_ph_ss.csv ph0 ph1 ph2 ph3 ph4 ph5 ph6 ph7
+		
+.endc
+
+.end

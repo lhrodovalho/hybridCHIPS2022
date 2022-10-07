@@ -4,12 +4,12 @@
 X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
 X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
 X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
-C0 bp vreg 0.23fF
-C1 hi bp 0.28fF
-C2 hih vdd 0.45fF
-C3 vreg gp 1.01fF
-C4 vdd vreg 0.22fF
-C5 hi vreg 0.11fF
+C0 hi bp 0.28fF
+C1 vreg vdd 0.22fF
+C2 hi vreg 0.11fF
+C3 bp vreg 0.23fF
+C4 vreg gp 1.01fF
+C5 hih vdd 0.45fF
 C6 vreg gnd 0.44fF
 C7 bp gnd 4.35fF
 C8 vdd gnd 4.01fF
@@ -31,23 +31,23 @@ X8 gnd inr d2 gnd nmos_3p3 w=1.8u l=0.6u
 X9 out inl d1 gnd nmos_3p3 w=1.8u l=0.6u
 X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
 X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
-C0 out op 0.11fF
-C1 inr om 0.18fF
-C2 inr bp 0.32fF
-C3 inr out 0.20fF
-C4 vreg vdd 1.41fF
-C5 inl op 0.20fF
-C6 inl inr 0.60fF
-C7 bp vreg 0.92fF
-C8 out vreg 0.78fF
-C9 out om 0.11fF
-C10 gp vreg 1.98fF
-C11 out bp 0.15fF
-C12 inr op 0.20fF
-C13 inl om 0.18fF
-C14 gp vdd 0.66fF
-C15 inl bp 0.32fF
-C16 inl out 0.17fF
+C0 vdd gp 0.66fF
+C1 inl inr 0.60fF
+C2 vreg gp 1.98fF
+C3 inr bp 0.32fF
+C4 inr om 0.18fF
+C5 inr op 0.20fF
+C6 inl out 0.17fF
+C7 bp out 0.15fF
+C8 out om 0.11fF
+C9 inl bp 0.32fF
+C10 inl om 0.18fF
+C11 vreg out 0.78fF
+C12 vreg bp 0.92fF
+C13 vdd vreg 1.41fF
+C14 out op 0.11fF
+C15 inl op 0.20fF
+C16 inr out 0.20fF
 C17 out gnd 1.69fF
 C18 inr gnd 2.35fF
 C19 inl gnd 2.36fF
@@ -69,48 +69,40 @@ Xmanf_cell_3 x op x gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_4 x y y gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_5 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_6 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
-Xmanf_cell_7 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
-Xmanf_cell_8 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_9 im y op gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_10 y ip om gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_11 om x x gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_12 x op x gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_13 x y y gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_14 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
-Xmanf_cell_15 ip y om gp vreg op im x y ip om vdd gnd bp manf_cell
 Xmanf_cell_16 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
-Xmanf_cell_17 y im op gp vreg op im x y ip om vdd gnd bp manf_cell
-C0 op im 0.40fF
-C1 op y 0.82fF
-C2 gp vdd 0.25fF
-C3 vreg y 0.15fF
-C4 ip im 0.86fF
-C5 gp vreg -1.33fF
-C6 ip y 1.07fF
-C7 om x 0.30fF
-C8 im y 0.32fF
-C9 om op 0.32fF
-C10 om vreg 0.13fF
-C11 op x 0.96fF
-C12 vreg x 0.12fF
-C13 vreg vdd 0.44fF
-C14 ip om 0.98fF
-C15 vreg op 0.12fF
-C16 ip x 0.23fF
-C17 om im 0.44fF
-C18 om y 0.85fF
-C19 im x 0.11fF
-C20 ip op 0.34fF
-C21 x y 0.19fF
-C22 bp gnd 113.77fF
-C23 vdd gnd 100.54fF
-C24 om gnd 33.51fF
-C25 ip gnd 26.57fF
-C26 y gnd 46.95fF
-C27 x gnd 33.99fF
-C28 im gnd 27.50fF
-C29 op gnd 33.62fF
-C30 vreg gnd 4.89fF
-C31 gp gnd 25.14fF
+C0 vreg x 0.12fF
+C1 ip om 0.91fF
+C2 y ip 0.97fF
+C3 x om 0.29fF
+C4 op om 0.23fF
+C5 x y 0.17fF
+C6 op y 0.63fF
+C7 op im 0.33fF
+C8 vreg gp -1.04fF
+C9 gp vdd 0.20fF
+C10 x ip 0.21fF
+C11 op ip 0.19fF
+C12 op x 0.95fF
+C13 vreg y 0.11fF
+C14 y om 0.65fF
+C15 om im 0.29fF
+C16 y im 0.20fF
+C17 vreg vdd 0.35fF
+C18 bp gnd 90.32fF
+C19 vdd gnd 79.79fF
+C20 om gnd 26.26fF
+C21 ip gnd 19.49fF
+C22 y gnd 35.73fF
+C23 x gnd 31.14fF
+C24 im gnd 20.25fF
+C25 op gnd 26.36fF
+C26 vreg gnd 3.94fF
+C27 gp gnd 19.62fF
 .ends
 

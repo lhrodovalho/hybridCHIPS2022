@@ -1,0 +1,10 @@
+# Open-loop AC common-mode input simulation TT corner 27C summary
+# amp avcm
+N -0.132788
+B -0.132756
+M 0.129851
+BN -36.5178
+BM -32.669
+NN -36.5176
+NV -32.668
+MV -33.0358
