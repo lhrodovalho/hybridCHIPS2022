@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1665184495
+timestamp 1665299795
 << metal1 >>
 rect -5040 1440 -4980 1500
 rect 2760 1440 2820 1500
@@ -344,59 +344,59 @@ rect 1440 284 1500 300
 rect 1440 256 1456 284
 rect 1484 256 1500 284
 rect 1440 240 1500 256
-use barth_cell  barth_cell_0
+use barth_cell#0  barth_cell_0
 timestamp 1665184495
 transform -1 0 -1080 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_1
+use barth_cell#0  barth_cell_1
 timestamp 1665184495
 transform -1 0 -1680 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_2
+use barth_cell#0  barth_cell_2
 timestamp 1665184495
 transform -1 0 -2280 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_3
+use barth_cell#0  barth_cell_3
 timestamp 1665184495
 transform -1 0 -2880 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_4
+use barth_cell#0  barth_cell_4
 timestamp 1665184495
 transform -1 0 -3480 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_5
+use barth_cell#0  barth_cell_5
 timestamp 1665184495
 transform -1 0 -4080 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_6
+use barth_cell#0  barth_cell_6
 timestamp 1665184495
 transform 1 0 1860 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_7
+use barth_cell#0  barth_cell_7
 timestamp 1665184495
 transform 1 0 1260 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_8
+use barth_cell#0  barth_cell_8
 timestamp 1665184495
 transform 1 0 660 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_9
+use barth_cell#0  barth_cell_9
 timestamp 1665184495
 transform 1 0 60 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_10
+use barth_cell#0  barth_cell_10
 timestamp 1665184495
 transform 1 0 -540 0 1 -180
 box -3600 -660 -2940 3060
-use barth_cell  barth_cell_11
+use barth_cell#0  barth_cell_11
 timestamp 1665184495
 transform 1 0 -1140 0 1 -180
 box -3600 -660 -2940 3060
-use barth_edge  barth_edge_0
+use barth_edge#0  barth_edge_0
 timestamp 1665184495
 transform -1 0 -840 0 1 -180
 box -3780 -660 -3300 3060
-use barth_edge  barth_edge_1
+use barth_edge#0  barth_edge_1
 timestamp 1665184495
 transform 1 0 -1380 0 1 -180
 box -3780 -660 -3300 3060

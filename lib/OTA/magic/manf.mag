@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1665184495
+timestamp 1665299795
 << metal2 >>
 rect -3900 1434 -3840 1440
 rect -3900 1146 -3884 1434
@@ -396,67 +396,67 @@ rect 2820 -6 2880 0
 rect 2820 -294 2836 -6
 rect 2864 -294 2880 -6
 rect 2820 -300 2880 -294
-use manf_cell  manf_cell_0
+use manf_cell#0  manf_cell_0
 timestamp 1665184495
 transform -1 0 660 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_1
+use manf_cell#0  manf_cell_1
 timestamp 1665184495
 transform -1 0 60 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_2
+use manf_cell#0  manf_cell_2
 timestamp 1665184495
 transform -1 0 -540 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_3
+use manf_cell#0  manf_cell_3
 timestamp 1665184495
 transform -1 0 -1140 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_4
+use manf_cell#0  manf_cell_4
 timestamp 1665184495
 transform -1 0 -1740 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_5
+use manf_cell#0  manf_cell_5
 timestamp 1665184495
 transform -1 0 -2340 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_6
+use manf_cell#0  manf_cell_6
 timestamp 1665184495
 transform -1 0 -2940 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_7
+use manf_cell#0  manf_cell_7
 timestamp 1665184495
 transform 1 0 3000 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_8
+use manf_cell#0  manf_cell_8
 timestamp 1665184495
 transform 1 0 2400 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_9
+use manf_cell#0  manf_cell_9
 timestamp 1665184495
 transform 1 0 1800 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_10
+use manf_cell#0  manf_cell_10
 timestamp 1665184495
 transform 1 0 1200 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_11
+use manf_cell#0  manf_cell_11
 timestamp 1665184495
 transform 1 0 600 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_12
+use manf_cell#0  manf_cell_12
 timestamp 1665184495
 transform 1 0 0 0 1 -240
 box -3600 -660 -2940 3300
-use manf_cell  manf_cell_13
+use manf_cell#0  manf_cell_13
 timestamp 1665184495
 transform 1 0 -600 0 1 -240
 box -3600 -660 -2940 3300
-use manf_edge  manf_edge_0
+use manf_edge#0  manf_edge_0
 timestamp 1665184495
 transform -1 0 900 0 1 -240
 box -3780 -660 -3300 3300
-use manf_edge  manf_edge_1
+use manf_edge#0  manf_edge_1
 timestamp 1665184495
 transform 1 0 -840 0 1 -240
 box -3780 -660 -3300 3300

@@ -1,4 +1,4 @@
-timestamp 1663962439
+timestamp 1665298770
 version 8.3
 tech gf180mcuC
 style ngspice()
@@ -39,39 +39,39 @@ node "hih" 62 458.531 -7080 5280 mvpdif 0 0 0 0 0 0 0 0 0 0 43200 960 79200 1560
 node "bp" 1808 4348.66 -7560 3240 m3 1029600 4200 0 0 259200 4560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 273600 4800 14400 480 115200 2160 0 0 0 0
 node "vdd" 1669 4014.34 -7560 5280 m3 936000 3960 0 0 0 0 0 0 244800 4320 43200 960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 5760 72000 1440 576000 3120 0 0 0 0
 substrate "gnd" 0 0 -7560 -1320 m3 0 0 0 0 43200 960 1699200 28560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1742400 29520 532800 9120 1152000 13920 0 0 0 0
-cap "hi" "hih" 3.26114
-cap "vreg" "gp" 1007.85
-cap "hi" "xm" 0.362089
-cap "vreg" "vdd" 215.53
-cap "op" "bp" 0.784651
-cap "bp" "vreg" 233.588
-cap "lo" "ip" 0.00316383
-cap "hi" "gp" 0.777969
-cap "om" "xp" 492.384
 cap "op" "vreg" 1.19548
-cap "hi" "vdd" 2.86671
-cap "hih" "gp" 0.951584
-cap "om" "lo" 0.437282
-cap "hi" "bp" 280.187
-cap "hih" "vdd" 454.517
-cap "op" "hi" 1.38557
-cap "bp" "hih" 1.79395
-cap "op" "vreg" 0.0618599
-cap "bp" "xm" 1.05288
-cap "op" "xm" 492.384
-cap "vdd" "gp" 2.81941
-cap "bp" "gp" 1.91892
-cap "op" "hi" 0.186928
-cap "bp" "vdd" 15.7433
-cap "bp" "im" 0.0130934
-cap "hi" "vreg" 114.367
 cap "om" "xp" 492.384
-cap "vreg" "hih" 23.8494
+cap "hih" "vreg" 23.8494
 cap "op" "bp" 3.30717
-cap "op" "xm" 492.384
+cap "vdd" "hi" 2.86671
+cap "bp" "hih" 1.79395
+cap "gp" "hih" 0.951584
+cap "xm" "op" 492.384
+cap "xm" "vreg" 0.19626
+cap "op" "hi" 0.186928
+cap "xm" "bp" 1.05288
 cap "om" "lo" 1.89987
-cap "vreg" "xm" 0.19626
-cap "lo" "xp" 0.630141
+cap "hi" "vreg" 114.367
+cap "vdd" "vreg" 215.53
+cap "bp" "hi" 280.187
+cap "ip" "lo" 0.00316383
+cap "gp" "hi" 0.777969
+cap "om" "lo" 0.437282
+cap "vdd" "bp" 15.7433
+cap "gp" "vdd" 2.81941
+cap "xm" "op" 492.384
+cap "op" "vreg" 0.0618599
+cap "op" "bp" 0.784651
+cap "op" "hi" 1.38557
+cap "bp" "vreg" 233.588
+cap "hih" "hi" 3.26114
+cap "gp" "vreg" 1007.85
+cap "xp" "lo" 0.630141
+cap "vdd" "hih" 454.517
+cap "gp" "bp" 1.91892
+cap "xp" "om" 492.384
+cap "im" "bp" 0.0130934
+cap "xm" "hi" 0.362089
 device msubckt nmos_3p3 -6960 -1080 -6959 -1079 l=120 w=360 "gnd" "lo" 240 0 "lo" 360 0 "gnd" 360 0
 device msubckt pmos_3p3 -6960 3720 -6959 3721 l=120 w=300 "bp" "hi" 240 0 "hi" 300 0 "vreg" 300 0
 device msubckt pmos_6p0 -6960 5280 -6959 5281 l=120 w=360 "vdd" "hih" 240 0 "hih" 360 0 "vdd" 360 0

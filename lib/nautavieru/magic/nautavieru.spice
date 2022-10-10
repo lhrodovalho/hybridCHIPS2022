@@ -1,4 +1,4 @@
-* NGSPICE file created from nautavieru.ext - technology: gf180mcuC
+* NGSPICE file created from ../../nautavieru/magic/nautavieru.ext - technology: gf180mcuC
 
 .subckt nautavieru_cell inl inr out gp vreg op xm im ip xp om x vdd gnd bp
 X0 vreg gp vdd vdd pmos_6p0 w=1.8u l=0.6u
@@ -13,25 +13,25 @@ X8 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
 X9 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
 X10 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
 X11 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
-C0 inr out 0.20fF
-C1 xp om 1.35fF
-C2 bp vreg 0.92fF
-C3 inl op 0.20fF
-C4 bp inl 0.32fF
-C5 om inl 0.18fF
-C6 inr op 0.20fF
-C7 vdd gp 0.66fF
-C8 vreg out 0.78fF
-C9 inl inr 0.60fF
-C10 bp inr 0.32fF
-C11 gp vreg 1.98fF
-C12 om inr 0.18fF
-C13 out op 0.12fF
-C14 inl out 0.17fF
-C15 vdd vreg 1.41fF
-C16 bp out 0.15fF
-C17 om out 0.12fF
-C18 xm op 1.35fF
+C0 op out 0.12fF
+C1 inl out 0.17fF
+C2 xp om 1.35fF
+C3 vreg bp 0.92fF
+C4 gp vdd 0.66fF
+C5 inl op 0.20fF
+C6 inr out 0.20fF
+C7 gp vreg 1.98fF
+C8 om out 0.12fF
+C9 bp out 0.15fF
+C10 vreg vdd 1.41fF
+C11 inr op 0.20fF
+C12 inl inr 0.60fF
+C13 inl om 0.18fF
+C14 op xm 1.35fF
+C15 inl bp 0.32fF
+C16 inr om 0.18fF
+C17 vreg out 0.78fF
+C18 inr bp 0.32fF
 C19 out gnd 1.64fF
 C20 inr gnd 2.31fF
 C21 inl gnd 2.32fF
@@ -47,14 +47,14 @@ C27 dl gnd 0.18fF
 X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
 X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
 X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
-C0 hih vdd 0.45fF
-C1 bp vreg 0.23fF
-C2 vreg gp 1.01fF
-C3 vreg hi 0.11fF
-C4 om xp 0.98fF
-C5 vreg vdd 0.22fF
-C6 op xm 0.98fF
-C7 bp hi 0.28fF
+C0 bp hi 0.28fF
+C1 vreg gp 1.01fF
+C2 bp vreg 0.23fF
+C3 xp om 0.98fF
+C4 op xm 0.98fF
+C5 vreg hi 0.11fF
+C6 vdd vreg 0.22fF
+C7 vdd hih 0.45fF
 C8 vreg gnd 0.44fF
 C9 bp gnd 4.35fF
 C10 vdd gnd 4.01fF
@@ -63,7 +63,7 @@ C12 hi gnd 0.46fF
 C13 hih gnd 0.46fF
 .ends
 
-.subckt nautavieru ip im op om vdd gp bp vreg gnd
+.subckt x../../nautavieru/magic/nautavieru ip im op om vdd gp bp vreg gnd
 Xnautavieru_cell_16 ip xm xm gp vreg op xm im ip xp om x vdd gnd bp nautavieru_cell
 Xnautavieru_cell_26 x x xm gp vreg op xm im ip xp om x vdd gnd bp nautavieru_cell
 Xnautavieru_cell_27 ip ip om gp vreg op xm im ip xp om x vdd gnd bp nautavieru_cell
@@ -100,41 +100,41 @@ Xnautavieru_cell_25 xm xm op gp vreg op xm im ip xp om x vdd gnd bp nautavieru_c
 Xnautavieru_cell_14 im im op gp vreg op xm im ip xp om x vdd gnd bp nautavieru_cell
 X0 om xp mim_2p0fF c_width=199.2u c_length=7.2u
 X1 op xm mim_2p0fF c_width=199.2u c_length=7.2u
-C0 ip om 0.94fF
-C1 gp vreg -2.33fF
-C2 op vdd 4.12fF
-C3 op xm 47.77fF
-C4 x xm 1.23fF
-C5 xp vreg 0.19fF
-C6 om xm 1.64fF
-C7 vdd vreg 0.75fF
-C8 vreg xm 1.06fF
-C9 op x 1.37fF
-C10 op om 0.48fF
-C11 im xp 1.91fF
+C0 vreg gp -2.33fF
+C1 xm op 47.73fF
+C2 op bp 0.13fF
+C3 vreg xm 1.06fF
+C4 xm x 1.23fF
+C5 vreg bp 0.11fF
+C6 vreg op 1.04fF
+C7 op x 1.37fF
+C8 xm xp 3.05fF
+C9 vreg x 0.16fF
+C10 gp vdd 0.30fF
+C11 op xp 0.76fF
 C12 im ip 1.82fF
-C13 x om 0.68fF
-C14 ip xp 1.18fF
-C15 gp vdd 0.30fF
-C16 gp xm 0.59fF
-C17 op vreg 1.04fF
-C18 im xm 0.13fF
-C19 xp xm 3.05fF
-C20 x vreg 0.16fF
-C21 op bp 0.13fF
-C22 ip xm 0.99fF
-C23 om vreg 0.16fF
-C24 op gp 0.63fF
-C25 vdd xm 5.01fF
-C26 op im 0.61fF
-C27 op xp 0.76fF
-C28 im x 0.18fF
-C29 op ip 0.73fF
-C30 x xp 0.53fF
-C31 im om 0.87fF
-C32 xp om 47.50fF
-C33 bp vreg 0.11fF
-C34 x ip 0.20fF
+C13 vreg xp 0.19fF
+C14 x xp 0.53fF
+C15 im om 0.87fF
+C16 xm vdd 5.00fF
+C17 ip om 0.94fF
+C18 op vdd 4.12fF
+C19 vreg vdd 0.75fF
+C20 xm im 0.13fF
+C21 op im 0.61fF
+C22 xm ip 0.99fF
+C23 im x 0.18fF
+C24 op ip 0.73fF
+C25 xm om 1.64fF
+C26 x ip 0.20fF
+C27 op om 0.48fF
+C28 im xp 1.91fF
+C29 gp xm 0.59fF
+C30 vreg om 0.16fF
+C31 x om 0.68fF
+C32 ip xp 1.18fF
+C33 gp op 0.63fF
+C34 xp om 47.50fF
 C35 bp gnd 195.36fF
 C36 vdd gnd 173.19fF
 C37 om gnd 68.09fF
@@ -143,7 +143,7 @@ C39 ip gnd 50.03fF
 C40 x gnd 56.38fF
 C41 im gnd 48.37fF
 C42 op gnd 53.53fF
-C43 xm gnd 42.28fF
+C43 xm gnd 42.27fF
 C44 gp gnd 44.32fF
 C45 vreg gnd 8.33fF
 .ends

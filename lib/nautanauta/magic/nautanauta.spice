@@ -13,25 +13,25 @@ X8 gnd inr dr gnd nmos_3p3 w=1.8u l=0.6u
 X9 out inl dl gnd nmos_3p3 w=1.8u l=0.6u
 X10 out inl vreg bp pmos_3p3 w=1.5u l=0.6u
 X11 vdd gp vreg vdd pmos_6p0 w=1.8u l=0.6u
-C0 inr op 0.20fF
+C0 out inl 0.17fF
 C1 bp inr 0.32fF
-C2 gp vreg 1.98fF
-C3 vreg out 0.78fF
-C4 inl inr 0.55fF
-C5 out op 0.12fF
-C6 vdd vreg 1.41fF
-C7 bp out 0.15fF
-C8 inl out 0.17fF
-C9 om xp 1.35fF
-C10 xm op 1.35fF
-C11 om inl 0.18fF
-C12 inr out 0.19fF
-C13 bp vreg 0.92fF
-C14 om inr 0.18fF
-C15 inl op 0.20fF
-C16 vdd gp 0.66fF
-C17 bp inl 0.32fF
-C18 om out 0.12fF
+C2 vdd gp 0.66fF
+C3 op inl 0.20fF
+C4 out op 0.12fF
+C5 vdd vreg 1.41fF
+C6 om inr 0.18fF
+C7 bp vreg 0.92fF
+C8 bp inl 0.32fF
+C9 gp vreg 1.98fF
+C10 inl inr 0.55fF
+C11 out bp 0.15fF
+C12 out inr 0.19fF
+C13 op inr 0.20fF
+C14 xm op 1.35fF
+C15 om inl 0.18fF
+C16 out om 0.12fF
+C17 out vreg 0.78fF
+C18 xp om 1.35fF
 C19 out gnd 1.48fF
 C20 inr gnd 2.23fF
 C21 inl gnd 2.25fF
@@ -47,14 +47,14 @@ C27 dl gnd 0.18fF
 X0 gnd lo lo gnd nmos_3p3 w=1.8u l=0.6u
 X1 vdd hih hih vdd pmos_6p0 w=1.8u l=0.6u
 X2 vreg hi hi bp pmos_3p3 w=1.5u l=0.6u
-C0 hi bp 0.28fF
-C1 vreg gp 1.01fF
-C2 xp om 0.98fF
-C3 vreg bp 0.23fF
+C0 vreg gp 1.01fF
+C1 hi vreg 0.11fF
+C2 vdd vreg 0.22fF
+C3 om xp 0.98fF
 C4 hih vdd 0.45fF
-C5 op xm 0.98fF
-C6 vreg vdd 0.22fF
-C7 vreg hi 0.11fF
+C5 hi bp 0.28fF
+C6 xm op 0.98fF
+C7 bp vreg 0.23fF
 C8 vreg gnd 0.44fF
 C9 bp gnd 4.35fF
 C10 vdd gnd 4.01fF
@@ -100,42 +100,42 @@ Xnautanauta_edge_0 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
 Xnautanauta_edge_1 gp vreg im ip xm op xp om vdd gnd bp nautanauta_edge
 X0 op xm mim_2p0fF c_width=199.2u c_length=7.2u
 X1 om xp mim_2p0fF c_width=199.2u c_length=7.2u
-C0 im xp 1.39fF
-C1 vreg vdd 0.76fF
-C2 xp xm 0.59fF
-C3 gp xm 0.36fF
-C4 om ip 0.92fF
-C5 im xm 0.20fF
-C6 xp op 1.08fF
-C7 gp op 0.49fF
-C8 vreg xp 0.15fF
-C9 gp vreg -1.31fF
-C10 om xp 41.46fF
-C11 im op 0.66fF
-C12 xm op 39.18fF
-C13 vreg xm 0.50fF
-C14 im om 1.04fF
-C15 xp ip 0.91fF
-C16 om xm 0.80fF
-C17 gp vdd 0.35fF
-C18 bp op 0.15fF
-C19 im ip 3.04fF
-C20 vreg op 0.91fF
-C21 xm vdd 3.94fF
-C22 xm ip 1.22fF
-C23 om op 1.07fF
-C24 om vreg 0.28fF
-C25 op vdd 3.60fF
-C26 op ip 0.84fF
+C0 xm im 0.18fF
+C1 vreg op 0.92fF
+C2 op gp 0.50fF
+C3 op om 1.03fF
+C4 xm ip 1.22fF
+C5 xm vdd 4.41fF
+C6 om im 1.05fF
+C7 op bp 0.15fF
+C8 op xp 1.09fF
+C9 vreg vdd 0.76fF
+C10 vreg xm 0.82fF
+C11 xp im 1.39fF
+C12 om ip 0.93fF
+C13 gp vdd 0.33fF
+C14 xm gp 0.47fF
+C15 om xm 0.80fF
+C16 xp ip 0.87fF
+C17 vreg gp -2.33fF
+C18 vreg om 0.28fF
+C19 op im 0.66fF
+C20 xp xm 0.59fF
+C21 vreg xp 0.15fF
+C22 op ip 0.84fF
+C23 op vdd 3.66fF
+C24 ip im 3.03fF
+C25 op xm 48.00fF
+C26 xp om 50.34fF
 C27 bp gnd 195.93fF
-C28 im gnd 47.95fF
-C29 vdd gnd 173.66fF
-C30 om gnd 84.32fF
-C31 ip gnd 48.79fF
-C32 op gnd 71.19fF
-C33 xm gnd 37.48fF
-C34 xp gnd 42.42fF
+C28 im gnd 49.00fF
+C29 vdd gnd 172.70fF
+C30 om gnd 84.82fF
+C31 ip gnd 48.71fF
+C32 op gnd 69.88fF
+C33 xm gnd 37.42fF
+C34 xp gnd 42.15fF
 C35 vreg gnd 8.66fF
-C36 gp gnd 43.78fF
+C36 gp gnd 44.31fF
 .ends
 

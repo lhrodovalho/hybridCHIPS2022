@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1665184495
+timestamp 1665299795
 << metal1 >>
 rect -5040 1440 -4980 1500
 rect 5160 1440 5220 1500
@@ -453,75 +453,75 @@ rect 2040 54 2100 60
 rect 2040 -234 2056 54
 rect 2084 -234 2100 54
 rect 2040 -240 2100 -234
-use barthnauta_cell  barthnauta_cell_0
+use barthnauta_cell#0  barthnauta_cell_0
 timestamp 1665184495
 transform -1 0 1320 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_1
+use barthnauta_cell#0  barthnauta_cell_1
 timestamp 1665184495
 transform -1 0 720 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_2
+use barthnauta_cell#0  barthnauta_cell_2
 timestamp 1665184495
 transform -1 0 120 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_3
+use barthnauta_cell#0  barthnauta_cell_3
 timestamp 1665184495
 transform -1 0 -480 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_4
+use barthnauta_cell#0  barthnauta_cell_4
 timestamp 1665184495
 transform -1 0 -1080 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_5
+use barthnauta_cell#0  barthnauta_cell_5
 timestamp 1665184495
 transform -1 0 -1680 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_6
+use barthnauta_cell#0  barthnauta_cell_6
 timestamp 1665184495
 transform -1 0 -2280 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_7
+use barthnauta_cell#0  barthnauta_cell_7
 timestamp 1665184495
 transform -1 0 -2880 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_8
+use barthnauta_cell#0  barthnauta_cell_8
 timestamp 1665184495
 transform 1 0 3060 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_9
+use barthnauta_cell#0  barthnauta_cell_9
 timestamp 1665184495
 transform 1 0 2460 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_10
+use barthnauta_cell#0  barthnauta_cell_10
 timestamp 1665184495
 transform 1 0 1860 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_11
+use barthnauta_cell#0  barthnauta_cell_11
 timestamp 1665184495
 transform 1 0 1260 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_12
+use barthnauta_cell#0  barthnauta_cell_12
 timestamp 1665184495
 transform 1 0 660 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_13
+use barthnauta_cell#0  barthnauta_cell_13
 timestamp 1665184495
 transform 1 0 60 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_14
+use barthnauta_cell#0  barthnauta_cell_14
 timestamp 1665184495
 transform 1 0 -540 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_cell  barthnauta_cell_15
+use barthnauta_cell#0  barthnauta_cell_15
 timestamp 1665184495
 transform 1 0 -1140 0 1 -180
 box -3600 -660 -2940 3060
-use barthnauta_edge  barthnauta_edge_0
+use barthnauta_edge#0  barthnauta_edge_0
 timestamp 1665184495
 transform -1 0 1560 0 1 -180
 box -3780 -660 -3300 3060
-use barthnauta_edge  barthnauta_edge_1
+use barthnauta_edge#0  barthnauta_edge_1
 timestamp 1665184495
 transform 1 0 -1380 0 1 -180
 box -3780 -660 -3300 3060

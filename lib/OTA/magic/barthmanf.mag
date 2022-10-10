@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1665184495
+timestamp 1665299795
 << metal2 >>
 rect -3900 1434 -3840 1440
 rect -3900 1146 -3884 1434
@@ -504,83 +504,83 @@ rect 5220 -6 5280 0
 rect 5220 -294 5236 -6
 rect 5264 -294 5280 -6
 rect 5220 -300 5280 -294
-use barthmanf_cell  barthmanf_cell_0
+use barthmanf_cell#0  barthmanf_cell_0
 timestamp 1665184495
 transform -1 0 3060 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_1
+use barthmanf_cell#0  barthmanf_cell_1
 timestamp 1665184495
 transform -1 0 2460 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_2
+use barthmanf_cell#0  barthmanf_cell_2
 timestamp 1665184495
 transform -1 0 1860 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_3
+use barthmanf_cell#0  barthmanf_cell_3
 timestamp 1665184495
 transform -1 0 1260 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_4
+use barthmanf_cell#0  barthmanf_cell_4
 timestamp 1665184495
 transform -1 0 660 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_5
+use barthmanf_cell#0  barthmanf_cell_5
 timestamp 1665184495
 transform -1 0 60 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_6
+use barthmanf_cell#0  barthmanf_cell_6
 timestamp 1665184495
 transform -1 0 -540 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_7
+use barthmanf_cell#0  barthmanf_cell_7
 timestamp 1665184495
 transform -1 0 -1140 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_8
+use barthmanf_cell#0  barthmanf_cell_8
 timestamp 1665184495
 transform -1 0 -1740 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_9
+use barthmanf_cell#0  barthmanf_cell_9
 timestamp 1665184495
 transform 1 0 4200 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_10
+use barthmanf_cell#0  barthmanf_cell_10
 timestamp 1665184495
 transform 1 0 3600 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_11
+use barthmanf_cell#0  barthmanf_cell_11
 timestamp 1665184495
 transform 1 0 3000 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_12
+use barthmanf_cell#0  barthmanf_cell_12
 timestamp 1665184495
 transform 1 0 2400 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_13
+use barthmanf_cell#0  barthmanf_cell_13
 timestamp 1665184495
 transform 1 0 1800 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_14
+use barthmanf_cell#0  barthmanf_cell_14
 timestamp 1665184495
 transform 1 0 1200 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_15
+use barthmanf_cell#0  barthmanf_cell_15
 timestamp 1665184495
 transform 1 0 600 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_16
+use barthmanf_cell#0  barthmanf_cell_16
 timestamp 1665184495
 transform 1 0 0 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_cell  barthmanf_cell_17
+use barthmanf_cell#0  barthmanf_cell_17
 timestamp 1665184495
 transform 1 0 -600 0 1 -240
 box -3600 -660 -2940 3300
-use barthmanf_edge  barthmanf_edge_0
+use barthmanf_edge#0  barthmanf_edge_0
 timestamp 1665184495
 transform -1 0 3300 0 1 -240
 box -3780 -660 -3300 3300
-use barthmanf_edge  barthmanf_edge_1
+use barthmanf_edge#0  barthmanf_edge_1
 timestamp 1665184495
 transform 1 0 -840 0 1 -240
 box -3780 -660 -3300 3300

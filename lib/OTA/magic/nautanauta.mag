@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1665184495
+timestamp 1665299795
 << error_s >>
 rect -5062 3782 -4598 3802
 rect -5062 3774 -5042 3782
@@ -1555,42 +1555,6 @@ rect -5082 -1064 14862 -1036
 << metal5 >>
 rect -5160 3782 14940 4080
 rect -5160 3358 -5042 3782
-rect -5034 3746 -5006 3774
-rect -4958 3746 -4930 3774
-rect -4882 3746 -4854 3774
-rect -4806 3746 -4778 3774
-rect -4730 3746 -4702 3774
-rect -4654 3746 -4626 3774
-rect -5034 3670 -5006 3698
-rect -4958 3670 -4930 3698
-rect -4882 3670 -4854 3698
-rect -4806 3670 -4778 3698
-rect -4730 3670 -4702 3698
-rect -4654 3670 -4626 3698
-rect -5034 3594 -5006 3622
-rect -4958 3594 -4930 3622
-rect -4882 3594 -4854 3622
-rect -4806 3594 -4778 3622
-rect -4730 3594 -4702 3622
-rect -4654 3594 -4626 3622
-rect -5034 3518 -5006 3546
-rect -4958 3518 -4930 3546
-rect -4882 3518 -4854 3546
-rect -4806 3518 -4778 3546
-rect -4730 3518 -4702 3546
-rect -4654 3518 -4626 3546
-rect -5034 3442 -5006 3470
-rect -4958 3442 -4930 3470
-rect -4882 3442 -4854 3470
-rect -4806 3442 -4778 3470
-rect -4730 3442 -4702 3470
-rect -4654 3442 -4626 3470
-rect -5034 3366 -5006 3394
-rect -4958 3366 -4930 3394
-rect -4882 3366 -4854 3394
-rect -4806 3366 -4778 3394
-rect -4730 3366 -4702 3394
-rect -4654 3366 -4626 3394
 rect -4618 3358 14940 3782
 rect -5160 3300 14940 3358
 rect -5580 3284 14940 3300
@@ -1625,177 +1589,141 @@ rect -5236 -1184 14940 -1156
 rect -5580 -1200 14940 -1184
 rect -5160 -1258 14940 -1200
 rect -5160 -1682 -5042 -1258
-rect -5034 -1294 -5006 -1266
-rect -4958 -1294 -4930 -1266
-rect -4882 -1294 -4854 -1266
-rect -4806 -1294 -4778 -1266
-rect -4730 -1294 -4702 -1266
-rect -4654 -1294 -4626 -1266
-rect -5034 -1370 -5006 -1342
-rect -4958 -1370 -4930 -1342
-rect -4882 -1370 -4854 -1342
-rect -4806 -1370 -4778 -1342
-rect -4730 -1370 -4702 -1342
-rect -4654 -1370 -4626 -1342
-rect -5034 -1446 -5006 -1418
-rect -4958 -1446 -4930 -1418
-rect -4882 -1446 -4854 -1418
-rect -4806 -1446 -4778 -1418
-rect -4730 -1446 -4702 -1418
-rect -4654 -1446 -4626 -1418
-rect -5034 -1522 -5006 -1494
-rect -4958 -1522 -4930 -1494
-rect -4882 -1522 -4854 -1494
-rect -4806 -1522 -4778 -1494
-rect -4730 -1522 -4702 -1494
-rect -4654 -1522 -4626 -1494
-rect -5034 -1598 -5006 -1570
-rect -4958 -1598 -4930 -1570
-rect -4882 -1598 -4854 -1570
-rect -4806 -1598 -4778 -1570
-rect -4730 -1598 -4702 -1570
-rect -4654 -1598 -4626 -1570
-rect -5034 -1674 -5006 -1646
-rect -4958 -1674 -4930 -1646
-rect -4882 -1674 -4854 -1646
-rect -4806 -1674 -4778 -1646
-rect -4730 -1674 -4702 -1646
-rect -4654 -1674 -4626 -1646
 rect -4618 -1682 14940 -1258
 rect -5160 -1980 14940 -1682
-use nautanauta_cell  nautanauta_cell_0
+use nautanauta_cell#0  nautanauta_cell_0
 timestamp 1665184495
 transform -1 0 10920 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_1
+use nautanauta_cell#0  nautanauta_cell_1
 timestamp 1665184495
 transform -1 0 10320 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_2
+use nautanauta_cell#0  nautanauta_cell_2
 timestamp 1665184495
 transform -1 0 9120 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_3
+use nautanauta_cell#0  nautanauta_cell_3
 timestamp 1665184495
 transform -1 0 9720 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_4
+use nautanauta_cell#0  nautanauta_cell_4
 timestamp 1665184495
 transform -1 0 8520 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_5
+use nautanauta_cell#0  nautanauta_cell_5
 timestamp 1665184495
 transform -1 0 7920 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_6
+use nautanauta_cell#0  nautanauta_cell_6
 timestamp 1665184495
 transform -1 0 7320 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_7
+use nautanauta_cell#0  nautanauta_cell_7
 timestamp 1665184495
 transform -1 0 6720 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_8
+use nautanauta_cell#0  nautanauta_cell_8
 timestamp 1665184495
 transform -1 0 6120 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_9
+use nautanauta_cell#0  nautanauta_cell_9
 timestamp 1665184495
 transform -1 0 5520 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_10
+use nautanauta_cell#0  nautanauta_cell_10
 timestamp 1665184495
 transform 1 0 11460 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_11
+use nautanauta_cell#0  nautanauta_cell_11
 timestamp 1665184495
 transform 1 0 10860 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_12
+use nautanauta_cell#0  nautanauta_cell_12
 timestamp 1665184495
 transform 1 0 10260 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_13
+use nautanauta_cell#0  nautanauta_cell_13
 timestamp 1665184495
 transform 1 0 9060 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_14
+use nautanauta_cell#0  nautanauta_cell_14
 timestamp 1665184495
 transform 1 0 9660 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_15
+use nautanauta_cell#0  nautanauta_cell_15
 timestamp 1665184495
 transform 1 0 8460 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_16
+use nautanauta_cell#0  nautanauta_cell_16
 timestamp 1665184495
 transform -1 0 1320 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_17
+use nautanauta_cell#0  nautanauta_cell_17
 timestamp 1665184495
 transform -1 0 720 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_18
+use nautanauta_cell#0  nautanauta_cell_18
 timestamp 1665184495
 transform -1 0 120 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_19
+use nautanauta_cell#0  nautanauta_cell_19
 timestamp 1665184495
 transform -1 0 -480 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_20
+use nautanauta_cell#0  nautanauta_cell_20
 timestamp 1665184495
 transform -1 0 -1080 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_21
+use nautanauta_cell#0  nautanauta_cell_21
 timestamp 1665184495
 transform -1 0 -1680 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_22
+use nautanauta_cell#0  nautanauta_cell_22
 timestamp 1665184495
 transform 1 0 4260 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_23
+use nautanauta_cell#0  nautanauta_cell_23
 timestamp 1665184495
 transform 1 0 3660 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_24
+use nautanauta_cell#0  nautanauta_cell_24
 timestamp 1665184495
 transform 1 0 3060 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_25
+use nautanauta_cell#0  nautanauta_cell_25
 timestamp 1665184495
 transform 1 0 2460 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_26
+use nautanauta_cell#0  nautanauta_cell_26
 timestamp 1665184495
 transform 1 0 1860 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_27
+use nautanauta_cell#0  nautanauta_cell_27
 timestamp 1665184495
 transform 1 0 1260 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_28
+use nautanauta_cell#0  nautanauta_cell_28
 timestamp 1665184495
 transform 1 0 660 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_29
+use nautanauta_cell#0  nautanauta_cell_29
 timestamp 1665184495
 transform 1 0 60 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_30
+use nautanauta_cell#0  nautanauta_cell_30
 timestamp 1665184495
 transform 1 0 -540 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_cell  nautanauta_cell_31
+use nautanauta_cell#0  nautanauta_cell_31
 timestamp 1665184495
 transform 1 0 -1140 0 1 -180
 box -3600 -660 -2940 3060
-use nautanauta_edge  nautanauta_edge_0
+use nautanauta_edge#0  nautanauta_edge_0
 timestamp 1665184495
 transform -1 0 11160 0 1 -180
 box -3780 -660 -3300 3060
-use nautanauta_edge  nautanauta_edge_1
+use nautanauta_edge#0  nautanauta_edge_1
 timestamp 1665184495
 transform 1 0 -1380 0 1 -180
 box -3780 -660 -3300 3060
