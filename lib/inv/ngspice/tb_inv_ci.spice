@@ -1,0 +1,120 @@
+* Amplifier open-loop DC testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "inv.spice"
+
+.param pVDD = 5.0
+.param pIB  = 23u
+
+VDD vdd 0 dc {pVDD} pulse (0 {pVDD} 1n 100p 100p 1 1)
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+
+ib vdd ib {pIB}
+xb ib     vdd vdd bp  vreg vss inv_bias
+x0 in out vdd vdd bp  vreg vss inv0
+
+vreg vreg vss 3.0
+vin  in  cm 0 ac 1
+vout out cm 0 
+
+.option gmin = 1e-15
+.control
+
+	******
+	alter vreg dc=3.0
+
+	let xi = -1.5
+	let xf =  1.5
+	let xs = 10m
+	let x  = xi
+
+	echo "# in,ci" > ../data/inv_ci_vdd30.csv
+
+	while (x <= xf)
+
+	alter vin dc=x
+
+	ac dec 1 1k 10k
+	let io_abs  = abs(i(vout))
+	let ii_imag = imag(i(vin))
+	let ci      = -ii_imag/(6.18*1k)
+
+	meas ac gm find io_abs  at=1k
+	meas ac ci_1khz find ci at=1k
+
+	echo "$&x,$&ci_1khz" >> ../data/inv_ci_vdd30.csv
+
+	let x = x+xs
+
+	end
+
+	******
+	alter vreg dc=2.4
+
+	let xi = -1.2
+	let xf =  1.2
+	let xs = 10m
+	let x  = xi
+
+	echo "# in,ci" > ../data/inv_ci_vdd24.csv
+
+	while (x <= xf)
+
+	alter vin dc=x
+
+	ac dec 1 1k 10k
+	let io_abs  = abs(i(vout))
+	let ii_imag = imag(i(vin))
+	let ci      = -ii_imag/(6.18*1k)
+
+	meas ac gm find io_abs  at=1k
+	meas ac ci_1khz find ci at=1k
+
+	echo "$&x,$&ci_1khz" >> ../data/inv_ci_vdd24.csv
+
+	let x = x+xs
+
+	end
+
+	******
+	alter vreg dc=1.8
+
+	let xi = -0.9
+	let xf =  0.9
+	let xs = 10m
+	let x  = xi
+
+	echo "# in,ci" > ../data/inv_ci_vdd18.csv
+
+	while (x <= xf)
+
+	alter vin dc=x
+
+	ac dec 1 1k 10k
+	let io_abs  = abs(i(vout))
+	let ii_imag = imag(i(vin))
+	let ci      = -ii_imag/(6.18*1k)
+
+	meas ac gm find io_abs  at=1k
+	meas ac ci_1khz find ci at=1k
+
+	echo "$&x,$&ci_1khz" >> ../data/inv_ci_vdd18.csv
+
+	let x = x+xs
+
+	end
+	****
+	exit
+.endc
+
+.end

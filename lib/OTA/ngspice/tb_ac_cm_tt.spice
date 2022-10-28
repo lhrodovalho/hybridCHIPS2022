@@ -22,7 +22,7 @@
 
 .param pVDD = 5.0
 .param pC   = 10p
-.param pIB  = 22u
+.param pIB  = 23u
 
 VDD  vdd 0 dc {pVDD}
 VSS  vss 0 0
@@ -125,7 +125,7 @@ com7 om7 cm  {pC}
 
 .control
 
-	set wr_vecnames
+*	set wr_vecnames
 
 	run
 

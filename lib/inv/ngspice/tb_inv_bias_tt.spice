@@ -3,11 +3,17 @@
 * Include GF180MCU device models
 .include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
 
 .include "inv.spice"
 
 .param pVDD = 5.0
-.param pIB  = 20u
+.param pIB  = 23u
 
 VDD vdd 0 dc {pVDD} pulse (0 {pVDD} 1n 100p 100p 1 1)
 VSS vss 0 0
@@ -15,23 +21,25 @@ ECM cm vss vdd vss 0.5
 
 ib vdd ib {pIB}
 xb ib     vdd gp bp  vreg vss inv_bias
-x0 in  out vdd gp bp  vreg vss inv0
 
 .option gmin = 1e-15
 .control
+
+	set wr_vecnames
 
 	dc vdd 1.0 6.0 10m
 	plot vdd vreg gp vss xb.q ib
 	plot xb.ref xb.q bp vreg
 	
-	wrdata ../data/inv_bias_vddsweep.txt vdd vreg gp
+	wrdata ../data/inv_bias_vddsweep_tt.txt vdd vreg gp
 	
-	dc ib 1u 100u 1u
-	plot vreg
+*	dc ib 1u 100u 1u
+*	plot vreg xlog
+*	wrdata ../data/inv_bias_ibsweep_tt.txt vdd vreg gp
 	
-	tran 100p 40n uic
+	tran 100p 20n uic
 	plot vdd vreg gp
-	wrdata ../data/inv_bias_tran.txt vdd vreg gp
+	wrdata ../data/inv_bias_tran_tt.txt vdd vreg gp
 .endc
 
 .end

@@ -22,98 +22,76 @@
 
 .param pVDD = 5.0
 .param pC   = 10p
-.param pIB  = 22u
+.param pIB  = 23u
 
 
-VDD  vdd 0 dc {pVDD}
+VDD  vdd 0 dc {pVDD} ac 1
 VSS  vss 0 0
-VCM  cm vss 1.2
-
-vx  x  cm 0
-bin in cm v = {v(x,cm)*v(x,cm)*v(x,cm)}
-eip ip cm in cm -0.5
-eim im cm in cm  0.5
+ECM  cm vss vdd vss 0.5
 
 vd0 vd0 vss dc {pVDD}
 ib0 vdd ib0 {pIB}
-xb0 ib0           vdd gp0 bp0 vreg0 vss inv_bias
-x0  ip im op0 om0 vd0 gp0 bp0 vreg0 vss nauta
+xb0 ib0             vdd gp0 bp0 vreg0 vss inv_bias
+x0  op0 om0 op0 om0 vd0 gp0 bp0 vreg0 vss nauta
 
 vd1 vd1 vss dc {pVDD}
 ib1 vdd ib1 {pIB}
 xb1 ib1             vdd gp1 bp1 vreg1 vss inv_bias
-x1  ip  im  op1 om1 vd1 gp1 bp1 vreg1 vss barth
+x1  op1 om1 op1 om1 vd1 gp1 bp1 vreg1 vss barth
 
 vd2 vd2 vss dc {pVDD}
 ib2 vdd ib2 {pIB}
 xb2 ib2             vdd gp2 bp2 vreg2 vss inv_bias
-x2  ip  im  op2 om2 vd2 gp2 bp2 vreg2 vss manf
+x2  op2 om2 op2 om2 vd2 gp2 bp2 vreg2 vss manf
 
 vd3 vd3 vss dc {pVDD}
 ib3 vdd ib3 {pIB}
 xb3 ib3             vdd gp3 bp3 vreg3 vss inv_bias
-x3  ip  im  op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
+x3  op3 om3 op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
 
 vd4 vd4 vss dc {pVDD}
 ib4 vdd ib4 {pIB}
 xb4 ib4             vdd gp4 bp4 vreg4 vss inv_bias
-x4  ip  im  op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
+x4  op4 om4 op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
 
 vd5 vd5 vss dc {pVDD}
 ib5 vdd ib5 {pIB}
 xb5 ib5             vdd gp5 bp5 vreg5 vss inv_bias
-x5  ip  im  op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
+x5  op5 om5 op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
 
 vd6 vd6 vss dc {pVDD}
 ib6 vdd ib6 {pIB}
 xb6 ib6             vdd gp6 bp6 vreg6 vss inv_bias
-x6  ip  im  op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
+x6  op6 om6 op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
 
 vd7 vd7 vss dc {pVDD}
 ib7 vdd ib7 {pIB}
 xb7 ib7             vdd gp7 bp7 vreg7 vss inv_bias
-x7  ip  im  op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
+x7  op7 om7 op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
 
 .option gmin=1e-15
-.param dx = 0.1
-.dc vx {-pow(dx,1/3)} {pow(dx,1/3)} {pow(dx,1/3)/1k}
+.param dx = 1
 
 .control
 
-	set wr_vecnames
-
-	run
-
-	let in = ip-im
-	let o0 = op0-om0
-	let o1 = op1-om1
-	let o2 = op2-om2
-	let o3 = op3-om3
-	let o4 = op4-om4
-	let o5 = op5-om5
-	let o6 = op6-om6
-	let o7 = op7-om7
-
-	plot o0 vs in o1 vs in o2 vs in
-	plot o0 vs in o3 vs in o4 vs in
-	plot o5 vs in o6 vs in o7 vs in
+*	set wr_vecnames
 	
-	let av0 = db(abs(deriv(o0)/deriv(in)))
-	let av1 = db(abs(deriv(o1)/deriv(in)))
-	let av2 = db(abs(deriv(o2)/deriv(in)))
-	let av3 = db(abs(deriv(o3)/deriv(in)))
-	let av4 = db(abs(deriv(o4)/deriv(in)))
-	let av5 = db(abs(deriv(o5)/deriv(in)))
-	let av6 = db(abs(deriv(o6)/deriv(in)))
-	let av7 = db(abs(deriv(o7)/deriv(in)))
+	noise v(op0,om0) vdd dec 10 1k 1G
+	noise v(op1,om1) vdd dec 10 1k 1G 
+	noise v(op2,om2) vdd dec 10 1k 1G 
+	noise v(op3,om3) vdd dec 10 1k 1G 
+	noise v(op4,om4) vdd dec 10 1k 1G 
+	noise v(op5,om5) vdd dec 10 1k 1G 
+	noise v(op6,om6) vdd dec 10 1k 1G  
+	noise v(op7,om7) vdd dec 10 1k 1G 
+	
+	plot noise1.onoise_spectrum noise3.onoise_spectrum noise5.onoise_spectrum loglog
+	plot noise1.onoise_spectrum noise7.onoise_spectrum noise9.onoise_spectrum loglog
+	plot noise11.onoise_spectrum noise13.onoise_spectrum noise15.onoise_spectrum loglog
 
-	plot av0 vs o0 av1 vs o1 av2 vs o2
-	plot av0 vs o0 av3 vs o3 av4 vs o4
-	plot av5 vs o5 av6 vs o6 av7 vs o7
+	wrdata ../data/noise.csv noise1.onoise_spectrum noise3.onoise_spectrum noise5.onoise_spectrum noise1.onoise_spectrum noise7.onoise_spectrum noise9.onoise_spectrum noise11.onoise_spectrum noise13.onoise_spectrum noise15.onoise_spectrum
 
-	wrdata ../data/dc_df_vo_tt.csv in o0 o1 o2 o3 o4 o5 o6 o7
-	wrdata ../data/dc_df_av_tt.csv o0 av0 o1 av1 o2 av2 o3 av3 o4 av4 o5 av5 o6 av6 o7 av7
-		
+
 .endc
 
 .end

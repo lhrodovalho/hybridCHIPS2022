@@ -1,14 +1,18 @@
 * CMOS inverter-based single-ended amplifiers open-loop testbench
 
 * Include GF180MCU device models
-.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
-.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" statistical
-.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_statistical
-.temp 27
-
+*.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
 .param
 +  sw_stat_global = 0
 +  sw_stat_mismatch = 1
++ mc_skew = 3
++ res_mc_skew = 3
++ cap_mc_skew = 3
++  fnoicor = 0
+
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" statistical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_statistical
+.temp 27
 
 .include "../../inv/ngspice/inv.spice"
 .include "../../nauta/magic/nauta.spice"
@@ -22,7 +26,7 @@
 
 .param pVDD = 5.0
 .param pC   = 10p
-.param pIB  = 22u
+.param pIB  = 23u
 
 
 VDD  vdd 0 dc {pVDD}
@@ -125,22 +129,31 @@ com7 om7 cm  {pC}
 
 .control
 
-	echo # Open-loop AC Monte Carlo simulation mismatch-only input voltage offset > ../data/ac_df_mc_mis_os.txt
-	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/ac_df_mc_mis_os.txt
+	echo # Open-loop AC Monte Carlo simulation mismatch-only input voltage offset > ../data/mc/ac_df_mc_mis_os.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_os.txt
 
-	echo # Open-loop AC Monte Carlo simulation mismatch-only output common-voltage > ../data/ac_df_mc_mis_cm.txt
-	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/ac_df_mc_mis_cm.txt
+	echo # Open-loop AC Monte Carlo simulation mismatch-only output common-voltage > ../data/mc/ac_df_mc_mis_cm.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_cm.txt
 
-	echo # Open-loop AC Monte Carlo simulation mismatch-only voltage gain > ../data/ac_df_mc_mis_av.txt
-	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/ac_df_mc_mis_av.txt
+	echo # Open-loop AC Monte Carlo simulation mismatch-only regulated supply voltage > ../data/mc/ac_df_mc_mis_vreg.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_vreg.txt
 
-	echo # Open-loop AC Monte Carlo simulation mismatch-only GBW > ../data/ac_df_mc_mis_gbw.txt
-	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/ac_df_mc_mis_gbw.txt
+	echo # Open-loop AC Monte Carlo simulation mismatch-only voltage gain > ../data/mc/ac_df_mc_mis_av.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_av.txt
 
+	echo # Open-loop AC Monte Carlo simulation mismatch-only GBW > ../data/mc/ac_df_mc_mis_gbw.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_gbw.txt
+
+	echo # Open-loop AC Monte Carlo simulation mismatch-only phase margin > ../data/mc/ac_df_mc_mis_pm.txt
+	echo # N,B,M,BN,BM,NN,NV,MV >> ../data/mc/ac_df_mc_mis_pm.txt
 
 	let run = 1
 	dowhile run <= 100
 
+	echo
+	echo ">>> run $&run"
+	echo
+	
 	reset
 	op
 
@@ -180,11 +193,19 @@ com7 om7 cm  {pC}
 	let vreg6 = vreg6
 	let vreg7 = vreg7
 
-	echo $&os0,$&os1,$&os2,$&os3,$&os4,$&os5,$&os6,$&os7 >> ../data/ac_df_mc_mis_os.txt
-	echo $&cm0,$&cm1,$&cm2,$&cm3,$&cm4,$&cm5,$&cm6,$&cm7 >> ../data/ac_df_mc_mis_cm.txt
+	let id0 = i(vd0)
+	let id1 = i(vd1)
+	let id2 = i(vd2)
+	let id3 = i(vd3)
+	let id4 = i(vd4)
+	let id5 = i(vd5)
+	let id6 = i(vd6)
+	let id7 = i(vd7)
 
-	echo ">>> voltage offset"
-	echo ">>> $&os0,$&os1,$&os2,$&os3,$&os4,$&os5,$&os6,$&os7"
+	echo $&os0,$&os1,$&os2,$&os3,$&os4,$&os5,$&os6,$&os7 >>                 ../data/mc/ac_df_mc_mis_os.txt
+	echo $&cm0,$&cm1,$&cm2,$&cm3,$&cm4,$&cm5,$&cm6,$&cm7 >>                 ../data/mc/ac_df_mc_mis_cm.txt
+	echo $&vreg0,$&vreg1,$&vreg2,$&vreg3,$&vreg4,$&vreg5,$&vreg6,$&vreg7 >> ../data/mc/ac_df_mc_mis_vreg.txt
+	*echo $&id0,$&id1,$&id2,$&id3,$&id4,$&id5,$&id6,$&id7 >> ../data/mc/ac_df_mc_mis_id.txt
 
 	ac dec 100 1 1T
 
@@ -234,12 +255,15 @@ com7 om7 cm  {pC}
 	meas ac av6_1khz find av6 at=1k
 	meas ac av7_1khz find av7 at=1k
 		
-	echo $&av0_1khz,$&av1_1khz,$&av2_1khz,$&av3_1khz,$&av4_1khz,$&av5_1khz,$&av6_1khz,$&av7_1khz >> ../data/ac_df_mc_mis_av.txt
-	echo $&gbw0,$&gbw1,$&gbw2,$&gbw3,$&gbw4,$&gbw5,$&gbw6,$&gbw7 >> ../data/ac_df_mc_mis_gbw.txt
+	echo $&av0_1khz,$&av1_1khz,$&av2_1khz,$&av3_1khz,$&av4_1khz,$&av5_1khz,$&av6_1khz,$&av7_1khz >> ../data/mc/ac_df_mc_mis_av.txt
+	echo $&gbw0,$&gbw1,$&gbw2,$&gbw3,$&gbw4,$&gbw5,$&gbw6,$&gbw7 >>                                 ../data/mc/ac_df_mc_mis_gbw.txt
+	echo $&pm0,$&pm1,$&pm2,$&pm3,$&pm4,$&pm5,$&pm6,$&pm7 >>                                         ../data/mc/ac_df_mc_mis_pm.txt
 
+	destroy all
 	let run = run + 1
 	end
-		
+	
+	exit	
 .endc
 
 .end

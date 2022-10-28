@@ -4,7 +4,7 @@
 .include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" ss
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_ss
-.temp 27
+.temp 0
 
 .param
 +  sw_stat_global = 0
@@ -22,7 +22,7 @@
 
 .param pVDD = 5.0
 .param pC   = 10p
-.param pIB  = 22u
+.param pIB  = 23u
 
 
 VDD  vdd 0 dc {pVDD}
@@ -126,7 +126,7 @@ com7 om7 cm  {pC}
 
 .control
 
-	set wr_vecnames
+*	set wr_vecnames
 
 	op
 	ac dec 100 1 1T
@@ -243,9 +243,9 @@ com7 om7 cm  {pC}
 	
 	print fom0 fom1 fom2 fom3 fom4 fom5 fom6 fom7	
 	
-	echo # Open-loop AC simulation SS corner 27C summary > ../data/ac_df_ss_summary.txt
+	echo # Open-loop AC simulation SS corner 0C summary > ../data/ac_df_ss_summary.txt
 	echo # amp,id,os,cm,vreg,gbw,pm,av,fom >> ../data/ac_df_ss_summary.txt
-	echo N,$&id0,$&os0,$&cm0,$&vreg0,&gbw0,$&pm0,$&av0_1khz,$&fom0 >> ../data/ac_df_ss_summary.txt
+	echo N,$&id0,$&os0,$&cm0,$&vreg0,$&gbw0,$&pm0,$&av0_1khz,$&fom0 >> ../data/ac_df_ss_summary.txt
 	echo B,$&id1,$&os1,$&cm1,$&vreg1,$&gbw1,$&pm1,$&av1_1khz,$&fom1 >> ../data/ac_df_ss_summary.txt
 	echo M,$&id2,$&os2,$&cm2,$&vreg2,$&gbw2,$&pm2,$&av2_1khz,$&fom2 >> ../data/ac_df_ss_summary.txt
 	echo BN,$&id3,$&os3,$&cm3,$&vreg3,$&gbw3,$&pm3,$&av3_1khz,$&fom3 >> ../data/ac_df_ss_summary.txt

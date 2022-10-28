@@ -1,0 +1,59 @@
+* Amplifier open-loop DC testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" ss
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_ss
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "inv.spice"
+
+.param pVDD = 5.0
+.param pIB  = 20u
+
+VDD vdd 0 dc {pVDD} pulse (0 {pVDD} 1n 100p 100p 1 1)
+VSS vss 0 0
+ECM cm vss vreg vss 0.5
+
+ib vdd ib {pIB}
+xb ib     vdd gp bp  vreg vss inv_bias
+x0 in out vdd gp bp  vreg vss inv0
+vin  in  cm 0 ac 1
+vout out cm 0 
+.option gmin = 1e-15
+.control
+
+	let xi = -7
+	let xf = -4
+	let xs = 0.1
+	let x  = xi
+
+	echo "# ib,vreg" > ../data/ibias_sweep_ss_vreg.csv
+	echo "# ib,gm"   > ../data/ibias_sweep_ss_gm.csv
+
+	while (x <= xf)
+
+	let i = 10^x
+	alter ib dc=i
+
+	op
+	echo "$&i,$&vreg" >> ../data/ibias_sweep_ss_vreg.csv
+
+	ac dec 1 1k 10k
+	let io_abs = abs(i(vout))
+	meas ac gm find io_abs at=1k
+
+	echo "$&i,$&gm" >> ../data/ibias_sweep_ss_gm.csv
+
+	let x = x+xs
+
+	end
+	
+	exit
+.endc
+
+.end

@@ -1,0 +1,107 @@
+* CMOS inverter-based single-ended amplifiers open-loop testbench
+
+* Include GF180MCU device models
+.include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" ff
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_ff
+.temp 70
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
+
+.include "../../inv/ngspice/inv.spice"
+.include "../../nauta/magic/nauta.spice"
+.include "../../barth/magic/barth.spice"
+.include "../../manf/magic/manf.spice"
+.include "../../barthmanf/magic/barthmanf.spice"
+.include "../../barthnauta/magic/barthnauta.spice"
+.include "../../nautanauta/magic/nautanauta.spice"
+.include "../../nautavieru/magic/nautavieru.spice"
+.include "../../manfvieru/magic/manfvieru.spice"
+
+.param pVDD = 5.0
+.param pC   = 10p
+.param pIB  = 23u
+
+
+VDD  vdd 0 dc {pVDD} ac 1
+VSS  vss 0 0
+ECM  cm vss vdd vss 0.5
+
+vd0 vd0 vss dc {pVDD}
+ib0 vdd ib0 {pIB}
+xb0 ib0             vdd gp0 bp0 vreg0 vss inv_bias
+x0  op0 om0 op0 om0 vd0 gp0 bp0 vreg0 vss nauta
+
+vd1 vd1 vss dc {pVDD}
+ib1 vdd ib1 {pIB}
+xb1 ib1             vdd gp1 bp1 vreg1 vss inv_bias
+x1  op1 om1 op1 om1 vd1 gp1 bp1 vreg1 vss barth
+
+vd2 vd2 vss dc {pVDD}
+ib2 vdd ib2 {pIB}
+xb2 ib2             vdd gp2 bp2 vreg2 vss inv_bias
+x2  op2 om2 op2 om2 vd2 gp2 bp2 vreg2 vss manf
+
+vd3 vd3 vss dc {pVDD}
+ib3 vdd ib3 {pIB}
+xb3 ib3             vdd gp3 bp3 vreg3 vss inv_bias
+x3  op3 om3 op3 om3 vd3 gp3 bp3 vreg3 vss barthnauta
+
+vd4 vd4 vss dc {pVDD}
+ib4 vdd ib4 {pIB}
+xb4 ib4             vdd gp4 bp4 vreg4 vss inv_bias
+x4  op4 om4 op4 om4 vd4 gp4 bp4 vreg4 vss barthmanf
+
+vd5 vd5 vss dc {pVDD}
+ib5 vdd ib5 {pIB}
+xb5 ib5             vdd gp5 bp5 vreg5 vss inv_bias
+x5  op5 om5 op5 om5 vd5 gp5 bp5 vreg5 vss nautanauta
+
+vd6 vd6 vss dc {pVDD}
+ib6 vdd ib6 {pIB}
+xb6 ib6             vdd gp6 bp6 vreg6 vss inv_bias
+x6  op6 om6 op6 om6 vd6 gp6 bp6 vreg6 vss nautavieru
+
+vd7 vd7 vss dc {pVDD}
+ib7 vdd ib7 {pIB}
+xb7 ib7             vdd gp7 bp7 vreg7 vss inv_bias
+x7  op7 om7 op7 om7 vd7 gp7 bp7 vreg7 vss manfvieru
+
+.option gmin=1e-15
+.param dx = 1
+
+.control
+
+*	set wr_vecnames
+	
+	noise v(op0,om0) vdd dec 10 1 10Meg
+	noise v(op1,om1) vdd dec 10 1 10Meg 
+	noise v(op2,om2) vdd dec 10 1 10Meg 
+	noise v(op3,om3) vdd dec 10 1 10Meg 
+	noise v(op4,om4) vdd dec 10 1 10Meg 
+	noise v(op5,om5) vdd dec 10 1 10Meg 
+	noise v(op6,om6) vdd dec 10 1 10Meg  
+	noise v(op7,om7) vdd dec 10 1 10Meg 
+	
+	plot noise1.onoise_spectrum noise3.onoise_spectrum noise5.onoise_spectrum loglog
+	plot noise1.onoise_spectrum noise7.onoise_spectrum noise9.onoise_spectrum loglog
+	plot noise11.onoise_spectrum noise13.onoise_spectrum noise15.onoise_spectrum loglog
+
+	let n0 = noise2.onoise_total
+	let n1 = noise4.onoise_total
+	let n2 = noise6.onoise_total
+	let n3 = noise8.onoise_total
+	let n4 = noise10.onoise_total
+	let n5 = noise12.onoise_total
+	let n6 = noise14.onoise_total
+	let n7 = noise16.onoise_total
+
+	echo "# Noise simulation summary (FF/70°C) 1Hz-10MHz" > ../data/onoise_ff_1_10Meg.txt
+	echo "# N,B,M,BN,BM,NN,NV,NM" >> ../data/onoise_ff_1_10Meg.txt
+	echo "$&n0,$&n1,$&n2,$&n3,$&n4,$&n5,$&n6,$&n7" >> ../data/onoise_ff_1_10Meg.txt
+
+.endc
+
+.end

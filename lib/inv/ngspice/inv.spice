@@ -25,10 +25,10 @@ XN  out  in gnd  gnd nch3
 .ends
 
 .subckt qref p ref m lo
-XPV1 x   x   p   p   pch6
-XPV2 ref ref x   x   pch6
-XPV3 y   y   ref ref pch6
-XPV4 m   lo  y   y   pch6
+XPV1 x   x   p   p   pmos_6p0 w=6.0u l=6.0u
+XPV2 ref ref x   x   pmos_6p0 w=6.0u l=6.0u
+XPV3 y   y   ref ref pmos_6p0 w=6.0u l=6.0u
+XPV4 m   lo  y   y   pmos_6p0 w=6.0u l=6.0u
 .ends
 
 .subckt inv_bias ib vdd gp bp vreg gnd
@@ -36,13 +36,13 @@ XP1a vreg gp  vdd  vdd pch6
 XP1b q    q   vreg bp  pch3
 XN1c q    q   gnd  gnd nch3
 
-XP2a z    z   vdd  vdd pch6
-XN2b z    z   y    gnd nch6
-XN2c y    q   gnd  gnd nch3
+XP2a z    z    vdd  vdd pch6
+XN2b z    vreg y    gnd nch6
+XN2c y    q    gnd  gnd nch3
 
-XP3a gp   z   vdd  vdd pch6
-XN3b gp   z   x    gnd nch6
-XN3c x    ib  gnd  gnd nch6
+XP3a gp   z    vdd  vdd pch6
+XN3b gp   vreg x    gnd nch6
+XN3c x    ib   gnd  gnd nch6
 
 XNV4 ib   ib  gnd  gnd nch6
 
@@ -52,9 +52,13 @@ XP5a vreg gp  vdd  vdd pch6
 XP5b bp0  ref vreg bp  pch3
 XN5c bp0  ref gnd  gnd nch3
 
-XP6a bp   gp  vdd  vdd pch6
+XP6a bp   gp0 vdd  vdd pch6
 XP6b gnd  bp0 bp   bp  pch3
 XN6c gnd  bp0 gnd  gnd nch3
+
+XPV7 gp0  gp0 vdd  vdd pch6
+XNV7 gp0  ib  gnd  gnd nch6
+
 
 cc vdd gp 10f
 

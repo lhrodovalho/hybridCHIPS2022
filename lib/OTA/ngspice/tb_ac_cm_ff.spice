@@ -4,7 +4,7 @@
 .include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" ff
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_ff
-.temp 27
+.temp 70
 
 .param
 +  sw_stat_global = 0
@@ -22,7 +22,7 @@
 
 .param pVDD = 5.0
 .param pC   = 10p
-.param pIB  = 22u
+.param pIB  = 23u
 
 VDD  vdd 0 dc {pVDD}
 VSS  vss 0 0
@@ -125,7 +125,7 @@ com7 om7 cm  {pC}
 
 .control
 
-	set wr_vecnames
+*	set wr_vecnames
 
 	run
 
@@ -153,7 +153,7 @@ com7 om7 cm  {pC}
 	
 	wrdata ../data/ac_cm_av_ff.csv av0 av1 av2 av3 av4 av5 av6 av7
 		
-	echo # Open-loop AC common-mode input simulation FF corner 27C summary > ../data/ac_cm_ff_summary.txt
+	echo # Open-loop AC common-mode input simulation FF corner 70C summary > ../data/ac_cm_ff_summary.txt
 	echo # amp,avcm >> ../data/ac_cm_ff_summary.txt
 	echo N,$&av0_1hz >> ../data/ac_cm_ff_summary.txt
 	echo B,$&av1_1hz >> ../data/ac_cm_ff_summary.txt

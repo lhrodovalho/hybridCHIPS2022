@@ -1,10 +1,10 @@
-# Open-loop AC common-mode input simulation SS corner 27C summary
+# Open-loop AC common-mode input simulation SS corner 0C summary
 # amp avcm
-N -0.125282
-B -0.125256
-M 0.12259
-BN -37.0161
-BM -33.1856
-NN -37.0159
-NV -33.1847
-MV -33.5305
+N -0.11969
+B -0.119665
+M 0.11728
+BN -37.4014
+BM -33.5844
+NN -37.4012
+NV -33.5835
+MV -33.9145

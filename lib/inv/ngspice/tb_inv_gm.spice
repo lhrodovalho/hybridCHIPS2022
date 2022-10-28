@@ -3,33 +3,38 @@
 * Include GF180MCU device models
 .include "../../../gf180mcuC/libs.tech/ngspice/design.ngspice"
 .lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" typical
+.lib "../../../gf180mcuC/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.temp 27
+
+.param
++  sw_stat_global = 0
++  sw_stat_mismatch = 0
 
 .include "inv.spice"
-.include "../magic/inv.spice"
 
-.param pVDH = 5.0
-.param pVDX = 3.3
+.param pVDD = 5.0
+.param pVREG = 3.3
 .param pIB  = 20.0u
 
-VDH vdh 0 dc {pVDH}
-VDX vdx 0 dc {pVDX}
+vdd vdd 0 dc {pVDD}
+vreg vreg 0 dc {pVREG}
 VSS vss 0 0
-ECM cm vss vdx vss 0.5
+ECM cm vss vreg vss 0.5
 
 vin in cm dc 0 ac 1
 
 *ib vdd ib {pIB}
-xb ib      vdh vdh bp  vdx vss inv_bias
-x0 in  out vdh vdh bp  vdx vss inv0
-evdq vdq vss vdx vss 1
-xq q   q   vdh vdh bp  vdq vss inv0
+xb ib      vdd vdd bp  vreg vss inv_bias
+x0 in  out vdd vdd bp  vreg vss inv0
+evdq vdq vss vreg vss 1
+xq q   q   vdd vdd bp  vdq vss inv0
 vo out cm
 .param dx = 1.5
 .dc vin {-dx} {dx} {dx/1001}
 .option gmin = 1e-15
 .control	
-	alter vdx dc=3.0
-	dc vin -1.5 1.5 1m
+	alter vreg dc=3.0
+	dc vin -1.5 1.5 10m
 		
 	let vi = in-cm
 	let io = i(vo)
@@ -41,25 +46,10 @@ vo out cm
 	let ioN = i(vo)/gm0
 	let gmN = gm/gm0
 
-	wrdata ../data/inv_gm_vdd30.txt io gm ioN gmN
+	wrdata ../data/inv_gm_vdd30.csv io gm ioN gmN
 
-	alter vdx dc=2.4
-	dc vin -1.2 1.2 1m
-
-	let vi = in-cm
-	let io = i(vo)
-	let gm = abs(deriv(io))
-
-	meas dc iq  find i(evdq) at=0	
-	meas dc io0 find io at=0
-	meas dc gm0 find gm at=0
-	let ioN = i(vo)/gm0
-	let gmN = gm/gm0
-
-	wrdata ../data/inv_gm_vdd24.txt io gm ioN gmN
-
-	alter vdx dc=1.8
-	dc vin -0.9 0.9 1m
+	alter vreg dc=2.4
+	dc vin -1.2 1.2 10m
 
 	let vi = in-cm
 	let io = i(vo)
@@ -71,7 +61,22 @@ vo out cm
 	let ioN = i(vo)/gm0
 	let gmN = gm/gm0
 
-	wrdata ../data/inv_gm_vdd18.txt io gm ioN gmN
+	wrdata ../data/inv_gm_vdd24.csv io gm ioN gmN
+
+	alter vreg dc=1.8
+	dc vin -0.9 0.9 10m
+
+	let vi = in-cm
+	let io = i(vo)
+	let gm = abs(deriv(io))
+
+	meas dc iq  find i(evdq) at=0	
+	meas dc io0 find io at=0
+	meas dc gm0 find gm at=0
+	let ioN = i(vo)/gm0
+	let gmN = gm/gm0
+
+	wrdata ../data/inv_gm_vdd18.csv io gm ioN gmN
 
 	plot dc1.io dc2.io dc3.io
 	plot dc1.gm dc2.gm dc3.gm
